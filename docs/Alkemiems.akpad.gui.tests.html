@@ -1,0 +1,482 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alkemiems.akpad.gui.tests package &mdash; Alkemiems 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Alkemiems.akpad.help package" href="Alkemiems.akpad.help.html" />
+    <link rel="prev" title="Alkemiems.akpad.gui package" href="Alkemiems.akpad.gui.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Alkemiems
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Alkemiems</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Alkemiems.akpad.html">Alkemiems.akpad package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="Alkemiems.akpad.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.akpad.html">Alkemiems.akpad.akpad package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.application.html">Alkemiems.akpad.application package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.document.html">Alkemiems.akpad.document package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="Alkemiems.akpad.gui.html">Alkemiems.akpad.gui package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="Alkemiems.akpad.gui.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.dock">Alkemiems.akpad.gui.dock module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.dropshadow">Alkemiems.akpad.gui.dropshadow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.framelesswindow">Alkemiems.akpad.gui.framelesswindow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.lineedit">Alkemiems.akpad.gui.lineedit module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.quickhelp">Alkemiems.akpad.gui.quickhelp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.splashscreen">Alkemiems.akpad.gui.splashscreen module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.stackedwidget">Alkemiems.akpad.gui.stackedwidget module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.test">Alkemiems.akpad.gui.test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.toolbar">Alkemiems.akpad.gui.toolbar module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.toolbox">Alkemiems.akpad.gui.toolbox module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.toolgrid">Alkemiems.akpad.gui.toolgrid module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.tooltree">Alkemiems.akpad.gui.tooltree module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.utils">Alkemiems.akpad.gui.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.help.html">Alkemiems.akpad.help package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.preview.html">Alkemiems.akpad.preview package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.registry.html">Alkemiems.akpad.registry package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html">Alkemiems.akpad.scheme package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.styles.html">Alkemiems.akpad.styles package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.utils.html">Alkemiems.akpad.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.config">Alkemiems.akpad.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.report">Alkemiems.akpad.report module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.resources">Alkemiems.akpad.resources module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.data.html">Alkemiems.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.io.html">Alkemiems.io package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.lammps.html">Alkemiems.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.misc.html">Alkemiems.misc package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.openphase.html">Alkemiems.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.preprocess.html">Alkemiems.preprocess package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.potentialmind.html">Alkemiems.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.statistics.html">Alkemiems.statistics package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.vasp.html">Alkemiems.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.html">Alkemiems.widgets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.abinit.html">Alkemiems.widgets.abinit package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.calypso.html">Alkemiems.widgets.calypso package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.data.html">Alkemiems.widgets.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.database.html">Alkemiems.widgets.database package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.lammps.html">Alkemiems.widgets.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.openphase.html">Alkemiems.widgets.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.potentialmind.html">Alkemiems.widgets.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.qe.html">Alkemiems.widgets.qe package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.report.html">Alkemiems.widgets.report package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.utils.html">Alkemiems.widgets.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.vasp.html">Alkemiems.widgets.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.visualize.html">Alkemiems.widgets.visualize package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alkemiems</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Alkemiems</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.html">Alkemiems package</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.akpad.html">Alkemiems.akpad package</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.akpad.gui.html">Alkemiems.akpad.gui package</a> &raquo;</li>
+        
+      <li>Alkemiems.akpad.gui.tests package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Alkemiems.akpad.gui.tests.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alkemiems-akpad-gui-tests-package">
+<h1>Alkemiems.akpad.gui.tests package<a class="headerlink" href="#alkemiems-akpad-gui-tests-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tests.test_dock">
+<span id="alkemiems-akpad-gui-tests-test-dock-module"></span><h2>Alkemiems.akpad.gui.tests.test_dock module<a class="headerlink" href="#module-Alkemiems.akpad.gui.tests.test_dock" title="Permalink to this headline">¶</a></h2>
+<p>Tests for the DockWidget.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tests.test_dock.TestDock">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tests.test_dock.</code><code class="descname">TestDock</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_dock.html#TestDock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_dock.TestDock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.akpad.gui.html#Alkemiems.akpad.gui.test.QAppTestCase" title="Alkemiems.akpad.gui.test.QAppTestCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.gui.test.QAppTestCase</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_dock.TestDock.test_dock_mainwinow">
+<code class="descname">test_dock_mainwinow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_dock.html#TestDock.test_dock_mainwinow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_dock.TestDock.test_dock_mainwinow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_dock.TestDock.test_dock_standalone">
+<code class="descname">test_dock_standalone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_dock.html#TestDock.test_dock_standalone"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_dock.TestDock.test_dock_standalone" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tests.test_dropshadow">
+<span id="alkemiems-akpad-gui-tests-test-dropshadow-module"></span><h2>Alkemiems.akpad.gui.tests.test_dropshadow module<a class="headerlink" href="#module-Alkemiems.akpad.gui.tests.test_dropshadow" title="Permalink to this headline">¶</a></h2>
+<p>Tests for DropShadowFrame wiget.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tests.test_dropshadow.TestDropShadow">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tests.test_dropshadow.</code><code class="descname">TestDropShadow</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_dropshadow.html#TestDropShadow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_dropshadow.TestDropShadow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.akpad.gui.html#Alkemiems.akpad.gui.test.QAppTestCase" title="Alkemiems.akpad.gui.test.QAppTestCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.gui.test.QAppTestCase</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_dropshadow.TestDropShadow.test">
+<code class="descname">test</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_dropshadow.html#TestDropShadow.test"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_dropshadow.TestDropShadow.test" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_dropshadow.TestDropShadow.test1">
+<code class="descname">test1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_dropshadow.html#TestDropShadow.test1"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_dropshadow.TestDropShadow.test1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_dropshadow.TestDropShadow.test_drop_shadow_old">
+<code class="descname">test_drop_shadow_old</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_dropshadow.html#TestDropShadow.test_drop_shadow_old"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_dropshadow.TestDropShadow.test_drop_shadow_old" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tests.test_framelesswindow">
+<span id="alkemiems-akpad-gui-tests-test-framelesswindow-module"></span><h2>Alkemiems.akpad.gui.tests.test_framelesswindow module<a class="headerlink" href="#module-Alkemiems.akpad.gui.tests.test_framelesswindow" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tests.test_framelesswindow.TestFramelessWindow">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tests.test_framelesswindow.</code><code class="descname">TestFramelessWindow</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_framelesswindow.html#TestFramelessWindow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_framelesswindow.TestFramelessWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.akpad.gui.html#Alkemiems.akpad.gui.test.QAppTestCase" title="Alkemiems.akpad.gui.test.QAppTestCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.gui.test.QAppTestCase</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_framelesswindow.TestFramelessWindow.test_framelesswindow">
+<code class="descname">test_framelesswindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_framelesswindow.html#TestFramelessWindow.test_framelesswindow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_framelesswindow.TestFramelessWindow.test_framelesswindow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tests.test_lineedit">
+<span id="alkemiems-akpad-gui-tests-test-lineedit-module"></span><h2>Alkemiems.akpad.gui.tests.test_lineedit module<a class="headerlink" href="#module-Alkemiems.akpad.gui.tests.test_lineedit" title="Permalink to this headline">¶</a></h2>
+<p>Test for searchwidget</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tests.test_lineedit.TestSearchWidget">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tests.test_lineedit.</code><code class="descname">TestSearchWidget</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_lineedit.html#TestSearchWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_lineedit.TestSearchWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.akpad.gui.html#Alkemiems.akpad.gui.test.QAppTestCase" title="Alkemiems.akpad.gui.test.QAppTestCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.gui.test.QAppTestCase</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_lineedit.TestSearchWidget.test_lineedit">
+<code class="descname">test_lineedit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_lineedit.html#TestSearchWidget.test_lineedit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_lineedit.TestSearchWidget.test_lineedit" title="Permalink to this definition">¶</a></dt>
+<dd><p>test LineEdit</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tests.test_splashscreen">
+<span id="alkemiems-akpad-gui-tests-test-splashscreen-module"></span><h2>Alkemiems.akpad.gui.tests.test_splashscreen module<a class="headerlink" href="#module-Alkemiems.akpad.gui.tests.test_splashscreen" title="Permalink to this headline">¶</a></h2>
+<p>Test for splashscreen</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tests.test_splashscreen.TestSplashScreen">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tests.test_splashscreen.</code><code class="descname">TestSplashScreen</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_splashscreen.html#TestSplashScreen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_splashscreen.TestSplashScreen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.akpad.gui.html#Alkemiems.akpad.gui.test.QAppTestCase" title="Alkemiems.akpad.gui.test.QAppTestCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.gui.test.QAppTestCase</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_splashscreen.TestSplashScreen.test_splashscreen">
+<code class="descname">test_splashscreen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_splashscreen.html#TestSplashScreen.test_splashscreen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_splashscreen.TestSplashScreen.test_splashscreen" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tests.test_stackedwidget">
+<span id="alkemiems-akpad-gui-tests-test-stackedwidget-module"></span><h2>Alkemiems.akpad.gui.tests.test_stackedwidget module<a class="headerlink" href="#module-Alkemiems.akpad.gui.tests.test_stackedwidget" title="Permalink to this headline">¶</a></h2>
+<p>Test for StackedWidget</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tests.test_stackedwidget.TestStackedWidget">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tests.test_stackedwidget.</code><code class="descname">TestStackedWidget</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_stackedwidget.html#TestStackedWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_stackedwidget.TestStackedWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.akpad.gui.html#Alkemiems.akpad.gui.test.QAppTestCase" title="Alkemiems.akpad.gui.test.QAppTestCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.gui.test.QAppTestCase</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_stackedwidget.TestStackedWidget.test">
+<code class="descname">test</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_stackedwidget.html#TestStackedWidget.test"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_stackedwidget.TestStackedWidget.test" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tests.test_toolbar">
+<span id="alkemiems-akpad-gui-tests-test-toolbar-module"></span><h2>Alkemiems.akpad.gui.tests.test_toolbar module<a class="headerlink" href="#module-Alkemiems.akpad.gui.tests.test_toolbar" title="Permalink to this headline">¶</a></h2>
+<p>Test for DynamicResizeToolbar</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tests.test_toolbar.ToolBoxTest">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tests.test_toolbar.</code><code class="descname">ToolBoxTest</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_toolbar.html#ToolBoxTest"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_toolbar.ToolBoxTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.akpad.gui.html#Alkemiems.akpad.gui.test.QAppTestCase" title="Alkemiems.akpad.gui.test.QAppTestCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.gui.test.QAppTestCase</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_toolbar.ToolBoxTest.test_dynamic_toolbar">
+<code class="descname">test_dynamic_toolbar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_toolbar.html#ToolBoxTest.test_dynamic_toolbar"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_toolbar.ToolBoxTest.test_dynamic_toolbar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tests.test_toolbox">
+<span id="alkemiems-akpad-gui-tests-test-toolbox-module"></span><h2>Alkemiems.akpad.gui.tests.test_toolbox module<a class="headerlink" href="#module-Alkemiems.akpad.gui.tests.test_toolbox" title="Permalink to this headline">¶</a></h2>
+<p>Tests for ToolBox widget.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tests.test_toolbox.TestToolBox">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tests.test_toolbox.</code><code class="descname">TestToolBox</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_toolbox.html#TestToolBox"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_toolbox.TestToolBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.akpad.gui.html#Alkemiems.akpad.gui.test.QAppTestCase" title="Alkemiems.akpad.gui.test.QAppTestCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.gui.test.QAppTestCase</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_toolbox.TestToolBox.test_tool_box">
+<code class="descname">test_tool_box</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_toolbox.html#TestToolBox.test_tool_box"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_toolbox.TestToolBox.test_tool_box" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tests.test_toolgrid">
+<span id="alkemiems-akpad-gui-tests-test-toolgrid-module"></span><h2>Alkemiems.akpad.gui.tests.test_toolgrid module<a class="headerlink" href="#module-Alkemiems.akpad.gui.tests.test_toolgrid" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tests.test_toolgrid.TestToolGrid">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tests.test_toolgrid.</code><code class="descname">TestToolGrid</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_toolgrid.html#TestToolGrid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_toolgrid.TestToolGrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.akpad.gui.html#Alkemiems.akpad.gui.test.QAppTestCase" title="Alkemiems.akpad.gui.test.QAppTestCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.gui.test.QAppTestCase</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_toolgrid.TestToolGrid.test_tool_grid">
+<code class="descname">test_tool_grid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_toolgrid.html#TestToolGrid.test_tool_grid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_toolgrid.TestToolGrid.test_tool_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tests.test_tooltree">
+<span id="alkemiems-akpad-gui-tests-test-tooltree-module"></span><h2>Alkemiems.akpad.gui.tests.test_tooltree module<a class="headerlink" href="#module-Alkemiems.akpad.gui.tests.test_tooltree" title="Permalink to this headline">¶</a></h2>
+<p>Test for tooltree</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tests.test_tooltree.TestToolTree">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tests.test_tooltree.</code><code class="descname">TestToolTree</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_tooltree.html#TestToolTree"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_tooltree.TestToolTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.akpad.gui.html#Alkemiems.akpad.gui.test.QAppTestCase" title="Alkemiems.akpad.gui.test.QAppTestCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.gui.test.QAppTestCase</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_tooltree.TestToolTree.test_flattened">
+<code class="descname">test_flattened</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_tooltree.html#TestToolTree.test_flattened"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_tooltree.TestToolTree.test_flattened" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_tooltree.TestToolTree.test_tooltree">
+<code class="descname">test_tooltree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_tooltree.html#TestToolTree.test_tooltree"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_tooltree.TestToolTree.test_tooltree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_tooltree.TestToolTree.test_tooltree_registry">
+<code class="descname">test_tooltree_registry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_tooltree.html#TestToolTree.test_tooltree_registry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_tooltree.TestToolTree.test_tooltree_registry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tests.test_utils">
+<span id="alkemiems-akpad-gui-tests-test-utils-module"></span><h2>Alkemiems.akpad.gui.tests.test_utils module<a class="headerlink" href="#module-Alkemiems.akpad.gui.tests.test_utils" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tests.test_utils.TestUpdatesDisabled">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tests.test_utils.</code><code class="descname">TestUpdatesDisabled</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_utils.html#TestUpdatesDisabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_utils.TestUpdatesDisabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.akpad.gui.html#Alkemiems.akpad.gui.test.QAppTestCase" title="Alkemiems.akpad.gui.test.QAppTestCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.gui.test.QAppTestCase</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_utils.TestUpdatesDisabled.test_context_manager">
+<code class="descname">test_context_manager</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_utils.html#TestUpdatesDisabled.test_context_manager"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_utils.TestUpdatesDisabled.test_context_manager" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tests.test_utils.TestUpdatesDisabled.test_decorator">
+<code class="descname">test_decorator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tests/test_utils.html#TestUpdatesDisabled.test_decorator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tests.test_utils.TestUpdatesDisabled.test_decorator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tests">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Alkemiems.akpad.gui.tests" title="Permalink to this headline">¶</a></h2>
+<p>Tests for gui toolkit</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Alkemiems.akpad.help.html" class="btn btn-neutral float-right" title="Alkemiems.akpad.help package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Alkemiems.akpad.gui.html" class="btn btn-neutral float-left" title="Alkemiems.akpad.gui package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Guanjie Wang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

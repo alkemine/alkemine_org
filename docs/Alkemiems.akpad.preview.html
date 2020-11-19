@@ -1,0 +1,653 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alkemiems.akpad.preview package &mdash; Alkemiems 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Alkemiems.akpad.preview.tests package" href="Alkemiems.akpad.preview.tests.html" />
+    <link rel="prev" title="Alkemiems.akpad.help package" href="Alkemiems.akpad.help.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Alkemiems
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Alkemiems</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Alkemiems.akpad.html">Alkemiems.akpad package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="Alkemiems.akpad.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.akpad.html">Alkemiems.akpad.akpad package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.application.html">Alkemiems.akpad.application package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.document.html">Alkemiems.akpad.document package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.gui.html">Alkemiems.akpad.gui package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.help.html">Alkemiems.akpad.help package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Alkemiems.akpad.preview package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.preview.previewbrowser">Alkemiems.akpad.preview.previewbrowser module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.preview.previewdialog">Alkemiems.akpad.preview.previewdialog module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.preview.previewmodel">Alkemiems.akpad.preview.previewmodel module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.preview.scanner">Alkemiems.akpad.preview.scanner module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.preview">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.registry.html">Alkemiems.akpad.registry package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html">Alkemiems.akpad.scheme package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.styles.html">Alkemiems.akpad.styles package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.utils.html">Alkemiems.akpad.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.config">Alkemiems.akpad.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.report">Alkemiems.akpad.report module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.resources">Alkemiems.akpad.resources module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.data.html">Alkemiems.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.io.html">Alkemiems.io package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.lammps.html">Alkemiems.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.misc.html">Alkemiems.misc package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.openphase.html">Alkemiems.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.preprocess.html">Alkemiems.preprocess package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.potentialmind.html">Alkemiems.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.statistics.html">Alkemiems.statistics package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.vasp.html">Alkemiems.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.html">Alkemiems.widgets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.abinit.html">Alkemiems.widgets.abinit package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.calypso.html">Alkemiems.widgets.calypso package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.data.html">Alkemiems.widgets.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.database.html">Alkemiems.widgets.database package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.lammps.html">Alkemiems.widgets.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.openphase.html">Alkemiems.widgets.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.potentialmind.html">Alkemiems.widgets.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.qe.html">Alkemiems.widgets.qe package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.report.html">Alkemiems.widgets.report package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.utils.html">Alkemiems.widgets.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.vasp.html">Alkemiems.widgets.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.visualize.html">Alkemiems.widgets.visualize package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alkemiems</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Alkemiems</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.html">Alkemiems package</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.akpad.html">Alkemiems.akpad package</a> &raquo;</li>
+        
+      <li>Alkemiems.akpad.preview package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Alkemiems.akpad.preview.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alkemiems-akpad-preview-package">
+<h1>Alkemiems.akpad.preview package<a class="headerlink" href="#alkemiems-akpad-preview-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.preview.tests.html">Alkemiems.akpad.preview.tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.preview.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.preview.tests.html#module-Alkemiems.akpad.preview.tests.test_previewbrowser">Alkemiems.akpad.preview.tests.test_previewbrowser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.preview.tests.html#module-Alkemiems.akpad.preview.tests.test_previewdialog">Alkemiems.akpad.preview.tests.test_previewdialog module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.preview.tests.html#module-Alkemiems.akpad.preview.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.akpad.preview.previewbrowser">
+<span id="alkemiems-akpad-preview-previewbrowser-module"></span><h2>Alkemiems.akpad.preview.previewbrowser module<a class="headerlink" href="#module-Alkemiems.akpad.preview.previewbrowser" title="Permalink to this headline">¶</a></h2>
+<p>Preview Browser Widget.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.preview.previewbrowser.LinearIconView">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.preview.previewbrowser.</code><code class="descname">LinearIconView</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#LinearIconView"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.LinearIconView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QListView</span></code></p>
+<p>An list view (in QListView.IconMode) with no item wrapping.</p>
+<p>Suitable for displaying large(ish) icons with text underneath single
+horizontal line layout.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.LinearIconView.dataChanged">
+<code class="descname">dataChanged</code><span class="sig-paren">(</span><em>topLeft</em>, <em>bottomRight</em>, <em>roles=[]</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#LinearIconView.dataChanged"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.LinearIconView.dataChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reimplemented</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.LinearIconView.sizeHint">
+<code class="descname">sizeHint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#LinearIconView.sizeHint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.LinearIconView.sizeHint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reimplemented.</p>
+<p>Provide sensible vertical size hint based on the view’s contents.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.LinearIconView.updateGeometries">
+<code class="descname">updateGeometries</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#LinearIconView.updateGeometries"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.LinearIconView.updateGeometries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reimplemented</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.preview.previewbrowser.PreviewBrowser">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.preview.previewbrowser.</code><code class="descname">PreviewBrowser</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#PreviewBrowser"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.PreviewBrowser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QWidget</span></code></p>
+<p>A Preview Browser for recent/premade scheme selection.</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.activated">
+<code class="descname">activated</code><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.activated" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.currentIndex">
+<code class="descname">currentIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#PreviewBrowser.currentIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.currentIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the current selected index.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.currentIndexChanged">
+<code class="descname">currentIndexChanged</code><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.currentIndexChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.model">
+<code class="descname">model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#PreviewBrowser.model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the item model.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.setCurrentIndex">
+<code class="descname">setCurrentIndex</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#PreviewBrowser.setCurrentIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.setCurrentIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the selected preview item index.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.setDescriptionTemplate">
+<code class="descname">setDescriptionTemplate</code><span class="sig-paren">(</span><em>template</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#PreviewBrowser.setDescriptionTemplate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.setDescriptionTemplate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.setModel">
+<code class="descname">setModel</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#PreviewBrowser.setModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.setModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the item model for preview.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.setPreviewDelegate">
+<code class="descname">setPreviewDelegate</code><span class="sig-paren">(</span><em>delegate</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#PreviewBrowser.setPreviewDelegate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.PreviewBrowser.setPreviewDelegate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the delegate to render the preview images.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.preview.previewbrowser.TextLabel">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.preview.previewbrowser.</code><code class="descname">TextLabel</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#TextLabel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.TextLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QWidget</span></code></p>
+<p>A plain text label widget with support for elided text.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.TextLabel.changeEvent">
+<code class="descname">changeEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#TextLabel.changeEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.TextLabel.changeEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.TextLabel.elideMode">
+<code class="descname">elideMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#TextLabel.elideMode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.TextLabel.elideMode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.TextLabel.paintEvent">
+<code class="descname">paintEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QPaintEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#TextLabel.paintEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.TextLabel.paintEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.TextLabel.setAlignment">
+<code class="descname">setAlignment</code><span class="sig-paren">(</span><em>align</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#TextLabel.setAlignment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.TextLabel.setAlignment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set text alignment (<cite>Qt.Alignment</cite>).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.TextLabel.setText">
+<code class="descname">setText</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#TextLabel.setText"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.TextLabel.setText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the <cite>text</cite> string to display.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.TextLabel.setTextElideMode">
+<code class="descname">setTextElideMode</code><span class="sig-paren">(</span><em>mode</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#TextLabel.setTextElideMode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.TextLabel.setTextElideMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set elide mode (<cite>Qt.TextElideMode</cite>)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.TextLabel.sizeHint">
+<code class="descname">sizeHint</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; QSize<a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#TextLabel.sizeHint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.TextLabel.sizeHint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewbrowser.TextLabel.text">
+<code class="descname">text</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewbrowser.html#TextLabel.text"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewbrowser.TextLabel.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the text</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.preview.previewdialog">
+<span id="alkemiems-akpad-preview-previewdialog-module"></span><h2>Alkemiems.akpad.preview.previewdialog module<a class="headerlink" href="#module-Alkemiems.akpad.preview.previewdialog" title="Permalink to this headline">¶</a></h2>
+<p>A dialog widget for selecting an item.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.preview.previewdialog.PreviewDialog">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.preview.previewdialog.</code><code class="descname">PreviewDialog</code><span class="sig-paren">(</span><em>parent=None</em>, <em>flags=&lt;PyQt5.QtCore.Qt.WindowFlags object&gt;</em>, <em>model=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewdialog.html#PreviewDialog"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewdialog.PreviewDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
+<p>A Dialog for selecting an item from a PreviewItem.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewdialog.PreviewDialog.currentIndex">
+<code class="descname">currentIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewdialog.html#PreviewDialog.currentIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewdialog.PreviewDialog.currentIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.preview.previewdialog.PreviewDialog.currentIndexChanged">
+<code class="descname">currentIndexChanged</code><a class="headerlink" href="#Alkemiems.akpad.preview.previewdialog.PreviewDialog.currentIndexChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewdialog.PreviewDialog.heading">
+<code class="descname">heading</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewdialog.html#PreviewDialog.heading"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewdialog.PreviewDialog.heading" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the heading string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewdialog.PreviewDialog.model">
+<code class="descname">model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewdialog.html#PreviewDialog.model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewdialog.PreviewDialog.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the model.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewdialog.PreviewDialog.setCurrentIndex">
+<code class="descname">setCurrentIndex</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewdialog.html#PreviewDialog.setCurrentIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewdialog.PreviewDialog.setCurrentIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the current selected (shown) index.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewdialog.PreviewDialog.setHeading">
+<code class="descname">setHeading</code><span class="sig-paren">(</span><em>heading</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewdialog.html#PreviewDialog.setHeading"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewdialog.PreviewDialog.setHeading" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set <cite>heading</cite> as the heading string (‘&lt;h3&gt;Preview&lt;/h3&gt;’
+by default).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewdialog.PreviewDialog.setItems">
+<code class="descname">setItems</code><span class="sig-paren">(</span><em>items</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewdialog.html#PreviewDialog.setItems"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewdialog.PreviewDialog.setItems" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the items (a list of strings) for preview/selection.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewdialog.PreviewDialog.setModel">
+<code class="descname">setModel</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewdialog.html#PreviewDialog.setModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewdialog.PreviewDialog.setModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the model for preview/selection.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.preview.previewmodel">
+<span id="alkemiems-akpad-preview-previewmodel-module"></span><h2>Alkemiems.akpad.preview.previewmodel module<a class="headerlink" href="#module-Alkemiems.akpad.preview.previewmodel" title="Permalink to this headline">¶</a></h2>
+<p>Preview item model.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.preview.previewmodel.PreviewItem">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.preview.previewmodel.</code><code class="descname">PreviewItem</code><span class="sig-paren">(</span><em>name=None</em>, <em>description=None</em>, <em>thumbnail=None</em>, <em>icon=None</em>, <em>path=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#PreviewItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.PreviewItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtGui.QStandardItem</span></code></p>
+<p>A preview item.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewmodel.PreviewItem.description">
+<code class="descname">description</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#PreviewItem.description"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.PreviewItem.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the detailed description for the item.</p>
+<p>This is stored as <cite>DescriptionRole</cite>, if no data is set then
+return the string for <cite>WhatsThisRole</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewmodel.PreviewItem.name">
+<code class="descname">name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#PreviewItem.name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.PreviewItem.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the name (title) of the item (same as <cite>text()</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewmodel.PreviewItem.path">
+<code class="descname">path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#PreviewItem.path"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.PreviewItem.path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the path item data.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewmodel.PreviewItem.setDescription">
+<code class="descname">setDescription</code><span class="sig-paren">(</span><em>description</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#PreviewItem.setDescription"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.PreviewItem.setDescription" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewmodel.PreviewItem.setName">
+<code class="descname">setName</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#PreviewItem.setName"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.PreviewItem.setName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the item name. <cite>value</cite> if not empty will be used as
+the items DisplayRole otherwise an ‘untitled’ placeholder will
+be used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewmodel.PreviewItem.setPath">
+<code class="descname">setPath</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#PreviewItem.setPath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.PreviewItem.setPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the path data of the item.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This also sets the Qt.StatusTipRole</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewmodel.PreviewItem.setThumbnail">
+<code class="descname">setThumbnail</code><span class="sig-paren">(</span><em>thumbnail</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#PreviewItem.setThumbnail"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.PreviewItem.setThumbnail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the thumbnail SVG contents as a string.</p>
+<p>When set it also overrides the icon role.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewmodel.PreviewItem.thumbnail">
+<code class="descname">thumbnail</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#PreviewItem.thumbnail"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.PreviewItem.thumbnail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the thumbnail SVG string for the preview item.</p>
+<p>This is stored as <cite>ThumbnailSVGRole</cite></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.preview.previewmodel.PreviewModel">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.preview.previewmodel.</code><code class="descname">PreviewModel</code><span class="sig-paren">(</span><em>parent=None</em>, <em>items=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#PreviewModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.PreviewModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtGui.QStandardItemModel</span></code></p>
+<p>A model for preview items.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewmodel.PreviewModel.delayedScanUpdate">
+<code class="descname">delayedScanUpdate</code><span class="sig-paren">(</span><em>delay=10</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#PreviewModel.delayedScanUpdate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.PreviewModel.delayedScanUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run a delayed preview item scan update.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.preview.previewmodel.SvgIconEngine">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.preview.previewmodel.</code><code class="descname">SvgIconEngine</code><span class="sig-paren">(</span><em>contents</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#SvgIconEngine"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.SvgIconEngine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtGui.QIconEngine</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewmodel.SvgIconEngine.paint">
+<code class="descname">paint</code><span class="sig-paren">(</span><em>self</em>, <em>QPainter</em>, <em>QRect</em>, <em>QIcon.Mode</em>, <em>QIcon.State</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#SvgIconEngine.paint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.SvgIconEngine.paint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.previewmodel.SvgIconEngine.pixmap">
+<code class="descname">pixmap</code><span class="sig-paren">(</span><em>self</em>, <em>QSize</em>, <em>QIcon.Mode</em>, <em>QIcon.State</em><span class="sig-paren">)</span> &#x2192; QPixmap<a class="reference internal" href="_modules/Alkemiems/akpad/preview/previewmodel.html#SvgIconEngine.pixmap"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.previewmodel.SvgIconEngine.pixmap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.preview.scanner">
+<span id="alkemiems-akpad-preview-scanner-module"></span><h2>Alkemiems.akpad.preview.scanner module<a class="headerlink" href="#module-Alkemiems.akpad.preview.scanner" title="Permalink to this headline">¶</a></h2>
+<p>Scheme file preview parser.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.preview.scanner.PreviewHandler">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.preview.scanner.</code><code class="descname">PreviewHandler</code><a class="reference internal" href="_modules/Alkemiems/akpad/preview/scanner.html#PreviewHandler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.scanner.PreviewHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/xml.sax.handler.html#xml.sax.handler.ContentHandler" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">xml.sax.handler.ContentHandler</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.scanner.PreviewHandler.characters">
+<code class="descname">characters</code><span class="sig-paren">(</span><em>content</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/scanner.html#PreviewHandler.characters"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.scanner.PreviewHandler.characters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Receive notification of character data.</p>
+<p>The Parser will call this method to report each chunk of
+character data. SAX parsers may return all contiguous
+character data in a single chunk, or they may split it into
+several chunks; however, all of the characters in any single
+event must come from the same external entity so that the
+Locator provides useful information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.scanner.PreviewHandler.endElement">
+<code class="descname">endElement</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/scanner.html#PreviewHandler.endElement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.scanner.PreviewHandler.endElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signals the end of an element in non-namespace mode.</p>
+<p>The name parameter contains the name of the element type, just
+as with the startElement event.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.preview.scanner.PreviewHandler.startElement">
+<code class="descname">startElement</code><span class="sig-paren">(</span><em>name</em>, <em>attrs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/scanner.html#PreviewHandler.startElement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.scanner.PreviewHandler.startElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signals the start of an element in non-namespace mode.</p>
+<p>The name parameter contains the raw XML 1.0 name of the
+element type as a string and the attrs parameter holds an
+instance of the Attributes class containing the attributes of
+the element.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.preview.scanner.filter_properties">
+<code class="descclassname">Alkemiems.akpad.preview.scanner.</code><code class="descname">filter_properties</code><span class="sig-paren">(</span><em>stream</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/scanner.html#filter_properties"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.scanner.filter_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter out the ‘&lt;properties&gt;’ section from the .ows xml stream.</p>
+<p>stream : io.BinaryIO</p>
+<dl class="docutils">
+<dt>xml <span class="classifier-delimiter">:</span> <span class="classifier">bytes</span></dt>
+<dd>ows xml without the ‘&lt;properties&gt;’ nodes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.preview.scanner.preview_parse">
+<code class="descclassname">Alkemiems.akpad.preview.scanner.</code><code class="descname">preview_parse</code><span class="sig-paren">(</span><em>scheme_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/scanner.html#preview_parse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.scanner.preview_parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the title, description, and thumbnail svg image data from a
+<cite>scheme_file</cite> (can be a file path or a file-like object).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.preview.scanner.scan_update">
+<code class="descclassname">Alkemiems.akpad.preview.scanner.</code><code class="descname">scan_update</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/scanner.html#scan_update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.scanner.scan_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a preview item, scan the scheme file (‘item.path’) and update the
+items contents.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.preview.scanner.scheme_svg_thumbnail">
+<code class="descclassname">Alkemiems.akpad.preview.scanner.</code><code class="descname">scheme_svg_thumbnail</code><span class="sig-paren">(</span><em>scheme_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/preview/scanner.html#scheme_svg_thumbnail"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.preview.scanner.scheme_svg_thumbnail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the scheme scheme from a file and return it’s svg image
+representation.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.preview">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Alkemiems.akpad.preview" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Alkemiems.akpad.preview.tests.html" class="btn btn-neutral float-right" title="Alkemiems.akpad.preview.tests package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Alkemiems.akpad.help.html" class="btn btn-neutral float-left" title="Alkemiems.akpad.help package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Guanjie Wang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

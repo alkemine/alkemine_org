@@ -1,0 +1,550 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alkemiems.data.sql package &mdash; Alkemiems 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Alkemiems.data.sql.backend package" href="Alkemiems.data.sql.backend.html" />
+    <link rel="prev" title="Alkemiems.data package" href="Alkemiems.data.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Alkemiems
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Alkemiems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.html">Alkemiems.akpad package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Alkemiems.data.html">Alkemiems.data package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="Alkemiems.data.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Alkemiems.data.sql package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.data.sql.filter">Alkemiems.data.sql.filter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.data.sql.table">Alkemiems.data.sql.table module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.data.sql">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.html#module-Alkemiems.data.domain">Alkemiems.data.domain module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.html#module-Alkemiems.data.filter">Alkemiems.data.filter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.html#module-Alkemiems.data.instance">Alkemiems.data.instance module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.html#module-Alkemiems.data.io">Alkemiems.data.io module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.html#module-Alkemiems.data.pandas_compat">Alkemiems.data.pandas_compat module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.html#module-Alkemiems.data.setup">Alkemiems.data.setup module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.html#module-Alkemiems.data.storage">Alkemiems.data.storage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.html#module-Alkemiems.data.table">Alkemiems.data.table module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.html#module-Alkemiems.data.util">Alkemiems.data.util module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.html#module-Alkemiems.data.variable">Alkemiems.data.variable module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.html#module-Alkemiems.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.io.html">Alkemiems.io package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.lammps.html">Alkemiems.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.misc.html">Alkemiems.misc package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.openphase.html">Alkemiems.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.preprocess.html">Alkemiems.preprocess package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.potentialmind.html">Alkemiems.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.statistics.html">Alkemiems.statistics package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.vasp.html">Alkemiems.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.html">Alkemiems.widgets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.abinit.html">Alkemiems.widgets.abinit package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.calypso.html">Alkemiems.widgets.calypso package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.data.html">Alkemiems.widgets.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.database.html">Alkemiems.widgets.database package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.lammps.html">Alkemiems.widgets.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.openphase.html">Alkemiems.widgets.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.potentialmind.html">Alkemiems.widgets.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.qe.html">Alkemiems.widgets.qe package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.report.html">Alkemiems.widgets.report package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.utils.html">Alkemiems.widgets.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.vasp.html">Alkemiems.widgets.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.visualize.html">Alkemiems.widgets.visualize package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alkemiems</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Alkemiems</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.html">Alkemiems package</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.data.html">Alkemiems.data package</a> &raquo;</li>
+        
+      <li>Alkemiems.data.sql package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Alkemiems.data.sql.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alkemiems-data-sql-package">
+<h1>Alkemiems.data.sql package<a class="headerlink" href="#alkemiems-data-sql-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.data.sql.backend.html">Alkemiems.data.sql.backend package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.sql.backend.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.sql.backend.html#module-Alkemiems.data.sql.backend.base">Alkemiems.data.sql.backend.base module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.sql.backend.html#alkemiems-data-sql-backend-mssql-module">Alkemiems.data.sql.backend.mssql module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.sql.backend.html#alkemiems-data-sql-backend-postgres-module">Alkemiems.data.sql.backend.postgres module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.data.sql.backend.html#module-Alkemiems.data.sql.backend">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.data.sql.filter">
+<span id="alkemiems-data-sql-filter-module"></span><h2>Alkemiems.data.sql.filter module<a class="headerlink" href="#module-Alkemiems.data.sql.filter" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.data.sql.filter.CustomFilterSql">
+<em class="property">class </em><code class="descclassname">Alkemiems.data.sql.filter.</code><code class="descname">CustomFilterSql</code><span class="sig-paren">(</span><em>where_sql</em>, <em>negate=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#CustomFilterSql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.CustomFilterSql" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.filter.Filter</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.data.sql.filter.CustomFilterSql.to_sql">
+<code class="descname">to_sql</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#CustomFilterSql.to_sql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.CustomFilterSql.to_sql" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.data.sql.filter.FilterContinuousSql">
+<em class="property">class </em><code class="descclassname">Alkemiems.data.sql.filter.</code><code class="descname">FilterContinuousSql</code><span class="sig-paren">(</span><em>position</em>, <em>oper</em>, <em>ref=None</em>, <em>max=None</em>, <em>min=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#FilterContinuousSql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.FilterContinuousSql" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.filter.FilterContinuous" title="Alkemiems.data.filter.FilterContinuous"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.filter.FilterContinuous</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.data.sql.filter.FilterContinuousSql.to_sql">
+<code class="descname">to_sql</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#FilterContinuousSql.to_sql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.FilterContinuousSql.to_sql" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.data.sql.filter.FilterDiscreteSql">
+<em class="property">class </em><code class="descclassname">Alkemiems.data.sql.filter.</code><code class="descname">FilterDiscreteSql</code><span class="sig-paren">(</span><em>column</em>, <em>values</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#FilterDiscreteSql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.FilterDiscreteSql" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.filter.FilterDiscrete" title="Alkemiems.data.filter.FilterDiscrete"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.filter.FilterDiscrete</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.data.sql.filter.FilterDiscreteSql.to_sql">
+<code class="descname">to_sql</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#FilterDiscreteSql.to_sql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.FilterDiscreteSql.to_sql" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.data.sql.filter.FilterString">
+<em class="property">class </em><code class="descclassname">Alkemiems.data.sql.filter.</code><code class="descname">FilterString</code><span class="sig-paren">(</span><em>position</em>, <em>oper</em>, <em>ref=None</em>, <em>max=None</em>, <em>case_sensitive=True</em>, <em>**a</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#FilterString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.FilterString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.filter.FilterString" title="Alkemiems.data.filter.FilterString"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.filter.FilterString</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.data.sql.filter.FilterString.to_sql">
+<code class="descname">to_sql</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#FilterString.to_sql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.FilterString.to_sql" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.data.sql.filter.FilterStringList">
+<em class="property">class </em><code class="descclassname">Alkemiems.data.sql.filter.</code><code class="descname">FilterStringList</code><span class="sig-paren">(</span><em>column</em>, <em>values</em>, <em>case_sensitive=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#FilterStringList"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.FilterStringList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.filter.FilterStringList" title="Alkemiems.data.filter.FilterStringList"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.filter.FilterStringList</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.data.sql.filter.FilterStringList.to_sql">
+<code class="descname">to_sql</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#FilterStringList.to_sql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.FilterStringList.to_sql" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.data.sql.filter.IsDefinedSql">
+<em class="property">class </em><code class="descclassname">Alkemiems.data.sql.filter.</code><code class="descname">IsDefinedSql</code><span class="sig-paren">(</span><em>columns=None</em>, <em>negate=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#IsDefinedSql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.IsDefinedSql" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.filter.IsDefined" title="Alkemiems.data.filter.IsDefined"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.filter.IsDefined</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.data.sql.filter.IsDefinedSql.to_sql">
+<code class="descname">to_sql</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#IsDefinedSql.to_sql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.IsDefinedSql.to_sql" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.data.sql.filter.SameValueSql">
+<em class="property">class </em><code class="descclassname">Alkemiems.data.sql.filter.</code><code class="descname">SameValueSql</code><span class="sig-paren">(</span><em>column</em>, <em>value</em>, <em>negate=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#SameValueSql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.SameValueSql" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.filter.SameValue" title="Alkemiems.data.filter.SameValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.filter.SameValue</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.data.sql.filter.SameValueSql.to_sql">
+<code class="descname">to_sql</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#SameValueSql.to_sql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.SameValueSql.to_sql" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.data.sql.filter.ValuesSql">
+<em class="property">class </em><code class="descclassname">Alkemiems.data.sql.filter.</code><code class="descname">ValuesSql</code><span class="sig-paren">(</span><em>conditions</em>, <em>conjunction=True</em>, <em>negate=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#ValuesSql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.ValuesSql" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.filter.Values" title="Alkemiems.data.filter.Values"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.filter.Values</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.data.sql.filter.ValuesSql.to_sql">
+<code class="descname">to_sql</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#ValuesSql.to_sql"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.ValuesSql.to_sql" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.data.sql.filter.quote">
+<code class="descclassname">Alkemiems.data.sql.filter.</code><code class="descname">quote</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/filter.html#quote"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.filter.quote" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.data.sql.table">
+<span id="alkemiems-data-sql-table-module"></span><h2>Alkemiems.data.sql.table module<a class="headerlink" href="#module-Alkemiems.data.sql.table" title="Permalink to this headline">¶</a></h2>
+<p>Support for example tables wrapping data stored on a PostgreSQL server.</p>
+<dl class="class">
+<dt id="Alkemiems.data.sql.table.SqlRowInstance">
+<em class="property">class </em><code class="descclassname">Alkemiems.data.sql.table.</code><code class="descname">SqlRowInstance</code><span class="sig-paren">(</span><em>domain</em>, <em>data=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlRowInstance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlRowInstance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.instance.Instance" title="Alkemiems.data.instance.Instance"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.instance.Instance</span></code></a></p>
+<p>Extends <code class="xref py py-obj docutils literal notranslate"><span class="pre">Alkemiems.data.Instance</span></code> to correctly handle values of meta
+attributes.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.data.sql.table.SqlTable">
+<em class="property">class </em><code class="descclassname">Alkemiems.data.sql.table.</code><code class="descname">SqlTable</code><span class="sig-paren">(</span><em>connection_params</em>, <em>table_or_sql</em>, <em>backend=None</em>, <em>type_hints=None</em>, <em>inspect_values=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.table.Table" title="Alkemiems.data.table.Table"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.table.Table</span></code></a></p>
+<dl class="attribute">
+<dt id="Alkemiems.data.sql.table.SqlTable.CONTINUOUS_STATS">
+<code class="descname">CONTINUOUS_STATS</code><em class="property"> = 'MIN(%(field_name)s)::double precision, MAX(%(field_name)s)::double precision, AVG(%(field_name)s)::double precision, STDDEV(%(field_name)s)::double precision, SUM(CASE TRUE WHEN %(field_name)s IS NULL THEN 1 ELSE 0 END), SUM(CASE TRUE WHEN %(field_name)s IS NULL THEN 0 ELSE 1 END)'</em><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.CONTINUOUS_STATS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.data.sql.table.SqlTable.DISCRETE_STATS">
+<code class="descname">DISCRETE_STATS</code><em class="property"> = 'SUM(CASE TRUE WHEN %(field_name)s IS NULL THEN 1 ELSE 0 END), SUM(CASE TRUE WHEN %(field_name)s IS NULL THEN 0 ELSE 1 END)'</em><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.DISCRETE_STATS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.data.sql.table.SqlTable.W">
+<code class="descname">W</code><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.W" title="Permalink to this definition">¶</a></dt>
+<dd><p>Numpy array with class values.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.data.sql.table.SqlTable.X">
+<code class="descname">X</code><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.X" title="Permalink to this definition">¶</a></dt>
+<dd><p>Numpy array with attribute values.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.data.sql.table.SqlTable.X_density">
+<code class="descname">X_density</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable.X_density"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.X_density" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.data.sql.table.SqlTable.Y">
+<code class="descname">Y</code><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.Y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Numpy array with class values.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.data.sql.table.SqlTable.Y_density">
+<code class="descname">Y_density</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable.Y_density"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.Y_density" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.data.sql.table.SqlTable.approx_len">
+<code class="descname">approx_len</code><span class="sig-paren">(</span><em>get_exact=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable.approx_len"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.approx_len" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.data.sql.table.SqlTable.checksum">
+<code class="descname">checksum</code><span class="sig-paren">(</span><em>include_metas=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable.checksum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.checksum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a checksum over X, Y, metas and W.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.data.sql.table.SqlTable.connection_params">
+<code class="descname">connection_params</code><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.connection_params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.data.sql.table.SqlTable.copy">
+<code class="descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable.copy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the SqlTable</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.data.sql.table.SqlTable.domain">
+<code class="descname">domain</code><em class="property"> = None</em><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.data.sql.table.SqlTable.download_data">
+<code class="descname">download_data</code><span class="sig-paren">(</span><em>limit=None</em>, <em>partial=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable.download_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.download_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download SQL data and store it in memory as numpy matrices.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Alkemiems.data.sql.table.SqlTable.from_table">
+<em class="property">classmethod </em><code class="descname">from_table</code><span class="sig-paren">(</span><em>domain</em>, <em>source</em>, <em>row_indices=Ellipsis</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable.from_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.from_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new table from selected columns and/or rows of an existing
+one. The columns are chosen using a domain. The domain may also include
+variables that do not appear in the source table; they are computed
+from source variables if possible.</p>
+<p>The resulting data may be a view or a copy of the existing data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>domain</strong> (<em>Alkemiems.data.Domain</em>) – the domain for the new table</li>
+<li><strong>source</strong> (<em>Alkemiems.data.Table</em>) – the source table</li>
+<li><strong>row_indices</strong> (<em>a slice</em><em> or </em><em>a sequence</em>) – indices of the rows to include</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a new table</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Alkemiems.data.Table</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.data.sql.table.SqlTable.get_domain">
+<code class="descname">get_domain</code><span class="sig-paren">(</span><em>type_hints=None</em>, <em>inspect_values=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable.get_domain"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.get_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.data.sql.table.SqlTable.has_weights">
+<code class="descname">has_weights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable.has_weights"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.has_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return <cite>True</cite> if the data instances are weighed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.data.sql.table.SqlTable.ids">
+<code class="descname">ids</code><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Numpy array with class values.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.data.sql.table.SqlTable.metas">
+<code class="descname">metas</code><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.metas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Numpy array with class values.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.data.sql.table.SqlTable.metas_density">
+<code class="descname">metas_density</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable.metas_density"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.metas_density" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.data.sql.table.SqlTable.row_filters">
+<code class="descname">row_filters</code><em class="property"> = ()</em><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.row_filters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.data.sql.table.SqlTable.sample_percentage">
+<code class="descname">sample_percentage</code><span class="sig-paren">(</span><em>percentage</em>, <em>no_cache=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable.sample_percentage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.sample_percentage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.data.sql.table.SqlTable.sample_time">
+<code class="descname">sample_time</code><span class="sig-paren">(</span><em>time_in_seconds</em>, <em>no_cache=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/data/sql/table.html#SqlTable.sample_time"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.sample_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.data.sql.table.SqlTable.table_name">
+<code class="descname">table_name</code><em class="property"> = None</em><a class="headerlink" href="#Alkemiems.data.sql.table.SqlTable.table_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.data.sql">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Alkemiems.data.sql" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Alkemiems.data.sql.backend.html" class="btn btn-neutral float-right" title="Alkemiems.data.sql.backend package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Alkemiems.data.html" class="btn btn-neutral float-left" title="Alkemiems.data package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Guanjie Wang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

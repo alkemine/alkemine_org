@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alkemiems.akpad.help package &mdash; Alkemiems 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Alkemiems.akpad.preview package" href="Alkemiems.akpad.preview.html" />
+    <link rel="prev" title="Alkemiems.akpad.gui.tests package" href="Alkemiems.akpad.gui.tests.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Alkemiems
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Alkemiems</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Alkemiems.akpad.html">Alkemiems.akpad package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="Alkemiems.akpad.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.akpad.html">Alkemiems.akpad.akpad package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.application.html">Alkemiems.akpad.application package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.document.html">Alkemiems.akpad.document package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.gui.html">Alkemiems.akpad.gui package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Alkemiems.akpad.help package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.help.intersphinx">Alkemiems.akpad.help.intersphinx module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.help.manager">Alkemiems.akpad.help.manager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.help.provider">Alkemiems.akpad.help.provider module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.help">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.preview.html">Alkemiems.akpad.preview package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.registry.html">Alkemiems.akpad.registry package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html">Alkemiems.akpad.scheme package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.styles.html">Alkemiems.akpad.styles package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.utils.html">Alkemiems.akpad.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.config">Alkemiems.akpad.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.report">Alkemiems.akpad.report module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.resources">Alkemiems.akpad.resources module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.data.html">Alkemiems.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.io.html">Alkemiems.io package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.lammps.html">Alkemiems.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.misc.html">Alkemiems.misc package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.openphase.html">Alkemiems.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.preprocess.html">Alkemiems.preprocess package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.potentialmind.html">Alkemiems.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.statistics.html">Alkemiems.statistics package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.vasp.html">Alkemiems.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.html">Alkemiems.widgets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.abinit.html">Alkemiems.widgets.abinit package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.calypso.html">Alkemiems.widgets.calypso package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.data.html">Alkemiems.widgets.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.database.html">Alkemiems.widgets.database package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.lammps.html">Alkemiems.widgets.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.openphase.html">Alkemiems.widgets.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.potentialmind.html">Alkemiems.widgets.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.qe.html">Alkemiems.widgets.qe package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.report.html">Alkemiems.widgets.report package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.utils.html">Alkemiems.widgets.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.vasp.html">Alkemiems.widgets.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.visualize.html">Alkemiems.widgets.visualize package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alkemiems</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Alkemiems</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.html">Alkemiems package</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.akpad.html">Alkemiems.akpad package</a> &raquo;</li>
+        
+      <li>Alkemiems.akpad.help package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Alkemiems.akpad.help.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alkemiems-akpad-help-package">
+<h1>Alkemiems.akpad.help package<a class="headerlink" href="#alkemiems-akpad-help-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.akpad.help.intersphinx">
+<span id="alkemiems-akpad-help-intersphinx-module"></span><h2>Alkemiems.akpad.help.intersphinx module<a class="headerlink" href="#module-Alkemiems.akpad.help.intersphinx" title="Permalink to this headline">¶</a></h2>
+<p>Parsers for intersphinx inventory files</p>
+<p>Taken from <cite>sphinx.ext.intersphinx</cite></p>
+<dl class="function">
+<dt id="Alkemiems.akpad.help.intersphinx.read_inventory_v1">
+<code class="descclassname">Alkemiems.akpad.help.intersphinx.</code><code class="descname">read_inventory_v1</code><span class="sig-paren">(</span><em>f</em>, <em>uri</em>, <em>join</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/intersphinx.html#read_inventory_v1"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.intersphinx.read_inventory_v1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.intersphinx.read_inventory_v2">
+<code class="descclassname">Alkemiems.akpad.help.intersphinx.</code><code class="descname">read_inventory_v2</code><span class="sig-paren">(</span><em>f</em>, <em>uri</em>, <em>join</em>, <em>bufsize=16384</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/intersphinx.html#read_inventory_v2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.intersphinx.read_inventory_v2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.help.manager">
+<span id="alkemiems-akpad-help-manager-module"></span><h2>Alkemiems.akpad.help.manager module<a class="headerlink" href="#module-Alkemiems.akpad.help.manager" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.akpad.help.manager.HelpManager">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">HelpManager</code><span class="sig-paren">(</span><em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#HelpManager"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.HelpManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.help.manager.HelpManager.description_by_id">
+<code class="descname">description_by_id</code><span class="sig-paren">(</span><em>desc_id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#HelpManager.description_by_id"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.HelpManager.description_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.help.manager.HelpManager.get_help">
+<code class="descname">get_help</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#HelpManager.get_help"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.HelpManager.get_help" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.help.manager.HelpManager.initialize">
+<code class="descname">initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#HelpManager.initialize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.HelpManager.initialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.help.manager.HelpManager.registry">
+<code class="descname">registry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#HelpManager.registry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.HelpManager.registry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the previously set with set_registry.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.help.manager.HelpManager.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>query</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#HelpManager.search"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.HelpManager.search" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.help.manager.HelpManager.set_registry">
+<code class="descname">set_registry</code><span class="sig-paren">(</span><em>registry</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#HelpManager.set_registry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.HelpManager.set_registry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the widget registry for which the manager should
+provide help.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.create_html_inventory_provider">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">create_html_inventory_provider</code><span class="sig-paren">(</span><em>entry_point</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#create_html_inventory_provider"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.create_html_inventory_provider" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.create_html_provider">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">create_html_provider</code><span class="sig-paren">(</span><em>entry_point</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#create_html_provider"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.create_html_provider" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.create_intersphinx_provider">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">create_intersphinx_provider</code><span class="sig-paren">(</span><em>entry_point</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#create_intersphinx_provider"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.create_intersphinx_provider" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.get_by_id">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">get_by_id</code><span class="sig-paren">(</span><em>registry</em>, <em>descriptor_id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#get_by_id"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.get_by_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.get_dist_meta">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">get_dist_meta</code><span class="sig-paren">(</span><em>dist</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#get_dist_meta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.get_dist_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.get_dist_url">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">get_dist_url</code><span class="sig-paren">(</span><em>dist</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#get_dist_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.get_dist_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the ‘url’ of the distribution (as passed to setup function)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.get_help_provider_for_description">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">get_help_provider_for_description</code><span class="sig-paren">(</span><em>desc</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#get_help_provider_for_description"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.get_help_provider_for_description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.get_help_provider_for_distribution">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">get_help_provider_for_distribution</code><span class="sig-paren">(</span><em>dist</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#get_help_provider_for_distribution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.get_help_provider_for_distribution" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.get_meta_entry">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">get_meta_entry</code><span class="sig-paren">(</span><em>dist</em>, <em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#get_meta_entry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.get_meta_entry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the contents of the named entry from the distributions PKG-INFO file</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.is_develop_egg">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">is_develop_egg</code><span class="sig-paren">(</span><em>dist</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#is_develop_egg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.is_develop_egg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is the distribution installed in development mode (setup.py develop)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.left_trim_lines">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">left_trim_lines</code><span class="sig-paren">(</span><em>lines</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#left_trim_lines"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.left_trim_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove all unnecessary leading space from lines.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.parse_meta">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">parse_meta</code><span class="sig-paren">(</span><em>contents</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#parse_meta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.parse_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.qurl_from_path">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">qurl_from_path</code><span class="sig-paren">(</span><em>urlpath</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#qurl_from_path"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.qurl_from_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.qurl_query_items">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">qurl_query_items</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#qurl_query_items"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.qurl_query_items" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.trim">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">trim</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#trim"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.trim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trim a string in PEP-256 compatible way</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.trim_leading_lines">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">trim_leading_lines</code><span class="sig-paren">(</span><em>lines</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#trim_leading_lines"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.trim_leading_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trim leading blank lines.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.help.manager.trim_trailing_lines">
+<code class="descclassname">Alkemiems.akpad.help.manager.</code><code class="descname">trim_trailing_lines</code><span class="sig-paren">(</span><em>lines</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/manager.html#trim_trailing_lines"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.manager.trim_trailing_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trim trailing blank lines.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.help.provider">
+<span id="alkemiems-akpad-help-provider-module"></span><h2>Alkemiems.akpad.help.provider module<a class="headerlink" href="#module-Alkemiems.akpad.help.provider" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.akpad.help.provider.BaseInventoryProvider">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.help.provider.</code><code class="descname">BaseInventoryProvider</code><span class="sig-paren">(</span><em>inventory</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/provider.html#BaseInventoryProvider"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.provider.BaseInventoryProvider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.akpad.help.provider.HelpProvider" title="Alkemiems.akpad.help.provider.HelpProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.help.provider.HelpProvider</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.help.provider.HelpProvider">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.help.provider.</code><code class="descname">HelpProvider</code><span class="sig-paren">(</span><em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/provider.html#HelpProvider"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.provider.HelpProvider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.help.provider.HelpProvider.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>description</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/provider.html#HelpProvider.search"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.provider.HelpProvider.search" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.help.provider.HtmlIndexProvider">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.help.provider.</code><code class="descname">HtmlIndexProvider</code><span class="sig-paren">(</span><em>inventory</em>, <em>parent=None</em>, <em>xpathquery=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/provider.html#HtmlIndexProvider"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.provider.HtmlIndexProvider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.akpad.help.provider.BaseInventoryProvider" title="Alkemiems.akpad.help.provider.BaseInventoryProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.help.provider.BaseInventoryProvider</span></code></a></p>
+<p>Provide help links from an html help index page.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.help.provider.HtmlIndexProvider.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>desc</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/provider.html#HtmlIndexProvider.search"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.provider.HtmlIndexProvider.search" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.help.provider.IntersphinxHelpProvider">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.help.provider.</code><code class="descname">IntersphinxHelpProvider</code><span class="sig-paren">(</span><em>inventory</em>, <em>target=None</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/provider.html#IntersphinxHelpProvider"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.provider.IntersphinxHelpProvider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.akpad.help.provider.BaseInventoryProvider" title="Alkemiems.akpad.help.provider.BaseInventoryProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.help.provider.BaseInventoryProvider</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.help.provider.IntersphinxHelpProvider.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>description</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/provider.html#IntersphinxHelpProvider.search"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.provider.IntersphinxHelpProvider.search" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.help.provider.SimpleHelpProvider">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.help.provider.</code><code class="descname">SimpleHelpProvider</code><span class="sig-paren">(</span><em>parent=None</em>, <em>baseurl=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/provider.html#SimpleHelpProvider"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.provider.SimpleHelpProvider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.akpad.help.provider.HelpProvider" title="Alkemiems.akpad.help.provider.HelpProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.help.provider.HelpProvider</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.help.provider.SimpleHelpProvider.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>description</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/help/provider.html#SimpleHelpProvider.search"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.help.provider.SimpleHelpProvider.search" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.help">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Alkemiems.akpad.help" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Alkemiems.akpad.preview.html" class="btn btn-neutral float-right" title="Alkemiems.akpad.preview package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Alkemiems.akpad.gui.tests.html" class="btn btn-neutral float-left" title="Alkemiems.akpad.gui.tests package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Guanjie Wang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

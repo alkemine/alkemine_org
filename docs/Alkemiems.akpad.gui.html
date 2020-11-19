@@ -1,0 +1,1833 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alkemiems.akpad.gui package &mdash; Alkemiems 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Alkemiems.akpad.gui.tests package" href="Alkemiems.akpad.gui.tests.html" />
+    <link rel="prev" title="Alkemiems.akpad.document.tests package" href="Alkemiems.akpad.document.tests.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Alkemiems
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Alkemiems</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Alkemiems.akpad.html">Alkemiems.akpad package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="Alkemiems.akpad.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.akpad.html">Alkemiems.akpad.akpad package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.application.html">Alkemiems.akpad.application package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.document.html">Alkemiems.akpad.document package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Alkemiems.akpad.gui package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.dock">Alkemiems.akpad.gui.dock module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.dropshadow">Alkemiems.akpad.gui.dropshadow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.framelesswindow">Alkemiems.akpad.gui.framelesswindow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.lineedit">Alkemiems.akpad.gui.lineedit module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.quickhelp">Alkemiems.akpad.gui.quickhelp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.splashscreen">Alkemiems.akpad.gui.splashscreen module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.stackedwidget">Alkemiems.akpad.gui.stackedwidget module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.test">Alkemiems.akpad.gui.test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.toolbar">Alkemiems.akpad.gui.toolbar module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.toolbox">Alkemiems.akpad.gui.toolbox module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.toolgrid">Alkemiems.akpad.gui.toolgrid module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.tooltree">Alkemiems.akpad.gui.tooltree module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui.utils">Alkemiems.akpad.gui.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.gui">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.help.html">Alkemiems.akpad.help package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.preview.html">Alkemiems.akpad.preview package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.registry.html">Alkemiems.akpad.registry package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html">Alkemiems.akpad.scheme package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.styles.html">Alkemiems.akpad.styles package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.utils.html">Alkemiems.akpad.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.config">Alkemiems.akpad.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.report">Alkemiems.akpad.report module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.resources">Alkemiems.akpad.resources module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.data.html">Alkemiems.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.io.html">Alkemiems.io package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.lammps.html">Alkemiems.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.misc.html">Alkemiems.misc package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.openphase.html">Alkemiems.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.preprocess.html">Alkemiems.preprocess package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.potentialmind.html">Alkemiems.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.statistics.html">Alkemiems.statistics package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.vasp.html">Alkemiems.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.html">Alkemiems.widgets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.abinit.html">Alkemiems.widgets.abinit package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.calypso.html">Alkemiems.widgets.calypso package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.data.html">Alkemiems.widgets.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.database.html">Alkemiems.widgets.database package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.lammps.html">Alkemiems.widgets.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.openphase.html">Alkemiems.widgets.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.potentialmind.html">Alkemiems.widgets.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.qe.html">Alkemiems.widgets.qe package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.report.html">Alkemiems.widgets.report package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.utils.html">Alkemiems.widgets.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.vasp.html">Alkemiems.widgets.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.visualize.html">Alkemiems.widgets.visualize package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alkemiems</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Alkemiems</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.html">Alkemiems package</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.akpad.html">Alkemiems.akpad package</a> &raquo;</li>
+        
+      <li>Alkemiems.akpad.gui package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Alkemiems.akpad.gui.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alkemiems-akpad-gui-package">
+<h1>Alkemiems.akpad.gui package<a class="headerlink" href="#alkemiems-akpad-gui-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html">Alkemiems.akpad.gui.tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_dock">Alkemiems.akpad.gui.tests.test_dock module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_dropshadow">Alkemiems.akpad.gui.tests.test_dropshadow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_framelesswindow">Alkemiems.akpad.gui.tests.test_framelesswindow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_lineedit">Alkemiems.akpad.gui.tests.test_lineedit module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_splashscreen">Alkemiems.akpad.gui.tests.test_splashscreen module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_stackedwidget">Alkemiems.akpad.gui.tests.test_stackedwidget module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_toolbar">Alkemiems.akpad.gui.tests.test_toolbar module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_toolbox">Alkemiems.akpad.gui.tests.test_toolbox module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_toolgrid">Alkemiems.akpad.gui.tests.test_toolgrid module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_tooltree">Alkemiems.akpad.gui.tests.test_tooltree module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_utils">Alkemiems.akpad.gui.tests.test_utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.dock">
+<span id="alkemiems-akpad-gui-dock-module"></span><h2>Alkemiems.akpad.gui.dock module<a class="headerlink" href="#module-Alkemiems.akpad.gui.dock" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="collapsible-dock-widget">
+<h3>Collapsible Dock Widget<a class="headerlink" href="#collapsible-dock-widget" title="Permalink to this headline">¶</a></h3>
+<p>A dock widget that can be a collapsed/expanded.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.dock.</code><code class="descname">CollapsibleDockWidget</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDockWidget</span></code></p>
+<p>This <code class="xref py py-class docutils literal notranslate"><span class="pre">QDockWidget</span></code> subclass overrides the <cite>close</cite> header
+button to instead collapse to a smaller size. The contents contents
+to show when in each state can be set using the <code class="docutils literal notranslate"><span class="pre">setExpandedWidget</span></code>
+and <code class="docutils literal notranslate"><span class="pre">setCollapsedWidget</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Do  not use the base class <code class="docutils literal notranslate"><span class="pre">QDockWidget.setWidget</span></code> method
+to set the docks contents. Use set[Expanded|Collapsed]Widget
+instead.</p>
+</div>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.animationEnabled">
+<code class="descname">animationEnabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.animationEnabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.animationEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is transition animation enabled.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.collapse">
+<code class="descname">collapse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.collapse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.collapse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collapse the dock (same as <code class="docutils literal notranslate"><span class="pre">setExpanded(False)</span></code>)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.collapsedWidget">
+<code class="descname">collapsedWidget</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.collapsedWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.collapsedWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the widget previously set with <code class="docutils literal notranslate"><span class="pre">setCollapsedWidget</span></code>,
+or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no widget has been set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.currentWidget">
+<code class="descname">currentWidget</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.currentWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.currentWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the current shown widget depending on the <cite>expanded</cite> state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.event">
+<code class="descname">event</code><span class="sig-paren">(</span><em>self</em>, <em>QEvent</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.event"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.event" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.eventFilter">
+<code class="descname">eventFilter</code><span class="sig-paren">(</span><em>self</em>, <em>QObject</em>, <em>QEvent</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.eventFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.eventFilter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.expand">
+<code class="descname">expand</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.expand"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.expand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expand the dock (same as <code class="docutils literal notranslate"><span class="pre">setExpanded(True)</span></code>)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.expanded">
+<code class="descname">expanded</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.expanded"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.expanded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is the dock widget in expanded state. If <cite>True</cite> the
+<code class="docutils literal notranslate"><span class="pre">expandedWidget</span></code> will be shown, and <code class="docutils literal notranslate"><span class="pre">collapsedWidget</span></code> otherwise.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.expandedChanged">
+<code class="descname">expandedChanged</code><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.expandedChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emitted when the dock widget’s expanded state changes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.expandedWidget">
+<code class="descname">expandedWidget</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.expandedWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.expandedWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the widget previously set with <code class="docutils literal notranslate"><span class="pre">setExpandedWidget</span></code>,
+or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no widget has been set.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.expanded_">
+<code class="descname">expanded_</code><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.expanded_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is the dock widget in expanded state. If <cite>True</cite> the
+<code class="docutils literal notranslate"><span class="pre">expandedWidget</span></code> will be shown, and <code class="docutils literal notranslate"><span class="pre">collapsedWidget</span></code> otherwise.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.setAnimationEnabled">
+<code class="descname">setAnimationEnabled</code><span class="sig-paren">(</span><em>animationEnabled</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.setAnimationEnabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.setAnimationEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable/disable the transition animation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.setCollapsedWidget">
+<code class="descname">setCollapsedWidget</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.setCollapsedWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.setCollapsedWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the widget with contents to show while collapsed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.setExpanded">
+<code class="descname">setExpanded</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.setExpanded"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.setExpanded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the widgets <cite>expanded</cite> state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.setExpandedWidget">
+<code class="descname">setExpandedWidget</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.setExpandedWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.setExpandedWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the widget with contents to show while expanded.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dock.CollapsibleDockWidget.setWidget">
+<code class="descname">setWidget</code><span class="sig-paren">(</span><em>self</em>, <em>QWidget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dock.html#CollapsibleDockWidget.setWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dock.CollapsibleDockWidget.setWidget" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.dropshadow">
+<span id="alkemiems-akpad-gui-dropshadow-module"></span><h2>Alkemiems.akpad.gui.dropshadow module<a class="headerlink" href="#module-Alkemiems.akpad.gui.dropshadow" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="drop-shadow-frame">
+<h3>Drop Shadow Frame<a class="headerlink" href="#drop-shadow-frame" title="Permalink to this headline">¶</a></h3>
+<p>A widget providing a drop shadow (gaussian blur effect) around another
+widget.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.dropshadow.DropShadowFrame">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.dropshadow.</code><code class="descname">DropShadowFrame</code><span class="sig-paren">(</span><em>parent=None</em>, <em>color=&lt;PyQt5.QtGui.QColor object&gt;</em>, <em>radius=5</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dropshadow.html#DropShadowFrame"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dropshadow.DropShadowFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QWidget</span></code></p>
+<p>A widget drawing a drop shadow effect around the geometry of
+another widget (works similar to <code class="xref py py-class docutils literal notranslate"><span class="pre">QFocusFrame</span></code>).</p>
+<dl class="docutils">
+<dt>parent <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QObject</span></code></span></dt>
+<dd>Parent object.</dd>
+<dt>color <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QColor</span></code></span></dt>
+<dd>The color of the drop shadow.</dd>
+<dt>radius <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd>Shadow radius.</dd>
+</dl>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dropshadow.DropShadowFrame.color">
+<code class="descname">color</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dropshadow.html#DropShadowFrame.color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dropshadow.DropShadowFrame.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the color of the drop shadow.</p>
+<p>By default this is a color from the <cite>palette</cite> (for
+<cite>self.foregroundRole()</cite>)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.dropshadow.DropShadowFrame.color_">
+<code class="descname">color_</code><a class="headerlink" href="#Alkemiems.akpad.gui.dropshadow.DropShadowFrame.color_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Drop shadow color</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dropshadow.DropShadowFrame.eventFilter">
+<code class="descname">eventFilter</code><span class="sig-paren">(</span><em>self</em>, <em>QObject</em>, <em>QEvent</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/Alkemiems/akpad/gui/dropshadow.html#DropShadowFrame.eventFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dropshadow.DropShadowFrame.eventFilter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dropshadow.DropShadowFrame.paintEvent">
+<code class="descname">paintEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QPaintEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dropshadow.html#DropShadowFrame.paintEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dropshadow.DropShadowFrame.paintEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dropshadow.DropShadowFrame.radius">
+<code class="descname">radius</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dropshadow.html#DropShadowFrame.radius"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dropshadow.DropShadowFrame.radius" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the shadow blur radius.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.dropshadow.DropShadowFrame.radius_">
+<code class="descname">radius_</code><a class="headerlink" href="#Alkemiems.akpad.gui.dropshadow.DropShadowFrame.radius_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Drop shadow blur radius.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dropshadow.DropShadowFrame.setColor">
+<code class="descname">setColor</code><span class="sig-paren">(</span><em>color</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dropshadow.html#DropShadowFrame.setColor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dropshadow.DropShadowFrame.setColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the color of the shadow.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dropshadow.DropShadowFrame.setRadius">
+<code class="descname">setRadius</code><span class="sig-paren">(</span><em>radius</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dropshadow.html#DropShadowFrame.setRadius"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dropshadow.DropShadowFrame.setRadius" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the drop shadow’s blur radius.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dropshadow.DropShadowFrame.setWidget">
+<code class="descname">setWidget</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dropshadow.html#DropShadowFrame.setWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dropshadow.DropShadowFrame.setWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the widget around which to show the shadow.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.dropshadow.DropShadowFrame.widget">
+<code class="descname">widget</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dropshadow.html#DropShadowFrame.widget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dropshadow.DropShadowFrame.widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the widget that was set by <cite>setWidget</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.dropshadow.render_drop_shadow_frame">
+<code class="descclassname">Alkemiems.akpad.gui.dropshadow.</code><code class="descname">render_drop_shadow_frame</code><span class="sig-paren">(</span><em>pixmap</em>, <em>shadow_rect</em>, <em>shadow_color</em>, <em>offset</em>, <em>radius</em>, <em>rect_fill_color</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/dropshadow.html#render_drop_shadow_frame"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.dropshadow.render_drop_shadow_frame" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.framelesswindow">
+<span id="alkemiems-akpad-gui-framelesswindow-module"></span><h2>Alkemiems.akpad.gui.framelesswindow module<a class="headerlink" href="#module-Alkemiems.akpad.gui.framelesswindow" title="Permalink to this headline">¶</a></h2>
+<p>A frameless window widget</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.framelesswindow.FramelessWindow">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.framelesswindow.</code><code class="descname">FramelessWindow</code><span class="sig-paren">(</span><em>parent=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/framelesswindow.html#FramelessWindow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.framelesswindow.FramelessWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QWidget</span></code></p>
+<p>A basic frameless window widget with rounded corners (if supported by
+the windowing system).</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.framelesswindow.FramelessWindow.paintEvent">
+<code class="descname">paintEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QPaintEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/framelesswindow.html#FramelessWindow.paintEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.framelesswindow.FramelessWindow.paintEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.framelesswindow.FramelessWindow.radius">
+<code class="descname">radius</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/framelesswindow.html#FramelessWindow.radius"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.framelesswindow.FramelessWindow.radius" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the border radius.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.framelesswindow.FramelessWindow.radius_">
+<code class="descname">radius_</code><a class="headerlink" href="#Alkemiems.akpad.gui.framelesswindow.FramelessWindow.radius_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Window border radius</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.framelesswindow.FramelessWindow.resizeEvent">
+<code class="descname">resizeEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QResizeEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/framelesswindow.html#FramelessWindow.resizeEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.framelesswindow.FramelessWindow.resizeEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.framelesswindow.FramelessWindow.setRadius">
+<code class="descname">setRadius</code><span class="sig-paren">(</span><em>radius</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/framelesswindow.html#FramelessWindow.setRadius"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.framelesswindow.FramelessWindow.setRadius" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the window rounded border radius.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.lineedit">
+<span id="alkemiems-akpad-gui-lineedit-module"></span><h2>Alkemiems.akpad.gui.lineedit module<a class="headerlink" href="#module-Alkemiems.akpad.gui.lineedit" title="Permalink to this headline">¶</a></h2>
+<p>A LineEdit class with a button on left/right side.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEdit">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.lineedit.</code><code class="descname">LineEdit</code><span class="sig-paren">(</span><em>parent=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/lineedit.html#LineEdit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEdit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QLineEdit</span></code></p>
+<p>A line edit widget with support for adding actions (buttons) to
+the left/right of the edited text</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEdit.LeftPosition">
+<code class="descname">LeftPosition</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEdit.LeftPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position flags</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEdit.RightPosition">
+<code class="descname">RightPosition</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEdit.RightPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position flags</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEdit.actionAt">
+<code class="descname">actionAt</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/lineedit.html#LineEdit.actionAt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEdit.actionAt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return <code class="xref py py-class docutils literal notranslate"><span class="pre">QAction</span></code> at <cite>position</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEdit.button">
+<code class="descname">button</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/lineedit.html#LineEdit.button"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEdit.button" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the button (<a class="reference internal" href="#Alkemiems.akpad.gui.lineedit.LineEditButton" title="Alkemiems.akpad.gui.lineedit.LineEditButton"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineEditButton</span></code></a>) for the action
+at <cite>position</cite>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEdit.leftTriggered">
+<code class="descname">leftTriggered</code><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEdit.leftTriggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>The left action was triggered.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEdit.removeActionAt">
+<code class="descname">removeActionAt</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/lineedit.html#LineEdit.removeActionAt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEdit.removeActionAt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the action at position.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEdit.resizeEvent">
+<code class="descname">resizeEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QResizeEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/lineedit.html#LineEdit.resizeEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEdit.resizeEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEdit.rightTriggered">
+<code class="descname">rightTriggered</code><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEdit.rightTriggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>The right action was triggered.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEdit.setAction">
+<code class="descname">setAction</code><span class="sig-paren">(</span><em>action</em>, <em>position=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/lineedit.html#LineEdit.setAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEdit.setAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set <cite>action</cite> to be displayed at <cite>position</cite>. Existing action
+(if present) will be removed.</p>
+<p>action : <code class="xref py py-class docutils literal notranslate"><span class="pre">QAction</span></code>
+position : int</p>
+<blockquote>
+<div>Position where to set the action (default: <code class="docutils literal notranslate"><span class="pre">LeftPosition</span></code>).</div></blockquote>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEdit.triggered">
+<code class="descname">triggered</code><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEdit.triggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emitted when the action is triggered.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEditButton">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.lineedit.</code><code class="descname">LineEditButton</code><span class="sig-paren">(</span><em>parent=None</em>, <em>flat=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/lineedit.html#LineEditButton"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEditButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QToolButton</span></code></p>
+<p>A button in the <a class="reference internal" href="#Alkemiems.akpad.gui.lineedit.LineEdit" title="Alkemiems.akpad.gui.lineedit.LineEdit"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineEdit</span></code></a>.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEditButton.flat">
+<code class="descname">flat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/lineedit.html#LineEditButton.flat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEditButton.flat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEditButton.flat_">
+<code class="descname">flat_</code><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEditButton.flat_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEditButton.paintEvent">
+<code class="descname">paintEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QPaintEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/lineedit.html#LineEditButton.paintEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEditButton.paintEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.lineedit.LineEditButton.setFlat">
+<code class="descname">setFlat</code><span class="sig-paren">(</span><em>flat</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/lineedit.html#LineEditButton.setFlat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.lineedit.LineEditButton.setFlat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.quickhelp">
+<span id="alkemiems-akpad-gui-quickhelp-module"></span><h2>Alkemiems.akpad.gui.quickhelp module<a class="headerlink" href="#module-Alkemiems.akpad.gui.quickhelp" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelp">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.quickhelp.</code><code class="descname">QuickHelp</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#QuickHelp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QTextBrowser</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelp.clearHelp">
+<code class="descname">clearHelp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#QuickHelp.clearHelp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelp.clearHelp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear help text previously set with <cite>showHelp</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelp.currentText">
+<code class="descname">currentText</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#QuickHelp.currentText"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelp.currentText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the current shown text.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelp.setDefaultText">
+<code class="descname">setDefaultText</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#QuickHelp.setDefaultText"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelp.setDefaultText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set default help text. The text is overriden by normal and permanent help messages,
+but is show again after such messages are cleared.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelp.showHelp">
+<code class="descname">showHelp</code><span class="sig-paren">(</span><em>text</em>, <em>timeout=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#QuickHelp.showHelp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelp.showHelp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show help for <cite>timeout</cite> milliseconds. if timeout is 0 then
+show the text until it is cleared with clearHelp or showHelp is
+called with an empty string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelp.showPermanentHelp">
+<code class="descname">showPermanentHelp</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#QuickHelp.showPermanentHelp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelp.showPermanentHelp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set permanent help text. The text may be temporarily overridden
+by showHelp but will be shown again when that is cleared.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelp.textChanged">
+<code class="descname">textChanged</code><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelp.textChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emitted when the shown text changes.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelpDetailRequestEvent">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.quickhelp.</code><code class="descname">QuickHelpDetailRequestEvent</code><span class="sig-paren">(</span><em>href</em>, <em>url</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#QuickHelpDetailRequestEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelpDetailRequestEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtGui.QWhatsThisClickedEvent</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelpDetailRequestEvent.url">
+<code class="descname">url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#QuickHelpDetailRequestEvent.url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelpDetailRequestEvent.url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.quickhelp.</code><code class="descname">QuickHelpTipEvent</code><span class="sig-paren">(</span><em>tip</em>, <em>html=None</em>, <em>priority=2</em>, <em>timeout=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#QuickHelpTipEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtGui.QStatusTipEvent</span></code></p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent.Normal">
+<code class="descname">Normal</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent.Normal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent.Permanent">
+<code class="descname">Permanent</code><em class="property"> = 3</em><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent.Permanent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent.Temporary">
+<code class="descname">Temporary</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent.Temporary" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent.html">
+<code class="descname">html</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#QuickHelpTipEvent.html"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent.html" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent.priority">
+<code class="descname">priority</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#QuickHelpTipEvent.priority"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent.priority" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent.timeout">
+<code class="descname">timeout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#QuickHelpTipEvent.timeout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.QuickHelpTipEvent.timeout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.quickhelp.StatusTipPromoter">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.quickhelp.</code><code class="descname">StatusTipPromoter</code><a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#StatusTipPromoter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.StatusTipPromoter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<p>Promotes <cite>QStatusTipEvent</cite> to <cite>QuickHelpTipEvent</cite> using <code class="docutils literal notranslate"><span class="pre">whatsThis</span></code>
+property of the object.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.quickhelp.StatusTipPromoter.eventFilter">
+<code class="descname">eventFilter</code><span class="sig-paren">(</span><em>self</em>, <em>QObject</em>, <em>QEvent</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/Alkemiems/akpad/gui/quickhelp.html#StatusTipPromoter.eventFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.quickhelp.StatusTipPromoter.eventFilter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.splashscreen">
+<span id="alkemiems-akpad-gui-splashscreen-module"></span><h2>Alkemiems.akpad.gui.splashscreen module<a class="headerlink" href="#module-Alkemiems.akpad.gui.splashscreen" title="Permalink to this headline">¶</a></h2>
+<p>A splash screen widget with support for positioning of the message text.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.splashscreen.SplashScreen">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.splashscreen.</code><code class="descname">SplashScreen</code><span class="sig-paren">(</span><em>parent=None</em>, <em>pixmap=None</em>, <em>textRect=None</em>, <em>textFormat=0</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/splashscreen.html#SplashScreen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.splashscreen.SplashScreen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QSplashScreen</span></code></p>
+<p>Splash screen widget.</p>
+<dl class="docutils">
+<dt>parent <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QWidget</span></code></span></dt>
+<dd>Parent widget</dd>
+<dt>pixmap <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QPixmap</span></code></span></dt>
+<dd>Splash window pixmap.</dd>
+<dt>textRect <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QRect</span></code></span></dt>
+<dd>Bounding rectangle of the shown message on the widget.</dd>
+<dt>textFormat <span class="classifier-delimiter">:</span> <span class="classifier">Qt.TextFormat</span></dt>
+<dd>How message text format should be interpreted.</dd>
+</dl>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.splashscreen.SplashScreen.drawContents">
+<code class="descname">drawContents</code><span class="sig-paren">(</span><em>painter</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/splashscreen.html#SplashScreen.drawContents"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.splashscreen.SplashScreen.drawContents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reimplementation of drawContents to limit the drawing
+inside <cite>textRext</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.splashscreen.SplashScreen.event">
+<code class="descname">event</code><span class="sig-paren">(</span><em>self</em>, <em>QEvent</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/Alkemiems/akpad/gui/splashscreen.html#SplashScreen.event"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.splashscreen.SplashScreen.event" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.splashscreen.SplashScreen.repaint">
+<code class="descname">repaint</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/splashscreen.html#SplashScreen.repaint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.splashscreen.SplashScreen.repaint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.splashscreen.SplashScreen.setPixmap">
+<code class="descname">setPixmap</code><span class="sig-paren">(</span><em>self</em>, <em>QPixmap</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/splashscreen.html#SplashScreen.setPixmap"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.splashscreen.SplashScreen.setPixmap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.splashscreen.SplashScreen.setTextFormat">
+<code class="descname">setTextFormat</code><span class="sig-paren">(</span><em>format</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/splashscreen.html#SplashScreen.setTextFormat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.splashscreen.SplashScreen.setTextFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.splashscreen.SplashScreen.setTextRect">
+<code class="descname">setTextRect</code><span class="sig-paren">(</span><em>rect</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/splashscreen.html#SplashScreen.setTextRect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.splashscreen.SplashScreen.setTextRect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the rectangle (<code class="xref py py-class docutils literal notranslate"><span class="pre">QRect</span></code>) in which to show the message text.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.splashscreen.SplashScreen.showEvent">
+<code class="descname">showEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QShowEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/splashscreen.html#SplashScreen.showEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.splashscreen.SplashScreen.showEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.splashscreen.SplashScreen.showMessage">
+<code class="descname">showMessage</code><span class="sig-paren">(</span><em>message</em>, <em>alignment=1</em>, <em>color=2</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/splashscreen.html#SplashScreen.showMessage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.splashscreen.SplashScreen.showMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the <cite>message</cite> with <cite>color</cite> and <cite>alignment</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.splashscreen.SplashScreen.textFormat">
+<code class="descname">textFormat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/splashscreen.html#SplashScreen.textFormat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.splashscreen.SplashScreen.textFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.splashscreen.SplashScreen.textRect">
+<code class="descname">textRect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/splashscreen.html#SplashScreen.textRect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.splashscreen.SplashScreen.textRect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the text message rectangle.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.splashscreen.mightBeRichText">
+<code class="descclassname">Alkemiems.akpad.gui.splashscreen.</code><code class="descname">mightBeRichText</code><span class="sig-paren">(</span><em>str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#Alkemiems.akpad.gui.splashscreen.mightBeRichText" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.stackedwidget">
+<span id="alkemiems-akpad-gui-stackedwidget-module"></span><h2>Alkemiems.akpad.gui.stackedwidget module<a class="headerlink" href="#module-Alkemiems.akpad.gui.stackedwidget" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="animatedstackedwidget">
+<h3>AnimatedStackedWidget<a class="headerlink" href="#animatedstackedwidget" title="Permalink to this headline">¶</a></h3>
+<p>A widget similar to <code class="xref py py-class docutils literal notranslate"><span class="pre">QStackedWidget</span></code> supporting animated
+transitions between widgets.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.stackedwidget.</code><code class="descname">AnimatedStackedWidget</code><span class="sig-paren">(</span><em>parent=None</em>, <em>animationEnabled=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QFrame</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.addWidget">
+<code class="descname">addWidget</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget.addWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.addWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append the widget to the stack and return its index.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.animationEnabled">
+<code class="descname">animationEnabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget.animationEnabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.animationEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is the transition animation enabled.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.count">
+<code class="descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget.count"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of widgets in the stack.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.currentChanged">
+<code class="descname">currentChanged</code><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.currentChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.currentIndex">
+<code class="descname">currentIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget.currentIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.currentIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the current shown widget index.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.indexOf">
+<code class="descname">indexOf</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget.indexOf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.indexOf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the index of <cite>widget</cite> in the stack.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.insertWidget">
+<code class="descname">insertWidget</code><span class="sig-paren">(</span><em>index</em>, <em>widget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget.insertWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.insertWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert <cite>widget</cite> into the stack at <cite>index</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.removeWidget">
+<code class="descname">removeWidget</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget.removeWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.removeWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove <cite>widget</cite> from the stack.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The widget is hidden but is not deleted.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.setAnimationEnabled">
+<code class="descname">setAnimationEnabled</code><span class="sig-paren">(</span><em>animationEnabled</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget.setAnimationEnabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.setAnimationEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable/disable transition animations.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.setCurrentIndex">
+<code class="descname">setCurrentIndex</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget.setCurrentIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.setCurrentIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the current shown widget index.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.setCurrentWidget">
+<code class="descname">setCurrentWidget</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget.setCurrentWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.setCurrentWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the current shown widget.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.sizeHint">
+<code class="descname">sizeHint</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; QSize<a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget.sizeHint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.sizeHint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.transitionFinished">
+<code class="descname">transitionFinished</code><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.transitionFinished" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.transitionStarted">
+<code class="descname">transitionStarted</code><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.transitionStarted" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.widget">
+<code class="descname">widget</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#AnimatedStackedWidget.widget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.AnimatedStackedWidget.widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the widget at <cite>index</cite></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.stackedwidget.</code><code class="descname">CrossFadePixmapWidget</code><span class="sig-paren">(</span><em>parent=None</em>, <em>pixmap1=None</em>, <em>pixmap2=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#CrossFadePixmapWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QWidget</span></code></p>
+<p>A widget for cross fading between two pixmaps.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.blendingFactor">
+<code class="descname">blendingFactor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#CrossFadePixmapWidget.blendingFactor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.blendingFactor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pixmap blending factor between 0.0 and 1.0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.blendingFactor_">
+<code class="descname">blendingFactor_</code><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.blendingFactor_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pixmap blending factor between 0.0 and 1.0</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.paintEvent">
+<code class="descname">paintEvent</code><span class="sig-paren">(</span><em>event</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#CrossFadePixmapWidget.paintEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.paintEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Paint the interpolated pixmap image.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.setBlendingFactor">
+<code class="descname">setBlendingFactor</code><span class="sig-paren">(</span><em>factor</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#CrossFadePixmapWidget.setBlendingFactor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.setBlendingFactor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the blending factor between the two pixmaps.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.setPixmap">
+<code class="descname">setPixmap</code><span class="sig-paren">(</span><em>pixmap</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#CrossFadePixmapWidget.setPixmap"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.setPixmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set pixmap 1</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.setPixmap2">
+<code class="descname">setPixmap2</code><span class="sig-paren">(</span><em>pixmap</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#CrossFadePixmapWidget.setPixmap2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.setPixmap2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set pixmap 2</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.sizeHint">
+<code class="descname">sizeHint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#CrossFadePixmapWidget.sizeHint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.CrossFadePixmapWidget.sizeHint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an interpolated size between pixmap1.size()
+and pixmap2.size()</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.stackedwidget.StackLayout">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.stackedwidget.</code><code class="descname">StackLayout</code><span class="sig-paren">(</span><em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#StackLayout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.StackLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QStackedLayout</span></code></p>
+<p>A stacked layout with <code class="docutils literal notranslate"><span class="pre">sizeHint</span></code> always the same as that of the
+<cite>current</cite> widget.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.StackLayout.geometry">
+<code class="descname">geometry</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; QRect<a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#StackLayout.geometry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.StackLayout.geometry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.StackLayout.maximumSize">
+<code class="descname">maximumSize</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; QSize<a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#StackLayout.maximumSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.StackLayout.maximumSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.StackLayout.minimumSize">
+<code class="descname">minimumSize</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; QSize<a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#StackLayout.minimumSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.StackLayout.minimumSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.StackLayout.setGeometry">
+<code class="descname">setGeometry</code><span class="sig-paren">(</span><em>self</em>, <em>QRect</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#StackLayout.setGeometry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.StackLayout.setGeometry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.stackedwidget.StackLayout.sizeHint">
+<code class="descname">sizeHint</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; QSize<a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#StackLayout.sizeHint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.StackLayout.sizeHint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.stackedwidget.clipMinMax">
+<code class="descclassname">Alkemiems.akpad.gui.stackedwidget.</code><code class="descname">clipMinMax</code><span class="sig-paren">(</span><em>size</em>, <em>minSize</em>, <em>maxSize</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#clipMinMax"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.clipMinMax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clip the size so it is bigger then minSize but smaller than maxSize.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.stackedwidget.fixSizePolicy">
+<code class="descclassname">Alkemiems.akpad.gui.stackedwidget.</code><code class="descname">fixSizePolicy</code><span class="sig-paren">(</span><em>size</em>, <em>hint</em>, <em>policy</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/stackedwidget.html#fixSizePolicy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.stackedwidget.fixSizePolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fix size so it conforms to the size policy and the given size hint.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.test">
+<span id="alkemiems-akpad-gui-test-module"></span><h2>Alkemiems.akpad.gui.test module<a class="headerlink" href="#module-Alkemiems.akpad.gui.test" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="basic-qt-testing-framework">
+<h3>Basic Qt testing framework<a class="headerlink" href="#basic-qt-testing-framework" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.test.QAppTestCase">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.test.</code><code class="descname">QAppTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/test.html#QAppTestCase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.test.QAppTestCase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.test.QAppTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/test.html#QAppTestCase.setUp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.test.QAppTestCase.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.test.QAppTestCase.singleShot">
+<code class="descname">singleShot</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/test.html#QAppTestCase.singleShot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.test.QAppTestCase.singleShot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.test.QAppTestCase.tearDown">
+<code class="descname">tearDown</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/test.html#QAppTestCase.tearDown"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.test.QAppTestCase.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.test.QCoreAppTestCase">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.test.</code><code class="descname">QCoreAppTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/test.html#QCoreAppTestCase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.test.QCoreAppTestCase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.test.QCoreAppTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/test.html#QCoreAppTestCase.setUp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.test.QCoreAppTestCase.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.test.QCoreAppTestCase.singleShot">
+<code class="descname">singleShot</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/test.html#QCoreAppTestCase.singleShot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.test.QCoreAppTestCase.singleShot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.test.QCoreAppTestCase.tearDown">
+<code class="descname">tearDown</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/test.html#QCoreAppTestCase.tearDown"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.test.QCoreAppTestCase.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.toolbar">
+<span id="alkemiems-akpad-gui-toolbar-module"></span><h2>Alkemiems.akpad.gui.toolbar module<a class="headerlink" href="#module-Alkemiems.akpad.gui.toolbar" title="Permalink to this headline">¶</a></h2>
+<p>A custom toolbar with linear uniform size layout.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.toolbar.DynamicResizeToolBar">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.toolbar.</code><code class="descname">DynamicResizeToolBar</code><span class="sig-paren">(</span><em>parent=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbar.html#DynamicResizeToolBar"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbar.DynamicResizeToolBar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QToolBar</span></code></p>
+<p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">QToolBar</span></code> subclass that dynamically resizes its tool buttons
+to fit available space (this is done by setting fixed size on the
+button instances).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">the class does not support <code class="xref py py-class docutils literal notranslate"><span class="pre">QWidgetAction</span></code> items,
+separators, etc.</p>
+</div>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbar.DynamicResizeToolBar.actionEvent">
+<code class="descname">actionEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QActionEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbar.html#DynamicResizeToolBar.actionEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbar.DynamicResizeToolBar.actionEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbar.DynamicResizeToolBar.resizeEvent">
+<code class="descname">resizeEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QResizeEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbar.html#DynamicResizeToolBar.resizeEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbar.DynamicResizeToolBar.resizeEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbar.DynamicResizeToolBar.sizeHint">
+<code class="descname">sizeHint</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; QSize<a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbar.html#DynamicResizeToolBar.sizeHint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbar.DynamicResizeToolBar.sizeHint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.toolbar.uniform_layout_helper">
+<code class="descclassname">Alkemiems.akpad.gui.toolbar.</code><code class="descname">uniform_layout_helper</code><span class="sig-paren">(</span><em>items</em>, <em>contents_rect</em>, <em>expanding</em>, <em>spacing</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbar.html#uniform_layout_helper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbar.uniform_layout_helper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set fixed sizes on ‘items’ so they can be laid out in <cite>contents_rect</cite>
+and fill the whole space. The items are laid out in
+<cite>expanding_direction</cite> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Qt.Orientation</span></code>) with <cite>spacing</cite>
+(<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.toolbox">
+<span id="alkemiems-akpad-gui-toolbox-module"></span><h2>Alkemiems.akpad.gui.toolbox module<a class="headerlink" href="#module-Alkemiems.akpad.gui.toolbox" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tool-box-widget">
+<h3>Tool Box Widget<a class="headerlink" href="#tool-box-widget" title="Permalink to this headline">¶</a></h3>
+<p>A reimplementation of the <code class="xref py py-class docutils literal notranslate"><span class="pre">QToolBox</span></code> widget that keeps all the tabs
+in a single <code class="xref py py-class docutils literal notranslate"><span class="pre">QScrollArea</span></code> instance and can keep multiple open tabs.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.toolbox.</code><code class="descname">ToolBox</code><span class="sig-paren">(</span><em>parent=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QFrame</span></code></p>
+<p>A tool box widget.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.addItem">
+<code class="descname">addItem</code><span class="sig-paren">(</span><em>widget</em>, <em>text</em>, <em>icon=None</em>, <em>toolTip=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.addItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.addItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append the <cite>widget</cite> in a new tab and return its index.</p>
+<dl class="docutils">
+<dt>widget <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QWidget</span></code></span></dt>
+<dd>A widget to be inserted. The toolbox takes ownership
+of the widget.</dd>
+<dt>text <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Name/title of the new tab.</dd>
+<dt>icon <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QIcon</span></code>, optional</span></dt>
+<dd>An icon for the tab button.</dd>
+<dt>toolTip <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd>Tool tip for the tab button.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.count">
+<code class="descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.count"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of widgets inserted in the toolbox.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.createTabButton">
+<code class="descname">createTabButton</code><span class="sig-paren">(</span><em>widget</em>, <em>text</em>, <em>icon=None</em>, <em>toolTip=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.createTabButton"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.createTabButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the tab button for <cite>widget</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.ensureWidgetVisible">
+<code class="descname">ensureWidgetVisible</code><span class="sig-paren">(</span><em>child</em>, <em>xmargin=50</em>, <em>ymargin=50</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.ensureWidgetVisible"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.ensureWidgetVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scroll the contents so child widget instance is visible inside
+the viewport.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.exclusive">
+<code class="descname">exclusive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.exclusive"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.exclusive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Are the tabs in the toolbox exclusive.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.exclusive_">
+<code class="descname">exclusive_</code><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.exclusive_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exclusive tabs</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.insertItem">
+<code class="descname">insertItem</code><span class="sig-paren">(</span><em>index</em>, <em>widget</em>, <em>text</em>, <em>icon=None</em>, <em>toolTip=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.insertItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.insertItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert the <cite>widget</cite> in a new tab at position <cite>index</cite>.</p>
+<p>ToolBox.addItem</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.removeItem">
+<code class="descname">removeItem</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.removeItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.removeItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the widget at <cite>index</cite>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The widget hidden but is is not deleted.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.setExclusive">
+<code class="descname">setExclusive</code><span class="sig-paren">(</span><em>exclusive</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.setExclusive"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.setExclusive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set exclusive tabs (only one tab can be open at a time).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.setTabButtonHeight">
+<code class="descname">setTabButtonHeight</code><span class="sig-paren">(</span><em>height</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.setTabButtonHeight"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.setTabButtonHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the tab button height.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.setTabIconSize">
+<code class="descname">setTabIconSize</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.setTabIconSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.setTabIconSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the tab button icon size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.sizeHint">
+<code class="descname">sizeHint</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; QSize<a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.sizeHint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.sizeHint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.tabAction">
+<code class="descname">tabAction</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.tabAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.tabAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return open/close action for the tab at <cite>index</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.tabButton">
+<code class="descname">tabButton</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.tabButton"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.tabButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the tab button at <cite>index</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.tabButtonHeight">
+<code class="descname">tabButtonHeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.tabButtonHeight"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.tabButtonHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the tab button height.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.tabIconSize">
+<code class="descname">tabIconSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.tabIconSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.tabIconSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the tab icon size.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.tabToogled">
+<code class="descname">tabToogled</code><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.tabToogled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBox.widget">
+<code class="descname">widget</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBox.widget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBox.widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the widget at <cite>index</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBoxTabButton">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.toolbox.</code><code class="descname">ToolBoxTabButton</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBoxTabButton"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBoxTabButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QToolButton</span></code></p>
+<p>A tab button for an item in a <a class="reference internal" href="#Alkemiems.akpad.gui.toolbox.ToolBox" title="Alkemiems.akpad.gui.toolbox.ToolBox"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToolBox</span></code></a>.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBoxTabButton.enterEvent">
+<code class="descname">enterEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBoxTabButton.enterEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBoxTabButton.enterEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBoxTabButton.leaveEvent">
+<code class="descname">leaveEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBoxTabButton.leaveEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBoxTabButton.leaveEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBoxTabButton.nativeStyling">
+<code class="descname">nativeStyling</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBoxTabButton.nativeStyling"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBoxTabButton.nativeStyling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use <code class="xref py py-class docutils literal notranslate"><span class="pre">QStyle</span></code>’s to paint the class:<cite>QToolButton</cite> look.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBoxTabButton.nativeStyling_">
+<code class="descname">nativeStyling_</code><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBoxTabButton.nativeStyling_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use <code class="xref py py-class docutils literal notranslate"><span class="pre">QStyle</span></code>’s to paint the class:<cite>QToolButton</cite> look.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBoxTabButton.paintEvent">
+<code class="descname">paintEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QPaintEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBoxTabButton.paintEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBoxTabButton.paintEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolbox.ToolBoxTabButton.setNativeStyling">
+<code class="descname">setNativeStyling</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#ToolBoxTabButton.setNativeStyling"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.ToolBoxTabButton.setNativeStyling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render tab buttons as native (or css styled) <code class="xref py py-class docutils literal notranslate"><span class="pre">QToolButtons</span></code>.
+If set to <cite>False</cite> (default) the button is pained using a custom
+paint routine.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.toolbox.find">
+<code class="descclassname">Alkemiems.akpad.gui.toolbox.</code><code class="descname">find</code><span class="sig-paren">(</span><em>iterable</em><span class="optional">[</span>, <em>what</em><span class="optional">[</span>, <em>key=None</em><span class="optional">[</span>, <em>predicate=operator.eq</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#find"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.toolbox.identity">
+<code class="descclassname">Alkemiems.akpad.gui.toolbox.</code><code class="descname">identity</code><span class="sig-paren">(</span><em>arg</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolbox.html#identity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolbox.identity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.toolgrid">
+<span id="alkemiems-akpad-gui-toolgrid-module"></span><h2>Alkemiems.akpad.gui.toolgrid module<a class="headerlink" href="#module-Alkemiems.akpad.gui.toolgrid" title="Permalink to this headline">¶</a></h2>
+<p>A widget containing a grid of clickable actions/buttons.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.toolgrid.</code><code class="descname">ToolGrid</code><span class="sig-paren">(</span><em>parent=None</em>, <em>columns=4</em>, <em>buttonSize=None</em>, <em>iconSize=None</em>, <em>toolButtonStyle=3</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QFrame</span></code></p>
+<p>A widget containing a grid of actions/buttons.</p>
+<p>Actions can be added using standard <code class="xref py py-func docutils literal notranslate"><span class="pre">QWidget.addAction(QAction)()</span></code>
+and <code class="xref py py-func docutils literal notranslate"><span class="pre">QWidget.insertAction(int,</span> <span class="pre">QAction)()</span></code> methods.</p>
+<dl class="docutils">
+<dt>parent <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QWidget</span></code></span></dt>
+<dd>Parent widget.</dd>
+<dt>columns <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>Number of columns in the grid layout.</dd>
+<dt>buttonSize <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QSize</span></code>, optional</span></dt>
+<dd>Size of tool buttons in the grid.</dd>
+<dt>iconSize <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QSize</span></code>, optional</span></dt>
+<dd>Size of icons in the buttons.</dd>
+<dt>toolButtonStyle <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">Qt.ToolButtonStyle</span></code></span></dt>
+<dd>Tool button style.</dd>
+</dl>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.actionEvent">
+<code class="descname">actionEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QActionEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.actionEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.actionEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.actionHovered">
+<code class="descname">actionHovered</code><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.actionHovered" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.actionTriggered">
+<code class="descname">actionTriggered</code><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.actionTriggered" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.buttonForAction">
+<code class="descname">buttonForAction</code><span class="sig-paren">(</span><em>action</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.buttonForAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.buttonForAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the <code class="xref py py-class docutils literal notranslate"><span class="pre">QToolButton</span></code> instance button for <cite>action</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.buttonSize">
+<code class="descname">buttonSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.buttonSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.buttonSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the button size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.clear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear all actions/buttons.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.columns">
+<code class="descname">columns</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.columns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.columns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of columns in the grid.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.count">
+<code class="descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.count"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of buttons/actions in the grid.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.createButtonForAction">
+<code class="descname">createButtonForAction</code><span class="sig-paren">(</span><em>action</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.createButtonForAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.createButtonForAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create and return a <code class="xref py py-class docutils literal notranslate"><span class="pre">QToolButton</span></code> for action.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.eventFilter">
+<code class="descname">eventFilter</code><span class="sig-paren">(</span><em>self</em>, <em>QObject</em>, <em>QEvent</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.eventFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.eventFilter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.iconSize">
+<code class="descname">iconSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.iconSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.iconSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the icon size</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.insertAction">
+<code class="descname">insertAction</code><span class="sig-paren">(</span><em>before</em>, <em>action</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.insertAction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.insertAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert a new action at the position currently occupied
+by <cite>before</cite> (can also be an index).</p>
+<dl class="docutils">
+<dt>before <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QAction</span></code> or int</span></dt>
+<dd>Position where the <cite>action</cite> should be inserted.</dd>
+<dt>action <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QAction</span></code></span></dt>
+<dd>Action to insert</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.paintEvent">
+<code class="descname">paintEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QPaintEvent</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.paintEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.paintEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.setActions">
+<code class="descname">setActions</code><span class="sig-paren">(</span><em>actions</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.setActions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.setActions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the grid and add <cite>actions</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.setButtonSize">
+<code class="descname">setButtonSize</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.setButtonSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.setButtonSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the button size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.setColumnCount">
+<code class="descname">setColumnCount</code><span class="sig-paren">(</span><em>columns</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.setColumnCount"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.setColumnCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the number of button/action columns.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.setIconSize">
+<code class="descname">setIconSize</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.setIconSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.setIconSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the button icon size.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.setToolButtonStyle">
+<code class="descname">setToolButtonStyle</code><span class="sig-paren">(</span><em>style</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.setToolButtonStyle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.setToolButtonStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the tool button style.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.toolgrid.ToolGrid.toolButtonStyle">
+<code class="descname">toolButtonStyle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/toolgrid.html#ToolGrid.toolButtonStyle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.toolgrid.ToolGrid.toolButtonStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the tool button style.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.tooltree">
+<span id="alkemiems-akpad-gui-tooltree-module"></span><h2>Alkemiems.akpad.gui.tooltree module<a class="headerlink" href="#module-Alkemiems.akpad.gui.tooltree" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tool-tree">
+<h3>Tool Tree<a class="headerlink" href="#tool-tree" title="Permalink to this headline">¶</a></h3>
+<p>A ToolTree widget presenting the user with a set of actions
+organized in a tree structure.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tooltree.</code><code class="descname">FlattenedTreeItemModel</code><span class="sig-paren">(</span><em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QAbstractProxyModel</span></code></p>
+<p>An Proxy Item model containing a flattened view of a column in a tree
+like item model.</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.Default">
+<code class="descname">Default</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.Default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.InternalNodesDisabled">
+<code class="descname">InternalNodesDisabled</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.InternalNodesDisabled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.LeavesOnly">
+<code class="descname">LeavesOnly</code><em class="property"> = 4</em><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.LeavesOnly" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.columnCount">
+<code class="descname">columnCount</code><span class="sig-paren">(</span><em>self</em>, <em>parent: QModelIndex = QModelIndex()</em><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.columnCount"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.columnCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.flags">
+<code class="descname">flags</code><span class="sig-paren">(</span><em>self</em>, <em>QModelIndex</em><span class="sig-paren">)</span> &#x2192; Qt.ItemFlags<a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.flags"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.flags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.flatteningMode">
+<code class="descname">flatteningMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.flatteningMode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.flatteningMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the flattening mode.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.index">
+<code class="descname">index</code><span class="sig-paren">(</span><em>self</em>, <em>int</em>, <em>int</em>, <em>parent: QModelIndex = QModelIndex()</em><span class="sig-paren">)</span> &#x2192; QModelIndex<a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.mapFromSource">
+<code class="descname">mapFromSource</code><span class="sig-paren">(</span><em>self</em>, <em>QModelIndex</em><span class="sig-paren">)</span> &#x2192; QModelIndex<a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.mapFromSource"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.mapFromSource" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.mapToSource">
+<code class="descname">mapToSource</code><span class="sig-paren">(</span><em>self</em>, <em>QModelIndex</em><span class="sig-paren">)</span> &#x2192; QModelIndex<a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.mapToSource"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.mapToSource" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.parent">
+<code class="descname">parent</code><span class="sig-paren">(</span><em>self</em>, <em>QModelIndex</em><span class="sig-paren">)</span> &#x2192; QModelIndex<a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.parent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>parent(self) -&gt; QObject</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.rowCount">
+<code class="descname">rowCount</code><span class="sig-paren">(</span><em>self</em>, <em>parent: QModelIndex = QModelIndex()</em><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.rowCount"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.rowCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.setFlatteningMode">
+<code class="descname">setFlatteningMode</code><span class="sig-paren">(</span><em>mode</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.setFlatteningMode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.setFlatteningMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the flattening mode.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.setSourceColumn">
+<code class="descname">setSourceColumn</code><span class="sig-paren">(</span><em>column</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.setSourceColumn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.setSourceColumn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.setSourceModel">
+<code class="descname">setSourceModel</code><span class="sig-paren">(</span><em>self</em>, <em>QAbstractItemModel</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.setSourceModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.setSourceModel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.setSourceRootIndex">
+<code class="descname">setSourceRootIndex</code><span class="sig-paren">(</span><em>rootIndex</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.setSourceRootIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.setSourceRootIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the source root index.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.sourceColumn">
+<code class="descname">sourceColumn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.sourceColumn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.sourceColumn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.sourceRootIndex">
+<code class="descname">sourceRootIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#FlattenedTreeItemModel.sourceRootIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.FlattenedTreeItemModel.sourceRootIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the source root index.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tooltree.</code><code class="descname">ToolTree</code><span class="sig-paren">(</span><em>parent=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTree"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QWidget</span></code></p>
+<p>A ListView like presentation of a list of actions.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.actionRole">
+<code class="descname">actionRole</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTree.actionRole"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.actionRole" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.ensureCurrent">
+<code class="descname">ensureCurrent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTree.ensureCurrent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.ensureCurrent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ensure the view has a current item if one is available.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.eventFilter">
+<code class="descname">eventFilter</code><span class="sig-paren">(</span><em>self</em>, <em>QObject</em>, <em>QEvent</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTree.eventFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.eventFilter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.flattened">
+<code class="descname">flattened</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTree.flattened"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.flattened" title="Permalink to this definition">¶</a></dt>
+<dd><p>Are actions shown in a flattened tree (a list).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.hovered">
+<code class="descname">hovered</code><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.hovered" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.model">
+<code class="descname">model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTree.model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.rootIndex">
+<code class="descname">rootIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTree.rootIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.rootIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the root index.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.setActionRole">
+<code class="descname">setActionRole</code><span class="sig-paren">(</span><em>role</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTree.setActionRole"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.setActionRole" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the action role. By default this is UserRole</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.setFlattened">
+<code class="descname">setFlattened</code><span class="sig-paren">(</span><em>flatten</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTree.setFlattened"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.setFlattened" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the actions in a flattened view.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.setModel">
+<code class="descname">setModel</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTree.setModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.setModel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.setRootIndex">
+<code class="descname">setRootIndex</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTree.setRootIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.setRootIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the root index</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.triggered">
+<code class="descname">triggered</code><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.triggered" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTree.view">
+<code class="descname">view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTree.view"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTree.view" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the QTreeView instance used.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTreeItemDelegate">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.tooltree.</code><code class="descname">ToolTreeItemDelegate</code><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTreeItemDelegate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTreeItemDelegate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QStyledItemDelegate</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.tooltree.ToolTreeItemDelegate.paint">
+<code class="descname">paint</code><span class="sig-paren">(</span><em>self</em>, <em>QPainter</em>, <em>QStyleOptionViewItem</em>, <em>QModelIndex</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/tooltree.html#ToolTreeItemDelegate.paint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.tooltree.ToolTreeItemDelegate.paint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui.utils">
+<span id="alkemiems-akpad-gui-utils-module"></span><h2>Alkemiems.akpad.gui.utils module<a class="headerlink" href="#module-Alkemiems.akpad.gui.utils" title="Permalink to this headline">¶</a></h2>
+<p>Helper utilities</p>
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.OSX_NSURL_toLocalFile">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">OSX_NSURL_toLocalFile</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#OSX_NSURL_toLocalFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.OSX_NSURL_toLocalFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return OS X NSURL file reference as local file path or ‘’ if not NSURL</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.utils.StyledWidget">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">StyledWidget</code><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#StyledWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.StyledWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QWidget</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.gui.utils.StyledWidget.paintEvent">
+<code class="descname">paintEvent</code><span class="sig-paren">(</span><em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#Alkemiems.akpad.gui.utils.StyledWidget.paintEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>A default styled QWidget subclass  paintEvent function.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.StyledWidget_paintEvent">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">StyledWidget_paintEvent</code><span class="sig-paren">(</span><em>self</em>, <em>event</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#StyledWidget_paintEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.StyledWidget_paintEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>A default styled QWidget subclass  paintEvent function.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.brush_darker">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">brush_darker</code><span class="sig-paren">(</span><em>brush</em>, <em>factor</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#brush_darker"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.brush_darker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the brush darkened by factor.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.create_css_gradient">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">create_css_gradient</code><span class="sig-paren">(</span><em>base_color</em>, <em>stop=PyQt5.QtCore.QPointF()</em>, <em>finalStop=PyQt5.QtCore.QPointF(0.0</em>, <em>1.0)</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#create_css_gradient"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.create_css_gradient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Qt css linear gradient fragment based on the <cite>base_color</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.create_gradient">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">create_gradient</code><span class="sig-paren">(</span><em>base_color</em>, <em>stop=PyQt5.QtCore.QPointF()</em>, <em>finalStop=PyQt5.QtCore.QPointF(0.0</em>, <em>1.0)</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#create_gradient"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.create_gradient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a default linear gradient using <cite>base_color</cite> .</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.css_gradient">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">css_gradient</code><span class="sig-paren">(</span><em>gradient</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#css_gradient"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.css_gradient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given an instance of a <cite>QLinearGradient</cite> return an equivalent qt css
+gradient fragment.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.disabled">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">disabled</code><span class="sig-paren">(</span><em>qobject</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#disabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.disabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disables a disablable QObject instance.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.gradient_darker">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">gradient_darker</code><span class="sig-paren">(</span><em>grad</em>, <em>factor</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#gradient_darker"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.gradient_darker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the QGradient darkened by factor.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Only QLinearGradeint and QRadialGradient are supported.</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.has_x11">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">has_x11</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#has_x11"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.has_x11" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is Qt build against X11 server.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.is_dwm_compositing_enabled">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">is_dwm_compositing_enabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#is_dwm_compositing_enabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.is_dwm_compositing_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is Desktop Window Manager compositing (Aero) enabled.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.is_transparency_supported">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">is_transparency_supported</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#is_transparency_supported"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.is_transparency_supported" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is window transparency supported by the current windowing system.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.is_x11_compositing_enabled">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">is_x11_compositing_enabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#is_x11_compositing_enabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.is_x11_compositing_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is X11 compositing manager running.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.message">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">message</code><span class="sig-paren">(</span><em>icon</em>, <em>text</em>, <em>title=None</em>, <em>informative_text=None</em>, <em>details=None</em>, <em>buttons=None</em>, <em>default_button=None</em>, <em>exc_info=False</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#message"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show a message helper function.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.message_critical">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">message_critical</code><span class="sig-paren">(</span><em>text</em>, <em>title=None</em>, <em>informative_text=None</em>, <em>details=None</em>, <em>buttons=None</em>, <em>default_button=None</em>, <em>exc_info=False</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#message_critical"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.message_critical" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show a critical message.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.message_information">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">message_information</code><span class="sig-paren">(</span><em>text</em>, <em>title=None</em>, <em>informative_text=None</em>, <em>details=None</em>, <em>buttons=None</em>, <em>default_button=None</em>, <em>exc_info=False</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#message_information"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.message_information" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show an information message box.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.message_question">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">message_question</code><span class="sig-paren">(</span><em>text</em>, <em>title</em>, <em>informative_text=None</em>, <em>details=None</em>, <em>buttons=None</em>, <em>default_button=None</em>, <em>exc_info=False</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#message_question"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.message_question" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show an message box asking the user to select some
+predefined course of action (set by buttons argument).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.message_warning">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">message_warning</code><span class="sig-paren">(</span><em>text</em>, <em>title=None</em>, <em>informative_text=None</em>, <em>details=None</em>, <em>buttons=None</em>, <em>default_button=None</em>, <em>exc_info=False</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#message_warning"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.message_warning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show a warning message.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.gui.utils.signals_disabled">
+<code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">signals_disabled</code><span class="sig-paren">(</span><em>qobject</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#signals_disabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.signals_disabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disables signals on an instance of QObject.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.gui.utils.updates_disabled">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.gui.utils.</code><code class="descname">updates_disabled</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/gui/utils.html#updates_disabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.gui.utils.updates_disabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Disable QWidget updates (using QWidget.setUpdatesEnabled).</p>
+<p><cite>updates_disabled</cite> can be used either as a context manager or a decorator
+for a method of a class derived from <cite>QWidget</cite>.</p>
+<p>When used as context manager, the argument is an instance of QWidget.</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>with updates_disabled(self.plot_widget):</dt>
+<dd>do_something()</dd>
+</dl>
+</div></blockquote>
+<p>When used as decorator, the argument is the name of the widget’s
+attribute containing the child widget whose updates.</p>
+<blockquote>
+<div><p>&#64;updated_disabled(‘plot_widget’):
+def method(self):</p>
+<blockquote>
+<div>do_something()</div></blockquote>
+</div></blockquote>
+<p>In both cases, updates are enabled when the context or the function exits,
+and the widget’s content is scheduled to be updated.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.gui">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Alkemiems.akpad.gui" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="gui-toolkit">
+<h3>GUI toolkit<a class="headerlink" href="#gui-toolkit" title="Permalink to this headline">¶</a></h3>
+<p>A GUI toolkit with widgets used by other parts of Alkemiems Canvas.</p>
+<p>Extends basic Qt classes with extra functionality.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Alkemiems.akpad.gui.tests.html" class="btn btn-neutral float-right" title="Alkemiems.akpad.gui.tests package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Alkemiems.akpad.document.tests.html" class="btn btn-neutral float-left" title="Alkemiems.akpad.document.tests package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Guanjie Wang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

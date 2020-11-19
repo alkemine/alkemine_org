@@ -1,0 +1,2302 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alkemiems.akpad.scheme package &mdash; Alkemiems 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Alkemiems.akpad.scheme.tests package" href="Alkemiems.akpad.scheme.tests.html" />
+    <link rel="prev" title="Alkemiems.akpad.registry.tests package" href="Alkemiems.akpad.registry.tests.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Alkemiems
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Alkemiems</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Alkemiems.akpad.html">Alkemiems.akpad package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="Alkemiems.akpad.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.akpad.html">Alkemiems.akpad.akpad package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.application.html">Alkemiems.akpad.application package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.document.html">Alkemiems.akpad.document package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.gui.html">Alkemiems.akpad.gui package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.help.html">Alkemiems.akpad.help package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.preview.html">Alkemiems.akpad.preview package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.registry.html">Alkemiems.akpad.registry package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Alkemiems.akpad.scheme package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.scheme.annotations">Alkemiems.akpad.scheme.annotations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.scheme.errors">Alkemiems.akpad.scheme.errors module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.scheme.link">Alkemiems.akpad.scheme.link module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.scheme.node">Alkemiems.akpad.scheme.node module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.scheme.readwrite">Alkemiems.akpad.scheme.readwrite module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.scheme.scheme">Alkemiems.akpad.scheme.scheme module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.scheme.signalmanager">Alkemiems.akpad.scheme.signalmanager module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.scheme.widgetsscheme">Alkemiems.akpad.scheme.widgetsscheme module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.akpad.scheme">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.styles.html">Alkemiems.akpad.styles package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.utils.html">Alkemiems.akpad.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.config">Alkemiems.akpad.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.report">Alkemiems.akpad.report module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad.resources">Alkemiems.akpad.resources module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.html#module-Alkemiems.akpad">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.data.html">Alkemiems.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.io.html">Alkemiems.io package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.lammps.html">Alkemiems.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.misc.html">Alkemiems.misc package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.openphase.html">Alkemiems.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.preprocess.html">Alkemiems.preprocess package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.potentialmind.html">Alkemiems.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.statistics.html">Alkemiems.statistics package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.vasp.html">Alkemiems.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.html">Alkemiems.widgets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.abinit.html">Alkemiems.widgets.abinit package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.calypso.html">Alkemiems.widgets.calypso package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.data.html">Alkemiems.widgets.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.database.html">Alkemiems.widgets.database package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.lammps.html">Alkemiems.widgets.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.openphase.html">Alkemiems.widgets.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.potentialmind.html">Alkemiems.widgets.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.qe.html">Alkemiems.widgets.qe package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.report.html">Alkemiems.widgets.report package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.utils.html">Alkemiems.widgets.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.vasp.html">Alkemiems.widgets.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.visualize.html">Alkemiems.widgets.visualize package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alkemiems</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Alkemiems</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.html">Alkemiems package</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.akpad.html">Alkemiems.akpad package</a> &raquo;</li>
+        
+      <li>Alkemiems.akpad.scheme package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Alkemiems.akpad.scheme.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alkemiems-akpad-scheme-package">
+<h1>Alkemiems.akpad.scheme package<a class="headerlink" href="#alkemiems-akpad-scheme-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html">Alkemiems.akpad.scheme.tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#module-Alkemiems.akpad.scheme.tests.test_annotations">Alkemiems.akpad.scheme.tests.test_annotations module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#module-Alkemiems.akpad.scheme.tests.test_links">Alkemiems.akpad.scheme.tests.test_links module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#module-Alkemiems.akpad.scheme.tests.test_nodes">Alkemiems.akpad.scheme.tests.test_nodes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#module-Alkemiems.akpad.scheme.tests.test_readwrite">Alkemiems.akpad.scheme.tests.test_readwrite module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#module-Alkemiems.akpad.scheme.tests.test_scheme">Alkemiems.akpad.scheme.tests.test_scheme module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#module-Alkemiems.akpad.scheme.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.akpad.scheme.annotations">
+<span id="alkemiems-akpad-scheme-annotations-module"></span><h2>Alkemiems.akpad.scheme.annotations module<a class="headerlink" href="#module-Alkemiems.akpad.scheme.annotations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="scheme-annotations">
+<h3>Scheme Annotations<a class="headerlink" href="#scheme-annotations" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.annotations.BaseSchemeAnnotation">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.annotations.</code><code class="descname">BaseSchemeAnnotation</code><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/annotations.html#BaseSchemeAnnotation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.BaseSchemeAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<p>Base class for scheme annotations.</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.BaseSchemeAnnotation.geometry_changed">
+<code class="descname">geometry_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.BaseSchemeAnnotation.geometry_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.annotations.</code><code class="descname">SchemeArrowAnnotation</code><span class="sig-paren">(</span><em>start_pos</em>, <em>end_pos</em>, <em>color='red'</em>, <em>anchor=None</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/annotations.html#SchemeArrowAnnotation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.akpad.scheme.annotations.BaseSchemeAnnotation" title="Alkemiems.akpad.scheme.annotations.BaseSchemeAnnotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.scheme.annotations.BaseSchemeAnnotation</span></code></a></p>
+<p>An arrow annotation in the scheme.</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.color">
+<code class="descname">color</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>The arrow’s fill color.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.color_changed">
+<code class="descname">color_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.color_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.end_pos">
+<code class="descname">end_pos</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.end_pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>End position of the arrow (arrow head points toward the end).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.geometry">
+<code class="descname">geometry</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.geometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the start and end positions of the arrow.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.set_color">
+<code class="descname">set_color</code><span class="sig-paren">(</span><em>color</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/annotations.html#SchemeArrowAnnotation.set_color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.set_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the fill color for the arrow as a string (<cite>#RGB</cite>, <cite>#RRGGBB</cite>,
+<cite>#RRRGGGBBB</cite>, <cite>#RRRRGGGGBBBB</cite> format or one of SVG color keyword
+names).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.set_geometry">
+<code class="descname">set_geometry</code><span class="sig-paren">(</span><em>geometry</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/annotations.html#SchemeArrowAnnotation.set_geometry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.set_geometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the geometry of the arrow as a start and end position tuples
+(e.g. <code class="docutils literal notranslate"><span class="pre">set_geometry(((0,</span> <span class="pre">0),</span> <span class="pre">(100,</span> <span class="pre">0))</span></code>).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.set_line">
+<code class="descname">set_line</code><span class="sig-paren">(</span><em>start_pos</em>, <em>end_pos</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/annotations.html#SchemeArrowAnnotation.set_line"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.set_line" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set arrow lines start and end position (<code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> tuples).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.start_pos">
+<code class="descname">start_pos</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation.start_pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start position of the arrow (base point).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.annotations.</code><code class="descname">SchemeTextAnnotation</code><span class="sig-paren">(</span><em>rect</em>, <em>text=''</em>, <em>content_type='text/plain'</em>, <em>font=None</em>, <em>anchor=None</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/annotations.html#SchemeTextAnnotation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.akpad.scheme.annotations.BaseSchemeAnnotation" title="Alkemiems.akpad.scheme.annotations.BaseSchemeAnnotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.scheme.annotations.BaseSchemeAnnotation</span></code></a></p>
+<p>Text annotation in the scheme.</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.content">
+<code class="descname">content</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.content" title="Permalink to this definition">¶</a></dt>
+<dd><p>The annotation content.</p>
+<p>How the content is interpreted/displayed depends on <cite>content_type</cite>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.content_changed">
+<code class="descname">content_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.content_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.content_type">
+<code class="descname">content_type</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.content_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the annotations’ content type.</p>
+<p>Currently this will be ‘text/plain’, ‘text/html’ or ‘text/rst’.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.font">
+<code class="descname">font</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.font" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotation’s font property dictionary.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.font_changed">
+<code class="descname">font_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.font_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.geometry">
+<code class="descname">geometry</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.geometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Text annotation geometry (same as <code class="docutils literal notranslate"><span class="pre">rect</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.rect">
+<code class="descname">rect</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.rect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Text bounding rectangle</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.set_content">
+<code class="descname">set_content</code><span class="sig-paren">(</span><em>content</em>, <em>content_type='text/plain'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/annotations.html#SchemeTextAnnotation.set_content"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.set_content" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the annotation content.</p>
+<dl class="docutils">
+<dt>content <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The content.</dd>
+<dt>content_type <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Content type. Currently supported are ‘text/plain’ ‘text/html’
+(subset supported by <cite>QTextDocument</cite>) and <cite>text/rst</cite>.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.set_font">
+<code class="descname">set_font</code><span class="sig-paren">(</span><em>font</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/annotations.html#SchemeTextAnnotation.set_font"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.set_font" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the annotation’s default font as a dictionary of font properties
+(at the moment only family and size are used).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">annotation</span><span class="o">.</span><span class="n">set_font</span><span class="p">({</span><span class="s2">&quot;family&quot;</span><span class="p">:</span> <span class="s2">&quot;Helvetica&quot;</span><span class="p">,</span> <span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.set_geometry">
+<code class="descname">set_geometry</code><span class="sig-paren">(</span><em>rect</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/annotations.html#SchemeTextAnnotation.set_geometry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.set_geometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the text geometry (same as <code class="docutils literal notranslate"><span class="pre">set_rect</span></code>)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.set_rect">
+<code class="descname">set_rect</code><span class="sig-paren">(</span><em>rect</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/annotations.html#SchemeTextAnnotation.set_rect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.set_rect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the text geometry bounding rectangle (<code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">width,</span> <span class="pre">height)</span></code>
+tuple).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.set_text">
+<code class="descname">set_text</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/annotations.html#SchemeTextAnnotation.set_text"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.set_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the annotation text.</p>
+<p>Same as <cite>set_content(text, “text/plain”)</cite></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.text">
+<code class="descname">text</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotation text.</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version Use: </span><cite>content</cite> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.text_changed">
+<code class="descname">text_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation.text_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.scheme.errors">
+<span id="alkemiems-akpad-scheme-errors-module"></span><h2>Alkemiems.akpad.scheme.errors module<a class="headerlink" href="#module-Alkemiems.akpad.scheme.errors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="scheme-errors">
+<h3>Scheme Errors<a class="headerlink" href="#scheme-errors" title="Permalink to this headline">¶</a></h3>
+<dl class="exception">
+<dt id="Alkemiems.akpad.scheme.errors.DuplicatedLinkError">
+<em class="property">exception </em><code class="descclassname">Alkemiems.akpad.scheme.errors.</code><code class="descname">DuplicatedLinkError</code><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/errors.html#DuplicatedLinkError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.errors.DuplicatedLinkError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.akpad.scheme.errors.SchemeTopologyError" title="Alkemiems.akpad.scheme.errors.SchemeTopologyError"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.scheme.errors.SchemeTopologyError</span></code></a></p>
+<p>A link duplicates another link already present in the scheme.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="Alkemiems.akpad.scheme.errors.IncompatibleChannelTypeError">
+<em class="property">exception </em><code class="descclassname">Alkemiems.akpad.scheme.errors.</code><code class="descname">IncompatibleChannelTypeError</code><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/errors.html#IncompatibleChannelTypeError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.errors.IncompatibleChannelTypeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeError</span></code></a></p>
+<p>Source and sink channels do not have compatible types</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="Alkemiems.akpad.scheme.errors.SchemeCycleError">
+<em class="property">exception </em><code class="descclassname">Alkemiems.akpad.scheme.errors.</code><code class="descname">SchemeCycleError</code><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/errors.html#SchemeCycleError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.errors.SchemeCycleError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.akpad.scheme.errors.SchemeTopologyError" title="Alkemiems.akpad.scheme.errors.SchemeTopologyError"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.scheme.errors.SchemeTopologyError</span></code></a></p>
+<p>A link would create a cycle in the scheme.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="Alkemiems.akpad.scheme.errors.SchemeTopologyError">
+<em class="property">exception </em><code class="descclassname">Alkemiems.akpad.scheme.errors.</code><code class="descname">SchemeTopologyError</code><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/errors.html#SchemeTopologyError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.errors.SchemeTopologyError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>A general scheme topology error.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="Alkemiems.akpad.scheme.errors.SinkChannelError">
+<em class="property">exception </em><code class="descclassname">Alkemiems.akpad.scheme.errors.</code><code class="descname">SinkChannelError</code><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/errors.html#SinkChannelError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.errors.SinkChannelError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.akpad.scheme.errors.SchemeTopologyError" title="Alkemiems.akpad.scheme.errors.SchemeTopologyError"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.scheme.errors.SchemeTopologyError</span></code></a></p>
+<p>Sink channel already connected.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.scheme.link">
+<span id="alkemiems-akpad-scheme-link-module"></span><h2>Alkemiems.akpad.scheme.link module<a class="headerlink" href="#module-Alkemiems.akpad.scheme.link" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="scheme-link">
+<h3>Scheme Link<a class="headerlink" href="#scheme-link" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.link.</code><code class="descname">SchemeLink</code><span class="sig-paren">(</span><em>source_node</em>, <em>source_channel</em>, <em>sink_node</em>, <em>sink_channel</em>, <em>enabled=True</em>, <em>properties=None</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#SchemeLink"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<p>A instantiation of a link between two <a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a> instances
+in a <a class="reference internal" href="#Alkemiems.akpad.scheme.scheme.Scheme" title="Alkemiems.akpad.scheme.scheme.Scheme"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scheme</span></code></a>.</p>
+<dl class="docutils">
+<dt>source_node <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a></span></dt>
+<dd>Source node.</dd>
+<dt>source_channel <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">OutputSignal</span></code></span></dt>
+<dd>The source widget’s signal.</dd>
+<dt>sink_node <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a></span></dt>
+<dd>The sink node.</dd>
+<dt>sink_channel <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputSignal</span></code></span></dt>
+<dd>The sink widget’s input signal.</dd>
+<dt>properties <span class="classifier-delimiter">:</span> <span class="classifier"><cite>dict</cite></span></dt>
+<dd>Additional link properties.</dd>
+</dl>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.Active">
+<code class="descname">Active</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.Active" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.Empty">
+<code class="descname">Empty</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.Empty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.NoState">
+<code class="descname">NoState</code><em class="property"> = 0</em><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.NoState" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.Pending">
+<code class="descname">Pending</code><em class="property"> = 4</em><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.Pending" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.State">
+<em class="property">class </em><code class="descname">State</code><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#SchemeLink.State"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.State" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a></p>
+<p>Flags indicating the runtime state of a link</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.State.Active">
+<code class="descname">Active</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.State.Active" title="Permalink to this definition">¶</a></dt>
+<dd><p>A link is active when the source node provides a value on output</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.State.Empty">
+<code class="descname">Empty</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.State.Empty" title="Permalink to this definition">¶</a></dt>
+<dd><p>A link is empty when it has no value on it</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.State.NoState">
+<code class="descname">NoState</code><em class="property"> = 0</em><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.State.NoState" title="Permalink to this definition">¶</a></dt>
+<dd><p>The link has no associated state.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.State.Pending">
+<code class="descname">Pending</code><em class="property"> = 4</em><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.State.Pending" title="Permalink to this definition">¶</a></dt>
+<dd><p>A link is pending when it’s sink node has not yet been notified
+of a change (note that Empty|Pending is a valid state)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.dynamic_enabled">
+<code class="descname">dynamic_enabled</code><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.dynamic_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is this a dynamic link and is <cite>dynamic_enabled</cite> set to <cite>True</cite></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.dynamic_enabled_changed">
+<code class="descname">dynamic_enabled_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.dynamic_enabled_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>The link dynamic enabled state has changed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.enabled">
+<code class="descname">enabled</code><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is this link enabled.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.enabled_changed">
+<code class="descname">enabled_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.enabled_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>The link enabled state has changed</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.is_dynamic">
+<code class="descname">is_dynamic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#SchemeLink.is_dynamic"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.is_dynamic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is this link dynamic.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.runtime_state">
+<code class="descname">runtime_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#SchemeLink.runtime_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.runtime_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>state : SchemeLink.State</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.set_dynamic_enabled">
+<code class="descname">set_dynamic_enabled</code><span class="sig-paren">(</span><em>enabled</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#SchemeLink.set_dynamic_enabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.set_dynamic_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable/disable the dynamic link. Has no effect if the link
+is not dynamic.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.set_enabled">
+<code class="descname">set_enabled</code><span class="sig-paren">(</span><em>enabled</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#SchemeLink.set_enabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.set_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable/disable the link.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.set_runtime_state">
+<code class="descname">set_runtime_state</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#SchemeLink.set_runtime_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.set_runtime_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the link’s runtime state.</p>
+<p>state : SchemeLink.State</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.set_tool_tip">
+<code class="descname">set_tool_tip</code><span class="sig-paren">(</span><em>tool_tip</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#SchemeLink.set_tool_tip"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.set_tool_tip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the link tool tip.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.sink_type">
+<code class="descname">sink_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#SchemeLink.sink_type"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.sink_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the type of the sink channel.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.source_type">
+<code class="descname">source_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#SchemeLink.source_type"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.source_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the type of the source channel.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.state_changed">
+<code class="descname">state_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.state_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runtime link state has changed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.link.SchemeLink.tool_tip">
+<code class="descname">tool_tip</code><a class="headerlink" href="#Alkemiems.akpad.scheme.link.SchemeLink.tool_tip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Link tool tip.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.link.can_connect">
+<code class="descclassname">Alkemiems.akpad.scheme.link.</code><code class="descname">can_connect</code><span class="sig-paren">(</span><em>source_node</em>, <em>sink_node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#can_connect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.can_connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True if any output from <cite>source_node</cite> can be connected to
+any input of <cite>sink_node</cite>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.link.compatible_channels">
+<code class="descclassname">Alkemiems.akpad.scheme.link.</code><code class="descname">compatible_channels</code><span class="sig-paren">(</span><em>source_channel</em>, <em>sink_channel</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#compatible_channels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.compatible_channels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do the channels in link have compatible types, i.e. can they be
+connected based on their type.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.link.possible_links">
+<code class="descclassname">Alkemiems.akpad.scheme.link.</code><code class="descname">possible_links</code><span class="sig-paren">(</span><em>source_node</em>, <em>sink_node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/link.html#possible_links"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.link.possible_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of (OutputSignal, InputSignal) tuples, that
+can connect the two nodes.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.scheme.node">
+<span id="alkemiems-akpad-scheme-node-module"></span><h2>Alkemiems.akpad.scheme.node module<a class="headerlink" href="#module-Alkemiems.akpad.scheme.node" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="scheme-node">
+<h3>Scheme Node<a class="headerlink" href="#scheme-node" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.node.</code><code class="descname">SchemeNode</code><span class="sig-paren">(</span><em>description</em>, <em>title=None</em>, <em>position=None</em>, <em>properties=None</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<p>A node in a <a class="reference internal" href="#Alkemiems.akpad.scheme.scheme.Scheme" title="Alkemiems.akpad.scheme.scheme.Scheme"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scheme</span></code></a>.</p>
+<dl class="docutils">
+<dt>description <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">WidgetDescription</span></code></span></dt>
+<dd>Node description instance.</dd>
+<dt>title <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd>Node title string (if None <cite>description.name</cite> is used).</dd>
+<dt>position <span class="classifier-delimiter">:</span> <span class="classifier">tuple</span></dt>
+<dd>(x, y) tuple of floats for node position in a visual display.</dd>
+<dt>properties <span class="classifier-delimiter">:</span> <span class="classifier">dict</span></dt>
+<dd>Additional extra instance properties (settings, widget geometry, …)</dd>
+<dt>parent <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QObject</span></code></span></dt>
+<dd>Parent object.</dd>
+</dl>
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.input_channel">
+<code class="descname">input_channel</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.input_channel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.input_channel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the input channel matching <cite>name</cite>. Raise a <cite>ValueError</cite>
+if not found.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.input_channels">
+<code class="descname">input_channels</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.input_channels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.input_channels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of input channels (<code class="xref py py-class docutils literal notranslate"><span class="pre">InputSignal</span></code>) for the node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.output_channel">
+<code class="descname">output_channel</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.output_channel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.output_channel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the output channel matching <cite>name</cite>. Raise an <cite>ValueError</cite>
+if not found.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.output_channels">
+<code class="descname">output_channels</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.output_channels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.output_channels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of output channels (<code class="xref py py-class docutils literal notranslate"><span class="pre">OutputSignal</span></code>) for the node.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.position">
+<code class="descname">position</code><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.position" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> tuple containing the position of the node in the scheme.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.position_changed">
+<code class="descname">position_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.position_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position of the node in the scheme has changed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.processing_state">
+<code class="descname">processing_state</code><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.processing_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>The node processing state, 0 for not processing, 1 the node is busy.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.processing_state_changed">
+<code class="descname">processing_state_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.processing_state_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Node’s processing state has changed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.progress">
+<code class="descname">progress</code><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.progress" title="Permalink to this definition">¶</a></dt>
+<dd><p>The current progress value. -1 if progress is not set.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.progress_changed">
+<code class="descname">progress_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.progress_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Node’s progress value has changed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.set_position">
+<code class="descname">set_position</code><span class="sig-paren">(</span><em>pos</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.set_position"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.set_position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the position (<code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> tuple) of the node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.set_processing_state">
+<code class="descname">set_processing_state</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.set_processing_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.set_processing_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the node processing state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.set_progress">
+<code class="descname">set_progress</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.set_progress"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.set_progress" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the progress value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.set_state_message">
+<code class="descname">set_state_message</code><span class="sig-paren">(</span><em>message</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.set_state_message"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.set_state_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a message to be displayed by a scheme view for this node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.set_status_message">
+<code class="descname">set_status_message</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.set_status_message"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.set_status_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.set_title">
+<code class="descname">set_title</code><span class="sig-paren">(</span><em>title</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.set_title"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.set_title" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the node title.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.set_tool_tip">
+<code class="descname">set_tool_tip</code><span class="sig-paren">(</span><em>tool_tip</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.set_tool_tip"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.set_tool_tip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.state_message_changed">
+<code class="descname">state_message_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.state_message_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>The node’s state message has changed</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.state_messages">
+<code class="descname">state_messages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.state_messages"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.state_messages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of all state messages.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.status_message">
+<code class="descname">status_message</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#SchemeNode.status_message"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.status_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.status_message_changed">
+<code class="descname">status_message_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.status_message_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>The node’s status tip has changes</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.title">
+<code class="descname">title</code><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.title" title="Permalink to this definition">¶</a></dt>
+<dd><p>The node title.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.title_changed">
+<code class="descname">title_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.title_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>The title of the node has changed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.SchemeNode.tool_tip">
+<code class="descname">tool_tip</code><a class="headerlink" href="#Alkemiems.akpad.scheme.node.SchemeNode.tool_tip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.node.UserMessage">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.node.</code><code class="descname">UserMessage</code><span class="sig-paren">(</span><em>contents</em>, <em>severity=1</em>, <em>message_id=None</em>, <em>data={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/node.html#UserMessage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.node.UserMessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A user message that should be displayed in a scheme view.</p>
+<dl class="docutils">
+<dt>contents <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Message text.</dd>
+<dt>severity <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>Message severity.</dd>
+<dt>message_id <span class="classifier-delimiter">:</span> <span class="classifier">A hashable object</span></dt>
+<dd>Message id.</dd>
+<dt>data <span class="classifier-delimiter">:</span> <span class="classifier">dict</span></dt>
+<dd>A dictionary with optional extra data.</dd>
+</dl>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.UserMessage.Error">
+<code class="descname">Error</code><em class="property"> = 3</em><a class="headerlink" href="#Alkemiems.akpad.scheme.node.UserMessage.Error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Severity flags</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.UserMessage.Info">
+<code class="descname">Info</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.akpad.scheme.node.UserMessage.Info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Severity flags</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.node.UserMessage.Warning">
+<code class="descname">Warning</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.akpad.scheme.node.UserMessage.Warning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Severity flags</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.scheme.readwrite">
+<span id="alkemiems-akpad-scheme-readwrite-module"></span><h2>Alkemiems.akpad.scheme.readwrite module<a class="headerlink" href="#module-Alkemiems.akpad.scheme.readwrite" title="Permalink to this headline">¶</a></h2>
+<p>Scheme save/load routines.</p>
+<dl class="exception">
+<dt id="Alkemiems.akpad.scheme.readwrite.UnknownWidgetDefinition">
+<em class="property">exception </em><code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">UnknownWidgetDefinition</code><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#UnknownWidgetDefinition"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.UnknownWidgetDefinition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.dumps">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">dumps</code><span class="sig-paren">(</span><em>obj</em>, <em>format='literal'</em>, <em>prettyprint=False</em>, <em>pickle_fallback=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#dumps"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.dumps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize <cite>obj</cite> using <cite>format</cite> (‘json’ or ‘literal’) and return its
+string representation and the used serialization format (‘literal’,
+‘json’ or ‘pickle’).</p>
+<p>If <cite>pickle_fallback</cite> is True and the serialization with <cite>format</cite>
+fails object’s pickle representation will be returned</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.indent">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">indent</code><span class="sig-paren">(</span><em>element</em>, <em>level=0</em>, <em>indent='\t'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#indent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.indent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indent an instance of a <code class="xref py py-class docutils literal notranslate"><span class="pre">Element</span></code>. Based on
+(<a class="reference external" href="http://effbot.org/zone/element-lib.htm#prettyprint">http://effbot.org/zone/element-lib.htm#prettyprint</a>).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.literal_dumps">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">literal_dumps</code><span class="sig-paren">(</span><em>obj</em>, <em>prettyprint=False</em>, <em>indent=4</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#literal_dumps"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.literal_dumps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write obj into a string as a python literal.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.loads">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">loads</code><span class="sig-paren">(</span><em>string</em>, <em>format</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#loads"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.loads" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.parse_ows_etree_v_1_0">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">parse_ows_etree_v_1_0</code><span class="sig-paren">(</span><em>tree</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#parse_ows_etree_v_1_0"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.parse_ows_etree_v_1_0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.parse_ows_etree_v_2_0">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">parse_ows_etree_v_2_0</code><span class="sig-paren">(</span><em>tree</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#parse_ows_etree_v_2_0"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.parse_ows_etree_v_2_0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.parse_ows_stream">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">parse_ows_stream</code><span class="sig-paren">(</span><em>stream</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#parse_ows_stream"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.parse_ows_stream" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.parse_scheme">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">parse_scheme</code><span class="sig-paren">(</span><em>scheme</em>, <em>stream</em>, <em>error_handler=None</em>, <em>allow_pickle_data=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#parse_scheme"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.parse_scheme" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a saved scheme from <cite>stream</cite> and populate a <cite>scheme</cite>
+instance (<code class="xref py py-class docutils literal notranslate"><span class="pre">Scheme</span></code>).
+<cite>error_handler</cite> if given will be called with an exception when
+a ‘recoverable’ error occurs. By default the exception is simply
+raised.</p>
+<dl class="docutils">
+<dt>scheme <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#Alkemiems.akpad.scheme.scheme.Scheme" title="Alkemiems.akpad.scheme.scheme.Scheme"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scheme</span></code></a></span></dt>
+<dd>A scheme instance to populate with the contents of <cite>stream</cite>.</dd>
+<dt>stream <span class="classifier-delimiter">:</span> <span class="classifier">file-like object</span></dt>
+<dd>A file like object opened for reading.</dd>
+<dt>error_hander <span class="classifier-delimiter">:</span> <span class="classifier">function, optional</span></dt>
+<dd>A function to call with an exception instance when a <cite>recoverable</cite>
+error occurs.</dd>
+<dt>allow_picked_data <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional</span></dt>
+<dd>Specifically allow parsing of picked data streams.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.parse_scheme_v_1_0">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">parse_scheme_v_1_0</code><span class="sig-paren">(</span><em>etree</em>, <em>scheme</em>, <em>error_handler</em>, <em>widget_registry=None</em>, <em>allow_pickle_data=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#parse_scheme_v_1_0"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.parse_scheme_v_1_0" title="Permalink to this definition">¶</a></dt>
+<dd><p>ElementTree Instance of an old .ows scheme format (Alkemiems &lt; 2.7).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.parse_scheme_v_2_0">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">parse_scheme_v_2_0</code><span class="sig-paren">(</span><em>etree</em>, <em>scheme</em>, <em>error_handler</em>, <em>widget_registry=None</em>, <em>allow_pickle_data=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#parse_scheme_v_2_0"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.parse_scheme_v_2_0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse an <cite>ElementTree</cite> instance.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.resolve_1_0">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">resolve_1_0</code><span class="sig-paren">(</span><em>scheme_desc</em>, <em>registry</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#resolve_1_0"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.resolve_1_0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.resolve_replaced">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">resolve_replaced</code><span class="sig-paren">(</span><em>scheme_desc</em>, <em>registry</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#resolve_replaced"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.resolve_replaced" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.scheme_load">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">scheme_load</code><span class="sig-paren">(</span><em>scheme</em>, <em>stream</em>, <em>registry=None</em>, <em>error_handler=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#scheme_load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.scheme_load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.scheme_node_from_element">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">scheme_node_from_element</code><span class="sig-paren">(</span><em>node_el</em>, <em>registry</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#scheme_node_from_element"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.scheme_node_from_element" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a SchemeNode from an <cite>Element</cite> instance.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.scheme_to_etree">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">scheme_to_etree</code><span class="sig-paren">(</span><em>scheme</em>, <em>data_format='literal'</em>, <em>pickle_fallback=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#scheme_to_etree"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.scheme_to_etree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an <cite>xml.etree.ElementTree</cite> representation of the <a href="#id1"><span class="problematic" id="id2">`</span></a>scheme.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.scheme_to_ows_stream">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">scheme_to_ows_stream</code><span class="sig-paren">(</span><em>scheme</em>, <em>stream</em>, <em>pretty=False</em>, <em>pickle_fallback=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#scheme_to_ows_stream"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.scheme_to_ows_stream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write scheme to a a stream in Alkemiems Scheme .ows (v 2.0) format.</p>
+<dl class="docutils">
+<dt>scheme <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#Alkemiems.akpad.scheme.scheme.Scheme" title="Alkemiems.akpad.scheme.scheme.Scheme"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scheme</span></code></a></span></dt>
+<dd>A <a class="reference internal" href="#Alkemiems.akpad.scheme.scheme.Scheme" title="Alkemiems.akpad.scheme.scheme.Scheme"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scheme</span></code></a> instance to serialize.</dd>
+<dt>stream <span class="classifier-delimiter">:</span> <span class="classifier">file-like object</span></dt>
+<dd>A file-like object opened for writing.</dd>
+<dt>pretty <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional</span></dt>
+<dd>If <cite>True</cite> the output xml will be pretty printed (indented).</dd>
+<dt>pickle_fallback <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional</span></dt>
+<dd>If <cite>True</cite> allow scheme node properties to be saves using pickle
+protocol if properties cannot be saved using the default
+notation.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.sniff_version">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">sniff_version</code><span class="sig-paren">(</span><em>stream</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#sniff_version"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.sniff_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a scheme stream and return the scheme’s serialization
+version string.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.string_eval">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">string_eval</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#string_eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.string_eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate a python string literal <cite>source</cite>. Raise ValueError if
+<cite>source</cite> is not a string literal.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">string_eval</span><span class="p">(</span><span class="s2">&quot;&#39;a string&#39;&quot;</span><span class="p">)</span>
+<span class="go">a string</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.terminal_eval">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">terminal_eval</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#terminal_eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.terminal_eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate a python ‘constant’ (string, number, None, True, False)
+<cite>source</cite>. Raise ValueError is not a terminal literal.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">terminal_eval</span><span class="p">(</span><span class="s2">&quot;True&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.readwrite.tuple_eval">
+<code class="descclassname">Alkemiems.akpad.scheme.readwrite.</code><code class="descname">tuple_eval</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/readwrite.html#tuple_eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.readwrite.tuple_eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate a python tuple literal <cite>source</cite> where the elements are
+constrained to be int, float or string. Raise ValueError if not
+a tuple literal.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tuple_eval</span><span class="p">(</span><span class="s2">&quot;(1, 2, &quot;</span><span class="mi">3</span><span class="s2">&quot;)&quot;</span><span class="p">)</span>
+<span class="go">(1, 2, &#39;3&#39;)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.scheme.scheme">
+<span id="alkemiems-akpad-scheme-scheme-module"></span><h2>Alkemiems.akpad.scheme.scheme module<a class="headerlink" href="#module-Alkemiems.akpad.scheme.scheme" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="scheme-workflow">
+<h3>Scheme Workflow<a class="headerlink" href="#scheme-workflow" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference internal" href="#Alkemiems.akpad.scheme.scheme.Scheme" title="Alkemiems.akpad.scheme.scheme.Scheme"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scheme</span></code></a> class defines a DAG (Directed Acyclic Graph) workflow.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.scheme.</code><code class="descname">Scheme</code><span class="sig-paren">(</span><em>parent=None</em>, <em>title=None</em>, <em>description=None</em>, <em>env={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<p>An <code class="xref py py-class docutils literal notranslate"><span class="pre">QObject</span></code> subclass representing the scheme widget workflow
+with annotations.</p>
+<dl class="docutils">
+<dt>parent <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">QObject</span></code></span></dt>
+<dd>A parent QObject item (default <cite>None</cite>).</dd>
+<dt>title <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The scheme title.</dd>
+<dt>description <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>A longer description of the scheme.</dd>
+</dl>
+<dl class="docutils">
+<dt>nodes <span class="classifier-delimiter">:</span> <span class="classifier">list of <a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a></span></dt>
+<dd>A list of all the nodes in the scheme.</dd>
+<dt>links <span class="classifier-delimiter">:</span> <span class="classifier">list of <a class="reference internal" href="#Alkemiems.akpad.scheme.link.SchemeLink" title="Alkemiems.akpad.scheme.link.SchemeLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeLink</span></code></a></span></dt>
+<dd>A list of all links in the scheme.</dd>
+<dt>annotations <span class="classifier-delimiter">:</span> <span class="classifier">list of <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseSchemeAnnotation</span></code></span></dt>
+<dd>A list of all the annotations in the scheme.</dd>
+</dl>
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.WindowGroup">
+<em class="property">class </em><code class="descname">WindowGroup</code><span class="sig-paren">(</span><em>name=''</em>, <em>default=False</em>, <em>state=[]</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.WindowGroup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.WindowGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/types.html#types.SimpleNamespace" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">types.SimpleNamespace</span></code></a></p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.WindowGroup.default">
+<code class="descname">default</code><em class="property"> = Ellipsis</em><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.WindowGroup.default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.WindowGroup.name">
+<code class="descname">name</code><em class="property"> = Ellipsis</em><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.WindowGroup.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.WindowGroup.state">
+<code class="descname">state</code><em class="property"> = Ellipsis</em><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.WindowGroup.state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.add_annotation">
+<code class="descname">add_annotation</code><span class="sig-paren">(</span><em>annotation</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.add_annotation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.add_annotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an annotation (<code class="xref py py-class docutils literal notranslate"><span class="pre">BaseSchemeAnnotation</span></code> subclass) instance
+to the scheme.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.add_link">
+<code class="descname">add_link</code><span class="sig-paren">(</span><em>link</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.add_link"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.add_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a <cite>link</cite> to the scheme.</p>
+<dl class="docutils">
+<dt>link <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#Alkemiems.akpad.scheme.link.SchemeLink" title="Alkemiems.akpad.scheme.link.SchemeLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeLink</span></code></a></span></dt>
+<dd>An initialized link instance to add to the scheme.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.add_node">
+<code class="descname">add_node</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.add_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.add_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a node to the scheme. An error is raised if the node is
+already in the scheme.</p>
+<dl class="docutils">
+<dt>node <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a></span></dt>
+<dd>Node instance to add to the scheme.</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.annotation_added">
+<code class="descname">annotation_added</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.annotation_added" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.annotation_removed">
+<code class="descname">annotation_removed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.annotation_removed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.annotations">
+<code class="descname">annotations</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.annotations" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of all annotations (<a class="reference internal" href="#Alkemiems.akpad.scheme.annotations.BaseSchemeAnnotation" title="Alkemiems.akpad.scheme.annotations.BaseSchemeAnnotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseSchemeAnnotation</span></code></a>) in the
+scheme.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.can_connect">
+<code class="descname">can_connect</code><span class="sig-paren">(</span><em>link</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.can_connect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.can_connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return <cite>True</cite> if <cite>link</cite> can be added to the scheme.</p>
+<p>Scheme.check_connect</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.channel_state_changed">
+<code class="descname">channel_state_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.channel_state_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.check_connect">
+<code class="descname">check_connect</code><span class="sig-paren">(</span><em>link</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.check_connect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.check_connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the <cite>link</cite> can be added to the scheme and raise an
+appropriate exception.</p>
+<dl class="docutils">
+<dt>Can raise:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeError</span></code></a> if <cite>link</cite> is not an instance of
+<a class="reference internal" href="#Alkemiems.akpad.scheme.link.SchemeLink" title="Alkemiems.akpad.scheme.link.SchemeLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeLink</span></code></a></li>
+<li><a class="reference internal" href="#Alkemiems.akpad.scheme.errors.SchemeCycleError" title="Alkemiems.akpad.scheme.errors.SchemeCycleError"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeCycleError</span></code></a> if the <cite>link</cite> would introduce a cycle</li>
+<li><a class="reference internal" href="#Alkemiems.akpad.scheme.errors.IncompatibleChannelTypeError" title="Alkemiems.akpad.scheme.errors.IncompatibleChannelTypeError"><code class="xref py py-class docutils literal notranslate"><span class="pre">IncompatibleChannelTypeError</span></code></a> if the channel types are
+not compatible</li>
+<li><a class="reference internal" href="#Alkemiems.akpad.scheme.errors.SinkChannelError" title="Alkemiems.akpad.scheme.errors.SinkChannelError"><code class="xref py py-class docutils literal notranslate"><span class="pre">SinkChannelError</span></code></a> if a sink channel has a <cite>Single</cite> flag
+specification and the channel is already connected.</li>
+<li><a class="reference internal" href="#Alkemiems.akpad.scheme.errors.DuplicatedLinkError" title="Alkemiems.akpad.scheme.errors.DuplicatedLinkError"><code class="xref py py-class docutils literal notranslate"><span class="pre">DuplicatedLinkError</span></code></a> if a <cite>link</cite> duplicates an already
+present link.</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.children">
+<code class="descname">children</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.children"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.children" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a set of all children of <cite>node</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.clear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove all nodes, links, and annotation items from the scheme.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.compatible_channels">
+<code class="descname">compatible_channels</code><span class="sig-paren">(</span><em>link</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.compatible_channels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.compatible_channels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return <cite>True</cite> if the channels in <cite>link</cite> have compatible types.</p>
+<p>link : <a class="reference internal" href="#Alkemiems.akpad.scheme.link.SchemeLink" title="Alkemiems.akpad.scheme.link.SchemeLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeLink</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.creates_cycle">
+<code class="descname">creates_cycle</code><span class="sig-paren">(</span><em>link</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.creates_cycle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.creates_cycle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return <cite>True</cite> if <cite>link</cite> would introduce a cycle in the scheme.</p>
+<p>link : <a class="reference internal" href="#Alkemiems.akpad.scheme.link.SchemeLink" title="Alkemiems.akpad.scheme.link.SchemeLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeLink</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.description">
+<code class="descname">description</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scheme description text.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.description_changed">
+<code class="descname">description_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.description_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.downstream_nodes">
+<code class="descname">downstream_nodes</code><span class="sig-paren">(</span><em>start_node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.downstream_nodes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.downstream_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a set of all nodes downstream from <cite>start_node</cite>.</p>
+<p>start_node : <a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.dump_settings">
+<code class="descname">dump_settings</code><span class="sig-paren">(</span><em>node: Alkemiems.akpad.scheme.node.SchemeNode</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.dump_settings"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.dump_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dump current settings of the <cite>node</cite> to the standard output</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.find_links">
+<code class="descname">find_links</code><span class="sig-paren">(</span><em>source_node=None</em>, <em>source_channel=None</em>, <em>sink_node=None</em>, <em>sink_channel=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.find_links"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.find_links" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.get_runtime_env">
+<code class="descname">get_runtime_env</code><span class="sig-paren">(</span><em>key</em>, <em>default=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.get_runtime_env"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.get_runtime_env" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a runtime environment variable for <cite>key</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.input_links">
+<code class="descname">input_links</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.input_links"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.input_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of all input links (<a class="reference internal" href="#Alkemiems.akpad.scheme.link.SchemeLink" title="Alkemiems.akpad.scheme.link.SchemeLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeLink</span></code></a>) connected
+to the <cite>node</cite> instance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.is_ancestor">
+<code class="descname">is_ancestor</code><span class="sig-paren">(</span><em>node</em>, <em>child</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.is_ancestor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.is_ancestor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True if <cite>node</cite> is an ancestor node of <cite>child</cite> (is upstream
+of the child in the workflow). Both nodes must be in the scheme.</p>
+<p>node : <a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a>
+child : <a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.link_added">
+<code class="descname">link_added</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.link_added" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.link_removed">
+<code class="descname">link_removed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.link_removed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.links">
+<code class="descname">links</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.links" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of all links (<a class="reference internal" href="#Alkemiems.akpad.scheme.link.SchemeLink" title="Alkemiems.akpad.scheme.link.SchemeLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeLink</span></code></a>) currently in the scheme.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.load_from">
+<code class="descname">load_from</code><span class="sig-paren">(</span><em>stream</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.load_from"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.load_from" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the scheme from xml formated stream.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.new_link">
+<code class="descname">new_link</code><span class="sig-paren">(</span><em>source_node</em>, <em>source_channel</em>, <em>sink_node</em>, <em>sink_channel</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.new_link"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.new_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new <a class="reference internal" href="#Alkemiems.akpad.scheme.link.SchemeLink" title="Alkemiems.akpad.scheme.link.SchemeLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeLink</span></code></a> from arguments and add it to
+the scheme. The new link is returned.</p>
+<dl class="docutils">
+<dt>source_node <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a></span></dt>
+<dd>Source node of the new link.</dd>
+<dt>source_channel <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="Alkemiems.akpad.registry.html#Alkemiems.akpad.registry.description.OutputSignal" title="Alkemiems.akpad.registry.description.OutputSignal"><code class="xref py py-class docutils literal notranslate"><span class="pre">OutputSignal</span></code></a></span></dt>
+<dd>Source channel of the new node. The instance must be from
+<code class="docutils literal notranslate"><span class="pre">source_node.output_channels()</span></code></dd>
+<dt>sink_node <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a></span></dt>
+<dd>Sink node of the new link.</dd>
+<dt>sink_channel <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="Alkemiems.akpad.registry.html#Alkemiems.akpad.registry.description.InputSignal" title="Alkemiems.akpad.registry.description.InputSignal"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputSignal</span></code></a></span></dt>
+<dd>Sink channel of the new node. The instance must be from
+<code class="docutils literal notranslate"><span class="pre">sink_node.input_channels()</span></code></dd>
+</dl>
+<p>.SchemeLink, Scheme.add_link</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.new_node">
+<code class="descname">new_node</code><span class="sig-paren">(</span><em>description</em>, <em>title=None</em>, <em>position=None</em>, <em>properties=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.new_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.new_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new <a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a> and add it to the scheme.</p>
+<p>Same as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scheme</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">SchemeNode</span><span class="p">(</span><span class="n">description</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span>
+                           <span class="n">properties</span><span class="p">))</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>description <span class="classifier-delimiter">:</span> <span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">WidgetDescription</span></code></span></dt>
+<dd>The new node’s description.</dd>
+<dt>title <span class="classifier-delimiter">:</span> <span class="classifier">str, optional</span></dt>
+<dd>Optional new nodes title. By default <cite>description.name</cite> is used.</dd>
+<dt>position <span class="classifier-delimiter">:</span> <span class="classifier"><cite>(x, y)</cite> tuple of floats, optional</span></dt>
+<dd>Optional position in a 2D space.</dd>
+<dt>properties <span class="classifier-delimiter">:</span> <span class="classifier">dict, optional</span></dt>
+<dd>A dictionary of optional extra properties.</dd>
+</dl>
+<p>.SchemeNode, Scheme.add_node</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.node_added">
+<code class="descname">node_added</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.node_added" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.node_removed">
+<code class="descname">node_removed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.node_removed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.node_state_changed">
+<code class="descname">node_state_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.node_state_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.nodes">
+<code class="descname">nodes</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of all nodes (<a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a>) currently in the scheme.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.output_links">
+<code class="descname">output_links</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.output_links"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.output_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of all output links (<a class="reference internal" href="#Alkemiems.akpad.scheme.link.SchemeLink" title="Alkemiems.akpad.scheme.link.SchemeLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeLink</span></code></a>) connected
+to the <cite>node</cite> instance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.parents">
+<code class="descname">parents</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.parents"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.parents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a set of all parents of <cite>node</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.propose_links">
+<code class="descname">propose_links</code><span class="sig-paren">(</span><em>source_node</em>, <em>sink_node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.propose_links"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.propose_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of ordered (<code class="xref py py-class docutils literal notranslate"><span class="pre">OutputSignal</span></code>,
+<code class="xref py py-class docutils literal notranslate"><span class="pre">InputSignal</span></code>, weight) tuples that could be added to
+the scheme between <cite>source_node</cite> and <cite>sink_node</cite>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This can depend on the links already in the scheme.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.remove_annotation">
+<code class="descname">remove_annotation</code><span class="sig-paren">(</span><em>annotation</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.remove_annotation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.remove_annotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the <cite>annotation</cite> instance from the scheme.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.remove_link">
+<code class="descname">remove_link</code><span class="sig-paren">(</span><em>link</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.remove_link"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.remove_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a link from the scheme.</p>
+<dl class="docutils">
+<dt>link <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#Alkemiems.akpad.scheme.link.SchemeLink" title="Alkemiems.akpad.scheme.link.SchemeLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeLink</span></code></a></span></dt>
+<dd>Link instance to remove.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.remove_node">
+<code class="descname">remove_node</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.remove_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.remove_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a <cite>node</cite> from the scheme. All links into and out of the
+<cite>node</cite> are also removed. If the node in not in the scheme an error
+is raised.</p>
+<dl class="docutils">
+<dt>node <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a></span></dt>
+<dd>Node instance to remove.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.runtime_env">
+<code class="descname">runtime_env</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.runtime_env"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.runtime_env" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return (a view to) the full runtime environment.</p>
+<p>The return value is a types.MappingProxyType of the
+underlying environment dictionary. Changes to the env.
+will be reflected in it.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.runtime_env_changed">
+<code class="descname">runtime_env_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.runtime_env_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emitted when the associated runtime environment changes
+runtime_env_changed(key: str, newvalue: Option[str],</p>
+<blockquote>
+<div>oldvalue: Option[str])</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.save_to">
+<code class="descname">save_to</code><span class="sig-paren">(</span><em>stream</em>, <em>pretty=True</em>, <em>pickle_fallback=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.save_to"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.save_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the scheme as an xml formated file to <cite>stream</cite></p>
+<p>.scheme_to_ows_stream</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.set_description">
+<code class="descname">set_description</code><span class="sig-paren">(</span><em>description</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.set_description"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.set_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the scheme description text.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.set_runtime_env">
+<code class="descname">set_runtime_env</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.set_runtime_env"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.set_runtime_env" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a runtime environment variable <cite>key</cite> to <cite>value</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.set_title">
+<code class="descname">set_title</code><span class="sig-paren">(</span><em>title</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.set_title"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.set_title" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the scheme title text.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.set_window_group_presets">
+<code class="descname">set_window_group_presets</code><span class="sig-paren">(</span><em>groups</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.set_window_group_presets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.set_window_group_presets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.sync_node_properties">
+<code class="descname">sync_node_properties</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.sync_node_properties"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.sync_node_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before saving, allowing a subclass to update/sync.</p>
+<p>The default implementation does nothing.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.title">
+<code class="descname">title</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.title" title="Permalink to this definition">¶</a></dt>
+<dd><p>The title (human readable string) of the scheme.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.title_changed">
+<code class="descname">title_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.title_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.topology_changed">
+<code class="descname">topology_changed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.topology_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.upstream_nodes">
+<code class="descname">upstream_nodes</code><span class="sig-paren">(</span><em>start_node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.upstream_nodes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.upstream_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a set of all nodes upstream from <cite>start_node</cite> (i.e.
+all ancestor nodes).</p>
+<p>start_node : <a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.scheme.Scheme.window_group_presets">
+<code class="descname">window_group_presets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/scheme.html#Scheme.window_group_presets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.scheme.Scheme.window_group_presets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a collection of preset window groups and their encoded states.</p>
+<p>The base implementation returns an empty list.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.scheme.signalmanager">
+<span id="alkemiems-akpad-scheme-signalmanager-module"></span><h2>Alkemiems.akpad.scheme.signalmanager module<a class="headerlink" href="#module-Alkemiems.akpad.scheme.signalmanager" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="signal-manager">
+<h3>Signal Manager<a class="headerlink" href="#signal-manager" title="Permalink to this headline">¶</a></h3>
+<p>A SignalManager instance handles the runtime signal propagation between
+widgets in a scheme.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.signalmanager.</code><code class="descname">SignalManager</code><span class="sig-paren">(</span><em>scheme</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<p>Handle all runtime signal propagation for a <a href="#id3"><span class="problematic" id="id4">:clas:`Scheme`</span></a> instance.
+The scheme must be passed to the constructor and will become the parent
+of this object. Furthermore this should happen before any items
+(nodes, links) are added to the scheme.</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.Error">
+<code class="descname">Error</code><em class="property"> = 3</em><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.Error" title="Permalink to this definition">¶</a></dt>
+<dd><p>SignalManger state flags.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.Paused">
+<code class="descname">Paused</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.Paused" title="Permalink to this definition">¶</a></dt>
+<dd><p>SignalManger state flags.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.Processing">
+<code class="descname">Processing</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.Processing" title="Permalink to this definition">¶</a></dt>
+<dd><p>SignalManager runtime state flags.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.Running">
+<code class="descname">Running</code><em class="property"> = 0</em><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.Running" title="Permalink to this definition">¶</a></dt>
+<dd><p>SignalManger state flags.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.Stoped">
+<code class="descname">Stoped</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.Stoped" title="Permalink to this definition">¶</a></dt>
+<dd><p>SignalManger state flags.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.Waiting">
+<code class="descname">Waiting</code><em class="property"> = 0</em><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.Waiting" title="Permalink to this definition">¶</a></dt>
+<dd><p>SignalManager runtime state flags.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.blocking_nodes">
+<code class="descname">blocking_nodes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.blocking_nodes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.blocking_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of nodes in a blocking state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.compress_signals">
+<code class="descname">compress_signals</code><span class="sig-paren">(</span><em>signals</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.compress_signals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.compress_signals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compress a list of <code class="xref py py-class docutils literal notranslate"><span class="pre">_Signal</span></code> instances to be delivered.</p>
+<p>The base implementation returns the list unmodified.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.is_blocking">
+<code class="descname">is_blocking</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.is_blocking"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.is_blocking" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.is_pending">
+<code class="descname">is_pending</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.is_pending"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.is_pending" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is <cite>node</cite> (class:<cite>SchemeNode</cite>) scheduled for processing (i.e.
+it has incoming pending signals).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.link_added">
+<code class="descname">link_added</code><span class="sig-paren">(</span><em>link</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.link_added"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.link_added" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.link_contents">
+<code class="descname">link_contents</code><span class="sig-paren">(</span><em>link</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.link_contents"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.link_contents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the contents on link.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.link_enabled_changed">
+<code class="descname">link_enabled_changed</code><span class="sig-paren">(</span><em>enabled</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.link_enabled_changed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.link_enabled_changed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.link_removed">
+<code class="descname">link_removed</code><span class="sig-paren">(</span><em>link</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.link_removed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.link_removed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.node_update_front">
+<code class="descname">node_update_front</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.node_update_front"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.node_update_front" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of nodes on the update front, i.e. nodes scheduled for
+an update that have no ancestor which is either itself scheduled
+for update or is in a blocking state)</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The node’s ancestors are only computed over enabled links.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.on_node_added">
+<code class="descname">on_node_added</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.on_node_added"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.on_node_added" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.on_node_removed">
+<code class="descname">on_node_removed</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.on_node_removed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.on_node_removed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.pause">
+<code class="descname">pause</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.pause"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.pause" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pause the updates.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.pending_input_signals">
+<code class="descname">pending_input_signals</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.pending_input_signals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.pending_input_signals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of pending input signals for node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.pending_nodes">
+<code class="descname">pending_nodes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.pending_nodes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.pending_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of pending nodes.</p>
+<p>The nodes are returned in the order they were enqueued for
+signal delivery.</p>
+<p>nodes : List[SchemeNode]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.process_node">
+<code class="descname">process_node</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.process_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.process_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process pending input signals for <cite>node</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.process_queued">
+<code class="descname">process_queued</code><span class="sig-paren">(</span><em>max_nodes=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.process_queued"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.process_queued" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process queued signals.</p>
+<p>Take one node node from the pending input queue and deliver
+all scheduled signals.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.processingFinished">
+<code class="descname">processingFinished</code><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.processingFinished" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emitted right after a <cite>SchemeNode</cite> instance has had its inputs
+updated.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.processingStarted">
+<code class="descname">processingStarted</code><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.processingStarted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emitted right before a <cite>SchemeNode</cite> instance has its inputs
+updated.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.purge_link">
+<code class="descname">purge_link</code><span class="sig-paren">(</span><em>link</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.purge_link"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.purge_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Purge the link (send None for all ids currently present)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.remove_pending_signals">
+<code class="descname">remove_pending_signals</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.remove_pending_signals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.remove_pending_signals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove pending signals for <cite>node</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.resume">
+<code class="descname">resume</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.resume"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.resume" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.runtimeStateChanged">
+<code class="descname">runtimeStateChanged</code><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.runtimeStateChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emitted when <cite>SignalManager</cite>’s runtime state changes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.runtime_state">
+<code class="descname">runtime_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.runtime_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.runtime_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the runtime state. This can be <cite>SignalManager.Waiting</cite>
+or <cite>SignalManager.Processing</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.scheme">
+<code class="descname">scheme</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.scheme"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.scheme" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the parent class:<cite>Scheme</cite> instance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.send">
+<code class="descname">send</code><span class="sig-paren">(</span><em>node</em>, <em>channel</em>, <em>value</em>, <em>id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.send"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.send" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.send_to_node">
+<code class="descname">send_to_node</code><span class="sig-paren">(</span><em>node</em>, <em>signals</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.send_to_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.send_to_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abstract. Reimplement in subclass.</p>
+<p>Send/notify the <code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code> instance (or whatever
+object/instance it is a representation of) that it has new inputs
+as represented by the signals list (list of <code class="xref py py-class docutils literal notranslate"><span class="pre">_Signal</span></code>).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.signals_on_link">
+<code class="descname">signals_on_link</code><span class="sig-paren">(</span><em>link</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.signals_on_link"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.signals_on_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return _Signal instances representing the current values
+present on the link.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.start">
+<code class="descname">start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.start"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the update loop.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The updates will not happen until the control reaches
+the Qt event loop.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.state">
+<code class="descname">state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the current state.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.stateChanged">
+<code class="descname">stateChanged</code><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.stateChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emitted when the state of the signal manager changes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.step">
+<code class="descname">step</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.step"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.stop">
+<code class="descname">stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#SignalManager.stop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.stop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stop the update loop.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If the <cite>SignalManager</cite> is currently in <cite>process_queues</cite> it
+will still update all current pending signals, but will not
+re-enter until <cite>start()</cite> is called again</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.signalmanager.SignalManager.updatesPending">
+<code class="descname">updatesPending</code><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager.updatesPending" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emitted when signals are added to the queue.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.signalmanager.can_enable_dynamic">
+<code class="descclassname">Alkemiems.akpad.scheme.signalmanager.</code><code class="descname">can_enable_dynamic</code><span class="sig-paren">(</span><em>link</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#can_enable_dynamic"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.can_enable_dynamic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Can the a dynamic <cite>link</cite> (<code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeLink</span></code>) be enabled for`value`.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.signalmanager.compress_signals">
+<code class="descclassname">Alkemiems.akpad.scheme.signalmanager.</code><code class="descname">compress_signals</code><span class="sig-paren">(</span><em>signals</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#compress_signals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.compress_signals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compress a list of signals.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.signalmanager.dependent_nodes">
+<code class="descclassname">Alkemiems.akpad.scheme.signalmanager.</code><code class="descname">dependent_nodes</code><span class="sig-paren">(</span><em>scheme</em>, <em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#dependent_nodes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.dependent_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of all nodes (in breadth first order) in <cite>scheme</cite> that
+are dependent on <cite>node</cite>,</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This does not include nodes only reachable by disables links.</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.signalmanager.group_by_all">
+<code class="descclassname">Alkemiems.akpad.scheme.signalmanager.</code><code class="descname">group_by_all</code><span class="sig-paren">(</span><em>sequence</em>, <em>key=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#group_by_all"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.group_by_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.signalmanager.traverse_bf">
+<code class="descclassname">Alkemiems.akpad.scheme.signalmanager.</code><code class="descname">traverse_bf</code><span class="sig-paren">(</span><em>start</em>, <em>expand</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#traverse_bf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.traverse_bf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.signalmanager.unique">
+<code class="descclassname">Alkemiems.akpad.scheme.signalmanager.</code><code class="descname">unique</code><span class="sig-paren">(</span><em>iterable</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/signalmanager.html#unique"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.signalmanager.unique" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return unique elements of <cite>iterable</cite> while preserving their order.</p>
+<p>iterable : Iterable[Hashable]</p>
+<dl class="docutils">
+<dt>unique <span class="classifier-delimiter">:</span> <span class="classifier">Iterable</span></dt>
+<dd>Unique elements from <cite>iterable</cite>.</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.scheme.widgetsscheme">
+<span id="alkemiems-akpad-scheme-widgetsscheme-module"></span><h2>Alkemiems.akpad.scheme.widgetsscheme module<a class="headerlink" href="#module-Alkemiems.akpad.scheme.widgetsscheme" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="widgets-scheme">
+<h3>Widgets Scheme<a class="headerlink" href="#widgets-scheme" title="Permalink to this headline">¶</a></h3>
+<p>A Scheme for Alkemiems Widgets Scheme (.ows).</p>
+<p>This is a subclass of the general <code class="xref py py-class docutils literal notranslate"><span class="pre">Scheme</span></code>. It is responsible for
+the construction and management of OWBaseWidget instances corresponding
+to the scheme nodes, as well as delegating the signal propagation to a
+companion <a class="reference internal" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager" title="Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager"><code class="xref py py-class docutils literal notranslate"><span class="pre">WidgetsSignalManager</span></code></a> class.</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.ActivateParentEvent">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.widgetsscheme.</code><code class="descname">ActivateParentEvent</code><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#ActivateParentEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.ActivateParentEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QEvent</span></code></p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.ActivateParentEvent.ActivateParent">
+<code class="descname">ActivateParent</code><em class="property"> = 65531</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.ActivateParentEvent.ActivateParent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.ActivationMonitor">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.widgetsscheme.</code><code class="descname">ActivationMonitor</code><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#ActivationMonitor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.ActivationMonitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<p>An event filter for monitoring QWidgets for <cite>WindowActivation</cite> events.</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.ActivationMonitor.activated">
+<code class="descname">activated</code><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.ActivationMonitor.activated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signal emitted with the <cite>QWidget</cite> instance that was activated.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.ActivationMonitor.eventFilter">
+<code class="descname">eventFilter</code><span class="sig-paren">(</span><em>self</em>, <em>QObject</em>, <em>QEvent</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#ActivationMonitor.eventFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.ActivationMonitor.eventFilter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.widgetsscheme.</code><code class="descname">WidgetManager</code><span class="sig-paren">(</span><em>parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
+<p>OWWidget instance manager class.</p>
+<p>This class handles the lifetime of OWWidget instances in a
+<a class="reference internal" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme" title="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme"><code class="xref py py-class docutils literal notranslate"><span class="pre">WidgetsScheme</span></code></a>.</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.BlockingUpdate">
+<code class="descname">BlockingUpdate</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.BlockingUpdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.CreationPolicy">
+<em class="property">class </em><code class="descname">CreationPolicy</code><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.CreationPolicy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.CreationPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></a></p>
+<p>Widget Creation Policy</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.CreationPolicy.Immediate">
+<code class="descname">Immediate</code><em class="property"> = 'Immediate'</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.CreationPolicy.Immediate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Widgets are created immediately when added to the workflow model</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.CreationPolicy.Normal">
+<code class="descname">Normal</code><em class="property"> = 'Normal'</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.CreationPolicy.Normal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Widgets are scheduled to be created from the event loop, or when
+first accessed with <cite>widget_for_node</cite></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.CreationPolicy.OnDemand">
+<code class="descname">OnDemand</code><em class="property"> = 'OnDemand'</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.CreationPolicy.OnDemand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Widgets are created only when first accessed with <cite>widget_for_node</cite></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Delayed">
+<em class="property">class </em><code class="descname">Delayed</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Delayed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></p>
+<p>Widget initialization states</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Delayed.node">
+<code class="descname">node</code><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Delayed.node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Immediate">
+<code class="descname">Immediate</code><em class="property"> = 'Immediate'</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Immediate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Initializing">
+<code class="descname">Initializing</code><em class="property"> = 8</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Initializing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.InputUpdate">
+<code class="descname">InputUpdate</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.InputUpdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Materialized">
+<em class="property">class </em><code class="descname">Materialized</code><span class="sig-paren">(</span><em>node</em>, <em>widget</em><span class="sig-paren">)</span><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Materialized" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Materialized.node">
+<code class="descname">node</code><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Materialized.node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Materialized.widget">
+<code class="descname">widget</code><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Materialized.widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Normal">
+<code class="descname">Normal</code><em class="property"> = 'Normal'</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.Normal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.OnDemand">
+<code class="descname">OnDemand</code><em class="property"> = 'OnDemand'</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.OnDemand" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.PartiallyInitialized">
+<code class="descname">PartiallyInitialized</code><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.PartiallyInitialized" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">Materializing</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.ProcessingState">
+<em class="property">class </em><code class="descname">ProcessingState</code><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.ProcessingState"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.ProcessingState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a></p>
+<p>Widget processing state flags</p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.ProcessingState.BlockingUpdate">
+<code class="descname">BlockingUpdate</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.ProcessingState.BlockingUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Widget has entered a blocking state (OWWidget.isBlocking)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.ProcessingState.Initializing">
+<code class="descname">Initializing</code><em class="property"> = 8</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.ProcessingState.Initializing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Widget is still in the process of initialization</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.ProcessingState.InputUpdate">
+<code class="descname">InputUpdate</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.ProcessingState.InputUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signal manager is updating/setting the widget’s inputs</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.ProcessingState.ProcessingUpdate">
+<code class="descname">ProcessingUpdate</code><em class="property"> = 4</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.ProcessingState.ProcessingUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Widget has entered processing state</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.ProcessingUpdate">
+<code class="descname">ProcessingUpdate</code><em class="property"> = 4</em><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.ProcessingUpdate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.activate_window_group">
+<code class="descname">activate_window_group</code><span class="sig-paren">(</span><em>group</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.activate_window_group"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.activate_window_group" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.add_widget_for_node">
+<code class="descname">add_widget_for_node</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.add_widget_for_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.add_widget_for_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new OWWidget instance for the corresponding scheme node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.create_widget_instance">
+<code class="descname">create_widget_instance</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.create_widget_instance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.create_widget_instance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a OWWidget instance for the node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.creation_policy">
+<code class="descname">creation_policy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.creation_policy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.creation_policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the current widget creation policy</p>
+<p>policy: WidgetManager.CreationPolicy</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.eventFilter">
+<code class="descname">eventFilter</code><span class="sig-paren">(</span><em>self</em>, <em>QObject</em>, <em>QEvent</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.eventFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.eventFilter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.node_for_widget">
+<code class="descname">node_for_widget</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.node_for_widget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.node_for_widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the SchemeNode instance for the OWWidget.</p>
+<p>Raise a KeyError if the widget does not map to a node in the scheme.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.node_processing_state">
+<code class="descname">node_processing_state</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.node_processing_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.node_processing_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the processing state flags for the node.</p>
+<p>Same as <cite>manager.widget_processing_state(manger.widget_for_node(node))</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.raise_widgets_to_front">
+<code class="descname">raise_widgets_to_front</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.raise_widgets_to_front"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.raise_widgets_to_front" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raise all current visible widgets to the front.</p>
+<p>The widgets will be stacked by activation order.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.remove_widget_for_node">
+<code class="descname">remove_widget_for_node</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.remove_widget_for_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.remove_widget_for_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the OWWidget instance for node.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.restore_window_state">
+<code class="descname">restore_window_state</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.restore_window_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.restore_window_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restore the window state.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.save_window_state">
+<code class="descname">save_window_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.save_window_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.save_window_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save current open window arrangement.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.scheme">
+<code class="descname">scheme</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.scheme"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.scheme" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the scheme instance on which this manager is installed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.set_creation_policy">
+<code class="descname">set_creation_policy</code><span class="sig-paren">(</span><em>policy</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.set_creation_policy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.set_creation_policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the widget creation policy</p>
+<p>policy : WidgetManager.CreationPolicy</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.set_float_widgets_on_top">
+<code class="descname">set_float_widgets_on_top</code><span class="sig-paren">(</span><em>float_on_top</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.set_float_widgets_on_top"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.set_float_widgets_on_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set <cite>Float Widgets on Top</cite> flag on all widgets.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.set_scheme">
+<code class="descname">set_scheme</code><span class="sig-paren">(</span><em>scheme</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.set_scheme"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.set_scheme" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the <a class="reference internal" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme" title="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme"><code class="xref py py-class docutils literal notranslate"><span class="pre">WidgetsScheme</span></code></a> instance to manage.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.signal_manager">
+<code class="descname">signal_manager</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.signal_manager"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.signal_manager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the signal manager in use on the <a class="reference internal" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.scheme" title="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.scheme"><code class="xref py py-func docutils literal notranslate"><span class="pre">scheme()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.widget_for_node">
+<code class="descname">widget_for_node</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.widget_for_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.widget_for_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the OWWidget instance for the scheme node.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.widget_for_node_added">
+<code class="descname">widget_for_node_added</code><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.widget_for_node_added" title="Permalink to this definition">¶</a></dt>
+<dd><p>A new OWWidget was created and added by the manager.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.widget_for_node_removed">
+<code class="descname">widget_for_node_removed</code><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.widget_for_node_removed" title="Permalink to this definition">¶</a></dt>
+<dd><p>An OWWidget was removed, hidden and will be deleted when appropriate.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.widget_processing_state">
+<code class="descname">widget_processing_state</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.widget_processing_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.widget_processing_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the processing state flags for the widget.</p>
+<p>The state is an bitwise or of <cite>InputUpdate</cite> and <cite>BlockingUpdate</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.widget_properties">
+<code class="descname">widget_properties</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetManager.widget_properties"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetManager.widget_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the current widget properties/settings.</p>
+<p>node : SchemeNode</p>
+<p>settings : dict</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.widgetsscheme.</code><code class="descname">WidgetsScheme</code><span class="sig-paren">(</span><em>parent=None</em>, <em>title=None</em>, <em>description=None</em>, <em>env={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.akpad.scheme.scheme.Scheme" title="Alkemiems.akpad.scheme.scheme.Scheme"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.scheme.scheme.Scheme</span></code></a></p>
+<p>A Scheme containing Alkemiems Widgets managed with a <cite>WidgetsSignalManager</cite>
+instance.</p>
+<p>Extends the base <cite>Scheme</cite> class to handle the lifetime
+(creation/deletion, etc.) of <cite>OWBaseWidget</cite> instances corresponding to
+the nodes in the scheme. It also delegates the interwidget signal
+propagation to an instance of <cite>WidgetsSignalManager</cite>.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.dump_settings">
+<code class="descname">dump_settings</code><span class="sig-paren">(</span><em>node: Alkemiems.akpad.scheme.node.SchemeNode</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme.dump_settings"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.dump_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dump current settings of the <cite>node</cite> to the standard output</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.event">
+<code class="descname">event</code><span class="sig-paren">(</span><em>self</em>, <em>QEvent</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme.event"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.event" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.has_report">
+<code class="descname">has_report</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme.has_report"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.has_report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Does this workflow have an associated report</p>
+<p>has_report: bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.node_for_widget">
+<code class="descname">node_for_widget</code><span class="sig-paren">(</span><em>widget</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme.node_for_widget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.node_for_widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the SchemeNode instance for the <cite>widget</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.report_view">
+<code class="descname">report_view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme.report_view"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.report_view" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a OWReport instance used by the workflow.</p>
+<p>If a report window has not been set then the <cite>report_view_requested</cite>
+signal is emitted to allow the framework to setup the report window.
+If the report window is still not set after the signal is emitted, a
+new default OWReport instance is constructed and returned.</p>
+<p>report : OWReport</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.report_view_requested">
+<code class="descname">report_view_requested</code><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.report_view_requested" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emitted when a report_view is requested for the first time, before a
+default instance is created. Clients can connect to this signal to
+set a report view (<cite>set_report_view</cite>) to use instead.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.restore_widget_geometry_for_node">
+<code class="descname">restore_widget_geometry_for_node</code><span class="sig-paren">(</span><em>node</em>, <em>state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme.restore_widget_geometry_for_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.restore_widget_geometry_for_node" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.save_widget_geometry_for_node">
+<code class="descname">save_widget_geometry_for_node</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme.save_widget_geometry_for_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.save_widget_geometry_for_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save and return the current geometry and state for node</p>
+<p>node : Scheme</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.set_report_view">
+<code class="descname">set_report_view</code><span class="sig-paren">(</span><em>view</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme.set_report_view"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.set_report_view" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the designated OWReport view for this workflow.</p>
+<p>view : Optional[OWReport]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.show_report_view">
+<code class="descname">show_report_view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme.show_report_view"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.show_report_view" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.sync_node_properties">
+<code class="descname">sync_node_properties</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme.sync_node_properties"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.sync_node_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sync the widget settings/properties with the SchemeNode.properties.
+Return True if there were any changes in the properties (i.e. if the
+new node.properties differ from the old value) and False otherwise.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.widget_for_node">
+<code class="descname">widget_for_node</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsScheme.widget_for_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsScheme.widget_for_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the OWWidget instance for a <cite>node</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.scheme.widgetsscheme.</code><code class="descname">WidgetsSignalManager</code><span class="sig-paren">(</span><em>scheme</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsSignalManager"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.akpad.scheme.signalmanager.SignalManager" title="Alkemiems.akpad.scheme.signalmanager.SignalManager"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.scheme.signalmanager.SignalManager</span></code></a></p>
+<p>A signal manager for a WidgetsScheme.</p>
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager.compress_signals">
+<code class="descname">compress_signals</code><span class="sig-paren">(</span><em>signals</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsSignalManager.compress_signals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager.compress_signals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reimplemented from <code class="xref py py-func docutils literal notranslate"><span class="pre">SignalManager.compress_signals()</span></code>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager.eventFilter">
+<code class="descname">eventFilter</code><span class="sig-paren">(</span><em>self</em>, <em>QObject</em>, <em>QEvent</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsSignalManager.eventFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager.eventFilter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager.is_blocking">
+<code class="descname">is_blocking</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsSignalManager.is_blocking"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager.is_blocking" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reimplemented from <cite>SignalManager</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager.process_signals_for_widget">
+<code class="descname">process_signals_for_widget</code><span class="sig-paren">(</span><em>node</em>, <em>widget</em>, <em>signals</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsSignalManager.process_signals_for_widget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager.process_signals_for_widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process new signals for the OWBaseWidget.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager.send">
+<code class="descname">send</code><span class="sig-paren">(</span><em>widget</em>, <em>channelname</em>, <em>value</em>, <em>signal_id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsSignalManager.send"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager.send" title="Permalink to this definition">¶</a></dt>
+<dd><p>send method compatible with OWBaseWidget.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager.send_to_node">
+<code class="descname">send_to_node</code><span class="sig-paren">(</span><em>node</em>, <em>signals</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#WidgetsSignalManager.send_to_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.WidgetsSignalManager.send_to_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implementation of <cite>SignalManager.send_to_node</cite>.</p>
+<p>Deliver input signals to an OWBaseWidget instance.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.mock_error_owwidget">
+<code class="descclassname">Alkemiems.akpad.scheme.widgetsscheme.</code><code class="descname">mock_error_owwidget</code><span class="sig-paren">(</span><em>node</em>, <em>message</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#mock_error_owwidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.mock_error_owwidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a mock OWWidget instance for <cite>node</cite>.</p>
+<p>node : SchemeNode
+message : str</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.scheme.widgetsscheme.user_message_from_state">
+<code class="descclassname">Alkemiems.akpad.scheme.widgetsscheme.</code><code class="descname">user_message_from_state</code><span class="sig-paren">(</span><em>message_group</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/scheme/widgetsscheme.html#user_message_from_state"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.scheme.widgetsscheme.user_message_from_state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.akpad.scheme">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Alkemiems.akpad.scheme" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="scheme">
+<h3>Scheme<a class="headerlink" href="#scheme" title="Permalink to this headline">¶</a></h3>
+<p>The scheme package implements and defines the underlying workflow model.</p>
+<p>The <a class="reference internal" href="#Alkemiems.akpad.scheme.scheme.Scheme" title="Alkemiems.akpad.scheme.scheme.Scheme"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scheme</span></code></a> class represents the workflow and is composed of a set
+of <a class="reference internal" href="#Alkemiems.akpad.scheme.node.SchemeNode" title="Alkemiems.akpad.scheme.node.SchemeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeNode</span></code></a> connected with <a class="reference internal" href="#Alkemiems.akpad.scheme.link.SchemeLink" title="Alkemiems.akpad.scheme.link.SchemeLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeLink</span></code></a>, defining an
+directed acyclic graph (DAG). Additionally instances of
+<a class="reference internal" href="#Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation" title="Alkemiems.akpad.scheme.annotations.SchemeArrowAnnotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeArrowAnnotation</span></code></a> or <a class="reference internal" href="#Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation" title="Alkemiems.akpad.scheme.annotations.SchemeTextAnnotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">SchemeTextAnnotation</span></code></a> can be
+inserted into the scheme.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Alkemiems.akpad.scheme.tests.html" class="btn btn-neutral float-right" title="Alkemiems.akpad.scheme.tests package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Alkemiems.akpad.registry.tests.html" class="btn btn-neutral float-left" title="Alkemiems.akpad.registry.tests package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Guanjie Wang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,875 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alkemiems.akpad package &mdash; Alkemiems 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Alkemiems.akpad.akpad package" href="Alkemiems.akpad.akpad.html" />
+    <link rel="prev" title="Alkemiems package" href="Alkemiems.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Alkemiems
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Alkemiems</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Alkemiems.akpad package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.akpad.html">Alkemiems.akpad.akpad package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.application.html">Alkemiems.akpad.application package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.document.html">Alkemiems.akpad.document package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.gui.html">Alkemiems.akpad.gui package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.help.html">Alkemiems.akpad.help package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.preview.html">Alkemiems.akpad.preview package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.registry.html">Alkemiems.akpad.registry package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html">Alkemiems.akpad.scheme package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.styles.html">Alkemiems.akpad.styles package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.utils.html">Alkemiems.akpad.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.akpad.config">Alkemiems.akpad.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.akpad.report">Alkemiems.akpad.report module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.akpad.resources">Alkemiems.akpad.resources module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.akpad">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.data.html">Alkemiems.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.io.html">Alkemiems.io package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.lammps.html">Alkemiems.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.misc.html">Alkemiems.misc package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.openphase.html">Alkemiems.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.preprocess.html">Alkemiems.preprocess package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.potentialmind.html">Alkemiems.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.statistics.html">Alkemiems.statistics package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.vasp.html">Alkemiems.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.html">Alkemiems.widgets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.abinit.html">Alkemiems.widgets.abinit package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.calypso.html">Alkemiems.widgets.calypso package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.data.html">Alkemiems.widgets.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.database.html">Alkemiems.widgets.database package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.lammps.html">Alkemiems.widgets.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.openphase.html">Alkemiems.widgets.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.potentialmind.html">Alkemiems.widgets.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.qe.html">Alkemiems.widgets.qe package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.report.html">Alkemiems.widgets.report package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.utils.html">Alkemiems.widgets.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.vasp.html">Alkemiems.widgets.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.visualize.html">Alkemiems.widgets.visualize package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alkemiems</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Alkemiems</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.html">Alkemiems package</a> &raquo;</li>
+        
+      <li>Alkemiems.akpad package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Alkemiems.akpad.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alkemiems-akpad-package">
+<h1>Alkemiems.akpad package<a class="headerlink" href="#alkemiems-akpad-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.akpad.html">Alkemiems.akpad.akpad package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.akpad.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.akpad.items.html">Alkemiems.akpad.akpad.items package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.items.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Alkemiems.akpad.akpad.items.tests.html">Alkemiems.akpad.akpad.items.tests package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Alkemiems.akpad.akpad.items.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Alkemiems.akpad.akpad.items.tests.html#module-Alkemiems.akpad.akpad.items.tests.test_annotationitem">Alkemiems.akpad.akpad.items.tests.test_annotationitem module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Alkemiems.akpad.akpad.items.tests.html#module-Alkemiems.akpad.akpad.items.tests.test_controlpoints">Alkemiems.akpad.akpad.items.tests.test_controlpoints module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Alkemiems.akpad.akpad.items.tests.html#module-Alkemiems.akpad.akpad.items.tests.test_graphicspathobject">Alkemiems.akpad.akpad.items.tests.test_graphicspathobject module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Alkemiems.akpad.akpad.items.tests.html#module-Alkemiems.akpad.akpad.items.tests.test_linkitem">Alkemiems.akpad.akpad.items.tests.test_linkitem module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Alkemiems.akpad.akpad.items.tests.html#module-Alkemiems.akpad.akpad.items.tests.test_nodeitem">Alkemiems.akpad.akpad.items.tests.test_nodeitem module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Alkemiems.akpad.akpad.items.tests.html#module-Alkemiems.akpad.akpad.items.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.items.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.items.html#module-Alkemiems.akpad.akpad.items.annotationitem">Alkemiems.akpad.akpad.items.annotationitem module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.items.html#module-Alkemiems.akpad.akpad.items.controlpoints">Alkemiems.akpad.akpad.items.controlpoints module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.items.html#module-Alkemiems.akpad.akpad.items.graphicspathobject">Alkemiems.akpad.akpad.items.graphicspathobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.items.html#module-Alkemiems.akpad.akpad.items.linkitem">Alkemiems.akpad.akpad.items.linkitem module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Alkemiems.akpad.akpad.items.html#link-item">Link Item</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.items.html#module-Alkemiems.akpad.akpad.items.nodeitem">Alkemiems.akpad.akpad.items.nodeitem module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Alkemiems.akpad.akpad.items.html#node-item">Node Item</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.items.html#module-Alkemiems.akpad.akpad.items.utils">Alkemiems.akpad.akpad.items.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.items.html#module-Alkemiems.akpad.akpad.items">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.akpad.tests.html">Alkemiems.akpad.akpad.tests package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.tests.html#module-Alkemiems.akpad.akpad.tests.test_layout">Alkemiems.akpad.akpad.tests.test_layout module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.tests.html#module-Alkemiems.akpad.akpad.tests.test_scene">Alkemiems.akpad.akpad.tests.test_scene module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.akpad.tests.html#module-Alkemiems.akpad.akpad.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.akpad.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.akpad.html#module-Alkemiems.akpad.akpad.layout">Alkemiems.akpad.akpad.layout module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.akpad.html#module-Alkemiems.akpad.akpad.scene">Alkemiems.akpad.akpad.scene module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.akpad.html#canvas-graphics-scene">Canvas Graphics Scene</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.akpad.html#module-Alkemiems.akpad.akpad.view">Alkemiems.akpad.akpad.view module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.akpad.html#module-Alkemiems.akpad.akpad">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.akpad.html#canvas">Canvas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.application.html">Alkemiems.akpad.application package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.application.tests.html">Alkemiems.akpad.application.tests package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.application.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.application.tests.html#module-Alkemiems.akpad.application.tests.test_addons">Alkemiems.akpad.application.tests.test_addons module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.application.tests.html#module-Alkemiems.akpad.application.tests.test_akpadtooldock">Alkemiems.akpad.application.tests.test_akpadtooldock module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.application.tests.html#module-Alkemiems.akpad.application.tests.test_outputview">Alkemiems.akpad.application.tests.test_outputview module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.application.tests.html#module-Alkemiems.akpad.application.tests.test_schemeinfo">Alkemiems.akpad.application.tests.test_schemeinfo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.application.tests.html#module-Alkemiems.akpad.application.tests.test_settings">Alkemiems.akpad.application.tests.test_settings module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.application.tests.html#module-Alkemiems.akpad.application.tests.test_welcomedialog">Alkemiems.akpad.application.tests.test_welcomedialog module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.application.tests.html#module-Alkemiems.akpad.application.tests.test_widgettoolbox">Alkemiems.akpad.application.tests.test_widgettoolbox module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.application.tests.html#module-Alkemiems.akpad.application.tests">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.application.workflows.html">Alkemiems.akpad.application.workflows package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.application.workflows.html#module-Alkemiems.akpad.application.workflows">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#module-Alkemiems.akpad.application.aboutdialog">Alkemiems.akpad.application.aboutdialog module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#module-Alkemiems.akpad.application.addons">Alkemiems.akpad.application.addons module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#module-Alkemiems.akpad.application.akpadmain">Alkemiems.akpad.application.akpadmain module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#module-Alkemiems.akpad.application.akpadtooldock">Alkemiems.akpad.application.akpadtooldock module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#module-Alkemiems.akpad.application.application">Alkemiems.akpad.application.application module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#module-Alkemiems.akpad.application.errorreporting">Alkemiems.akpad.application.errorreporting module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#module-Alkemiems.akpad.application.outputview">Alkemiems.akpad.application.outputview module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#module-Alkemiems.akpad.application.schemeinfo">Alkemiems.akpad.application.schemeinfo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#module-Alkemiems.akpad.application.settings">Alkemiems.akpad.application.settings module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.application.html#user-settings-preference-dialog">User settings/preference dialog</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#module-Alkemiems.akpad.application.welcomedialog">Alkemiems.akpad.application.welcomedialog module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#module-Alkemiems.akpad.application.widgettoolbox">Alkemiems.akpad.application.widgettoolbox module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.application.html#widget-tool-box">Widget Tool Box</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.application.html#module-Alkemiems.akpad.application">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.document.html">Alkemiems.akpad.document package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.document.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.document.tests.html">Alkemiems.akpad.document.tests package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.document.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.document.tests.html#module-Alkemiems.akpad.document.tests.test_editlinksdialog">Alkemiems.akpad.document.tests.test_editlinksdialog module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.document.tests.html#module-Alkemiems.akpad.document.tests.test_quickmenu">Alkemiems.akpad.document.tests.test_quickmenu module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.document.tests.html#module-Alkemiems.akpad.document.tests.test_schemeedit">Alkemiems.akpad.document.tests.test_schemeedit module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.document.tests.html#module-Alkemiems.akpad.document.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.document.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.document.html#module-Alkemiems.akpad.document.commands">Alkemiems.akpad.document.commands module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.document.html#module-Alkemiems.akpad.document.editlinksdialog">Alkemiems.akpad.document.editlinksdialog module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.document.html#link-editor">Link Editor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.document.html#module-Alkemiems.akpad.document.interactions">Alkemiems.akpad.document.interactions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.document.html#user-interaction-handlers">User Interaction Handlers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.document.html#module-Alkemiems.akpad.document.quickmenu">Alkemiems.akpad.document.quickmenu module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.document.html#quick-menu">Quick Menu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.document.html#module-Alkemiems.akpad.document.schemeedit">Alkemiems.akpad.document.schemeedit module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.document.html#scheme-editor-widget">Scheme Editor Widget</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.document.html#module-Alkemiems.akpad.document.suggestions">Alkemiems.akpad.document.suggestions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.document.html#module-Alkemiems.akpad.document.usagestatistics">Alkemiems.akpad.document.usagestatistics module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.document.html#module-Alkemiems.akpad.document">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.document.html#document">Document</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.gui.html">Alkemiems.akpad.gui package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html">Alkemiems.akpad.gui.tests package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_dock">Alkemiems.akpad.gui.tests.test_dock module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_dropshadow">Alkemiems.akpad.gui.tests.test_dropshadow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_framelesswindow">Alkemiems.akpad.gui.tests.test_framelesswindow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_lineedit">Alkemiems.akpad.gui.tests.test_lineedit module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_splashscreen">Alkemiems.akpad.gui.tests.test_splashscreen module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_stackedwidget">Alkemiems.akpad.gui.tests.test_stackedwidget module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_toolbar">Alkemiems.akpad.gui.tests.test_toolbar module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_toolbox">Alkemiems.akpad.gui.tests.test_toolbox module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_toolgrid">Alkemiems.akpad.gui.tests.test_toolgrid module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_tooltree">Alkemiems.akpad.gui.tests.test_tooltree module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests.test_utils">Alkemiems.akpad.gui.tests.test_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.gui.tests.html#module-Alkemiems.akpad.gui.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.dock">Alkemiems.akpad.gui.dock module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.gui.html#collapsible-dock-widget">Collapsible Dock Widget</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.dropshadow">Alkemiems.akpad.gui.dropshadow module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.gui.html#drop-shadow-frame">Drop Shadow Frame</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.framelesswindow">Alkemiems.akpad.gui.framelesswindow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.lineedit">Alkemiems.akpad.gui.lineedit module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.quickhelp">Alkemiems.akpad.gui.quickhelp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.splashscreen">Alkemiems.akpad.gui.splashscreen module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.stackedwidget">Alkemiems.akpad.gui.stackedwidget module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.gui.html#animatedstackedwidget">AnimatedStackedWidget</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.test">Alkemiems.akpad.gui.test module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.gui.html#basic-qt-testing-framework">Basic Qt testing framework</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.toolbar">Alkemiems.akpad.gui.toolbar module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.toolbox">Alkemiems.akpad.gui.toolbox module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.gui.html#tool-box-widget">Tool Box Widget</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.toolgrid">Alkemiems.akpad.gui.toolgrid module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.tooltree">Alkemiems.akpad.gui.tooltree module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.gui.html#tool-tree">Tool Tree</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui.utils">Alkemiems.akpad.gui.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.gui.html#module-Alkemiems.akpad.gui">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.gui.html#gui-toolkit">GUI toolkit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.help.html">Alkemiems.akpad.help package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.help.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.help.html#module-Alkemiems.akpad.help.intersphinx">Alkemiems.akpad.help.intersphinx module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.help.html#module-Alkemiems.akpad.help.manager">Alkemiems.akpad.help.manager module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.help.html#module-Alkemiems.akpad.help.provider">Alkemiems.akpad.help.provider module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.help.html#module-Alkemiems.akpad.help">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.preview.html">Alkemiems.akpad.preview package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.preview.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.preview.tests.html">Alkemiems.akpad.preview.tests package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.preview.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.preview.tests.html#module-Alkemiems.akpad.preview.tests.test_previewbrowser">Alkemiems.akpad.preview.tests.test_previewbrowser module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.preview.tests.html#module-Alkemiems.akpad.preview.tests.test_previewdialog">Alkemiems.akpad.preview.tests.test_previewdialog module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.preview.tests.html#module-Alkemiems.akpad.preview.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.preview.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.preview.html#module-Alkemiems.akpad.preview.previewbrowser">Alkemiems.akpad.preview.previewbrowser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.preview.html#module-Alkemiems.akpad.preview.previewdialog">Alkemiems.akpad.preview.previewdialog module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.preview.html#module-Alkemiems.akpad.preview.previewmodel">Alkemiems.akpad.preview.previewmodel module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.preview.html#module-Alkemiems.akpad.preview.scanner">Alkemiems.akpad.preview.scanner module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.preview.html#module-Alkemiems.akpad.preview">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.registry.html">Alkemiems.akpad.registry package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.registry.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.registry.tests.html">Alkemiems.akpad.registry.tests package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.registry.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.registry.tests.html#module-Alkemiems.akpad.registry.tests.test_base">Alkemiems.akpad.registry.tests.test_base module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.registry.tests.html#module-Alkemiems.akpad.registry.tests.test_discovery">Alkemiems.akpad.registry.tests.test_discovery module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.registry.tests.html#module-Alkemiems.akpad.registry.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.registry.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.registry.html#module-Alkemiems.akpad.registry.base">Alkemiems.akpad.registry.base module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.registry.html#widget-registry">Widget Registry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.registry.html#module-Alkemiems.akpad.registry.cache">Alkemiems.akpad.registry.cache module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.registry.html#module-Alkemiems.akpad.registry.description">Alkemiems.akpad.registry.description module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.registry.html#widget-meta-description-classes">Widget meta description classes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.registry.html#module-Alkemiems.akpad.registry.discovery">Alkemiems.akpad.registry.discovery module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.registry.html#widget-discovery">Widget Discovery</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.registry.html#module-Alkemiems.akpad.registry.qt">Alkemiems.akpad.registry.qt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.registry.html#module-Alkemiems.akpad.registry">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.registry.html#registry">Registry</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.scheme.html">Alkemiems.akpad.scheme package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html">Alkemiems.akpad.scheme.tests package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#module-Alkemiems.akpad.scheme.tests.test_annotations">Alkemiems.akpad.scheme.tests.test_annotations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#module-Alkemiems.akpad.scheme.tests.test_links">Alkemiems.akpad.scheme.tests.test_links module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#module-Alkemiems.akpad.scheme.tests.test_nodes">Alkemiems.akpad.scheme.tests.test_nodes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#module-Alkemiems.akpad.scheme.tests.test_readwrite">Alkemiems.akpad.scheme.tests.test_readwrite module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#module-Alkemiems.akpad.scheme.tests.test_scheme">Alkemiems.akpad.scheme.tests.test_scheme module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.scheme.tests.html#module-Alkemiems.akpad.scheme.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.html#module-Alkemiems.akpad.scheme.annotations">Alkemiems.akpad.scheme.annotations module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html#scheme-annotations">Scheme Annotations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.html#module-Alkemiems.akpad.scheme.errors">Alkemiems.akpad.scheme.errors module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html#scheme-errors">Scheme Errors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.html#module-Alkemiems.akpad.scheme.link">Alkemiems.akpad.scheme.link module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html#scheme-link">Scheme Link</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.html#module-Alkemiems.akpad.scheme.node">Alkemiems.akpad.scheme.node module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html#scheme-node">Scheme Node</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.html#module-Alkemiems.akpad.scheme.readwrite">Alkemiems.akpad.scheme.readwrite module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.html#module-Alkemiems.akpad.scheme.scheme">Alkemiems.akpad.scheme.scheme module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html#scheme-workflow">Scheme Workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.html#module-Alkemiems.akpad.scheme.signalmanager">Alkemiems.akpad.scheme.signalmanager module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html#signal-manager">Signal Manager</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.html#module-Alkemiems.akpad.scheme.widgetsscheme">Alkemiems.akpad.scheme.widgetsscheme module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html#widgets-scheme">Widgets Scheme</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.scheme.html#module-Alkemiems.akpad.scheme">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.scheme.html#scheme">Scheme</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.styles.html">Alkemiems.akpad.styles package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.styles.html#module-Alkemiems.akpad.styles">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.utils.html">Alkemiems.akpad.utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.utils.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.utils.tests.html">Alkemiems.akpad.utils.tests package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.utils.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.utils.tests.html#module-Alkemiems.akpad.utils.tests.test_propertybindings">Alkemiems.akpad.utils.tests.test_propertybindings module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.utils.tests.html#module-Alkemiems.akpad.utils.tests.test_settings">Alkemiems.akpad.utils.tests.test_settings module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Alkemiems.akpad.utils.tests.html#module-Alkemiems.akpad.utils.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.utils.html#module-Alkemiems.akpad.utils.environ">Alkemiems.akpad.utils.environ module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.utils.html#module-Alkemiems.akpad.utils.propertybindings">Alkemiems.akpad.utils.propertybindings module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.utils.html#qt-property-bindings-propertybindings">Qt Property Bindings (<cite>propertybindings</cite>)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.utils.html#module-Alkemiems.akpad.utils.settings">Alkemiems.akpad.utils.settings module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.akpad.utils.html#settings-settings">Settings (<cite>settings</cite>)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.akpad.utils.html#module-Alkemiems.akpad.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.akpad.config">
+<span id="alkemiems-akpad-config-module"></span><h2>Alkemiems.akpad.config module<a class="headerlink" href="#module-Alkemiems.akpad.config" title="Permalink to this headline">¶</a></h2>
+<p>Alkemiems Canvas Configuration</p>
+<dl class="data">
+<dt id="Alkemiems.akpad.config.ADDON_ENTRY">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">ADDON_ENTRY</code><em class="property"> = 'alkemiems3.addon'</em><a class="headerlink" href="#Alkemiems.akpad.config.ADDON_ENTRY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Entry points by which add-ons register with pkg_resources.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.application_icon">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">application_icon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#application_icon"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.application_icon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the main application icon.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.cache_dir">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">cache_dir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#cache_dir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.cache_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the application cache directory. If the directory path
+does not yet exists then create it.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.data_dir">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">data_dir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#data_dir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.data_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the application data directory. If the directory path
+does not yet exists then create it.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.default_entry_point">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">default_entry_point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#default_entry_point"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.default_entry_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a default alkemiems.widgets entry point for loading
+default Alkemiems Widgets.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.init">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#init"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the QCoreApplication.organizationDomain, applicationName,
+applicationVersion and the default settings format. Will only run once.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This should not be run before QApplication has been initialized.
+Otherwise it can break Qt’s plugin search paths.</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.log_dir">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">log_dir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#log_dir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.log_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the application log directory.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.open_config">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">open_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#open_config"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.open_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.recent_schemes">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">recent_schemes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#recent_schemes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.recent_schemes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of recently accessed schemes.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.save_config">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">save_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#save_config"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.save_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.save_recent_scheme_list">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">save_recent_scheme_list</code><span class="sig-paren">(</span><em>scheme_list</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#save_recent_scheme_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.save_recent_scheme_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the list of recently accessed schemes</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.settings">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">settings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#settings"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.settings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.splash_screen">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">splash_screen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#splash_screen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.splash_screen" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.widget_settings_dir">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">widget_settings_dir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#widget_settings_dir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.widget_settings_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the widget settings directory.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.config.widgets_entry_points">
+<code class="descclassname">Alkemiems.akpad.config.</code><code class="descname">widgets_entry_points</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/config.html#widgets_entry_points"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.config.widgets_entry_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an <cite>EntryPoint</cite> iterator for all ‘alkemiems.widget’ entry
+points plus the default Alkemiems Widgets.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad.report">
+<span id="alkemiems-akpad-report-module"></span><h2>Alkemiems.akpad.report module<a class="headerlink" href="#module-Alkemiems.akpad.report" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.akpad.resources">
+<span id="alkemiems-akpad-resources-module"></span><h2>Alkemiems.akpad.resources module<a class="headerlink" href="#module-Alkemiems.akpad.resources" title="Permalink to this headline">¶</a></h2>
+<p>Alkemiems Canvas Resource Loader</p>
+<dl class="class">
+<dt id="Alkemiems.akpad.resources.TestIconLoader">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.resources.</code><code class="descname">TestIconLoader</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#TestIconLoader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.TestIconLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.TestIconLoader.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#TestIconLoader.setUp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.TestIconLoader.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.TestIconLoader.tearDown">
+<code class="descname">tearDown</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#TestIconLoader.tearDown"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.TestIconLoader.tearDown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for deconstructing the test fixture after testing it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.TestIconLoader.test_from_desc">
+<code class="descname">test_from_desc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#TestIconLoader.test_from_desc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.TestIconLoader.test_from_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.TestIconLoader.test_loader">
+<code class="descname">test_loader</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#TestIconLoader.test_loader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.TestIconLoader.test_loader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.TestIconLoader.test_package_reflection">
+<code class="descname">test_package_reflection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#TestIconLoader.test_package_reflection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.TestIconLoader.test_package_reflection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.resources.add_default_search_paths">
+<code class="descclassname">Alkemiems.akpad.resources.</code><code class="descname">add_default_search_paths</code><span class="sig-paren">(</span><em>search_paths</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#add_default_search_paths"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.add_default_search_paths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.resources.default_search_paths">
+<code class="descclassname">Alkemiems.akpad.resources.</code><code class="descname">default_search_paths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#default_search_paths"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.default_search_paths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.resources.icon_loader">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.resources.</code><code class="descname">icon_loader</code><span class="sig-paren">(</span><em>search_paths=()</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#icon_loader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.icon_loader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.akpad.resources.resource_loader" title="Alkemiems.akpad.resources.resource_loader"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.akpad.resources.resource_loader</span></code></a></p>
+<dl class="attribute">
+<dt id="Alkemiems.akpad.resources.icon_loader.DEFAULT_ICON">
+<code class="descname">DEFAULT_ICON</code><em class="property"> = 'icons/Unknown.png'</em><a class="headerlink" href="#Alkemiems.akpad.resources.icon_loader.DEFAULT_ICON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.icon_loader.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>name</em>, <em>default=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#icon_loader.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.icon_loader.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.icon_loader.icon_glob">
+<code class="descname">icon_glob</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#icon_loader.icon_glob"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.icon_loader.icon_glob" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.icon_loader.is_icon_glob">
+<code class="descname">is_icon_glob</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#icon_loader.is_icon_glob"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.icon_loader.is_icon_glob" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.icon_loader.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#icon_loader.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.icon_loader.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.icon_loader.match">
+<code class="descname">match</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#icon_loader.match"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.icon_loader.match" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.icon_loader.open">
+<code class="descname">open</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#icon_loader.open"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.icon_loader.open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.resources.package">
+<code class="descclassname">Alkemiems.akpad.resources.</code><code class="descname">package</code><span class="sig-paren">(</span><em>qualified_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#package"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.package" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the enclosing package name where qualified_name is located.</p>
+<p><cite>qualified_name</cite> can be a module inside the package or even an object
+inside the module. If a package name itself is provided it is returned.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.resources.package_dirname">
+<code class="descclassname">Alkemiems.akpad.resources.</code><code class="descname">package_dirname</code><span class="sig-paren">(</span><em>package</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#package_dirname"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.package_dirname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the directory path where package is located.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.akpad.resources.resource_loader">
+<em class="property">class </em><code class="descclassname">Alkemiems.akpad.resources.</code><code class="descname">resource_loader</code><span class="sig-paren">(</span><em>search_paths=()</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#resource_loader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.resource_loader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.resource_loader.add_search_paths">
+<code class="descname">add_search_paths</code><span class="sig-paren">(</span><em>paths</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#resource_loader.add_search_paths"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.resource_loader.add_search_paths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add <cite>paths</cite> to the list of search paths.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.resource_loader.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#resource_loader.find"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.resource_loader.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find a resource matching <cite>name</cite>.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Alkemiems.akpad.resources.resource_loader.from_description">
+<em class="property">classmethod </em><code class="descname">from_description</code><span class="sig-paren">(</span><em>desc</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#resource_loader.from_description"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.resource_loader.from_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct an resource from a Widget or Category
+description.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.resource_loader.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#resource_loader.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.resource_loader.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.resource_loader.is_valid_prefixed">
+<code class="descname">is_valid_prefixed</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#resource_loader.is_valid_prefixed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.resource_loader.is_valid_prefixed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.resource_loader.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#resource_loader.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.resource_loader.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.resource_loader.match">
+<code class="descname">match</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#resource_loader.match"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.resource_loader.match" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.resource_loader.open">
+<code class="descname">open</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#resource_loader.open"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.resource_loader.open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.resource_loader.search_paths">
+<code class="descname">search_paths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#resource_loader.search_paths"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.resource_loader.search_paths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of all search paths.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.akpad.resources.resource_loader.split_prefix">
+<code class="descname">split_prefix</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#resource_loader.split_prefix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.resource_loader.split_prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Split prefixed path.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.akpad.resources.search_paths_from_description">
+<code class="descclassname">Alkemiems.akpad.resources.</code><code class="descname">search_paths_from_description</code><span class="sig-paren">(</span><em>desc</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/akpad/resources.html#search_paths_from_description"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.akpad.resources.search_paths_from_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the search paths for the Category/WidgetDescription.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.akpad">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Alkemiems.akpad" title="Permalink to this headline">¶</a></h2>
+<p>Canvas module</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Alkemiems.akpad.akpad.html" class="btn btn-neutral float-right" title="Alkemiems.akpad.akpad package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Alkemiems.html" class="btn btn-neutral float-left" title="Alkemiems package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Guanjie Wang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

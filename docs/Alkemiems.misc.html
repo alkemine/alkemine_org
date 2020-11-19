@@ -1,0 +1,531 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alkemiems.misc package &mdash; Alkemiems 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Alkemiems.openphase package" href="Alkemiems.openphase.html" />
+    <link rel="prev" title="Alkemiems.lammps package" href="Alkemiems.lammps.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Alkemiems
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Alkemiems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.html">Alkemiems.akpad package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.data.html">Alkemiems.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.io.html">Alkemiems.io package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.lammps.html">Alkemiems.lammps package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Alkemiems.misc package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.misc.cache">Alkemiems.misc.cache module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.misc.datasets">Alkemiems.misc.datasets module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.misc.distmatrix">Alkemiems.misc.distmatrix module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.misc.environ">Alkemiems.misc.environ module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.misc.lazy_module">Alkemiems.misc.lazy_module module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.misc.wrapper_meta">Alkemiems.misc.wrapper_meta module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.misc">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.openphase.html">Alkemiems.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.preprocess.html">Alkemiems.preprocess package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.potentialmind.html">Alkemiems.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.statistics.html">Alkemiems.statistics package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.vasp.html">Alkemiems.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.html">Alkemiems.widgets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.abinit.html">Alkemiems.widgets.abinit package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.calypso.html">Alkemiems.widgets.calypso package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.data.html">Alkemiems.widgets.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.database.html">Alkemiems.widgets.database package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.lammps.html">Alkemiems.widgets.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.openphase.html">Alkemiems.widgets.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.potentialmind.html">Alkemiems.widgets.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.qe.html">Alkemiems.widgets.qe package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.report.html">Alkemiems.widgets.report package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.utils.html">Alkemiems.widgets.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.vasp.html">Alkemiems.widgets.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.visualize.html">Alkemiems.widgets.visualize package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alkemiems</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Alkemiems</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.html">Alkemiems package</a> &raquo;</li>
+        
+      <li>Alkemiems.misc package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Alkemiems.misc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alkemiems-misc-package">
+<h1>Alkemiems.misc package<a class="headerlink" href="#alkemiems-misc-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.misc.cache">
+<span id="alkemiems-misc-cache-module"></span><h2>Alkemiems.misc.cache module<a class="headerlink" href="#module-Alkemiems.misc.cache" title="Permalink to this headline">¶</a></h2>
+<p>Common caching methods, using <cite>lru_cache</cite> sometimes has its downsides.</p>
+<dl class="function">
+<dt id="Alkemiems.misc.cache.memoize_method">
+<code class="descclassname">Alkemiems.misc.cache.</code><code class="descname">memoize_method</code><span class="sig-paren">(</span><em>*lru_args</em>, <em>**lru_kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/misc/cache.html#memoize_method"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.cache.memoize_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>Memoize methods without keeping reference to <cite>self</cite>.</p>
+<p>Using ordinary lru_cache on methods keeps a reference to the object in the cache,
+creating a cycle that keeps the object from getting garbage collected.</p>
+<p>lru_args
+lru_kwargs</p>
+<p><a class="reference external" href="https://stackoverflow.com/questions/33672412/python-functools-lru-cache-with-class-methods-release-object">https://stackoverflow.com/questions/33672412/python-functools-lru-cache-with-class-methods-release-object</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.misc.cache.single_cache">
+<code class="descclassname">Alkemiems.misc.cache.</code><code class="descname">single_cache</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/misc/cache.html#single_cache"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.cache.single_cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cache with size 1.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.misc.datasets">
+<span id="alkemiems-misc-datasets-module"></span><h2>Alkemiems.misc.datasets module<a class="headerlink" href="#module-Alkemiems.misc.datasets" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.misc.distmatrix">
+<span id="alkemiems-misc-distmatrix-module"></span><h2>Alkemiems.misc.distmatrix module<a class="headerlink" href="#module-Alkemiems.misc.distmatrix" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.misc.distmatrix.DistMatrix">
+<em class="property">class </em><code class="descclassname">Alkemiems.misc.distmatrix.</code><code class="descname">DistMatrix</code><a class="reference internal" href="_modules/Alkemiems/misc/distmatrix.html#DistMatrix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.distmatrix.DistMatrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></p>
+<p>Distance matrix. Extends <code class="docutils literal notranslate"><span class="pre">numpy.ndarray</span></code>.</p>
+<dl class="attribute">
+<dt id="Alkemiems.misc.distmatrix.DistMatrix.row_items">
+<code class="descname">row_items</code><a class="headerlink" href="#Alkemiems.misc.distmatrix.DistMatrix.row_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Items corresponding to matrix rows.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.misc.distmatrix.DistMatrix.col_items">
+<code class="descname">col_items</code><a class="headerlink" href="#Alkemiems.misc.distmatrix.DistMatrix.col_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Items corresponding to matrix columns.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.misc.distmatrix.DistMatrix.axis">
+<code class="descname">axis</code><a class="headerlink" href="#Alkemiems.misc.distmatrix.DistMatrix.axis" title="Permalink to this definition">¶</a></dt>
+<dd><p>If axis=1 we calculate distances between rows,
+if axis=0 we calculate distances between columns.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.misc.distmatrix.DistMatrix.X">
+<code class="descname">X</code><a class="headerlink" href="#Alkemiems.misc.distmatrix.DistMatrix.X" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.misc.distmatrix.DistMatrix.dim">
+<code class="descname">dim</code><a class="headerlink" href="#Alkemiems.misc.distmatrix.DistMatrix.dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the single dimension of the symmetric square matrix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.misc.distmatrix.DistMatrix.flat">
+<code class="descname">flat</code><a class="headerlink" href="#Alkemiems.misc.distmatrix.DistMatrix.flat" title="Permalink to this definition">¶</a></dt>
+<dd><p>A 1-D iterator over the array.</p>
+<p>This is a <cite>numpy.flatiter</cite> instance, which acts similarly to, but is not
+a subclass of, Python’s built-in iterator object.</p>
+<p>flatten : Return a copy of the array collapsed into one dimension.</p>
+<p>flatiter</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span>
+<span class="go">array([[1, 2, 3],</span>
+<span class="go">       [4, 5, 6]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">flat</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">T</span>
+<span class="go">array([[1, 4],</span>
+<span class="go">       [2, 5],</span>
+<span class="go">       [3, 6]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">flat</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="go">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">flat</span><span class="p">)</span>
+<span class="go">&lt;type &#39;numpy.flatiter&#39;&gt;</span>
+</pre></div>
+</div>
+<p>An assignment example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">flat</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span> <span class="n">x</span>
+<span class="go">array([[3, 3, 3],</span>
+<span class="go">       [3, 3, 3]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="o">.</span><span class="n">flat</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">x</span>
+<span class="go">array([[3, 1, 3],</span>
+<span class="go">       [3, 1, 3]])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="Alkemiems.misc.distmatrix.DistMatrix.from_file">
+<em class="property">classmethod </em><code class="descname">from_file</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/misc/distmatrix.html#DistMatrix.from_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.distmatrix.DistMatrix.from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load distance matrix from a file</p>
+<p>The file should be preferrably encoded in ascii/utf-8. White space at
+the beginning and end of lines is ignored.</p>
+<p>The first line of the file starts with the matrix dimension. It
+can be followed by a list flags</p>
+<ul class="simple">
+<li><em>axis=&lt;number&gt;</em>: the axis number</li>
+<li><em>symmetric</em>: the matrix is symmetric; when reading the element (i, j)
+it’s value is also assigned to (j, i)</li>
+<li><em>asymmetric</em>: the matrix is asymmetric</li>
+<li><em>row_labels</em>: the file contains row labels</li>
+<li><em>col_labels</em>: the file contains column labels</li>
+</ul>
+<p>By default, matrices are symmetric, have axis 1 and no labels are given.
+Flags <em>labeled</em> and <em>labelled</em> are obsolete aliases for <em>row_labels</em>.</p>
+<p>If the file has column labels, they follow in the second line.
+Row labels appear at the beginning of each row.
+Labels are arbitrary strings that cannot contain newlines and
+tabulators. Labels are stored as instances of <cite>Table</cite> with a single
+meta attribute named “label”.</p>
+<p>The remaining lines contain tab-separated numbers, preceded with labels,
+if present. Lines are padded with zeros if necessary. If the matrix is
+symmetric, the file contains the lower triangle; any data above the
+diagonal is ignored.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>filename: file name</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.misc.distmatrix.DistMatrix.has_col_labels">
+<code class="descname">has_col_labels</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/misc/distmatrix.html#DistMatrix.has_col_labels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.distmatrix.DistMatrix.has_col_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>True</cite> if column labels can be automatically determined from
+data</p>
+<p>For this, the <cite>col_items</cite> must be an instance of <cite>Alkemiems.data.Table</cite>
+whose domain contains a single meta attribute, which has to be a string.
+The domain may contain other variables, but not meta attributes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.misc.distmatrix.DistMatrix.has_row_labels">
+<code class="descname">has_row_labels</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/misc/distmatrix.html#DistMatrix.has_row_labels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.distmatrix.DistMatrix.has_row_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>True</cite> if row labels can be automatically determined from data</p>
+<p>For this, the <cite>row_items</cite> must be an instance of <cite>Alkemiems.data.Table</cite>
+whose domain contains a single meta attribute, which has to be a string.
+The domain may contain other variables, but not meta attributes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.misc.distmatrix.DistMatrix.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/misc/distmatrix.html#DistMatrix.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.distmatrix.DistMatrix.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the distance matrix to a file in the file format described at
+<a class="reference internal" href="#Alkemiems.misc.distmatrix.DistMatrix.from_file" title="Alkemiems.misc.distmatrix.DistMatrix.from_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_file</span></code></a>.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>filename: file name</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.misc.distmatrix.DistMatrix.submatrix">
+<code class="descname">submatrix</code><span class="sig-paren">(</span><em>row_items</em>, <em>col_items=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/misc/distmatrix.html#DistMatrix.submatrix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.distmatrix.DistMatrix.submatrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a submatrix</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>row_items: indices of rows
+col_items: incides of columns</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.misc.environ">
+<span id="alkemiems-misc-environ-module"></span><h2>Alkemiems.misc.environ module<a class="headerlink" href="#module-Alkemiems.misc.environ" title="Permalink to this headline">¶</a></h2>
+<p>Retrive basic library/application data/cache locations.</p>
+<p>The basic FS layout for Alkemiems data files is</p>
+<dl class="docutils">
+<dt>$DATA_HOME/Alkemiems/$VERSION/</dt>
+<dd>widgets/
+akpad/</dd>
+</dl>
+<p>where DATA_HOME is a platform dependent application directory
+(<span class="xref std std-ref">data_dir_base</span>) and VERSION is Alkemiems.__version__ string.</p>
+<p><code class="docutils literal notranslate"><span class="pre">akpad</span></code> subdirectory is reserved for settings/preferences stored
+by Alkemiems Canvas
+<code class="docutils literal notranslate"><span class="pre">widget</span></code> subdirectory is reserved for settings/preferences stored
+by OWWidget</p>
+<dl class="function">
+<dt id="Alkemiems.misc.environ.cache_dir">
+<code class="descclassname">Alkemiems.misc.environ.</code><code class="descname">cache_dir</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/misc/environ.html#cache_dir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.environ.cache_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the platform dependent Alkemiems cache directory.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.misc.environ.data_dir">
+<code class="descclassname">Alkemiems.misc.environ.</code><code class="descname">data_dir</code><span class="sig-paren">(</span><em>versioned=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/misc/environ.html#data_dir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.environ.data_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the platform dependent Alkemiems data directory.</p>
+<p>This is <code class="docutils literal notranslate"><span class="pre">data_dir_base()</span></code>/Alkemiems/__VERSION__/ directory if versioned is
+<cite>True</cite> and <code class="docutils literal notranslate"><span class="pre">data_dir_base()</span></code>/Alkemiems/ otherwise.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.misc.environ.data_dir_base">
+<code class="descclassname">Alkemiems.misc.environ.</code><code class="descname">data_dir_base</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/misc/environ.html#data_dir_base"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.environ.data_dir_base" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the platform dependent application directory.</p>
+<p>This is usually</p>
+<blockquote>
+<div><ul class="simple">
+<li>on windows: “%USERPROFILE%AppDataLocal”</li>
+<li>on OSX:  “~/Library/Application Support/”</li>
+<li>other: “~/.local/share/</li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.misc.environ.widget_settings_dir">
+<code class="descclassname">Alkemiems.misc.environ.</code><code class="descname">widget_settings_dir</code><span class="sig-paren">(</span><em>versioned=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/misc/environ.html#widget_settings_dir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.environ.widget_settings_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the platform dependent directory where widgets save their settings.</p>
+<p>This a subdirectory of <code class="docutils literal notranslate"><span class="pre">data_dir(versioned)</span></code> named “widgets”</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.misc.lazy_module">
+<span id="alkemiems-misc-lazy-module-module"></span><h2>Alkemiems.misc.lazy_module module<a class="headerlink" href="#module-Alkemiems.misc.lazy_module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.misc.wrapper_meta">
+<span id="alkemiems-misc-wrapper-meta-module"></span><h2>Alkemiems.misc.wrapper_meta module<a class="headerlink" href="#module-Alkemiems.misc.wrapper_meta" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.misc.wrapper_meta.WrapperMeta">
+<em class="property">class </em><code class="descclassname">Alkemiems.misc.wrapper_meta.</code><code class="descname">WrapperMeta</code><a class="reference internal" href="_modules/Alkemiems/misc/wrapper_meta.html#WrapperMeta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.wrapper_meta.WrapperMeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code></a></p>
+<p>Meta class for scikit-learn wrapper classes.</p>
+<p>This is used for docstring generation/templating upon
+class definition.
+The client (class using this meta class) should define a class
+attribute <cite>__wraps__</cite> which contains the wrapped class.</p>
+<p>For instance:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">Bar</span><span class="p">:</span>
+<span class="gp">... </span>   <span class="sd">&#39;&#39;&#39;I am a Bar&#39;&#39;&#39;</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">Foo</span><span class="p">(</span><span class="n">metaclass</span><span class="o">=</span><span class="n">WrapperMeta</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">__wraps__</span> <span class="o">=</span> <span class="n">Bar</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Foo</span><span class="o">.</span><span class="vm">__doc__</span>
+<span class="go">&#39;...A wrapper for ...Bar`. The following is its</span>
+<span class="go">    documentation:...I am a Bar...&#39;</span>
+</pre></div>
+</div>
+<p>The client can also define a template for the docstring</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">Foo</span><span class="p">(</span><span class="n">metaclass</span><span class="o">=</span><span class="n">WrapperMeta</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="sd">&#39;&#39;&#39;</span>
+<span class="gp">... </span><span class="sd">    Here is what ${sklname} says about itself:</span>
+<span class="gp">... </span><span class="sd">    ${skldoc}</span>
+<span class="gp">... </span><span class="sd">    &#39;&#39;&#39;</span>
+<span class="gp">... </span>    <span class="n">__wraps__</span> <span class="o">=</span> <span class="n">Bar</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Bar</span><span class="o">.</span><span class="vm">__doc__</span>
+<span class="go">&#39;I am a Bar&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Foo</span><span class="o">.</span><span class="vm">__doc__</span>
+<span class="go">&#39;...Here is what ...Bar says about itself:...I am a Bar...&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.misc">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Alkemiems.misc" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Alkemiems.misc.import_late_warning">
+<code class="descclassname">Alkemiems.misc.</code><code class="descname">import_late_warning</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/misc.html#import_late_warning"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.misc.import_late_warning" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Alkemiems.openphase.html" class="btn btn-neutral float-right" title="Alkemiems.openphase package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Alkemiems.lammps.html" class="btn btn-neutral float-left" title="Alkemiems.lammps package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Guanjie Wang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

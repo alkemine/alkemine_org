@@ -1,0 +1,681 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alkemiems.potentialmind.generate package &mdash; Alkemiems 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Alkemiems.potentialmind.symmtery_function package" href="Alkemiems.potentialmind.symmtery_function.html" />
+    <link rel="prev" title="Alkemiems.potentialmind package" href="Alkemiems.potentialmind.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Alkemiems
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Alkemiems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.html">Alkemiems.akpad package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.data.html">Alkemiems.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.io.html">Alkemiems.io package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.lammps.html">Alkemiems.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.misc.html">Alkemiems.misc package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.openphase.html">Alkemiems.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.preprocess.html">Alkemiems.preprocess package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Alkemiems.potentialmind.html">Alkemiems.potentialmind package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="Alkemiems.potentialmind.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Alkemiems.potentialmind.generate package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.potentialmind.generate.do_norm">Alkemiems.potentialmind.generate.do_norm module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.potentialmind.generate.genesetup">Alkemiems.potentialmind.generate.genesetup module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.potentialmind.generate.genesetup_copy">Alkemiems.potentialmind.generate.genesetup_copy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.potentialmind.generate.pmget_neighbor_distribute">Alkemiems.potentialmind.generate.pmget_neighbor_distribute module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.potentialmind.generate.simple_donor_xsf">Alkemiems.potentialmind.generate.simple_donor_xsf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-Alkemiems.potentialmind.generate">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.potentialmind.symmtery_function.html">Alkemiems.potentialmind.symmtery_function package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Alkemiems.potentialmind.utils.html">Alkemiems.potentialmind.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Alkemiems.potentialmind.html#module-Alkemiems.potentialmind">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.statistics.html">Alkemiems.statistics package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.vasp.html">Alkemiems.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.html">Alkemiems.widgets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.abinit.html">Alkemiems.widgets.abinit package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.calypso.html">Alkemiems.widgets.calypso package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.data.html">Alkemiems.widgets.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.database.html">Alkemiems.widgets.database package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.lammps.html">Alkemiems.widgets.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.openphase.html">Alkemiems.widgets.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.potentialmind.html">Alkemiems.widgets.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.qe.html">Alkemiems.widgets.qe package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.report.html">Alkemiems.widgets.report package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.utils.html">Alkemiems.widgets.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.vasp.html">Alkemiems.widgets.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.visualize.html">Alkemiems.widgets.visualize package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alkemiems</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Alkemiems</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.html">Alkemiems package</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.potentialmind.html">Alkemiems.potentialmind package</a> &raquo;</li>
+        
+      <li>Alkemiems.potentialmind.generate package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Alkemiems.potentialmind.generate.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alkemiems-potentialmind-generate-package">
+<h1>Alkemiems.potentialmind.generate package<a class="headerlink" href="#alkemiems-potentialmind-generate-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.potentialmind.generate.do_norm">
+<span id="alkemiems-potentialmind-generate-do-norm-module"></span><h2>Alkemiems.potentialmind.generate.do_norm module<a class="headerlink" href="#module-Alkemiems.potentialmind.generate.do_norm" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Alkemiems.potentialmind.generate.do_norm.check_read">
+<code class="descclassname">Alkemiems.potentialmind.generate.do_norm.</code><code class="descname">check_read</code><span class="sig-paren">(</span><em>filename</em>, <em>num=-1</em>, <em>head=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/do_norm.html#check_read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.do_norm.check_read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.potentialmind.generate.do_norm.input_file_make_filenamelists">
+<code class="descclassname">Alkemiems.potentialmind.generate.do_norm.</code><code class="descname">input_file_make_filenamelists</code><span class="sig-paren">(</span><em>file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/do_norm.html#input_file_make_filenamelists"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.do_norm.input_file_make_filenamelists" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.potentialmind.generate.do_norm.read_nor_sfval_to_save">
+<code class="descclassname">Alkemiems.potentialmind.generate.do_norm.</code><code class="descname">read_nor_sfval_to_save</code><span class="sig-paren">(</span><em>normparam_filename</em>, <em>nlabels</em>, <em>t_filename</em>, <em>wrifilename</em>, <em>split</em>, <em>head</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/do_norm.html#read_nor_sfval_to_save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.do_norm.read_nor_sfval_to_save" title="Permalink to this definition">¶</a></dt>
+<dd><p>输入单个归一化之后参数文件，将所有需要处理的二进制文件放在一个总文件夹中，指定要输出的文件夹名，输出归一化之后的数据
+输入labels的个数
+:param normparam_filename: 归一化参数文件
+:param nlabels: 标签的形状， values会自动根据归一化参数判断
+:param t_filename: 存放所有需要处理的总文件
+:param wrifilename: 要输出的总的文件(文件名，不可指定路径)
+:param split: 是否将文件分割开
+:param head: 每个文件是否储存value，label，nor信息
+:return: None</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.potentialmind.generate.genesetup">
+<span id="alkemiems-potentialmind-generate-genesetup-module"></span><h2>Alkemiems.potentialmind.generate.genesetup module<a class="headerlink" href="#module-Alkemiems.potentialmind.generate.genesetup" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup">
+<em class="property">class </em><code class="descclassname">Alkemiems.potentialmind.generate.genesetup.</code><code class="descname">GenerateSetup</code><span class="sig-paren">(</span><em>filename</em>, <em>max_nnl=None</em>, <em>total_atom=None</em>, <em>do_init=None</em>, <em>get_scale_shift=None</em>, <em>normalize_xsf=None</em>, <em>nl_stratety=True</em>, <em>whether_write_text=True</em>, <em>init_wri=False</em>, <em>do_sfval=True</em>, <em>multi_thread_num=None</em>, <em>show_progess=False</em>, <em>show_info=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup.html#GenerateSetup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="attribute">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.direc">
+<code class="descname">direc</code><em class="property"> = {'x': 0, 'y': 1, 'z': 2}</em><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.direc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.fixed_dict_keys">
+<code class="descname">fixed_dict_keys</code><em class="property"> = ['min', 'max', 'avg', 'cov', 'scale']</em><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.fixed_dict_keys" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.get_normalize_param">
+<code class="descname">get_normalize_param</code><span class="sig-paren">(</span><em>save_final_norparam=False</em>, <em>save_final_norparam_filename='_final_nps'</em>, <em>read_normalize_param=False</em>, <em>read_normalize_param_filename=None</em>, <em>record_normalize_process=False</em>, <em>record_normalize_process_filename='_part_nps'</em>, <em>save_each_sfval_bin=False</em>, <em>save_each_sfval_bin_filename='_not_norm_sfval'</em>, <em>save_final_norparam_json=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup.html#GenerateSetup.get_normalize_param"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.get_normalize_param" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>save_final_norparam</strong> – 存储最终归一化参数的结果</li>
+<li><strong>save_final_norparam_filename</strong> – 存储最终参数的文件的descrip是什么</li>
+<li><strong>read_normalize_param</strong> – 是否读取归一化参数</li>
+<li><strong>read_normalize_param_filename</strong> – 读取归一化参数文件名</li>
+<li><strong>record_normalize_process</strong> – 记录归一化参数的过程</li>
+<li><strong>record_normalize_process_filename</strong> – 记录归一化参数过程的文件名的descirp</li>
+<li><strong>save_each_sfval_bin</strong> – 存储每一个sf的未经归一化的值，方便之后做归一化</li>
+<li><strong>save_each_sfval_bin_filename</strong> – 存储每一个sf的未经归一化的值的文件名的descrip</li>
+<li><strong>save_final_norparam_json</strong> – save_final_norparam=True时此参数生效，保存成单个文件json格式</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.judge_file_type">
+<em class="property">static </em><code class="descname">judge_file_type</code><span class="sig-paren">(</span><em>filetype</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup.html#GenerateSetup.judge_file_type"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.judge_file_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>给定原子类型，判断分别有多少个能量参数，多少力学参数，多少能量值，多少原子力值
+:param filetype: 文件类型，支持：force, energy, full, eneforce, eacheneforce, eachforce
+:return: (int, int, int, int)</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.load_mdlognpz_to_init_normalize">
+<em class="property">static </em><code class="descname">load_mdlognpz_to_init_normalize</code><span class="sig-paren">(</span><em>gsetup_filename='generate.in'</em>, <em>filename='md.npz'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup.html#GenerateSetup.load_mdlognpz_to_init_normalize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.load_mdlognpz_to_init_normalize" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>从二进制文件md.npz中读取初始化参数，读取归一化参数，返回一个新的经过初始化和归一化的类，可以直接用来更新每一个xsf文件</div></blockquote>
+<p>（必须通过update计算xsf文件）
+:param gsetup_filename:
+:param filename:  ‘md.npz’
+:return: 新的GenerateSetup对象，gg.init=True, gg.scaleshift=True</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.nnl_init">
+<code class="descname">nnl_init</code><span class="sig-paren">(</span><em>total_atom=None</em>, <em>max_nnl=None</em>, <em>filename=None</em>, <em>wri=True</em>, <em>show_info=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup.html#GenerateSetup.nnl_init"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.nnl_init" title="Permalink to this definition">¶</a></dt>
+<dd><p>遍历所有xsf得到最大近邻原子
+:param total_atom: 字典，如果传入总原子个数，同时必须传入最大近邻原子，这样会跳过遍历，直接完成初始化
+:param max_nnl: 字典，每种元素最大近邻原子个数
+:param filename: 记录遍历过程每个原子近邻列表的文件
+:param wri: 将最后的信息，即total_atom， max_nnl记录下来
+:param show_info: 显示初始化结果的信息
+:return: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.normalize_xsf">
+<code class="descname">normalize_xsf</code><span class="sig-paren">(</span><em>do_normalize=True</em>, <em>save_filename=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup.html#GenerateSetup.normalize_xsf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.normalize_xsf" title="Permalink to this definition">¶</a></dt>
+<dd><p>do_normalize=True： 计算完成了归一化参数，然后对实际的sf数值进行缩放
+do_normalize=False：或者不做归一化，直接输出sf参数
+一般这一步用不到，因为按照之前的过程，normalize时候会输出bin二进制文件，之后只需要对参数进行缩放就可以了</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>do_normalize</strong> – 是否运行对sf数值乘以归一化参数的过程</li>
+<li><strong>save_filename</strong> – 储存的文件的descrip是什么</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.nptype">
+<code class="descname">nptype</code><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.nptype" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.float32</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.op_single_xsf">
+<code class="descname">op_single_xsf</code><span class="sig-paren">(</span><em>objxsf</em>, <em>save_final_sfval=None</em>, <em>record_nor=None</em>, <em>record_init=None</em>, <em>do_init=None</em>, <em>get_scale_shift=None</em>, <em>do_normalize=None</em>, <em>add_attribute_to_atom=None</em>, <em>record_json=True</em>, <em>center_atom_detail_info=False</em>, <em>nei_atom_detail_info=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup.html#GenerateSetup.op_single_xsf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.op_single_xsf" title="Permalink to this definition">¶</a></dt>
+<dd><p>对一个xsf对象执行的操作
+:param objxsf:  XSF对象
+:param save_final_sfval: 是否保存
+:param record_nor: 记录归一化过程的文件对象, 以一个XSF为整体输出一次
+:param record_init: 记录初始化的文件对象, 以一个XSF为整体输出一次
+:param do_init: 是否是做初始化，如果是，会跳过最耗时的计算sf值的部分
+:param get_scale_shift: 计算归一化参数
+:param do_normalize: 通过归一化参数缩放每个sf值
+:param add_attribute_to_atom: 是否将计算完的属性添加到每个Atom对象中
+:param record_json: 是否以json的格式输出记录的数据， 只有record != None，record_json才有用，建议使用json格式，输出更清楚
+:param center_atom_detail_info: 是否记录中心原子的详细信息，如果record_json=False，此参数没用
+:param nei_atom_detail_info: 是否记录近邻原子的详细原子信息，如果record_json=False，此参数没用
+:return: None</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.set_max_nl">
+<code class="descname">set_max_nl</code><span class="sig-paren">(</span><em>new=True</em>, <em>skin=0.1</em>, <em>self_interaction=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup.html#GenerateSetup.set_max_nl"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.set_max_nl" title="Permalink to this definition">¶</a></dt>
+<dd><p>每种元素的对称函数设置近邻最大的截断半径
+:param new: 选择近邻原子的策略，是否考虑周期性
+:param skin: 截断半径圆环的宽度
+:param self_interaction: 近邻原子列表是否包括本身</p>
+<p># 以下两个参数抛弃，近邻原子列表会根据Fingerprint选择每种元素的最大近邻原子，分类默认为True
+rc_dict: 截断半径，每个元素对应一个浮点值
+sorted_accord_dis: 按照距离将近邻原子排序, True默认参数</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Neighborlist对象</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.set_sfsetup">
+<code class="descname">set_sfsetup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup.html#GenerateSetup.set_sfsetup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.set_sfsetup" title="Permalink to this definition">¶</a></dt>
+<dd><p>给每种元素配置fingerprint
+每种元素都会是一个Element对象，通过fpsetup 访问其对称函数相关的属性
+:return: 每种元素对应的Element实例，元素对应周边原子类型的分类</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>xsf_object</em>, <em>label=False</em>, <em>dicform=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup.html#GenerateSetup.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>通过载入train时候产生的数据，初始化genesetup，通过update更新预测时候的每个结构
+:param xsf_object: Xsf类的实例
+:param label: 返回该组数据的label值，预测应该没有label，因此默认为False
+:param dicform: 是否以字典形式返回，False：返回列表形式，列表长度是元素个数, 如果返回列表，不会包含label值
+:return: dict：{elment1：{‘values’:data1, ‘labels’:data1}, elment2：{‘values’:data2, ‘labels’:data2}…}</p>
+<blockquote>
+<div>list: [element1[‘values’], element2[‘values’] ……]</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup.GenerateSetup.write_md_log_bin">
+<code class="descname">write_md_log_bin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup.html#GenerateSetup.write_md_log_bin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup.GenerateSetup.write_md_log_bin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.potentialmind.generate.genesetup_copy">
+<span id="alkemiems-potentialmind-generate-genesetup-copy-module"></span><h2>Alkemiems.potentialmind.generate.genesetup_copy module<a class="headerlink" href="#module-Alkemiems.potentialmind.generate.genesetup_copy" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup">
+<em class="property">class </em><code class="descclassname">Alkemiems.potentialmind.generate.genesetup_copy.</code><code class="descname">GenerateSetup</code><span class="sig-paren">(</span><em>filename</em>, <em>max_nnl=None</em>, <em>total_atom=None</em>, <em>do_init=None</em>, <em>get_scale_shift=None</em>, <em>normalize=None</em>, <em>nl_stratety=True</em>, <em>whether_write_text=True</em>, <em>init_wri=False</em>, <em>do_sfval=True</em>, <em>multi_thread_num=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup_copy.html#GenerateSetup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="docutils">
+<dt>max_nnl: dict</dt>
+<dd>每种元素最大个数的近邻原子</dd>
+<dt>total_atom: dict</dt>
+<dd>每种元素总的原子个数</dd>
+<dt>do_init:</dt>
+<dd>是否做初始化，如果有max_nnl和total_atom则会跳过初始化</dd>
+<dt>get_scalshift:</dt>
+<dd>是否获得归一化参数，归一化参数包括每个对称函数的min max avg和cov，并计算scale和shift（=avg）</dd>
+<dt>nomalize:</dt>
+<dd>是否使用scale和shift缩放最终数据</dd>
+<dt>nl_stragety:</dt>
+<dd>近邻原子列表使用的策略，True：NewNeighborlist（推荐使用）； False：Neighborlist（不推荐使用）</dd>
+</dl>
+<dl class="attribute">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.direc">
+<code class="descname">direc</code><em class="property"> = {'x': 0, 'y': 1, 'z': 2}</em><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.direc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.fixed_dict_keys">
+<code class="descname">fixed_dict_keys</code><em class="property"> = ['min', 'max', 'avg', 'cov', 'scale']</em><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.fixed_dict_keys" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.get_normalize_param">
+<code class="descname">get_normalize_param</code><span class="sig-paren">(</span><em>save_final_norparam=None</em>, <em>save_final_norparam_filename='final_nps'</em>, <em>read_normalize_param=None</em>, <em>read_normalize_param_filename=None</em>, <em>record_normalize_process=None</em>, <em>record_normalize_process_filename='part_nps'</em>, <em>save_each_sfval_bin=None</em>, <em>save_each_sfval_bin_filename='_not_norm_sfval'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup_copy.html#GenerateSetup.get_normalize_param"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.get_normalize_param" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>save_final_norparam</strong> – </li>
+<li><strong>save_final_norparam_filename</strong> – </li>
+<li><strong>read_normalize_param</strong> – </li>
+<li><strong>read_normalize_param_filename</strong> – </li>
+<li><strong>record_normalize_process</strong> – </li>
+<li><strong>record_normalize_process_filename</strong> – </li>
+<li><strong>save_each_sfval_bin</strong> – </li>
+<li><strong>save_each_sfval_bin_filename</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.judge_file_type">
+<em class="property">static </em><code class="descname">judge_file_type</code><span class="sig-paren">(</span><em>filetype</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup_copy.html#GenerateSetup.judge_file_type"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.judge_file_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.load_mdlognpz_to_init_normalize">
+<em class="property">static </em><code class="descname">load_mdlognpz_to_init_normalize</code><span class="sig-paren">(</span><em>gsetup_filename='generate.in'</em>, <em>filename='md.npz'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup_copy.html#GenerateSetup.load_mdlognpz_to_init_normalize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.load_mdlognpz_to_init_normalize" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>从二进制文件md.npz中读取初始化参数，读取归一划参数，返回一个新的经过初始化和归一化的类，可以直接用来更新每一个xsf文件</div></blockquote>
+<p>（必须通过update计算xsf文件）
+:param gsetup_filename:
+:param filename:  ‘md.npz’
+:return: 新的GenerateSetup对象，gg.init=True, gg.normalize=True</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.nnl_init">
+<code class="descname">nnl_init</code><span class="sig-paren">(</span><em>total_atom=None</em>, <em>max_nnl=None</em>, <em>filename=None</em>, <em>wri=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup_copy.html#GenerateSetup.nnl_init"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.nnl_init" title="Permalink to this definition">¶</a></dt>
+<dd><p>遍历所有xsf得到最大近邻原子
+有两种方法初始化：</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>a = generate()   a.star_init() &gt;&gt; a是被初始化的</li>
+<li>a = generate()  max_nnl, totatom = a.star_init()
+b = generate(filename, max_nnl, totatom) &gt;&gt;&gt; b完成初始化</li>
+</ol>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">max_nnl, total_atom</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.normalize_xsf">
+<code class="descname">normalize_xsf</code><span class="sig-paren">(</span><em>do_normalize=True</em>, <em>save_filename=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup_copy.html#GenerateSetup.normalize_xsf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.normalize_xsf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.nptype">
+<code class="descname">nptype</code><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.nptype" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.float32</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.op_single_xsf">
+<code class="descname">op_single_xsf</code><span class="sig-paren">(</span><em>objxsf</em>, <em>save=None</em>, <em>record=None</em>, <em>do_init=None</em>, <em>get_scale_shift=None</em>, <em>do_normalize=None</em>, <em>add_attribute_to_atom=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup_copy.html#GenerateSetup.op_single_xsf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.op_single_xsf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.set_max_nl">
+<code class="descname">set_max_nl</code><span class="sig-paren">(</span><em>new=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup_copy.html#GenerateSetup.set_max_nl"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.set_max_nl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.set_sfsetup">
+<code class="descname">set_sfsetup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup_copy.html#GenerateSetup.set_sfsetup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.set_sfsetup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>xsf_object</em>, <em>label=False</em>, <em>dicform=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup_copy.html#GenerateSetup.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>通过载入train时候产生的数据，初始化genesetup，通过update更新预测时候的每个结构
+:param xsf_object: Xsf类的实例
+:param label: 返回该组数据的label值，预测应该没有label，因此默认为False
+:param dicform: 是否以字典形式返回，False：返回列表形式，列表长度是元素个数, 如果返回列表，不会包含label值
+:return: dict：{elment1：{‘values’:data1, ‘labels’:data1}, elment2：{‘values’:data2, ‘labels’:data2}…}</p>
+<blockquote>
+<div>list: [element1[‘values’], element2[‘values’] ……]</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.write_md_log_bin">
+<code class="descname">write_md_log_bin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/genesetup_copy.html#GenerateSetup.write_md_log_bin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.genesetup_copy.GenerateSetup.write_md_log_bin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.potentialmind.generate.pmget_neighbor_distribute">
+<span id="alkemiems-potentialmind-generate-pmget-neighbor-distribute-module"></span><h2>Alkemiems.potentialmind.generate.pmget_neighbor_distribute module<a class="headerlink" href="#module-Alkemiems.potentialmind.generate.pmget_neighbor_distribute" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.potentialmind.generate.pmget_neighbor_distribute.GetNei">
+<em class="property">class </em><code class="descclassname">Alkemiems.potentialmind.generate.pmget_neighbor_distribute.</code><code class="descname">GetNei</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/pmget_neighbor_distribute.html#GetNei"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.pmget_neighbor_distribute.GetNei" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.pmget_neighbor_distribute.GetNei.plot_dis">
+<code class="descname">plot_dis</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/pmget_neighbor_distribute.html#GetNei.plot_dis"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.pmget_neighbor_distribute.GetNei.plot_dis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.potentialmind.generate.simple_donor_xsf">
+<span id="alkemiems-potentialmind-generate-simple-donor-xsf-module"></span><h2>Alkemiems.potentialmind.generate.simple_donor_xsf module<a class="headerlink" href="#module-Alkemiems.potentialmind.generate.simple_donor_xsf" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm">
+<em class="property">class </em><code class="descclassname">Alkemiems.potentialmind.generate.simple_donor_xsf.</code><code class="descname">DoNorm</code><span class="sig-paren">(</span><em>param_filename</em>, <em>nlabels</em>, <em>ntype=&lt;class 'numpy.float32'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/simple_donor_xsf.html#DoNorm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>将最终的归一化参数 和 每一组数据labels的个数传进来，初始化一个可以用于写的对象
+对于每一个存储的数据，调用update即可写出最终结果</p>
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm.only_read">
+<code class="descname">only_read</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/simple_donor_xsf.html#DoNorm.only_read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm.only_read" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm.read_nor_params">
+<em class="property">static </em><code class="descname">read_nor_params</code><span class="sig-paren">(</span><em>param_filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/simple_donor_xsf.html#DoNorm.read_nor_params"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm.read_nor_params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>filename</em>, <em>wrifile</em>, <em>wmod='ab'</em>, <em>head=False</em>, <em>valid_ratio=0.3</em>, <em>valid_filename=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/simple_donor_xsf.html#DoNorm.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>没有归一化的数据，读取归一化参数文件，通过调用updata来产生归一化之后的参数，并且可以指定测试集
+:param filename:
+:param wrifile:
+:param wmod:
+:param head:
+:param valid_ratio:
+:param valid_filename:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm.valid_data">
+<code class="descname">valid_data</code><span class="sig-paren">(</span><em>filename</em>, <em>wrifile</em>, <em>wmod='ab'</em>, <em>head=False</em>, <em>valid_ratio=0.3</em>, <em>valid_filename=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/simple_donor_xsf.html#DoNorm.valid_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm.valid_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>已经做完归一化的数据，忘记提取测试集了，可以通过valid_data来获得测试集
+:param filename:
+:param wrifile:
+:param wmod:
+:param head:
+:param valid_ratio:
+:param valid_filename:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm.valid_one_file">
+<code class="descname">valid_one_file</code><span class="sig-paren">(</span><em>filename</em>, <em>wfile</em>, <em>wmod='wb'</em>, <em>head=False</em>, <em>valid_ratio=0.0</em>, <em>valid_filename=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/simple_donor_xsf.html#DoNorm.valid_one_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm.valid_one_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>已经做完归一化的数据，忘记提取测试集了，可以通过valid_data来获得测试集
+:param filename:
+:param wfile:
+:param wmod:
+:param head:
+:param valid_ratio:
+:param valid_filename:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm.write_one_file">
+<code class="descname">write_one_file</code><span class="sig-paren">(</span><em>filename</em>, <em>wfile</em>, <em>wmod='wb'</em>, <em>head=False</em>, <em>valid_ratio=0.0</em>, <em>valid_filename=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/potentialmind/generate/simple_donor_xsf.html#DoNorm.write_one_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.potentialmind.generate.simple_donor_xsf.DoNorm.write_one_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.potentialmind.generate">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Alkemiems.potentialmind.generate" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Alkemiems.potentialmind.symmtery_function.html" class="btn btn-neutral float-right" title="Alkemiems.potentialmind.symmtery_function package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Alkemiems.potentialmind.html" class="btn btn-neutral float-left" title="Alkemiems.potentialmind package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Guanjie Wang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

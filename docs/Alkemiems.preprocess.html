@@ -1,0 +1,1352 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alkemiems.preprocess package &mdash; Alkemiems 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Alkemiems.statistics package" href="Alkemiems.statistics.html" />
+    <link rel="prev" title="Alkemiems.potentialmind.utils.data package" href="Alkemiems.potentialmind.utils.data.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Alkemiems
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Alkemiems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.akpad.html">Alkemiems.akpad package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.data.html">Alkemiems.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.io.html">Alkemiems.io package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.lammps.html">Alkemiems.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.misc.html">Alkemiems.misc package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.openphase.html">Alkemiems.openphase package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Alkemiems.preprocess package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.preprocess.continuize">Alkemiems.preprocess.continuize module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.preprocess.discretize">Alkemiems.preprocess.discretize module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.preprocess.fss">Alkemiems.preprocess.fss module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.preprocess.impute">Alkemiems.preprocess.impute module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.preprocess.normalize">Alkemiems.preprocess.normalize module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.preprocess.preprocess">Alkemiems.preprocess.preprocess module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preprocess">Preprocess</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.preprocess.remove">Alkemiems.preprocess.remove module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.preprocess.score">Alkemiems.preprocess.score module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.preprocess.setup">Alkemiems.preprocess.setup module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.preprocess.transformation">Alkemiems.preprocess.transformation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.preprocess.util">Alkemiems.preprocess.util module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Alkemiems.preprocess">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.potentialmind.html">Alkemiems.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.statistics.html">Alkemiems.statistics package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.vasp.html">Alkemiems.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.html">Alkemiems.widgets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.abinit.html">Alkemiems.widgets.abinit package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.calypso.html">Alkemiems.widgets.calypso package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.data.html">Alkemiems.widgets.data package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.database.html">Alkemiems.widgets.database package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.lammps.html">Alkemiems.widgets.lammps package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.openphase.html">Alkemiems.widgets.openphase package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.potentialmind.html">Alkemiems.widgets.potentialmind package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.qe.html">Alkemiems.widgets.qe package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.report.html">Alkemiems.widgets.report package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.utils.html">Alkemiems.widgets.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.vasp.html">Alkemiems.widgets.vasp package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Alkemiems.widgets.visualize.html">Alkemiems.widgets.visualize package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alkemiems</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">Alkemiems</a> &raquo;</li>
+        
+          <li><a href="Alkemiems.html">Alkemiems package</a> &raquo;</li>
+        
+      <li>Alkemiems.preprocess package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Alkemiems.preprocess.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alkemiems-preprocess-package">
+<h1>Alkemiems.preprocess package<a class="headerlink" href="#alkemiems-preprocess-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.preprocess.continuize">
+<span id="alkemiems-preprocess-continuize-module"></span><h2>Alkemiems.preprocess.continuize module<a class="headerlink" href="#module-Alkemiems.preprocess.continuize" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.preprocess.continuize.DomainContinuizer">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.continuize.</code><code class="descname">DomainContinuizer</code><span class="sig-paren">(</span><em>zero_based=True</em>, <em>multinomial_treatment=Continuize.Indicators</em>, <em>transform_class=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/continuize.html#DomainContinuizer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.continuize.DomainContinuizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.util._RefuseDataInConstructor</span></code>, <a class="reference internal" href="Alkemiems.html#Alkemiems.util.Reprable" title="Alkemiems.util.Reprable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.util.Reprable</span></code></a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.preprocess.discretize">
+<span id="alkemiems-preprocess-discretize-module"></span><h2>Alkemiems.preprocess.discretize module<a class="headerlink" href="#module-Alkemiems.preprocess.discretize" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.preprocess.discretize.EqualFreq">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.discretize.</code><code class="descname">EqualFreq</code><span class="sig-paren">(</span><em>n=4</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/discretize.html#EqualFreq"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.discretize.EqualFreq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.discretize.Discretization</span></code></p>
+<p>Discretization into bins with approximately equal number of data
+instances.</p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.discretize.EqualFreq.n">
+<code class="descname">n</code><a class="headerlink" href="#Alkemiems.preprocess.discretize.EqualFreq.n" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of bins (default: 4). The actual number may be lower if the
+variable has less than n distinct values.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.discretize.EqualWidth">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.discretize.</code><code class="descname">EqualWidth</code><span class="sig-paren">(</span><em>n=4</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/discretize.html#EqualWidth"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.discretize.EqualWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.discretize.Discretization</span></code></p>
+<p>Discretization into a fixed number of bins with equal widths.</p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.discretize.EqualWidth.n">
+<code class="descname">n</code><a class="headerlink" href="#Alkemiems.preprocess.discretize.EqualWidth.n" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of bins (default: 4).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.discretize.EntropyMDL">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.discretize.</code><code class="descname">EntropyMDL</code><span class="sig-paren">(</span><em>force=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/discretize.html#EntropyMDL"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.discretize.EntropyMDL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.discretize.Discretization</span></code></p>
+<p>Discretization into bins inferred by recursively splitting the values to
+minimize the class-entropy. The procedure stops when further splits would
+decrease the entropy for less than the corresponding increase of minimal
+description length (MDL). [FayyadIrani93].</p>
+<p>If there are no suitable cut-off points, the procedure returns a single bin,
+which means that the new feature is constant and can be removed.</p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.discretize.EntropyMDL.force">
+<code class="descname">force</code><a class="headerlink" href="#Alkemiems.preprocess.discretize.EntropyMDL.force" title="Permalink to this definition">¶</a></dt>
+<dd><p>Induce at least one cut-off point, even when its information
+gain is lower than MDL (default: False).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.discretize.DomainDiscretizer">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.discretize.</code><code class="descname">DomainDiscretizer</code><span class="sig-paren">(</span><em>discretize_class=False</em>, <em>method=None</em>, <em>clean=True</em>, <em>fixed=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/discretize.html#DomainDiscretizer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.discretize.DomainDiscretizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.util._RefuseDataInConstructor</span></code>, <a class="reference internal" href="Alkemiems.html#Alkemiems.util.Reprable" title="Alkemiems.util.Reprable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.util.Reprable</span></code></a></p>
+<p>Discretizes all continuous features in the data.</p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.discretize.DomainDiscretizer.method">
+<code class="descname">method</code><a class="headerlink" href="#Alkemiems.preprocess.discretize.DomainDiscretizer.method" title="Permalink to this definition">¶</a></dt>
+<dd><p>Feature discretization method (instance of
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">Alkemiems.preprocess.Discretization</span></code>). If <cite>None</cite> (default),
+<code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.EqualFreq</span></code> with 4 intervals is
+used.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.discretize.DomainDiscretizer.clean">
+<code class="descname">clean</code><a class="headerlink" href="#Alkemiems.preprocess.discretize.DomainDiscretizer.clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <cite>True</cite>, features discretized into a single interval constant are
+removed. This is useful for discretization methods that infer the
+number of intervals from the data, such as
+<code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.EntropyMDL</span></code> (default: <cite>True</cite>).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.discretize.DomainDiscretizer.discretize_class">
+<code class="descname">discretize_class</code><a class="headerlink" href="#Alkemiems.preprocess.discretize.DomainDiscretizer.discretize_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether a target is also discretized if it is continuous.
+(default: <cite>False</cite>)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.preprocess.fss">
+<span id="alkemiems-preprocess-fss-module"></span><h2>Alkemiems.preprocess.fss module<a class="headerlink" href="#module-Alkemiems.preprocess.fss" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.preprocess.fss.SelectBestFeatures">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.fss.</code><code class="descname">SelectBestFeatures</code><span class="sig-paren">(</span><em>method=None</em>, <em>k=None</em>, <em>threshold=None</em>, <em>decreasing=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/fss.html#SelectBestFeatures"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.fss.SelectBestFeatures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.html#Alkemiems.util.Reprable" title="Alkemiems.util.Reprable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.util.Reprable</span></code></a></p>
+<p>A feature selector that builds a new dataset consisting of either the top
+<cite>k</cite> features or all those that exceed a given <cite>threshold</cite>. Features are
+scored using the provided feature scoring <cite>method</cite>. By default it is
+assumed that feature importance diminishes with decreasing scores.</p>
+<p>If both <cite>k</cite> and <cite>threshold</cite> are set, only features satisfying both
+conditions will be selected.</p>
+<p>If <cite>method</cite> is not set, it is automatically selected when presented with
+the dataset. Datasets with both continuous and discrete features are
+scored using a method suitable for the majority of features.</p>
+<dl class="docutils">
+<dt>method <span class="classifier-delimiter">:</span> <span class="classifier">Alkemiems.preprocess.score.ClassificationScorer, Alkemiems.preprocess.score.SklScorer</span></dt>
+<dd>Univariate feature scoring method.</dd>
+<dt>k <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>The number of top features to select.</dd>
+<dt>threshold <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd>A threshold that a feature should meet according to the provided method.</dd>
+<dt>decreasing <span class="classifier-delimiter">:</span> <span class="classifier">boolean</span></dt>
+<dd>The order of feature importance when sorted from the most to the least
+important feature.</dd>
+</dl>
+<dl class="method">
+<dt id="Alkemiems.preprocess.fss.SelectBestFeatures.score_only_nice_features">
+<code class="descname">score_only_nice_features</code><span class="sig-paren">(</span><em>data</em>, <em>method</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/fss.html#SelectBestFeatures.score_only_nice_features"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.fss.SelectBestFeatures.score_only_nice_features" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.fss.SelectRandomFeatures">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.fss.</code><code class="descname">SelectRandomFeatures</code><span class="sig-paren">(</span><em>k=0.1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/fss.html#SelectRandomFeatures"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.fss.SelectRandomFeatures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.html#Alkemiems.util.Reprable" title="Alkemiems.util.Reprable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.util.Reprable</span></code></a></p>
+<p>A feature selector that selects random <cite>k</cite> features from an input
+dataset and returns a dataset with selected features. Parameter
+<cite>k</cite> is either an integer (number of feature) or float (from 0.0 to
+1.0, proportion of retained features).</p>
+<dl class="docutils">
+<dt>k <span class="classifier-delimiter">:</span> <span class="classifier">int or float (default = 0.1)</span></dt>
+<dd>The number or proportion of features to retain.</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.preprocess.impute">
+<span id="alkemiems-preprocess-impute-module"></span><h2>Alkemiems.preprocess.impute module<a class="headerlink" href="#module-Alkemiems.preprocess.impute" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.preprocess.impute.ReplaceUnknowns">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.impute.</code><code class="descname">ReplaceUnknowns</code><span class="sig-paren">(</span><em>variable</em>, <em>value=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/impute.html#ReplaceUnknowns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.impute.ReplaceUnknowns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.transformation.Transformation" title="Alkemiems.preprocess.transformation.Transformation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.transformation.Transformation</span></code></a></p>
+<p>A column transformation which replaces unknown values with a fixed <cite>value</cite>.</p>
+<dl class="docutils">
+<dt>variable <span class="classifier-delimiter">:</span> <span class="classifier">Alkemiems.data.Variable</span></dt>
+<dd>The target variable for imputation.</dd>
+<dt>value <span class="classifier-delimiter">:</span> <span class="classifier">int or float</span></dt>
+<dd>The value with which to replace the unknown values</dd>
+</dl>
+<dl class="method">
+<dt id="Alkemiems.preprocess.impute.ReplaceUnknowns.transform">
+<code class="descname">transform</code><span class="sig-paren">(</span><em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/impute.html#ReplaceUnknowns.transform"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.impute.ReplaceUnknowns.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the transformed value of the argument <cite>c</cite>, which can be a number
+of a vector view.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.impute.Average">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.impute.</code><code class="descname">Average</code><a class="reference internal" href="_modules/Alkemiems/preprocess/impute.html#Average"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.impute.Average" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.impute.BaseImputeMethod</span></code></p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Average.description">
+<code class="descname">description</code><em class="property"> = 'Replace with average/mode of the column'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Average.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Average.name">
+<code class="descname">name</code><em class="property"> = 'Average/Most frequent'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Average.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Average.short_name">
+<code class="descname">short_name</code><em class="property"> = 'average'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Average.short_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.impute.DoNotImpute">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.impute.</code><code class="descname">DoNotImpute</code><a class="reference internal" href="_modules/Alkemiems/preprocess/impute.html#DoNotImpute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.impute.DoNotImpute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.impute.BaseImputeMethod</span></code></p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.DoNotImpute.description">
+<code class="descname">description</code><em class="property"> = ''</em><a class="headerlink" href="#Alkemiems.preprocess.impute.DoNotImpute.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.DoNotImpute.name">
+<code class="descname">name</code><em class="property"> = &quot;Don't impute&quot;</em><a class="headerlink" href="#Alkemiems.preprocess.impute.DoNotImpute.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.DoNotImpute.short_name">
+<code class="descname">short_name</code><em class="property"> = 'leave'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.DoNotImpute.short_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.impute.DropInstances">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.impute.</code><code class="descname">DropInstances</code><a class="reference internal" href="_modules/Alkemiems/preprocess/impute.html#DropInstances"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.impute.DropInstances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.impute.BaseImputeMethod</span></code></p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.DropInstances.description">
+<code class="descname">description</code><em class="property"> = ''</em><a class="headerlink" href="#Alkemiems.preprocess.impute.DropInstances.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.DropInstances.name">
+<code class="descname">name</code><em class="property"> = 'Remove instances with unknown values'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.DropInstances.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.DropInstances.short_name">
+<code class="descname">short_name</code><em class="property"> = 'drop'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.DropInstances.short_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.impute.Model">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.impute.</code><code class="descname">Model</code><span class="sig-paren">(</span><em>learner</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/impute.html#Model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.impute.Model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.impute.BaseImputeMethod</span></code></p>
+<dl class="method">
+<dt id="Alkemiems.preprocess.impute.Model.copy">
+<code class="descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/impute.html#Model.copy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.impute.Model.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Model.description">
+<code class="descname">description</code><em class="property"> = ''</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Model.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Model.format">
+<code class="descname">format</code><em class="property"> = '{var.name} -&gt; {self.short_name} ({self.learner.name})'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Model.format" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Model.name">
+<code class="descname">name</code><a class="headerlink" href="#Alkemiems.preprocess.impute.Model.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>str(object=’‘) -&gt; str
+str(bytes_or_buffer[, encoding[, errors]]) -&gt; str</p>
+<p>Create a new string object from the given object. If encoding or
+errors is specified, then the object must expose a data buffer
+that will be decoded using the given encoding and error handler.
+Otherwise, returns the result of object.__str__() (if defined)
+or repr(object).
+encoding defaults to sys.getdefaultencoding().
+errors defaults to ‘strict’.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Model.short_name">
+<code class="descname">short_name</code><em class="property"> = 'model'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Model.short_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.preprocess.impute.Model.supports_variable">
+<code class="descname">supports_variable</code><span class="sig-paren">(</span><em>variable</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/impute.html#Model.supports_variable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.impute.Model.supports_variable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.impute.AsValue">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.impute.</code><code class="descname">AsValue</code><a class="reference internal" href="_modules/Alkemiems/preprocess/impute.html#AsValue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.impute.AsValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.impute.BaseImputeMethod</span></code></p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.AsValue.description">
+<code class="descname">description</code><em class="property"> = ''</em><a class="headerlink" href="#Alkemiems.preprocess.impute.AsValue.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.AsValue.name">
+<code class="descname">name</code><em class="property"> = 'As a distinct value'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.AsValue.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.AsValue.short_name">
+<code class="descname">short_name</code><em class="property"> = 'new value'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.AsValue.short_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.impute.Random">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.impute.</code><code class="descname">Random</code><a class="reference internal" href="_modules/Alkemiems/preprocess/impute.html#Random"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.impute.Random" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.impute.BaseImputeMethod</span></code></p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Random.description">
+<code class="descname">description</code><em class="property"> = 'Replace with a random value'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Random.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Random.name">
+<code class="descname">name</code><em class="property"> = 'Random values'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Random.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Random.short_name">
+<code class="descname">short_name</code><em class="property"> = 'random'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Random.short_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.impute.Default">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.impute.</code><code class="descname">Default</code><span class="sig-paren">(</span><em>default=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/impute.html#Default"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.impute.Default" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.impute.BaseImputeMethod</span></code></p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Default.columns_only">
+<code class="descname">columns_only</code><em class="property"> = True</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Default.columns_only" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.preprocess.impute.Default.copy">
+<code class="descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/impute.html#Default.copy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.impute.Default.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Default.description">
+<code class="descname">description</code><em class="property"> = ''</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Default.description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Default.format">
+<code class="descname">format</code><em class="property"> = '{var} -&gt; {self.default}'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Default.format" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Default.name">
+<code class="descname">name</code><em class="property"> = 'Value'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Default.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.impute.Default.short_name">
+<code class="descname">short_name</code><em class="property"> = 'value'</em><a class="headerlink" href="#Alkemiems.preprocess.impute.Default.short_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.preprocess.normalize">
+<span id="alkemiems-preprocess-normalize-module"></span><h2>Alkemiems.preprocess.normalize module<a class="headerlink" href="#module-Alkemiems.preprocess.normalize" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.preprocess.normalize.Normalizer">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.normalize.</code><code class="descname">Normalizer</code><span class="sig-paren">(</span><em>zero_based=True</em>, <em>norm_type=Normalize.NormalizeBySD</em>, <em>transform_class=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/normalize.html#Normalizer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.normalize.Normalizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.html#Alkemiems.util.Reprable" title="Alkemiems.util.Reprable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.util.Reprable</span></code></a></p>
+<dl class="method">
+<dt id="Alkemiems.preprocess.normalize.Normalizer.normalize">
+<code class="descname">normalize</code><span class="sig-paren">(</span><em>dist</em>, <em>var</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/normalize.html#Normalizer.normalize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.normalize.Normalizer.normalize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.preprocess.normalize.Normalizer.normalize_by_sd">
+<code class="descname">normalize_by_sd</code><span class="sig-paren">(</span><em>dist</em>, <em>var</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/normalize.html#Normalizer.normalize_by_sd"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.normalize.Normalizer.normalize_by_sd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.preprocess.normalize.Normalizer.normalize_by_span">
+<code class="descname">normalize_by_span</code><span class="sig-paren">(</span><em>dist</em>, <em>var</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/normalize.html#Normalizer.normalize_by_span"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.normalize.Normalizer.normalize_by_span" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.preprocess.preprocess">
+<span id="alkemiems-preprocess-preprocess-module"></span><h2>Alkemiems.preprocess.preprocess module<a class="headerlink" href="#module-Alkemiems.preprocess.preprocess" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="preprocess">
+<h3>Preprocess<a class="headerlink" href="#preprocess" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.Continuize">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">Continuize</code><span class="sig-paren">(</span><em>zero_based=True</em>, <em>multinomial_treatment=Continuize.Indicators</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#Continuize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Continuize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Continuize.AsNormalizedOrdinal">
+<code class="descname">AsNormalizedOrdinal</code><em class="property"> = 8</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Continuize.AsNormalizedOrdinal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Continuize.AsOrdinal">
+<code class="descname">AsOrdinal</code><em class="property"> = 7</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Continuize.AsOrdinal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Continuize.FirstAsBase">
+<code class="descname">FirstAsBase</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Continuize.FirstAsBase" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Continuize.FrequentAsBase">
+<code class="descname">FrequentAsBase</code><em class="property"> = 3</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Continuize.FrequentAsBase" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Continuize.Indicators">
+<code class="descname">Indicators</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Continuize.Indicators" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Continuize.Leave">
+<code class="descname">Leave</code><em class="property"> = 9</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Continuize.Leave" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Continuize.MultinomialTreatment">
+<code class="descname">MultinomialTreatment</code><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Continuize.MultinomialTreatment" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Continuize.MultinomialTreatment" title="Alkemiems.preprocess.preprocess.Continuize.MultinomialTreatment"><code class="xref py py-class docutils literal notranslate"><span class="pre">Continuize.MultinomialTreatment</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Continuize.Remove">
+<code class="descname">Remove</code><em class="property"> = 4</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Continuize.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Continuize.RemoveMultinomial">
+<code class="descname">RemoveMultinomial</code><em class="property"> = 5</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Continuize.RemoveMultinomial" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Continuize.ReportError">
+<code class="descname">ReportError</code><em class="property"> = 6</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Continuize.ReportError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.Discretize">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">Discretize</code><span class="sig-paren">(</span><em>method=None</em>, <em>remove_const=True</em>, <em>discretize_classes=False</em>, <em>discretize_metas=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#Discretize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Discretize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+<p>Construct a discretizer, a preprocessor for discretization of
+continuous features.</p>
+<p>method : discretization method (default: Alkemiems.preprocess.discretize.Discretization)</p>
+<dl class="docutils">
+<dt>remove_const <span class="classifier-delimiter">:</span> <span class="classifier">bool (default=True)</span></dt>
+<dd>Determines whether the features with constant values are removed
+during discretization.</dd>
+</dl>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.Impute">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">Impute</code><span class="sig-paren">(</span><em>method=Average()</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#Impute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Impute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+<p>Construct a imputer, a preprocessor for imputation of missing values in
+the data table.</p>
+<p>method : imputation method (default: Alkemiems.preprocess.impute.Average())</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.RemoveNaNRows">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">RemoveNaNRows</code><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#RemoveNaNRows"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.RemoveNaNRows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.SklImpute">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">SklImpute</code><span class="sig-paren">(</span><em>strategy='mean'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#SklImpute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.SklImpute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.Normalize">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">Normalize</code><span class="sig-paren">(</span><em>zero_based=True</em>, <em>norm_type=Normalize.NormalizeBySD</em>, <em>transform_class=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#Normalize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+<p>Construct a preprocessor for normalization of features.
+Given a data table, preprocessor returns a new table in
+which the continuous attributes are normalized.</p>
+<dl class="docutils">
+<dt>zero_based <span class="classifier-delimiter">:</span> <span class="classifier">bool (default=True)</span></dt>
+<dd>Determines the value used as the “low” value of the variable.
+It determines the interval for normalized continuous variables
+(either [-1, 1] or [0, 1]).</dd>
+<dt>norm_type <span class="classifier-delimiter">:</span> <span class="classifier">NormTypes (default: Normalize.NormalizeBySD)</span></dt>
+<dd><p class="first">Normalization type. If Normalize.NormalizeBySD, the values are
+replaced with standardized values by subtracting the average
+value and dividing by the standard deviation.
+Attribute zero_based has no effect on this standardization.</p>
+<p class="last">If Normalize.NormalizeBySpan, the values are replaced with
+normalized values by subtracting min value of the data and
+dividing by span (max - min).</p>
+</dd>
+<dt>transform_class <span class="classifier-delimiter">:</span> <span class="classifier">bool (default=False)</span></dt>
+<dd>If True the class is normalized as well.</dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">Alkemiems.data</span> <span class="k">import</span> <span class="n">Table</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">Alkemiems.preprocess</span> <span class="k">import</span> <span class="n">Normalize</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="s2">&quot;iris&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">normalizer</span> <span class="o">=</span> <span class="n">Normalize</span><span class="p">(</span><span class="n">norm_type</span><span class="o">=</span><span class="n">Normalize</span><span class="o">.</span><span class="n">NormalizeBySpan</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">normalized_data</span> <span class="o">=</span> <span class="n">normalizer</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Normalize.NormalizeBySD">
+<code class="descname">NormalizeBySD</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Normalize.NormalizeBySD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Normalize.NormalizeBySpan">
+<code class="descname">NormalizeBySpan</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Normalize.NormalizeBySpan" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Normalize.Type">
+<code class="descname">Type</code><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Normalize.Type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Normalize.Type" title="Alkemiems.preprocess.preprocess.Normalize.Type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Normalize.Type</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.Randomize">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">Randomize</code><span class="sig-paren">(</span><em>rand_type=Randomize.RandomizeClasses</em>, <em>rand_seed=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#Randomize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Randomize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+<p>Construct a preprocessor for randomization of classes,
+attributes and/or metas.
+Given a data table, preprocessor returns a new table in
+which the data is shuffled.</p>
+<dl class="docutils">
+<dt>rand_type <span class="classifier-delimiter">:</span> <span class="classifier">RandTypes (default: Randomize.RandomizeClasses)</span></dt>
+<dd>Randomization type. If Randomize.RandomizeClasses, classes
+are shuffled.
+If Randomize.RandomizeAttributes, attributes are shuffled.
+If Randomize.RandomizeMetas, metas are shuffled.</dd>
+<dt>rand_seed <span class="classifier-delimiter">:</span> <span class="classifier">int (optional)</span></dt>
+<dd>Random seed</dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">Alkemiems.data</span> <span class="k">import</span> <span class="n">Table</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">Alkemiems.preprocess</span> <span class="k">import</span> <span class="n">Randomize</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="s2">&quot;iris&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">randomizer</span> <span class="o">=</span> <span class="n">Randomize</span><span class="p">(</span><span class="n">Randomize</span><span class="o">.</span><span class="n">RandomizeClasses</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">randomized_data</span> <span class="o">=</span> <span class="n">randomizer</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Randomize.RandomizeAttributes">
+<code class="descname">RandomizeAttributes</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Randomize.RandomizeAttributes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Randomize.RandomizeClasses">
+<code class="descname">RandomizeClasses</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Randomize.RandomizeClasses" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Randomize.RandomizeMetas">
+<code class="descname">RandomizeMetas</code><em class="property"> = 4</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Randomize.RandomizeMetas" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Randomize.Type">
+<code class="descname">Type</code><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Randomize.Type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Randomize.Type" title="Alkemiems.preprocess.preprocess.Randomize.Type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Randomize.Type</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.preprocess.preprocess.Randomize.randomize">
+<code class="descname">randomize</code><span class="sig-paren">(</span><em>table</em>, <em>rand_state=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#Randomize.randomize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Randomize.randomize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.Preprocess">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">Preprocess</code><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#Preprocess"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.util._RefuseDataInConstructor</span></code>, <a class="reference internal" href="Alkemiems.html#Alkemiems.util.Reprable" title="Alkemiems.util.Reprable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.util.Reprable</span></code></a></p>
+<p>A generic preprocessor base class.</p>
+<dl class="docutils">
+<dt>__call__(data: Table) -&gt; Table</dt>
+<dd>Return preprocessed data.</dd>
+</dl>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.RemoveConstant">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">RemoveConstant</code><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#RemoveConstant"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.RemoveConstant" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+<p>Construct a preprocessor that removes features with constant values
+from the dataset.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Alkemiems.preprocess.preprocess.RemoveNaNClasses">
+<code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">RemoveNaNClasses</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#RemoveNaNClasses"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.RemoveNaNClasses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct preprocessor that removes examples with missing class
+from the dataset.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.RemoveNaNColumns">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">RemoveNaNColumns</code><span class="sig-paren">(</span><em>threshold=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#RemoveNaNColumns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.RemoveNaNColumns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+<p>Remove features from the data domain if they contain
+<cite>threshold</cite> or more unknown values.</p>
+<p><cite>threshold</cite> can be an integer or a float in the range (0, 1) representing
+the fraction of the data size. When not provided, columns with only missing
+values are removed (default).</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.ProjectPCA">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">ProjectPCA</code><span class="sig-paren">(</span><em>n_components=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#ProjectPCA"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.ProjectPCA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.ProjectCUR">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">ProjectCUR</code><span class="sig-paren">(</span><em>rank=3</em>, <em>max_error=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#ProjectCUR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.ProjectCUR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.preprocess.Scale">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.preprocess.</code><code class="descname">Scale</code><span class="sig-paren">(</span><em>center=Scale.Mean</em>, <em>scale=Scale.Std</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/preprocess.html#Scale"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+<p>Scale data preprocessor.  Scales data so that its distribution remains
+the same but its location on the axis changes.</p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Scale.CenteringType">
+<code class="descname">CenteringType</code><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Scale.CenteringType" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Scale.CenteringType" title="Alkemiems.preprocess.preprocess.Scale.CenteringType"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scale.CenteringType</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Scale.Mean">
+<code class="descname">Mean</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Scale.Mean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Scale.Median">
+<code class="descname">Median</code><em class="property"> = 3</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Scale.Median" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Scale.NoCentering">
+<code class="descname">NoCentering</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Scale.NoCentering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Scale.NoScaling">
+<code class="descname">NoScaling</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Scale.NoScaling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Scale.ScalingType">
+<code class="descname">ScalingType</code><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Scale.ScalingType" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Scale.ScalingType" title="Alkemiems.preprocess.preprocess.Scale.ScalingType"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scale.ScalingType</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Scale.Span">
+<code class="descname">Span</code><em class="property"> = 3</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Scale.Span" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.preprocess.Scale.Std">
+<code class="descname">Std</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.preprocess.preprocess.Scale.Std" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-Alkemiems.preprocess.remove">
+<span id="alkemiems-preprocess-remove-module"></span><h2>Alkemiems.preprocess.remove module<a class="headerlink" href="#module-Alkemiems.preprocess.remove" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.preprocess.remove.Remove">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.remove.</code><code class="descname">Remove</code><span class="sig-paren">(</span><em>attr_flags=0</em>, <em>class_flags=0</em>, <em>meta_flags=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/remove.html#Remove"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.remove.Remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.preprocess.Preprocess" title="Alkemiems.preprocess.preprocess.Preprocess"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.preprocess.Preprocess</span></code></a></p>
+<p>Construct a preprocessor for removing constant features/classes
+and unused values.
+Given a data table, preprocessor returns a new table and a list of
+results. In the new table, the constant features/classes and unused
+values are removed. The list of results consists of two dictionaries.
+The first one contains numbers of ‘removed’, ‘reduced’ and ‘sorted’
+features. The second one contains numbers of ‘removed’, ‘reduced’
+and ‘sorted’ features.</p>
+<dl class="docutils">
+<dt>attr_flags <span class="classifier-delimiter">:</span> <span class="classifier">int (default: 0)</span></dt>
+<dd>If SortValues, values of discrete attributes are sorted.
+If RemoveConstant, unused attributes are removed.
+If RemoveUnusedValues, unused values are removed from discrete
+attributes.
+It is possible to merge operations in one by summing several types.</dd>
+<dt>class_flags: int (default: 0)</dt>
+<dd>If SortValues, values of discrete class attributes are sorted.
+If RemoveConstant, unused class attributes are removed.
+If RemoveUnusedValues, unused values are removed from discrete
+class attributes.
+It is possible to merge operations in one by summing several types.</dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">Alkemiems.data</span> <span class="k">import</span> <span class="n">Table</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">Alkemiems.preprocess</span> <span class="k">import</span> <span class="n">Remove</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="s2">&quot;zoo&quot;</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">flags</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">Remove</span><span class="o">.</span><span class="n">SortValues</span><span class="p">,</span> <span class="n">Remove</span><span class="o">.</span><span class="n">RemoveConstant</span><span class="p">,</span> <span class="n">Remove</span><span class="o">.</span><span class="n">RemoveUnusedValues</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">remover</span> <span class="o">=</span> <span class="n">Remove</span><span class="p">(</span><span class="n">attr_flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span> <span class="n">class_flags</span><span class="o">=</span><span class="n">flags</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">new_data</span> <span class="o">=</span> <span class="n">remover</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">attr_results</span><span class="p">,</span> <span class="n">class_results</span> <span class="o">=</span> <span class="n">remover</span><span class="o">.</span><span class="n">attr_results</span><span class="p">,</span> <span class="n">remover</span><span class="o">.</span><span class="n">class_results</span>
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.remove.Remove.RemoveConstant">
+<code class="descname">RemoveConstant</code><em class="property"> = 2</em><a class="headerlink" href="#Alkemiems.preprocess.remove.Remove.RemoveConstant" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.remove.Remove.RemoveUnusedValues">
+<code class="descname">RemoveUnusedValues</code><em class="property"> = 4</em><a class="headerlink" href="#Alkemiems.preprocess.remove.Remove.RemoveUnusedValues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.remove.Remove.SortValues">
+<code class="descname">SortValues</code><em class="property"> = 1</em><a class="headerlink" href="#Alkemiems.preprocess.remove.Remove.SortValues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.preprocess.remove.Remove.get_vars_and_results">
+<code class="descname">get_vars_and_results</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/remove.html#Remove.get_vars_and_results"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.remove.Remove.get_vars_and_results" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.preprocess.score">
+<span id="alkemiems-preprocess-score-module"></span><h2>Alkemiems.preprocess.score module<a class="headerlink" href="#module-Alkemiems.preprocess.score" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.preprocess.score.Chi2">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.score.</code><code class="descname">Chi2</code><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#Chi2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.Chi2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.score.SklScorer</span></code></p>
+<blockquote>
+<div><p>A wrapper for <cite>sklearn.feature_selection.univariate_selection.chi2</cite>. The following is the documentation
+from <a class="reference external" href="http://scikit-learn.org">scikit-learn</a>.</p>
+<p>Compute chi-squared stats between each non-negative feature and class.</p>
+</div></blockquote>
+<p>This score can be used to select the n_features features with the
+highest values for the test chi-squared statistic from X, which must
+contain only non-negative features such as booleans or frequencies
+(e.g., term counts in document classification), relative to the classes.</p>
+<p>Recall that the chi-square test measures dependence between stochastic
+variables, so using this function “weeds out” the features that are the
+most likely to be independent of class and therefore irrelevant for
+classification.</p>
+<p>Read more in the <span class="xref std std-ref">User Guide</span>.</p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.Chi2.class_type">
+<code class="descname">class_type</code><a class="headerlink" href="#Alkemiems.preprocess.score.Chi2.class_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.variable.DiscreteVariable" title="Alkemiems.data.variable.DiscreteVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.variable.DiscreteVariable</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.Chi2.feature_type">
+<code class="descname">feature_type</code><a class="headerlink" href="#Alkemiems.preprocess.score.Chi2.feature_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.variable.DiscreteVariable" title="Alkemiems.data.variable.DiscreteVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.variable.DiscreteVariable</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.Chi2.preprocessors">
+<code class="descname">preprocessors</code><em class="property"> = [HasClass(), SklImpute(), Discretize(remove_const=False)]</em><a class="headerlink" href="#Alkemiems.preprocess.score.Chi2.preprocessors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.preprocess.score.Chi2.score">
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#Chi2.score"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.Chi2.score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.score.ANOVA">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.score.</code><code class="descname">ANOVA</code><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#ANOVA"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.ANOVA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.score.SklScorer</span></code></p>
+<blockquote>
+<div><p>A wrapper for <cite>sklearn.feature_selection.univariate_selection.f_classif</cite>. The following is the documentation
+from <a class="reference external" href="http://scikit-learn.org">scikit-learn</a>.</p>
+<p>Compute the ANOVA F-value for the provided sample.</p>
+</div></blockquote>
+<p>Read more in the <span class="xref std std-ref">User Guide</span>.</p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.ANOVA.class_type">
+<code class="descname">class_type</code><a class="headerlink" href="#Alkemiems.preprocess.score.ANOVA.class_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.variable.DiscreteVariable" title="Alkemiems.data.variable.DiscreteVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.variable.DiscreteVariable</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.ANOVA.feature_type">
+<code class="descname">feature_type</code><a class="headerlink" href="#Alkemiems.preprocess.score.ANOVA.feature_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.variable.ContinuousVariable" title="Alkemiems.data.variable.ContinuousVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.variable.ContinuousVariable</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.preprocess.score.ANOVA.score">
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#ANOVA.score"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.ANOVA.score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.score.UnivariateLinearRegression">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.score.</code><code class="descname">UnivariateLinearRegression</code><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#UnivariateLinearRegression"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.UnivariateLinearRegression" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.score.SklScorer</span></code></p>
+<blockquote>
+<div><p>A wrapper for <cite>sklearn.feature_selection.univariate_selection.f_regression</cite>. The following is the documentation
+from <a class="reference external" href="http://scikit-learn.org">scikit-learn</a>.</p>
+<p>Univariate linear regression tests.</p>
+</div></blockquote>
+<p>Linear model for testing the individual effect of each of many regressors.
+This is a scoring function to be used in a feature selection procedure, not
+a free standing feature selection procedure.</p>
+<p>This is done in 2 steps:</p>
+<ol class="arabic simple">
+<li>The correlation between each regressor and the target is computed,
+that is, ((X[:, i] - mean(X[:, i])) * (y - mean_y)) / (std(X[:, i]) *
+std(y)).</li>
+<li>It is converted to an F score then to a p-value.</li>
+</ol>
+<p>For more on usage see the <span class="xref std std-ref">User Guide</span>.</p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.UnivariateLinearRegression.class_type">
+<code class="descname">class_type</code><a class="headerlink" href="#Alkemiems.preprocess.score.UnivariateLinearRegression.class_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.variable.ContinuousVariable" title="Alkemiems.data.variable.ContinuousVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.variable.ContinuousVariable</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.UnivariateLinearRegression.feature_type">
+<code class="descname">feature_type</code><a class="headerlink" href="#Alkemiems.preprocess.score.UnivariateLinearRegression.feature_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.variable.ContinuousVariable" title="Alkemiems.data.variable.ContinuousVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.variable.ContinuousVariable</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.preprocess.score.UnivariateLinearRegression.score">
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#UnivariateLinearRegression.score"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.UnivariateLinearRegression.score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.score.InfoGain">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.score.</code><code class="descname">InfoGain</code><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#InfoGain"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.InfoGain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.score.ClassificationScorer</span></code></p>
+<p>Information gain is the expected decrease of entropy. See <a class="reference external" href="http://en.wikipedia.org/wiki/Information_gain_ratio">Wikipedia entry on information gain</a>.</p>
+<dl class="method">
+<dt id="Alkemiems.preprocess.score.InfoGain.from_contingency">
+<code class="descname">from_contingency</code><span class="sig-paren">(</span><em>cont</em>, <em>nan_adjustment</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#InfoGain.from_contingency"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.InfoGain.from_contingency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.score.GainRatio">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.score.</code><code class="descname">GainRatio</code><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#GainRatio"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.GainRatio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.score.ClassificationScorer</span></code></p>
+<p>Information gain ratio is the ratio between information gain and
+the entropy of the feature’s
+value distribution. The score was introduced in <a class="reference internal" href="#quinlan1986" id="id3">[Quinlan1986]</a>
+to alleviate overestimation for multi-valued features. See <a class="reference external" href="http://en.wikipedia.org/wiki/Information_gain_ratio">Wikipedia entry on gain ratio</a>.</p>
+<table class="docutils citation" frame="void" id="quinlan1986" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[Quinlan1986]</a></td><td>J R Quinlan: Induction of Decision Trees, Machine Learning, 1986.</td></tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="Alkemiems.preprocess.score.GainRatio.from_contingency">
+<code class="descname">from_contingency</code><span class="sig-paren">(</span><em>cont</em>, <em>nan_adjustment</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#GainRatio.from_contingency"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.GainRatio.from_contingency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.score.Gini">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.score.</code><code class="descname">Gini</code><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#Gini"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.Gini" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.score.ClassificationScorer</span></code></p>
+<p>Gini impurity is the probability that two randomly chosen instances will have different
+classes. See <a class="reference external" href="https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity">Wikipedia entry on Gini impurity</a>.</p>
+<dl class="method">
+<dt id="Alkemiems.preprocess.score.Gini.from_contingency">
+<code class="descname">from_contingency</code><span class="sig-paren">(</span><em>cont</em>, <em>nan_adjustment</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#Gini.from_contingency"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.Gini.from_contingency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.score.ReliefF">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.score.</code><code class="descname">ReliefF</code><span class="sig-paren">(</span><em>n_iterations=50</em>, <em>k_nearest=10</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#ReliefF"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.ReliefF" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.score.Scorer</span></code></p>
+<p>ReliefF algorithm. Contrary to most other scorers, Relief family of
+algorithms is not as myoptic but tends to give unreliable results with
+datasets with lots (hundreds) of features.</p>
+<p>Robnik-Šikonja, M., Kononenko, I.
+Theoretical and empirical analysis of ReliefF and RReliefF.
+2003. <a class="reference external" href="http://lkm.fri.uni-lj.si/rmarko/papers/robnik03-mlj.pdf">http://lkm.fri.uni-lj.si/rmarko/papers/robnik03-mlj.pdf</a></p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.ReliefF.class_type">
+<code class="descname">class_type</code><a class="headerlink" href="#Alkemiems.preprocess.score.ReliefF.class_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.variable.DiscreteVariable" title="Alkemiems.data.variable.DiscreteVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.variable.DiscreteVariable</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.ReliefF.feature_type">
+<code class="descname">feature_type</code><a class="headerlink" href="#Alkemiems.preprocess.score.ReliefF.feature_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.variable.Variable" title="Alkemiems.data.variable.Variable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.variable.Variable</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.ReliefF.friendly_name">
+<code class="descname">friendly_name</code><em class="property"> = 'ReliefF'</em><a class="headerlink" href="#Alkemiems.preprocess.score.ReliefF.friendly_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.ReliefF.preprocessors">
+<code class="descname">preprocessors</code><em class="property"> = [HasClass(), RemoveNaNColumns()]</em><a class="headerlink" href="#Alkemiems.preprocess.score.ReliefF.preprocessors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.preprocess.score.ReliefF.score_data">
+<code class="descname">score_data</code><span class="sig-paren">(</span><em>data</em>, <em>feature</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#ReliefF.score_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.ReliefF.score_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.ReliefF.supports_sparse_data">
+<code class="descname">supports_sparse_data</code><em class="property"> = False</em><a class="headerlink" href="#Alkemiems.preprocess.score.ReliefF.supports_sparse_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.score.RReliefF">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.score.</code><code class="descname">RReliefF</code><span class="sig-paren">(</span><em>n_iterations=50</em>, <em>k_nearest=50</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#RReliefF"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.RReliefF" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.score.Scorer</span></code></p>
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.RReliefF.class_type">
+<code class="descname">class_type</code><a class="headerlink" href="#Alkemiems.preprocess.score.RReliefF.class_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.variable.ContinuousVariable" title="Alkemiems.data.variable.ContinuousVariable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.variable.ContinuousVariable</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.RReliefF.feature_type">
+<code class="descname">feature_type</code><a class="headerlink" href="#Alkemiems.preprocess.score.RReliefF.feature_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="Alkemiems.data.html#Alkemiems.data.variable.Variable" title="Alkemiems.data.variable.Variable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.data.variable.Variable</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.RReliefF.friendly_name">
+<code class="descname">friendly_name</code><em class="property"> = 'RReliefF'</em><a class="headerlink" href="#Alkemiems.preprocess.score.RReliefF.friendly_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.RReliefF.preprocessors">
+<code class="descname">preprocessors</code><em class="property"> = [HasClass(), RemoveNaNColumns()]</em><a class="headerlink" href="#Alkemiems.preprocess.score.RReliefF.preprocessors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Alkemiems.preprocess.score.RReliefF.score_data">
+<code class="descname">score_data</code><span class="sig-paren">(</span><em>data</em>, <em>feature</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#RReliefF.score_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.RReliefF.score_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="Alkemiems.preprocess.score.RReliefF.supports_sparse_data">
+<code class="descname">supports_sparse_data</code><em class="property"> = False</em><a class="headerlink" href="#Alkemiems.preprocess.score.RReliefF.supports_sparse_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.score.FCBF">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.score.</code><code class="descname">FCBF</code><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#FCBF"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.FCBF" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.score.ClassificationScorer</span></code></p>
+<p>Fast Correlation-Based Filter. Described in:</p>
+<p>Yu, L., Liu, H.,
+Feature selection for high-dimensional data: A fast correlation-based filter solution.
+2003. <a class="reference external" href="http://www.aaai.org/Papers/ICML/2003/ICML03-111.pdf">http://www.aaai.org/Papers/ICML/2003/ICML03-111.pdf</a></p>
+<dl class="method">
+<dt id="Alkemiems.preprocess.score.FCBF.score_data">
+<code class="descname">score_data</code><span class="sig-paren">(</span><em>data</em>, <em>feature=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/score.html#FCBF.score_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.score.FCBF.score_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.preprocess.setup">
+<span id="alkemiems-preprocess-setup-module"></span><h2>Alkemiems.preprocess.setup module<a class="headerlink" href="#module-Alkemiems.preprocess.setup" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Alkemiems.preprocess.setup.configuration">
+<code class="descclassname">Alkemiems.preprocess.setup.</code><code class="descname">configuration</code><span class="sig-paren">(</span><em>parent_package=''</em>, <em>top_path=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/setup.html#configuration"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.setup.configuration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.preprocess.transformation">
+<span id="alkemiems-preprocess-transformation-module"></span><h2>Alkemiems.preprocess.transformation module<a class="headerlink" href="#module-Alkemiems.preprocess.transformation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Alkemiems.preprocess.transformation.Identity">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.transformation.</code><code class="descname">Identity</code><span class="sig-paren">(</span><em>variable</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/transformation.html#Identity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.transformation.Identity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.transformation.Transformation" title="Alkemiems.preprocess.transformation.Transformation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.transformation.Transformation</span></code></a></p>
+<p>Return an untransformed value of <cite>c</cite>.</p>
+<dl class="method">
+<dt id="Alkemiems.preprocess.transformation.Identity.transform">
+<code class="descname">transform</code><span class="sig-paren">(</span><em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/transformation.html#Identity.transform"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.transformation.Identity.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the transformed value of the argument <cite>c</cite>, which can be a number
+of a vector view.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.transformation.Indicator">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.transformation.</code><code class="descname">Indicator</code><span class="sig-paren">(</span><em>variable</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/transformation.html#Indicator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.transformation.Indicator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.transformation.Transformation" title="Alkemiems.preprocess.transformation.Transformation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.transformation.Transformation</span></code></a></p>
+<p>Return an indicator value that equals 1 if the variable has the specified
+value and 0 otherwise.</p>
+<dl class="method">
+<dt id="Alkemiems.preprocess.transformation.Indicator.transform">
+<code class="descname">transform</code><span class="sig-paren">(</span><em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/transformation.html#Indicator.transform"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.transformation.Indicator.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the transformed value of the argument <cite>c</cite>, which can be a number
+of a vector view.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.transformation.Indicator1">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.transformation.</code><code class="descname">Indicator1</code><span class="sig-paren">(</span><em>variable</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/transformation.html#Indicator1"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.transformation.Indicator1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.transformation.Transformation" title="Alkemiems.preprocess.transformation.Transformation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.transformation.Transformation</span></code></a></p>
+<p>Return an indicator value that equals 1 if the variable has the specified
+value and -1 otherwise.</p>
+<dl class="method">
+<dt id="Alkemiems.preprocess.transformation.Indicator1.transform">
+<code class="descname">transform</code><span class="sig-paren">(</span><em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/transformation.html#Indicator1.transform"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.transformation.Indicator1.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the transformed value of the argument <cite>c</cite>, which can be a number
+of a vector view.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.transformation.Lookup">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.transformation.</code><code class="descname">Lookup</code><span class="sig-paren">(</span><em>variable</em>, <em>lookup_table</em>, <em>unknown=nan</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/transformation.html#Lookup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.transformation.Lookup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.transformation.Transformation" title="Alkemiems.preprocess.transformation.Transformation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.transformation.Transformation</span></code></a></p>
+<p>Transform a discrete variable according to lookup table (<cite>self.lookup</cite>).</p>
+<dl class="method">
+<dt id="Alkemiems.preprocess.transformation.Lookup.transform">
+<code class="descname">transform</code><span class="sig-paren">(</span><em>column</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/transformation.html#Lookup.transform"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.transformation.Lookup.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the transformed value of the argument <cite>c</cite>, which can be a number
+of a vector view.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.transformation.Normalizer">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.transformation.</code><code class="descname">Normalizer</code><span class="sig-paren">(</span><em>variable</em>, <em>offset</em>, <em>factor</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/transformation.html#Normalizer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.transformation.Normalizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Alkemiems.preprocess.transformation.Transformation" title="Alkemiems.preprocess.transformation.Transformation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.preprocess.transformation.Transformation</span></code></a></p>
+<p>Return a normalized variable; for the given <cite>value</cite>, the transformed value
+if <cite>(value - self.offset) * self.factor</cite>.</p>
+<dl class="method">
+<dt id="Alkemiems.preprocess.transformation.Normalizer.transform">
+<code class="descname">transform</code><span class="sig-paren">(</span><em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/transformation.html#Normalizer.transform"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.transformation.Normalizer.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the transformed value of the argument <cite>c</cite>, which can be a number
+of a vector view.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Alkemiems.preprocess.transformation.Transformation">
+<em class="property">class </em><code class="descclassname">Alkemiems.preprocess.transformation.</code><code class="descname">Transformation</code><span class="sig-paren">(</span><em>variable</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/transformation.html#Transformation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.transformation.Transformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="Alkemiems.html#Alkemiems.util.Reprable" title="Alkemiems.util.Reprable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Alkemiems.util.Reprable</span></code></a></p>
+<p>Base class for simple transformations of individual variables. Derived
+classes are used in continuization, imputation, discretization…</p>
+<dl class="method">
+<dt id="Alkemiems.preprocess.transformation.Transformation.transform">
+<code class="descname">transform</code><span class="sig-paren">(</span><em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Alkemiems/preprocess/transformation.html#Transformation.transform"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Alkemiems.preprocess.transformation.Transformation.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the transformed value of the argument <cite>c</cite>, which can be a number
+of a vector view.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Alkemiems.preprocess.util">
+<span id="alkemiems-preprocess-util-module"></span><h2>Alkemiems.preprocess.util module<a class="headerlink" href="#module-Alkemiems.preprocess.util" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Alkemiems.preprocess">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Alkemiems.preprocess" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Alkemiems.statistics.html" class="btn btn-neutral float-right" title="Alkemiems.statistics package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Alkemiems.potentialmind.utils.data.html" class="btn btn-neutral float-left" title="Alkemiems.potentialmind.utils.data package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Guanjie Wang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
