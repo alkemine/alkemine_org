@@ -270,7 +270,16 @@ if __name__ == '__main__':
     # gp = GetAllPyFiles(fn_dir=filen, rped_name='Alkemieth3', gogal_name='Alkemieth')
 
     gp.auto_run(nopy=False, valid=True, picture=True, mv_olddir_to_new_dir=False)
+    gp.log.info("Replace _static to static in *.html done!")
     gp = GetAllPyFiles(fn_dir=filen, rped_name='_images', gogal_name='images')
     gp.auto_run(nopy=False, valid=True, picture=True, mv_olddir_to_new_dir=False)
+    gp.log.info("Replace _images to images in *.html done!")
+
+    os.rename("docs/_static", "docs/static")
+    gp.log.info("Rename _images to images done!")
+
+    os.rename("docs/_images", "docs/images")
+    gp.log.info("Rename _images to images done!")
+    
     # fn = r'G:/alkemie-dev/Orange/tree.py'
     # replace_one_file(fn, log=log_test())
