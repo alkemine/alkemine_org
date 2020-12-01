@@ -270,5 +270,7 @@ if __name__ == '__main__':
     # gp = GetAllPyFiles(fn_dir=filen, rped_name='Alkemieth3', gogal_name='Alkemieth')
 
     gp.auto_run(nopy=False, valid=True, picture=True, mv_olddir_to_new_dir=False)
+    gp = GetAllPyFiles(fn_dir=filen, rped_name='_images', gogal_name='image')
+    gp.auto_run(nopy=False, valid=True, picture=True, mv_olddir_to_new_dir=False)
     # fn = r'G:/alkemie-dev/Orange/tree.py'
     # replace_one_file(fn, log=log_test())
