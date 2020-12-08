@@ -1,0 +1,38 @@
+3.2.2 复杂化合物中不同格点占据几率统计
+===========================================
+
+该算例根据第一性原理计算的空位扩散的势垒，模拟介观尺度的模特卡洛模拟，并获得复杂化合物中不同格点占据几率的统计。计算完成第一性原理NEB计算之后，链接到Kmc Run Li执行计算，最后通过Kmc Plot画图，完整流程图如下：
+
+.. image:: image/3-19.png
+    :align: center
+    :width: 900
+
+- 第一步，手动连接控件，或点击File，Open and Freeze，点击打开对应样例模板文件并点击开始按钮，如图：
+
+.. image:: image/3-19.png
+    :align: center
+    :width: 900
+
+- 第二至五步与上例操作相同，这里不重复赘述；
+
+- 第六步，点击Lattice，数据晶体结构文件，如图：
+
+- 第七步，点击Run garnet lattice Kmc WF， 配置参数，如图：
+
+    .. image:: image/3-20.png
+        :width: 500
+
+    .. image:: image/3-21.png
+        :width: 500
+
+- 第八步，在Jobs（1）提交任务，等待计算结束；
+
+- 第九步，点击Get Kmc Data，输入jobs_id，即可传输数据到Kmc Plot，如图：
+
+- 第十步，点击Kmc Plot，绘制图像，如图：
+
+    .. image:: image/3-22.png
+        :width: 500
+
+    .. image:: image/3-23.png
+        :width: 500

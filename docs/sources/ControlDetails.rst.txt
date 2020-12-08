@@ -1,0 +1,20 @@
+控件详细介绍
+===================
+
+.. toctree::
+    :maxdepth: 2
+
+    ModelingControls
+    VASPWorkflowControl
+    DatabaseControl
+    DrawingAndAnalysisControls
+    potentialmindControls
+    OpenPhaseControls
+    DynamicControls
+    GibbsControls
+    JobsControls
+    LammpsControls
+    QEControls
+    AbinitControls
+    CalypsoControls
+    VASPExtendControls

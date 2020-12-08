@@ -1,0 +1,20 @@
+3.25 高通量自动流程：材料电学性质态密度分析
+===============================================
+
+VaspPlot 中以散点图的形成展现Analyzer中Dos查询结果，可多任务展示。
+
+.. image:: image/3-79.png
+    :align: center
+    :width: 700
+
+首先在Analyzer控件中查询dos，在criteria中指定任务ID，无输入表示查询所有。
+
+.. image:: image/3-80.png
+    :align: center
+    :width: 700
+
+查询之后在VaspPlot中选择类型Dos，点击Plotting即可将所有结果画出。
+
+.. image:: image/3-81.png
+    :align: center
+    :width: 900

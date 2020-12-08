@@ -1,0 +1,28 @@
+3.27 OpenPhase 工作流
+============================
+
+通过OpenPhase工作流计算，将数据结果以动态图片的形式展现出来。
+
+* 第一步，手动连接控件，或点击File，Open and Freeze，点击打开对应样例模板文件并点击开始按钮，如图：
+
+.. image:: image/3-85.png
+    :align: center
+    :width: 700
+
+* 第二步，点击OpenPhase Input，输入相应参数，点击run配置工作流如图：
+
+.. image:: image/3-86.png
+    :align: center
+    :width: 700
+
+* 第三步，提交任务，等待任务结束；
+
+* 第四步，待任务计算完毕，点击Get VTK，目前VTK类型默认为PhaseField，选择动态类型，例如Interfaces，输入jobs_id,点击Get Data得到数据，如图：
+
+* 第五步，点击Openphase Plot,点击OpenPhase Plot按钮绘图，点击图片，即可查看动图，如图：
+
+    .. image:: image/3-87.png
+        :width: 500
+
+    .. image:: image/3-88.png
+        :width: 500

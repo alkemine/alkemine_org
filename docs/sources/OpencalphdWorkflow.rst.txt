@@ -1,0 +1,37 @@
+3.28 Opencalphd 工作流
+==============================
+
+通过Opencalphd工作流计算，得到相图数据结果。
+
+* 第一步，手动连接控件，或点击File，Open and Freeze，点击打开对应样例模板文件并点击开始按钮，如图：
+  第一部分为静态计算工作流，第二部分为Opencalphd工作流。
+
+.. image:: image/3-89.png
+    :align: center
+    :width: 900
+
+* 第二步，点击1 to 4控件，打开cif格式文件，会自动生成4个不同的结构信息，如图：
+
+.. image:: image/3-90.png
+    :align: center
+    :width: 700
+
+* 第三步，在Jobs中提交任务，等待任务结束，进行下一部分计算；
+
+* 第四步，点击Get EV，获取能量E，如图：
+
+* 第五步，待Opencalphd工作流配置完成后，在Jobs（1）中提交任务，等待任务结束；
+
+* 第六步，点击Get Oc Data，选择数据类型，并输入jobs_id，点击Get Data获得数据，如图：
+
+    .. image:: image/3-91.png
+        :width: 500
+
+    .. image:: image/3-92.png
+        :width: 500
+
+* 第六步，点击Opencalphd Plot绘制图像，如图：
+
+.. image:: image/3-93.png
+    :align: center
+    :width: 700

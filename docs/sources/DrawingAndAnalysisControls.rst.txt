@@ -1,0 +1,210 @@
+4.4 画图与分析控件
+=============================================
+
+4.4.1 PlotBand控件
+--------------------------------
+
+用于画出能带结构。
+
++-----------+-----------+
+|   Input   |   Output  |
++===========+===========+
+| file path | file path |
++-----------+-----------+
+
+**参数配置**::
+
+    Open                                       打开并加载json格式文件
+
+    Reload                                     重新载入文件
+
+    Database JSON Info                         json文件的相关信息
+
+    Type                                       选择需要的类型，包括Bands，PBands，Dos，PDos，COHP，Boltranp，E-V，Cp-T，Formation Erengy，RDF，MSD
+
+    Status                                     当前状态
+
+    Plotting                                   画图
+
+.. image:: image/3-136.png
+    :align: center
+    :width: 900
+
+
+4.4.2 viewer控件
+-------------------------------
+
+用于查看结构。
+
++-----------+-----------+
+|   Input   |   Output  |
++===========+===========+
+| Structure | Structure |
++-----------+-----------+
+
+**参数配置**::
+
+    Viewer type                                选择打开方式，包括vesta，custom等。下方可填入软件的安装路径
+
+    Auto-Run                                   勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击Send传输，默认勾选
+
+.. image:: image/3-137.png
+    :align: center
+    :width: 400
+
+
+4.4.3 Analyzer控件
+--------------------------------
+
+用于分析计算结果。
+
++-------------------------+----------+
+|           Input         |  Output  |
++==========+======+=======+==========+
+| Database | dict | Table | Database |
++----------+------+-------+----------+
+
+**参数配置**::
+
+    Query                                      选择energy，volumn，bandgap，dos，band其中一项进行分析
+
+        ID or criteria                         输入ID或标准
+        query                                  点击进行查询
+
+    Advanced Query                             高级查询
+
+        property                               输入要查询的性质
+        criteria                               输入标准
+        query                                  点击进行查询
+
+    Auto-Run                                   勾选状态下可以自动查询，取消勾选可以手动点击Run query查询，默认勾选
+
+.. image:: image/3-138.png
+    :align: center
+    :width: 500
+
+
+4.4.4 Color控件
+----------------------------
+
+用于设置变量的颜色图例。
+
++-----------+-----------+
+|   Input   |   Output  |
++===========+===========+
+|    Data   |    Data   |
++-----------+-----------+
+
+**参数配置**::
+
+    Discrete Variables                         设置离散变量的颜色显示
+
+    Numeric Variables                          设置数值变量的颜色显示
+
+    Apply automatically                        勾选状态下可以自动应用设置，取消勾选可以手动点击Apply应用设置，默认勾选
+
+.. image:: image/3-139.png
+    :align: center
+    :width: 600
+
+
+4.4.5 Distributions控件
+----------------------------------
+
+用图表展示数据要素的值分布。
+
++-----------+-----------+
+|   Input   |   Output  |
++===========+===========+
+|    Data   |    None   |
++-----------+-----------+
+
+**参数配置**::
+
+    Variable                                   可选择的变量
+
+    Precision                                  设置图像的精细程度，从光滑到精细
+
+        Bin numeric variables                  柱状图展示数值变量
+
+    Group by                                   选择分类依据
+
+        Show relative frequencies              显示相对频率
+        Show probabilities                     显示概率
+
+.. image:: image/3-140.png
+    :align: center
+    :width: 900
+
+
+4.4.6 Scatter Plot控件
+----------------------------------
+
+用于画出各种数据的散点图。
+
++-------------------------------+---------------------------------+
+|            Input              |             Output              |
++======+=============+==========+===============+======+==========+
+| Data | Data Sunset | Features | Selected Data | Data | Features |
++------+-------------+----------+---------------+------+----------+
+
+**参数配置**::
+
+    Axis x                                     选择X轴的数据
+
+    Axis y                                     选择Y轴的数据
+
+    Find Information Projection                查找信息投影
+
+    Color                                      设置颜色
+
+    Shape                                      设置形状
+
+    Size                                       设置尺寸
+
+    Label                                      添加标签
+
+        Label only selected points             勾选表示只为所选点加上标签
+
+    Symbol size                                设置符号大小
+
+    Opacity                                    设置不透明度
+
+    Jittering
+
+    Show color regions                         图片背景显示为彩色
+
+    Show legend                                显示图例
+
+    Show gridlines                             显示网格线
+
+    Show all data on mouse hover               显示鼠标悬停处的所有数据
+
+    Show regression line                       显示回归线
+
+    Send Automatically                         勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击Send Automatically传输，默认勾选
+
+.. image:: image/3-141.png
+    :align: center
+    :width: 900
+
+4.4.7 VaspPlot控件
+-----------------------------
+
+用于画出DOS和Band图。
+
++---------------------+-----------+
+|         Input       |   Output  |
++=====================+===========+
+|    PlotDict: dict   |    None   |
++---------------------+-----------+
+
+**参数配置**::
+
+    Type                                       选择作图类型
+
+    Plotting                                   作图
+
+.. image:: image/3-142.png
+    :align: center
+    :width: 900

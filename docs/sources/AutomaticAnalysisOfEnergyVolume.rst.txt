@@ -1,0 +1,14 @@
+3.21 高通量自动流程：能量体积自动分析
+=========================================
+
+Analyzer控件接入DataBase的输出接口，查询指定的性质或者所有性质，右侧按照任务ID显示所有任务。
+
+.. image:: image/3-71.png
+    :align: center
+    :width: 500
+
+Analyzer控件可以设置需要查询的属性，比如energy、dos、bands等，criteria中输入Job ID指定任务，无输入表示查询所有任务。Advanced Query可以指定任意性质进行查询。
+
+.. image:: image/3-72.png
+    :align: center
+    :width: 700

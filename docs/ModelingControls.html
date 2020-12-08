@@ -1,0 +1,778 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.1 建模控件 &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="static/alk.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script src="static/jquery.js"></script>
+        <script src="static/underscore.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/language_data.js"></script>
+    
+    <script type="text/javascript" src="static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4.2 VASP工作流控件" href="VASPWorkflowControl.html" />
+    <link rel="prev" title="控件详细介绍" href="ControlDetails.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> ALKEMIE Matter Studio
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">目录:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">ALKEMIE简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">ALKEMIE软件理念及概况</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">ALKEMIE软件安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">算例</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ControlDetails.html">控件详细介绍</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.1 建模控件</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#poscar">4.1.1 POSCAR控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#builder">4.1.2 Builder控件</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#find-grain-boundary">4.1.2.1 Find Grain Boundary：查找晶界</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-grain-boundary">4.1.2.2 Build Grain Boundary：构建晶界</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-vacancy">4.1.2.3 Build vacancy：构建空位</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-substitution">4.1.2.4 Build Substitution：构建置换原子</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-interstitution">4.1.2.5 Build Interstitution：构建间隙原子</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-doping">4.1.2.6 Build Doping：构建掺杂</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#send-data">4.1.2.7 Send data：将建好的结构信息传递至下一控件</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#multi-poscar">4.1.3 Multi POSCAR控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#finder">4.1.4 Finder控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ht-preprocessor">4.1.5 HT Preprocessor控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-table">4.1.6 Data Table控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file">4.1.7 File控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-info">4.1.8 Data Info控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lda-1-2">4.1.9 LDA-1/2控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#potcar">4.1.10 POTCAR控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#to-4">4.1.11 1 to 4控件</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="VASPWorkflowControl.html">4.2 VASP工作流控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DatabaseControl.html">4.3 数据库控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DrawingAndAnalysisControls.html">4.4 画图与分析控件</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ALKEMIE Matter Studio</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          <div class=asetop>
+<a href=genindex.html>index</a>
+| <a href=py-modindex.html>modules</a>
+| <a href=https://gitlab.com/ase/ase>gitlab</a>
+
+| <a href="https://gitlab.com/ase/ase/blob/master/doc/ModelingControls.rst">page source</a>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>4.1 建模控件<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="poscar">
+<h2>4.1.1 POSCAR控件<a class="headerlink" href="#poscar" title="Permalink to this headline">¶</a></h2>
+<p>读取POSCAR、cif、xsf和xyz等格式的文件。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>None</p></td>
+<td><p>Structure: pymatgen class</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>参数配置</strong>：主要用来加载并展示原子结构信息，双击图标打开参数配置</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Open                                   打开并加载文件
+
+Reload                                 重新载入文件
+
+Info                                   展示原子结构信息
+
+Apply automatically                    勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击apply传输，默认勾选
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-102.png"><img alt="images/3-102.png" class="align-center" src="images/3-102.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="builder">
+<h2>4.1.2 Builder控件<a class="headerlink" href="#builder" title="Permalink to this headline">¶</a></h2>
+<p>可构建晶界，掺杂，空位等复杂模型。 支持寻找晶界、构建晶界、间隙掺杂、空位掺杂、取代原子掺杂和指定任意位置掺杂等多种方式。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 29%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head" colspan="2"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Structure</p></td>
+<td><p>Structure</p></td>
+<td><p>Build Structures</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>下面的参数配置中，带 * 号为必填项，不带 * 号为选填项。</p>
+</div>
+<div class="section" id="find-grain-boundary">
+<h3>4.1.2.1 Find Grain Boundary：查找晶界<a class="headerlink" href="#find-grain-boundary" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Rotation axis*                         指定两个晶粒之间的旋转轴，如 0 0 1
+
+Maximum Σ*                             最大拟合自由度
+
+find                                   点击查找满足指定条件的晶界
+
+Information                            展示晶界结构信息
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-103.png"><img alt="images/3-103.png" class="align-center" src="images/3-103.png" style="width: 900px;" /></a>
+</div>
+<div class="section" id="build-grain-boundary">
+<h3>4.1.2.2 Build Grain Boundary：构建晶界<a class="headerlink" href="#build-grain-boundary" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Choose File*                           选择初始结构
+
+Rotation axis*                         两个晶粒的共同旋转轴，如 0 0 1
+
+Σ*                                     拟合自由度，如 5
+
+GB plane*                              晶界取向，如 1 2 0
+
+Grain A size(u. c.)                    晶粒A的尺寸
+
+Grain B size(u. c.)                    晶粒B的尺寸
+
+Delete layer                           删除每个晶粒两侧的表面层。必须输入8个字符。前4个字符针对晶粒A，后四个字符针对晶粒B。‘b’表示底层，‘t’表示顶层。整数表示要删除的层的数量。默认为：0b0t0b0t，表示没有要删除的层。
+
+Vacuum size(Å)                         设置晶界的真空层厚度（适用于采用平板模型的晶界）
+
+Extra IF distance(Å)                   在两个晶粒的界面间添加额外的距离
+
+Tolerance factor(Å)                    决定两个原子是否位于同一平面的公差因子
+
+primitive GB                           是否获得晶界的原始结构
+
+Output format                          选择输出格式
+
+Build                                  构建晶界
+
+Information                            展示构建的晶界结构信息
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-104.png"><img alt="images/3-104.png" class="align-center" src="images/3-104.png" style="width: 900px;" /></a>
+</div>
+<div class="section" id="build-vacancy">
+<h3>4.1.2.3 Build vacancy：构建空位<a class="headerlink" href="#build-vacancy" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Choose File*                           选择初始结构
+
+Scaling matrix*                        缩放矩阵，用于构建超胞。选项包括：1位整数，表示3个方向同时扩大相应倍数；3位矢量，表示3个方向分别扩大相应倍数；9位矩阵，表示以矩阵方式扩大相应倍数
+
+Summary                                给出建立空位的所有相关信息
+
+Output format                          选择输出格式
+
+Build                                  构建空位
+
+Information                            展示构建的空位结构信息
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-105.png"><img alt="images/3-105.png" class="align-center" src="images/3-105.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="build-substitution">
+<h3>4.1.2.4 Build Substitution：构建置换原子<a class="headerlink" href="#build-substitution" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Element*                               选择要置换的元素
+
+Choose File*                           选择初始结构
+
+Scaling matrix*                        缩放矩阵，用于构建超胞。选项包括：1位整数，表示3个方向同时扩大相应倍数；3位矢量，表示3个方向分别扩大相应倍数；9位矩阵，表示以矩阵方式扩大相应倍数
+
+Summary                                给出建立置换原子结构的所有相关信息
+
+Output format                          选择输出格式
+
+Build                                  构建置换原子
+
+Information                            展示构建的置换原子结构信息
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-106.png"><img alt="images/3-106.png" class="align-center" src="images/3-106.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="build-interstitution">
+<h3>4.1.2.5 Build Interstitution：构建间隙原子<a class="headerlink" href="#build-interstitution" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Element*                               选择要插入间隙的元素
+
+Choose File*                           选择初始结构
+
+Scaling matrix*                        缩放矩阵，用于构建超胞。选项包括：1位整数，表示3个方向同时扩大相应倍数；3位矢量，表示3个方向分别扩大相应倍数；9位矩阵，表示以矩阵方式扩大相应倍数
+
+Summary                                给出建立间隙原子结构的所有相关信息
+
+Output format                          选择输出格式
+
+Build                                  构建间隙原子
+
+Information                            展示构建的间隙原子结构信息
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-107.png"><img alt="images/3-107.png" class="align-center" src="images/3-107.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="build-doping">
+<h3>4.1.2.6 Build Doping：构建掺杂<a class="headerlink" href="#build-doping" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Element*                               选择要掺杂的元素
+
+Choose File*                           选择初始结构
+
+Add*                                   选择掺杂原子的坐标，默认为分数坐标
+
+cartesian coordinate                   勾选表示选择笛卡尔坐标
+
+validate proximity                     勾选表示检查掺杂原子位置是否与已有原子重叠
+
+Output format                          选择输出格式
+
+Build                                  构建间隙原子
+
+Information                            展示构建的间隙原子结构信息
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-108.png"><img alt="images/3-108.png" class="align-center" src="images/3-108.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="send-data">
+<h3>4.1.2.7 Send data：将建好的结构信息传递至下一控件<a class="headerlink" href="#send-data" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="multi-poscar">
+<h2>4.1.3 Multi POSCAR控件<a class="headerlink" href="#multi-poscar" title="Permalink to this headline">¶</a></h2>
+<p>读取多个POSCAR、cif、xsf和xyz等格式的文件。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 47%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head" colspan="2"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>None</p></td>
+<td><p>Structure: pymatgen class</p></td>
+<td><p>Many Structures</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>参数配置</strong>：主要用来加载并展示多个原子结构信息，双击图标打开参数配置</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Open                                   打开并加载多个文件。下拉框可选择指定的POSCAR文件进行查看
+
+Reload                                 重新载入文件
+
+Info                                   展示原子结构信息
+
+Apply automatically                    勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击apply传输，默认勾选
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-109.png"><img alt="images/3-109.png" class="align-center" src="images/3-109.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="finder">
+<h2>4.1.4 Finder控件<a class="headerlink" href="#finder" title="Permalink to this headline">¶</a></h2>
+<p>在数据库中查找指定元素的所有可能结构，并生成相应的结构文件。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>None</p></td>
+<td><p>Data</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sever info（服务器信息）</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Sever</span>                                  <span class="n">需要连接的服务器地址</span>
+
+<span class="n">Port</span>                                   <span class="n">服务器端口号</span>
+
+<span class="n">Database</span>                               <span class="n">数据库</span>
+
+<span class="n">collection</span>                             <span class="n">MongoDB集合</span>
+
+<span class="n">Username</span>                               <span class="n">用户名</span>
+
+<span class="n">Password</span>                               <span class="n">密码</span>
+
+<span class="n">Refresh</span> <span class="n">DB</span>                             <span class="n">刷新数据库</span>
+
+<span class="n">Structures</span> <span class="n">path</span>                        <span class="n">本地结构文件路径</span>
+
+<span class="n">Send</span> <span class="n">data</span>                              <span class="n">发送以上数据</span>
+</pre></div>
+</div>
+<p><strong>Search（查找需要的结构）</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    点击元素周期表中的元素，可查找包含或不包含相应元素的结构，通过Setup控制
+
+Setup                                  包含四个选项，分别为And，And Not，Or，Or Not
+
+Query Method                           查询方法，包括化学符号，化学式，正则表达式
+
+Query Input                            展示输入的查询条件
+
+Clear                                  清空所有查询条件
+
+Search                                 查找满足条件的结构
+
+Results                                展示所有满足条件的结构的信息，双击需要查看的结果可在vesta等可视化软件中查看
+</pre></div>
+</div>
+<p><strong>Finder（发送数据）</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Auto-run                               勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击Get finder传输，默认勾选
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-110.png"><img alt="images/3-110.png" class="align-center" src="images/3-110.png" style="width: 900px;" /></a>
+</div>
+<div class="section" id="ht-preprocessor">
+<h2>4.1.5 HT Preprocessor控件<a class="headerlink" href="#ht-preprocessor" title="Permalink to this headline">¶</a></h2>
+<p>高通量预处理控件，该控件类似于一个结构容器。 所有生成的结构必须传输到此控件，才能进行下一步计算。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 31%" />
+<col style="width: 13%" />
+<col style="width: 36%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="3"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Structure</p></td>
+<td><p>Many Structures</p></td>
+<td><p>Table</p></td>
+<td><p>Data</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>参数配置</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>显示传入的结构文件基本信息
+
+Auto-Run                               勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击Send data传输，默认勾选
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-111.png"><img alt="images/3-111.png" class="align-center" src="images/3-111.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="data-table">
+<h2>4.1.6 Data Table控件<a class="headerlink" href="#data-table" title="Permalink to this headline">¶</a></h2>
+<p>以表格的形式(类似于Excel)展示数据集。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 29%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head" colspan="2"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Data</p></td>
+<td><p>Data</p></td>
+<td><p>Selected Data</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>参数配置</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Info                                                 显示传入数据相关信息
+
+Variables --&gt; Show variable labels（if present）     勾选表示，如果存在变量标签则显示
+Variables --&gt; Visualize numeric values               勾选表示可视化数值
+Variables --&gt; Color by instance classes              勾选表示按实例类显示颜色
+
+
+Selection --&gt; Select full rows                       勾选表示每次选择一整行
+
+Restore Original Order                               恢复原始顺序
+
+Send Automatically                                   勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击Send Automatically传输，默认勾选
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-112.png"><img alt="images/3-112.png" class="align-center" src="images/3-112.png" style="width: 900px;" /></a>
+</div>
+<div class="section" id="file">
+<h2>4.1.7 File控件<a class="headerlink" href="#file" title="Permalink to this headline">¶</a></h2>
+<p>从输入文件或者网络中读取数据，并输出一个数据表格。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>None</p></td>
+<td><p>Data</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>参数配置</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>File                                   打开并加载文件
+
+Reload                                 重新载入文件
+
+URL                                    输入网络文件的网址
+
+Info                                   显示文件相关信息
+
+Columns（Double click to edit）        柱状显示数据信息，双击可编辑
+
+Browse documentation datasets          浏览文档数据集
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-113.png"><img alt="images/3-113.png" class="align-center" src="images/3-113.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="data-info">
+<h2>4.1.8 Data Info控件<a class="headerlink" href="#data-info" title="Permalink to this headline">¶</a></h2>
+<p>展示数据集的基本信息，例如每一列中变量的数量和类型，有多少行等等。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Data</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>参数配置</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Data</span> <span class="n">Set</span> <span class="n">Name</span>                          <span class="n">数据集名称</span>
+
+<span class="n">Data</span> <span class="n">Set</span> <span class="n">Size</span>                          <span class="n">数据集大小</span>
+
+<span class="n">Features</span>                               <span class="n">数据集特征</span>
+
+<span class="n">Targets</span>
+
+<span class="n">Meta</span> <span class="n">Attributes</span>                        <span class="n">元属性</span>
+
+<span class="n">Location</span>                               <span class="n">数据集存储位置</span>
+
+<span class="n">Data</span> <span class="n">Attributes</span>                        <span class="n">数据属性</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-114.png"><img alt="images/3-114.png" class="align-center" src="images/3-114.png" style="width: 300px;" /></a>
+</div>
+<div class="section" id="lda-1-2">
+<h2>4.1.9 LDA-1/2控件<a class="headerlink" href="#lda-1-2" title="Permalink to this headline">¶</a></h2>
+<p>生成特殊的LDA-1/2势函数。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>file path</p></td>
+<td><p>file path</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>LDA-1/2计算可以选择以下三种计算方法：</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>LDA-1/2</p></li>
+</ol>
+<blockquote>
+<div><a class="reference internal image-reference" href="images/3-115.png"><img alt="images/3-115.png" class="align-center" src="images/3-115.png" style="width: 900px;" /></a>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>shLDA-1/2r_in</p></li>
+</ol>
+<blockquote>
+<div><a class="reference internal image-reference" href="images/3-116.png"><img alt="images/3-116.png" class="align-center" src="images/3-116.png" style="width: 900px;" /></a>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>shLDA-1/2r_out</p></li>
+</ol>
+<blockquote>
+<div><a class="reference internal image-reference" href="images/3-117.png"><img alt="images/3-117.png" class="align-center" src="images/3-117.png" style="width: 900px;" /></a>
+</div></blockquote>
+</div></blockquote>
+<p><strong>参数配置</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Element</span>                                <span class="n">选择元素</span>
+
+<span class="n">Strip</span>                                  <span class="n">设置自能势修正值</span>
+
+<span class="n">Power</span> <span class="n">Index</span>                            <span class="n">设置幂指数</span>
+
+<span class="n">Fix</span> <span class="n">outer</span> <span class="n">cutoff</span> <span class="n">radius</span>                <span class="n">固定外截止半径</span>
+
+<span class="n">Scan</span> <span class="n">inner</span> <span class="n">cutoff</span> <span class="n">radius</span>               <span class="n">扫描内截止半径</span>
+
+<span class="n">XC</span>                                     <span class="n">所选的杂化泛函</span>
+
+<span class="n">Open</span> <span class="n">File</span>                              <span class="n">选择上传POTCAR文件</span>
+
+<span class="n">Calculate</span>                              <span class="n">计算上传的POTCAR</span>
+
+<span class="n">Information</span>                            <span class="n">LDA</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="n">计算方法的相关介绍</span>
+
+<span class="n">Reference</span>                              <span class="n">计算方法的参考文献</span>
+
+<span class="n">Send</span> <span class="n">data</span>                              <span class="n">全部设置完成后点击Send</span> <span class="n">data传送数据</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="potcar">
+<h2>4.1.10 POTCAR控件<a class="headerlink" href="#potcar" title="Permalink to this headline">¶</a></h2>
+<p>选择所需的POTCAR文件。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>file path</p></td>
+<td><p>file path</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>参数配置</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Open                                   打开并加载文件
+
+Reload                                 重新载入文件
+
+Info                                   展示POTCAR文件信息
+
+Apply automatically                    勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击apply传输，默认勾选
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-118.png"><img alt="images/3-118.png" class="align-center" src="images/3-118.png" style="width: 400px;" /></a>
+</div>
+<div class="section" id="to-4">
+<h2>4.1.11 1 to 4控件<a class="headerlink" href="#to-4" title="Permalink to this headline">¶</a></h2>
+<p>输入二元材料AB的cif格式文件，输出AA，AB，BA，BB，4个POSCAR文件。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>file path</p></td>
+<td><p>list:many structures</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>参数配置</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Open                                   打开并加载文件
+
+Reload                                 重新载入文件
+
+Info                                   展示生成的4个POSCAR文件信息
+
+Apply automatically                    勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击apply传输，默认勾选
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-119.png"><img alt="images/3-119.png" class="align-center" src="images/3-119.png" style="width: 400px;" /></a>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="VASPWorkflowControl.html" class="btn btn-neutral float-right" title="4.2 VASP工作流控件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ControlDetails.html" class="btn btn-neutral float-left" title="控件详细介绍" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, ALKEMIE Matter Studio Developers
+      <span class="lastupdated">
+        Last updated on Mon, 07 Dec 2020 15:33:13.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Documentation</span>
+      v: 1.5.0
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+          <dd><a href="https://gitee.com/alkemiems/dashboard/projects/alkemiems/alkemiems/tree/login">1.6.8 (development)</a></dd>
+        
+          <dd><a href="https://gitee.com/alkemiems/dashboard/projects/alkemiems/alkemiems/tree/release">1.5.0 (latest stable)</a></dd>
+        
+      </dl>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

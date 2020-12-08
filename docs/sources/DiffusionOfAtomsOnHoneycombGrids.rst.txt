@@ -1,0 +1,44 @@
+3.2.1 蜂窝状格点上原子的扩散
+===============================
+
+该算例根据第一性原理计算的空位扩散的势垒，模拟介观尺度的模特卡洛模拟，并获得原子的扩散系数。计算完成第一性原理NEB计算之后，链接到Kmc Run执行计算，最后通过Kmc Plot画图，完整流程图如下：
+
+.. image:: image/3-13.png
+         :align: center
+         :width: 900
+
++ 第一步，手动连接控件，或点击File，Open and Freeze，点击打开对应样例模板文件并点击开始按钮，如图：
+.. image:: image/3-13.png
+        :align: center
+        :width: 900
+
++ 第二步，选择结构，点击MultiPOSCAR，选择空位扩散的两端点结构；点击POSCAR选择最原始的结构（Parent Structure）
+.. image:: image/3-14.png
+        :align: center
+        :width: 900
+
++ 第三步，点击左下角开始按钮，运行neb计算工作流；
+
++ 第四步，在Jobs模块内点击Run jobs，提交任务，点击Jobs查看记录任务号；
+
++ 第五步，点击Get_delta_E，输入jobs_id,获得能量势垒，如图：
+    
++ 第六步，点击Run honeycomb lattice Kmc WF， 配置参数，如图：
+
+    .. image:: image/3-15.png
+        :width: 500
+
+    .. image:: image/3-16.png
+        :width: 500
+
++ 第八步，在Jobs（1）提交任务，等待计算结束；
+
++ 第九步，点击Get Kmc Data，输入jobs_id，即可传输数据到Kmc Plot，如图：
+
++ 第十步，点击Kmc Plot，绘制图像，如图：
+
+    .. image:: image/3-17.png
+        :width: 500
+
+    .. image:: image/3-18.png
+        :width: 500

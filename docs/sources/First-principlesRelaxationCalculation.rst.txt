@@ -1,0 +1,16 @@
+3.12 高通量自动计算流程：第一性原理驰豫计算
+==================================================
+
+从左至右连接控件，Optimize WF 对晶体结构进行优化。
+
+.. image:: image/3-47.png
+    :align: center
+    :width: 900
+
+.. image:: image/3-53.png
+    :align: center
+    :width: 900
+
+.. image:: image/3-48.png
+    :align: center
+    :width: 700

@@ -1,0 +1,6 @@
+2.3 安装Visual Studio Installer
+===========================================
+
+在https://visualstudio.microsoft.com/zh-hans下载Visual Studio 2019安装包。鼠标双击启动安装程序，选择使用C++的桌面开发，按照默认路径安装即可，安装过程大约需要花费半个小时左右，安装完成后按照提示重启电脑。
+
+.. image:: image/2-5.jpg

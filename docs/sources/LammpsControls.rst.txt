@@ -1,0 +1,93 @@
+4.10 lammps控件
+========================
+
+4.10.1 lammps relax workflow控件
+-----------------------------------------
+
+用于lammps relax workflow。
+
+.. _parameters:
+
++-----------------------------------------------------------+--------------------------+
+|                           Input                           |          Output          |
++===========+=============+=======+========+=========+======+==========+===============+
+| Structure | POSCAR file | INCAR | POTCAR | KPOINTS | Data | Workflow | Workflow List |
++-----------+-------------+-------+--------+---------+------+----------+---------------+
+
+**参数配置**::
+
+    VASP_CMD                                        远程计算机可执行的vasp命令
+
+    DB_FILE                                         数据库配置文件
+
+    USERINCARSETTINGS                               用户自定义的INCAR参数，会覆盖默认值
+
+    ADDWFMETADATA                                   wf相关的元数据（结构信息等）是否记录
+
+    ADD_NAMEFILE                                    如果是True：每个任务开始都会写一个空的fw.name的文件，这会让你很容易识别那个任务在哪个目录中
+
+    SCRATCH_DIR                                     搜寻之前计算结果的路径，默认当前目录
+
+    GAMMAVASPCMD                                    gammavaspcmd的路径，支持环境变量的检测env_chk
+
+    SMALLGAPKPOINTMULTIPLY                          静态计算和非晶态自洽计算是否采用小的K点计算
+
+    STABILITY_CHECK                                 结构优化完之后是否检测结构稳定性
+
+    RELAXMAXFORCE                                   驰豫收敛标准
+
+    REMOVE_WAVECAR                                  true表示移除wavecar，默认不移除
+
+    Auto-Run                                        勾选状态下可以自动运行工作流，取消勾选可以手动点击Run Workflow运行，默认勾选
+
+.. image:: image/3-186.png
+    :align: center
+    :width: 300
+
+
+4.10.2 Crack workf控件（待开发）
+----------------------------------------
+
+用于Crack workf。
+
+**参数配置**: :ref:`see this! <parameters>`
+
+
+4.10.3 diffuse workflow控件（待开发）
+----------------------------------------------
+
+用于diffuse workflow。
+
+**参数配置**: :ref:`see this! <parameters>`
+
+
+4.10.4 Elastic workflow控件（待开发）
+-------------------------------------------------
+
+用于Elastic workflow。
+
+**参数配置**: :ref:`see this! <parameters>`
+
+
+4.10.5 Flow workflow控件（待开发）
+-------------------------------------------
+
+用于Flow workflow。
+
+**参数配置**: :ref:`see this! <parameters>`
+
+
+4.10.6 lmp_Neb workflow控件（待开发）
+------------------------------------------------
+
+用于lmp_Neb workflow。
+
+**参数配置**: :ref:`see this! <parameters>`
+
+
+4.10.7 Shear workflow控件（待开发）
+----------------------------------------------
+
+用于Shear workflow。
+
+**参数配置**: :ref:`see this! <parameters>`

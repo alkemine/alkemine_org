@@ -1,0 +1,40 @@
+.. alkemine_doc documentation master file, created by
+   sphinx-quickstart on Wed Nov 25 20:11:52 2020.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to ALKEMIE Matter Studio's documentation!
+======================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 目录:
+
+   ALKEMIEIntroduction
+   ALKEMIESoftwareConceptAndOverview
+   ALKEMIESoftwareInstallation
+   Examples
+   ControlDetails
+   IntroductionToALKEMIEwebVersion
+   ConcludingRemarks
+
+
+ALKEMIE Matter Studio 平台界面
+-------------------------------
+.. image:: image/alkemie-software.png
+   :align: center
+   :width: 900
+
+ALKEMIE Matter Studio 平台概述
+-------------------------------
+.. image:: image/GraphicalAbstract-final.png
+   :align: center
+   :width: 900
+
+ALKEMIE Matter Studio 平台架构
+-------------------------------
+.. image:: image/architecture.png
+   :align: center
+   :width: 900
+
+

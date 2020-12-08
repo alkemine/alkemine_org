@@ -271,15 +271,30 @@ if __name__ == '__main__':
 
     gp.auto_run(nopy=False, valid=True, picture=True, mv_olddir_to_new_dir=False)
     gp.log.info("Replace _static to static in *.html done!")
+    
     gp = GetAllPyFiles(fn_dir=filen, rped_name='_images', gogal_name='images')
     gp.auto_run(nopy=False, valid=True, picture=True, mv_olddir_to_new_dir=False)
     gp.log.info("Replace _images to images in *.html done!")
-
-    os.rename("docs/_static", "docs/static")
-    gp.log.info("Rename _images to images done!")
-
-    os.rename("docs/_images", "docs/images")
-    gp.log.info("Rename _images to images done!")
     
+    gp = GetAllPyFiles(fn_dir=filen, rped_name='_sources', gogal_name='sources')
+    gp.auto_run(nopy=False, valid=True, picture=True, mv_olddir_to_new_dir=False)
+    gp.log.info("Replace _images to sources in *.html done!")
+
+    try:
+        os.rename("docs/_static", "docs/static")
+        gp.log.info("Rename _images to static done!")
+    except FileNotFoundError:
+        pass
+    try:
+        os.rename("docs/_images", "docs/images")
+        gp.log.info("Rename _images to images done!")
+    except FileNotFoundError:
+        pass
+    
+    try:
+        os.rename("docs/_sources", "docs/sources")
+        gp.log.info("Rename _images to sources done!")
+    except FileNotFoundError:
+        pass
     # fn = r'G:/alkemie-dev/Orange/tree.py'
     # replace_one_file(fn, log=log_test())

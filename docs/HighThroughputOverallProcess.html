@@ -1,0 +1,290 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.1.1 高通量总流程 &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="static/alk.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script src="static/jquery.js"></script>
+        <script src="static/underscore.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/language_data.js"></script>
+    
+    <script type="text/javascript" src="static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3.1.2 高通量计算流程具体操作实例" href="SpecificOperationExamplesOfHigh-throughputCalculationProcess.html" />
+    <link rel="prev" title="3.1 高通量1000量级计算流程" href="High-throughput1000-levelCalculationProcess.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> ALKEMIE Matter Studio
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">目录:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">ALKEMIE简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">ALKEMIE软件理念及概况</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">ALKEMIE软件安装</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Examples.html">算例</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="High-throughput1000-levelCalculationProcess.html">3.1 高通量1000量级计算流程</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1.1 高通量总流程</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#multiposcar">3.1.1.1 高通量建模基础概念（MultiPoscar）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">3.1.1.2 工作流实例基础概念</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">3.1.1.3 数据库配置及提交任务基础概念</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">3.1.1.4 数据分析实例</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="SpecificOperationExamplesOfHigh-throughputCalculationProcess.html">3.1.2 高通量计算流程具体操作实例</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="DynamicMonteCarlo.html">3.2 动态蒙特卡洛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FirstPrinciplesCoupledWithThermodynamicsGibbs.html">3.3 跨尺度模拟：第一性原理与热力学Gibbs耦合</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FirstPrinciplesAndBodyModulusCoupling.html">3.4 跨尺度模拟：第一性原理与体模量耦合</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CurieTemperatureCalculation.html">3.5 居里温度计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConstructVacancyConfigurationsAndPerformFirst-principlesStaticCalculations.html">3.6 高通量自动建模及计算：构建空位构型并进行第一性原理静态计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConstructTheDopingConfigurationOfPhaseChangeMaterialsAndPerformFirst-principlesStaticCalculations.html">3.7 高通量自动建模及计算：构建相变材料的掺杂构型并进行第一性原理静态计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConstructTheGrainBoundaryConfigurationOfPhaseChangeMaterialsAndPerformFirst-principlesStaticCalculations.html">3.8 高通量自动建模及计算：构建相变材料的晶界构型并进行第一性原理静态计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConstructAtomConfigurationsOfSubstitutionTypesAndPerformFirst-principlesStaticCalculations.html">3.9 构建取代类型的原子构型并进行第一性原理静态计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConstructTetrahedralAndOctahedralInterstitialAtomConfigurationsAndPerformFirst-principlesStaticCalculations.html">3.10 高通量自动建模及计算：构建四面体和八面体间隙原子构型并进行第一性原理静态计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IndexStructureAndVisualizationIn180000DatabasesThroughFinder.html">3.11 高通量自动建模及可视化：通过Finder在18万数据库索引结构并可视化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="First-principlesRelaxationCalculation.html">3.12 高通量自动计算流程：第一性原理驰豫计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="First-principlesBandCalculation.html">3.13 高通量自动计算流程：第一性原理能带计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="First-principlesDensityOfStatesCalculation.html">3.14 高通量自动计算流程：第一性原理态密度计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="First-principlesHSECalculation.html">3.15 高通量自动计算流程：第一性原理HSE计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="First-principlesNEBCalculation.html">3.16 高通量自动计算流程：第一性原理NEB计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LammpsRelaxationCalculation.html">3.17 高通量自动计算流程：Lammps弛豫计算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ViewingTheMultitaskingWorkingStatusOfTheComputingModule.html">3.18 高通量自动流程：计算模块多任务工作状态查看</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DeleteSpecifiedTask.html">3.19 高通量任务管理：删除指定任务</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChangeTheHigh-throughputTaskQueue.html">3.20 改变高通量任务队列</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AutomaticAnalysisOfEnergyVolume.html">3.21 高通量自动流程：能量体积自动分析</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AutomaticFormatDisplayOfEnergyVolumeBandGap.html">3.22 高通量自动数据分析：能量、体积、带隙自动格式化展示</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AutomaticStatisticalAnalysisOfEnergyVolumeBandGap.html">3.23 高通量自动数据分析：能量，体积、带隙自动统计学分析</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AutomaticScatterPlotDistributionOfEnergyVolumeBandGap.html">3.24 高通量自动数据分析：能量，体积、带隙自动散点图图分布</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DensityAnalysisOfElectricalPropertiesOfMaterials.html">3.25 高通量自动流程：材料电学性质态密度分析</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BandDiagramAnalysisOfElectricalPropertiesOfMaterials.html">3.26 高通量自动流程：材料电学性质能带图分析</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenPhaseWorkflow.html">3.27 OpenPhase 工作流</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpencalphdWorkflow.html">3.28 Opencalphd 工作流</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AutomaticallyConvertData.html">3.29 机器学习：自动转化数据（Generate）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AutomaticTrainingModel.html">3.30 机器学习：自动训练模型（Train）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AutomaticallyPredictAccordingToTheModel.html">3.31 机器学习：自动根据模型预测(Predict)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AutomaticallyLinkLarge-scaleMolecularDynamicsASEforSimulation.html">3.32 机器学习跨尺度模拟：自动链接大规模分子动力学ASE进行模拟（Pmlib）</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ControlDetails.html">控件详细介绍</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ALKEMIE Matter Studio</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          <div class=asetop>
+<a href=genindex.html>index</a>
+| <a href=py-modindex.html>modules</a>
+| <a href=https://gitlab.com/ase/ase>gitlab</a>
+
+| <a href="https://gitlab.com/ase/ase/blob/master/doc/HighThroughputOverallProcess.rst">page source</a>
+
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>3.1.1 高通量总流程<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>ALKEMIE软件中每一个基础操作都被封装为一个控件，即下图所示的圆形图标。控件左侧接受数据传入，右侧将数据传出。控件左侧输入的数据经过控件处理后，从右侧输出接口通过实线连接传入下一相关控件，类似数据的流动，故称为数据流。中间虚线表示控件已连接，但数据暂未传输，实线表示数据传输成功。每个圆形控件双击之后即可完成详细参数配置，如果选中Apply automatically数据会自动向下流动，这也是ALKEMIE高通量自动流程的基础思想。</p>
+<p>ALKEMIE软件中高通量计算总流程如下图所示。其中每个部分将在1.2-1.4中详细展开介绍。高通量计算总流程一共分为如下三个部分：</p>
+<a class="reference internal image-reference" href="images/3-1.png"><img alt="images/3-1.png" class="align-center" src="images/3-1.png" style="width: 900px;" /></a>
+<ol class="arabic simple">
+<li><p>首先选择合适控件进行建模，通过高通量处理器控件（HT Preprocessor）统一处理之后，可在Data Table和Data Info中查看相关信息。高通量处理器控件（HT Preprocessor）是连接材料结构和第一性原理计算的关键控件。</p></li>
+<li><p>高通量处理器输出接口可以连接第一性原理VASP实际计算流程相关的控件，即连接多个计算工作流。选择完不同的工作流之后，同样需要将所有不同的计算控件统一连接至Manager管理控件，该控件用来管理所需计算的任务并将任务发送至服务器上的数据库中。与此同时，需要设置数据库的位置（ip，端口，数据库名，用户，密码等信息），即在DataBase控件中的任务提交数据库和计算结果存储数据库。由于材料结构信息及计算结果的特殊性，不使用SQL这样的关系型数据库，因此我们整套软件选用了MongoDB作为远程服务器的数据库。</p></li>
+<li><p>添加完工作流任务后，将管理控件连接至Jobs任务提交控件，即可开始计算。</p></li>
+</ol>
+<div class="section" id="multiposcar">
+<h2>3.1.1.1 高通量建模基础概念（MultiPoscar）<a class="headerlink" href="#multiposcar" title="Permalink to this headline">¶</a></h2>
+<p>ALKEMIE软件可通过控件POSCAR、Builder、Multi POSCAR和Finder完成自动建模的过程，用户可根据需要自主选择最适合的建模方式。该模块还包含结构可视化部分但是需要安装VESTA软件，如果需要可视化，可以自行下载安装（<a class="reference external" href="http://jp-minerals.org/vesta/en/">http://jp-minerals.org/vesta/en/</a>），并通过Plotter中Viewer控件可视化，此处会在后面模块详细解释，高通量计算模块不涉及结构可视化。</p>
+<p>说明：在材料学中结构文件多数被存为POSCAR或者CIF的格式，此处POSCAR控件，Multi POSCAR控件专门用来解析这两种特定格式的结构文件，另外我们还支持不常见的XSF，XYZ等材料结构格式文件。ALKEMIE软件还可以支持多个结构文件同时传入。该方法可以通过Multi POSCAR完成，如下图所示，一次选取7个结构文件，并可以通过下拉框指定结构可视化。选取Apply automatically之后结构会自动传递到高通量处理器中进行后面的计算。</p>
+<a class="reference internal image-reference" href="images/3-2.png"><img alt="images/3-2.png" class="align-center" src="images/3-2.png" style="width: 900px;" /></a>
+</div>
+<div class="section" id="id2">
+<h2>3.1.1.2 工作流实例基础概念<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>每个工作流的输入接口必须是HT Preprocessor的输出接口，同时必须将结果传入Manager。通过HT Preprocessor可以连接多个工作流控件，实现多任务运行。当传入多个POSCAR并连接多个工作流控件时，会对每个POSCAR文件执行每个工作流的计算，例如高通量计算器中传入了2个POSCAR，并且连接了3个工作流控件，总计会提交2×3=6个任务。具体连接示意图如下：</p>
+<a class="reference internal image-reference" href="images/3-3.png"><img alt="images/3-3.png" class="align-center" src="images/3-3.png" style="width: 900px;" /></a>
+<p>当高通量计算任务都连接到Manager的时候，此时工作流都已经被分配打包好了，每个工作流可能包含多个子任务，每个子任务包含更多的子命令，这样对于复杂的材料学中计算来说，用户通过这个软件可以操作的十分方便。比如想计算一个材料体系的能带，能带计算就会被当做一个工作流，其中包含四个子任务：结构优化，静态自洽计算，非自洽态密度计算以及能带计算，这些子任务都有相互依赖，这些依赖关系通过蓝色的工作流控件均以完美解决，使得非常易懂，易理解，易学习。</p>
+<p>该软件目前共支持10个基础工作流，分别包括结构优化、能带结构计算、态密度计算、分子动力学模拟、HSE能带结构计算等等，每个控件详细内容及使用参见VASP计算部分。后面内容只详细讲解算例用到的两个工作流（静态计算和NEB工作流）。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>需要特别注意：工作流控件的输出接口必须统一连接至Manager进行管理。</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>3.1.1.3 数据库配置及提交任务基础概念<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Manager封装好任务之后，接下来是高通量计算的最后一步，将任务添加至有计算引擎的远程服务器对应的数据库中，该模块任务通过Database、Fworker和Jobs完成。从字面理解，Database是用来存储的数据库，该控件需要配置两个数据库，控件左侧为任务添加的数据库，右侧为结果存储的数据库。配置完数据库之后，需要通过Fworker完成远程计算引擎（安装第一性原理计算软件的集群）的配置。所有参数配置用户只用配置一次即可，软件会将用户配置添加到配置文件，并且每次运行自动读取参数。具体操作过程如下，所有参数配置完之后不需要点击任何按钮即可自动提交任务。</p>
+<a class="reference internal image-reference" href="images/3-4.png"><img alt="images/3-4.png" class="align-center" src="images/3-4.png" style="width: 900px;" /></a>
+</div>
+<div class="section" id="id4">
+<h2>3.1.1.4 数据分析实例<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>该软件不但能够支持任务的自动运行，还能对计算结果进行数据分析。</p>
+<ol class="arabic simple">
+<li><p>将任务计算结果从Jobs控件传入Analyzer控件，该控件可支持对energy，volumn，bandgap等多项的查询，将查询结果传入后续控件即可查看。</p></li>
+<li><p>然后连接Distributions等控件，设置好相应的参数，点击plotting，相应的图像即可出现在右侧的Plot栏。</p></li>
+</ol>
+<img alt="images/3-5.png" src="images/3-5.png" />
+<img alt="images/3-6.png" src="images/3-6.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="SpecificOperationExamplesOfHigh-throughputCalculationProcess.html" class="btn btn-neutral float-right" title="3.1.2 高通量计算流程具体操作实例" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="High-throughput1000-levelCalculationProcess.html" class="btn btn-neutral float-left" title="3.1 高通量1000量级计算流程" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, ALKEMIE Matter Studio Developers
+      <span class="lastupdated">
+        Last updated on Mon, 07 Dec 2020 15:33:13.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Documentation</span>
+      v: 1.5.0
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+          <dd><a href="https://gitee.com/alkemiems/dashboard/projects/alkemiems/alkemiems/tree/login">1.6.8 (development)</a></dd>
+        
+          <dd><a href="https://gitee.com/alkemiems/dashboard/projects/alkemiems/alkemiems/tree/release">1.5.0 (latest stable)</a></dd>
+        
+      </dl>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

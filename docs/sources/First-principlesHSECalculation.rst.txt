@@ -1,0 +1,16 @@
+3.15 高通量自动计算流程：第一性原理HSE计算
+===============================================
+
+从左至右连接控件，HSE WF计算，需要三步，分别为结构优化、静态自洽和HSE计算。
+
+.. image:: image/3-56.png
+    :align: center
+    :width: 900
+
+.. image:: image/3-57.png
+    :align: center
+    :width: 900
+
+.. image:: image/3-58.png
+    :align: center
+    :width: 700

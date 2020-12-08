@@ -1,0 +1,12 @@
+3.24 高通量自动数据分析：能量，体积、带隙自动散点图图分布
+=============================================================
+
+Scatter Plot 中以散点图的形成展现Analyzer中查询结果，可多任务展示。
+
+.. image:: image/3-77.png
+    :align: center
+    :width: 700
+
+.. image:: image/3-78.png
+    :align: center
+    :width: 700

@@ -1,0 +1,16 @@
+3.13 高通量自动计算流程：第一性原理能带计算
+==============================================
+
+从左至右连接控件，Bandstructure WF计算能带，包括了结构优化、静态自洽和非静态自洽。
+
+.. image:: image/3-49.png
+    :align: center
+    :width: 900
+
+.. image:: image/3-54.png
+    :align: center
+    :width: 900
+
+.. image:: image/3-50.png
+    :align: center
+    :width: 700

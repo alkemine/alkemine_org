@@ -1,0 +1,16 @@
+3.9 构建取代类型的原子构型并进行第一性原理静态计算
+============================================================
+
+从左至右连接控件，通过POSCAR模块输入晶体结构，通过Builder模块中的Build Substitution构建间隙掺杂模型。
+
+.. image:: image/3-38.png
+    :align: center
+    :width: 900
+
+.. image:: image/3-40.png
+    :align: center
+    :width: 900
+
+.. image:: image/3-44.png
+    :align: center
+    :width: 900

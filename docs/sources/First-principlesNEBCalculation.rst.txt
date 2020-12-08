@@ -1,0 +1,16 @@
+3.16 高通量自动计算流程：第一性原理NEB计算
+====================================================
+
+从左至右连接控件，NEB WF可以计算得到扩散势垒。首先获得扩散路径，然后结构驰豫，将结果写进数据库，改变路径上的点，循环执行以上步骤，直至完成。
+
+.. image:: image/3-59.png
+    :align: center
+    :width: 900
+
+.. image:: image/3-60.png
+    :align: center
+    :width: 900
+
+.. image:: image/3-61.png
+    :align: center
+    :width: 700
