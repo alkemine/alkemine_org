@@ -1,8 +1,17 @@
-ALKEMIE软件理念及概况
+设计架构
 =======================
 
 ALKEMIE整体设计理念如下：
 
-.. image:: image/1-1.png
+.. image:: image/architecture.png
+   :align: center
+   :width: 500
 
 ALKEMIE软件包含Basic、Works和AI三个部分，每个部分又分了若干个类别，共有近100个基本控件。每个基本控件都有自己独特的功能特性。可以完成自动建模，自动高通量第一性原理计算，自动数据分析以及材料机器学习等功能。
+
+
+ALKEMIE Matter Studio 平台概述
+-------------------------------
+.. image:: image/GraphicalAbstract-final.png
+   :align: center
+   :width: 500

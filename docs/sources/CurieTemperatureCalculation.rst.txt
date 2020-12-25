@@ -1,27 +1,22 @@
-3.5 居里温度计算
+居里温度计算
 =======================
 
-居里温度计算，首先在Tc Input配置工作流参数，工作流计算完成，可从Mananger输出接口中获取所需数据，Get Data得到数据，Tc Plot进行图像绘制。
+居里温度计算，首先在 :mod:`Tc Input` 配置工作流参数，工作流计算完成，可从 :mod:`Mananger` 输出接口中获取所需数据， :mod:`Get Data` 得到数据， :mod:`Tc Plot` 进行图像绘制。
 
-* 第一步，手动连接控件，或点击File，Open and Freeze，点击打开对应样例模板文件并点击开始按钮，如图：
+* 第一步，手动连接控件，或点击 :mod:`File` ， :mod:`Open and Freeze` ，点击打开对应样例模板文件并点击开始按钮，如图：
 
 .. image:: image/3-34.png
     :align: center
-    :width: 800
+    :width: 500
 
-* 第二步，点击Tc Input，输入参数，如图：
+* 第二步，点击 :mod:`Tc Input` ，输入参数，如图：
 
-* 第三步，在Jobs中提交任务，等待任务结束，可在Work State控件中查看任务状态；
+* 第三步，在 :mod:`Jobs` 中提交任务，等待任务结束，可在 :mod:`Work Stat` 控件中查看任务状态；
 
-* 第四步，待任务计算完毕，点击Get Data，选择参数类型为Tc，然后输入对应的jobs_id，点击Get Data，如图：
+* 第四步，待任务计算完毕，点击 :mod:`Get Data` ，选择参数类型为Tc，然后输入对应的jobs_id，点击 :mod:`Get Data` ，如图：
 
-* 第五步：点击Tc Plot，绘制图片。
+* 第五步：点击 :mod:`Tc Plot` ，绘制图片。
 
-    .. image:: image/3-35.png
-        :width: 330
-
-    .. image:: image/3-36.png
-        :width: 330
-
-    .. image:: image/3-37.png
-        :width: 330
+.. image:: image/3-35.png
+    :align: center
+    :width: 500

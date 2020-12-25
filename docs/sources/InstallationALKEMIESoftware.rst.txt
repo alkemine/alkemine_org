@@ -1,15 +1,37 @@
-2.4 安装ALKEMIE软件
+安装ALKEMIE软件
 =======================
 
 1. **首先将Alkemiems-1.5.tar.gz安装包文件夹整体复制到自定义路径，注意路径不能包含中文，空格等 非ASCII编码的字符。**
 
 2. **运行cmd并切换目录至安装包所保存的路径。**
 
-3. 通过conda激活刚刚安装的python环境（activate env_name）
-    .. image:: image/2-6.png
+3. **通过conda激活刚刚安装的python环境（activate env_name）**
 
-4. 输入pip install Alkemiems-1.5.tar.gz运行。（以Alkemiems-1.5.ar.gz安装包所在文件夹为D:\software为例运行如下)，显示successfully即表示安装成功。
-    .. image:: image/2-7.png
+.. image:: image/2-6.png
+    :align: center
+    :width: 500
 
-5. 添加配置文件，将配置文件.alkemiems-vasp.cfg文件放到用户根目录。通过cmd运行Alkemiems-akpad，即可启动软件。如下是软件启动、登陆、欢迎及主界面。
-    .. image:: image/2-8.png
+4. **输入pip install Alkemiems-1.5.tar.gz运行。（以Alkemiems-1.5.ar.gz安装包所在文件夹为D:\software为例运行如下)，显示successfully即表示安装成功。**
+
+.. image:: image/2-7.png
+    :align: center
+    :width: 500
+
+::
+
+    >>>ERROR: Could not find a version that satisfies the requirement fastTSNE>=0.2.12 (from alkemiems)
+    >>>ERROR: No matching distribution found for fastTSNE>=0.2.12
+
+.. warning::
+
+    如果出现上面的报错时，需要配置清华源镜像！
+
+5. **添加配置文件，将配置文件.aklicense文件放到用户根目录。通过cmd运行Alkemiems-akpad，即可启动软件。如下是软件启动、登陆、欢迎及主界面。**
+
+.. warning::
+
+    一定要在对应的python环境下启动！！！
+
+.. image:: image/2-8.png
+    :align: center
+    :width: 500

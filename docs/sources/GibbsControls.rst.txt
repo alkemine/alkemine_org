@@ -1,7 +1,7 @@
-4.8 Gibbs控件
+Gibbs控件
 ==========================
 
-4.8.1 Get data控件
+Get data控件
 ---------------------------
 
 用于从数据库Gibbs或Tc数据。
@@ -22,10 +22,10 @@
 
 .. image:: image/3-174.png
     :align: center
-    :width: 700
+    :width: 300
 
 
-4.8.2 Get EV控件
+Get EV控件
 --------------------------------
 
 用于从数据库Gibbs或Tc数据。
@@ -44,10 +44,10 @@
 
 .. image:: image/3-175.png
     :align: center
-    :width: 700
+    :width: 400
 
 
-4.8.3 Run BulkModule控件
+Run BulkModule控件
 -------------------------------
 
 用于计算材料体模量。
@@ -67,7 +67,7 @@
     :width: 400
 
 
-4.8.4 Gibbs WF控件
+Gibbs WF控件
 --------------------------
 
 用于Gibbs工作流计算。
@@ -110,10 +110,10 @@
 
 .. image:: image/3-177.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.8.5 Gibbs analyze控件
+Gibbs analyze控件
 ---------------------------------
 
 用于Gibbs计算数据图像绘制。
@@ -132,10 +132,10 @@
 
 .. image:: image/3-178.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.8.6 Volume Scale控件
+Volume Scale控件
 ----------------------------------
 
 用于对结构进行体积缩放用于Tc计算。
@@ -158,10 +158,10 @@
 
 .. image:: image/3-179.png
     :align: center
-    :width: 700
+    :width: 500
 
 
-4.8.7 Tc Input控件
+Tc Input控件
 ---------------------------
 
 用于Tc计算的参数配置。
@@ -200,10 +200,10 @@
 
 .. image:: image/3-180.png
     :align: center
-    :width: 500
+    :width: 400
 
 
-4.8.8 Tc WF控件
+Tc WF控件
 ------------------------------
 
 用于Tc工作流计算。
@@ -220,10 +220,10 @@
 
 .. image:: image/3-181.png
     :align: center
-    :width: 500
+    :width: 400
 
 
-4.8.9 Tc Plot控件
+Tc Plot控件
 ---------------------------
 
 用于Tc数据绘制图像。
@@ -238,6 +238,6 @@
 
 .. image:: image/3-182.png
     :align: center
-    :width: 500
+    :width: 400
 
 

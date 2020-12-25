@@ -1,42 +1,39 @@
-3.3 跨尺度模拟：第一性原理与热力学Gibbs耦合
+第一性原理与热力学Gibbs耦合
 ============================================
 
-第一性原理计算与Gibbs计算结合，先进行第一性原理静态计算，当静态计算完成，将计算数据传入数据库，可以从Manager输出接口中获取数据（即执行完VASP计算后的数据），Get EV获取EV数据，Gibbs WF执行工作流计算，通过Get Data得到Gibbs数据，通过Gibbs analyze作图。
+第一性原理计算与Gibbs计算结合，先进行第一性原理静态计算，当静态计算完成，将计算数据传入数据库，可以从 :mod:`Manager` 输出接口中获取数据（即执行完VASP计算后的数据）， :mod:`Get EV` 获取EV数据， :mod:`Gibbs WF` 执行工作流计算，通过 :mod:`Get Data` 得到Gibbs数据，通过 :mod:`Gibbs analyze` 作图。
 
-* 第一步，手动连接控件，或点击File，Open and Freeze，点击打开对应样例模板文件并点击开始按钮，如图：
+* 第一步，手动连接控件，或点击 :mod:`File` ， :mod:`Open and Freeze` ，点击打开对应样例模板文件并点击开始按钮，如图：
   第一部分为静态计算，第二部分为Gibbs计算。
 
 .. image:: image/3-24.png
     :align: center
-    :width: 900
+    :width: 500
 
-* 第二步，点击Volume Scale，调整结构尺寸，可输出多个结构至后续工作流，如图：
+* 第二步，点击 :mod:`Volume Scale` ，调整结构尺寸，可输出多个结构至后续工作流，如图：
 
 .. image:: image/3-25.png
     :align: center
-    :width: 800
+    :width: 500
 
-* 第三步，在Jobs中提交任务，等待任务结束，进行下一部分计算；
+* 第三步，在 :mod:`Jobs` 中提交任务，等待任务结束，进行下一部分计算；
 
-* 第四步，点击Get EV，输入jobs_id,获取E-V值，如图：
+* 第四步，点击 :mod:`Get EV` ，输入jobs_id,获取E-V值，如图：
 
-* 第五步，打开Gibbs WF，输入对应参数，点击run运行并传入下一控件，如果有本地EV文件，也可点击V-E-file导入，从这里传入E-V值
+* 第五步，打开 :mod:`Gibbs WF` ，输入对应参数，点击 :mod:`run` 运行并传入下一控件，如果有本地EV文件，也可点击 :mod:`V-E-file` 导入，从这里传入E-V值
   ，如图：
 
-    .. image:: image/3-26.png
-        :width: 500
+.. image:: image/3-26.png
+    :align: center
+    :width: 500
 
-    .. image:: image/3-27.png
-        :width: 500
 
 * 第六步，在Jobs（1）中提交任务，等待任务结束；
 
-* 第七步，待任务计算完毕，点击Get Data，选择参数类型为Gibbs，然后输入对应的jobs_id,点击Get Data，如图；
+* 第七步，待任务计算完毕，点击 :mod:`Get Data` ，选择参数类型为Gibbs，然后输入对应的jobs_id，点击 :mod:`Get Data` ，如图；
 
-* 第八步，点击Gibbs analyze, 选择需要画图的参数，如Estatic->p,点击run，即可得到图片，如图：
+* 第八步，点击 :mod:`Gibbs analyze` , 选择需要画图的参数，如Estatic->p,点击 :mod:`run` ，即可得到图片，如图：
 
-    .. image:: image/3-28.png
-        :width: 500
-
-    .. image:: image/3-29.png
-        :width: 500
+.. image:: image/3-28.png
+    :align: center
+    :width: 500

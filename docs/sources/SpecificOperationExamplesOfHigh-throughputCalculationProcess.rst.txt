@@ -1,36 +1,44 @@
-3.1.2 高通量计算流程具体操作实例
+高通量计算流程具体操作实例
 ====================================
 
-* 第一步：点击软件左上角File，选择Open and Freeze按钮，选择已经保存好的高通量计算流程1000wf.akwf，打开后如图所示：
-    .. image:: image/3-7.png
-        :align: center
-        :width: 900
+* 第一步：点击软件左上角 :mod:`File` ，选择 :mod:`Open and Freeze` 按钮，选择已经保存好的高通量计算流程1000wf.akwf，打开后如图所示：
 
- .. warning::
-     此处选择Open and Freeze，此时整个工作流中的数据是暂停状态的，当传入高通量数据后点击左下角开始按钮，
-     即可开始自动提交任务。
+.. image:: image/3-7.png
+    :align: center
+    :width: 400
 
-* 第二步，双击MultiPoscar，切换到对应文件夹，选择1000个结构，如图所示：
-    .. image:: image/3-8.png
-        :align: center
-        :width: 900
+.. warning::
 
-* 第三步，等待上图中窗口右下角进度条到100%，表明结构输入完毕。此时点击左下角开始按钮，即可开始将高通量自动静态计算添加到数据库。等待下图中两个控件进度条全部为100%之后表示数据添加完毕，如下图所示：
-    .. image:: image/3-9.png
-        :align: center
-        :width: 900
+    此处选择 :mod:`Open and Freeze` ，此时整个工作流中的数据是暂停状态的，当传入高通量数据后点击左下角开始按钮，即可开始自动提交任务。
 
-* 第四步：在jobs中点击run jobs，即可自动在远程计算机提交任务并开始计算，如下图所示。之后需要等待约2小时即可计算完毕。等待提交完毕可点击Jobs查看任务详情。
-    .. image:: image/3-10.png
-        :align: center
-        :width: 900
+* 第二步，双击 :mod:`MultiPoscar` ，切换到对应文件夹，选择1000个结构，如图所示：
 
-* 等待过程中可以通过Workstate查看工作状态
-    .. image:: image/3-11.png
-        :align: center
-        :width: 900
+.. image:: image/3-8.png
+    :align: center
+    :width: 400
 
-* 最后，等待计算结束可以查看计算结果。在Jobs之后连接两个数据分析按钮，一次点击1,2，3的按钮即可查看到对应任务id和计算结果。
-    .. image:: image/3-12.png
-        :align: center
-        :width: 900
+.. note::
+
+    等待上图中窗口右下角进度条到100%，表明结构输入完毕。此时点击左下角开始按钮，即可开始将高通量自动静态计算添加到数据库。等待下图中两个控件进度条全部为100%之后表示数据添加完毕，如下图所示：
+
+.. image:: image/3-9.png
+    :align: center
+    :width: 400
+
+* 第三步：在 :mod:`jobs` 中点击 :mod:`run jobs` ，即可自动在远程计算机提交任务并开始计算，如下图所示。之后需要等待约2小时即可计算完毕。等待提交完毕可点击 :mod:`Jobs` 查看任务详情。
+
+.. image:: image/3-10.png
+    :align: center
+    :width: 400
+
+* 等待过程中可以通过 :mod:`Workstate` 查看工作状态。
+
+.. image:: image/3-11.png
+    :align: center
+    :width: 400
+
+* 最后，等待计算结束可以查看计算结果。在Jobs之后连接两个数据分析按钮，一次点击1，2，3的按钮即可查看到对应任务id和计算结果。
+
+.. image:: image/3-12.png
+    :align: center
+    :width: 400

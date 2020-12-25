@@ -1,12 +1,12 @@
-3.20 改变高通量任务队列
+改变高通量任务队列
 ==================================
 
-通过Work Priority控件，可以调整工作流计算顺序。首先，连接Manager控件到Work Priority，然后进入界面，输入Job Id，输入Job priority（0-100，100为优先级最高），按Submit即可调整工作流顺序。
+通过 :mod:`Work Priority` 控件，可以调整工作流计算顺序。首先，连接 :mod:`Manager` 控件到 :mod:`Work Priority` ，然后进入界面，输入Job Id，输入Job priority（0-100，100为优先级最高），按 :mod:`Submit` 即可调整工作流顺序。
 
 .. image:: image/3-69.png
     :align: center
-    :width: 500
+    :width: 400
 
 .. image:: image/3-70.png
     :align: center
-    :width: 700
+    :width: 500

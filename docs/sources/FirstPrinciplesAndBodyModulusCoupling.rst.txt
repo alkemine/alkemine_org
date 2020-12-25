@@ -1,29 +1,27 @@
-3.4 跨尺度模拟：第一性原理与体模量耦合
+第一性原理与体模量耦合
 ===================================================
 
-第一性原理计算与Gibbs计算结合，先进行第一性原理静态计算，当静态计算完成，将计算数据传入数据库，可以从Manager输出接口中获取数据（即执行完VASP计算后的数据），Get EV获取EV数据，Run BulkModule执行体模量计算。
+第一性原理计算与Gibbs计算结合，先进行第一性原理静态计算，当静态计算完成，将计算数据传入数据库，可以从 :mod:`Manager` 输出接口中获取数据（即执行完VASP计算后的数据）， :mod:`Get EV` 获取EV数据， :mod:`Run BulkModule` 执行体模量计算。
 
-+ 第一步，手动连接控件，或点击File，Open and Freeze，点击打开对应样例模板文件并点击开始按钮，如图：
++ 第一步，手动连接控件，或点击 :mod:`File` ， :mod:`Open and Freeze` ，点击打开对应样例模板文件并点击开始按钮，如图：
   第一部分为静态计算，第二部分为体模量计算。
 
 .. image:: image/3-30.png
     :align: center
-    :width: 900
+    :width: 500
 
-+ 第二步，点击Volume Scale，调整结构尺寸，可输出多个结构信息至后续工作流，如图：
++ 第二步，点击 :mod:`Volume Scale` ，调整结构尺寸，可输出多个结构信息至后续工作流，如图：
 
 .. image:: image/3-31.png
     :align: center
-    :width: 800
+    :width: 500
 
 + 第三步，在Jobs中提交任务，等待任务结束，进行下一部分计算；
 
-+ 第四步，点击Get EV，输入jobs_id,得到E-V值；
++ 第四步，点击 :mod:`Get EV` ，输入jobs_id，得到E-V值；
 
-+ 第五步，点击Run BulkModule，即可得到体模量参数；
++ 第五步，点击 :mod:`Run BulkModule` ，即可得到体模量参数；
 
-    .. image:: image/3-32.png
-        :width: 500
-
-    .. image:: image/3-33.png
-        :width: 500
+.. image:: image/3-32.png
+    :align: center
+    :width: 500

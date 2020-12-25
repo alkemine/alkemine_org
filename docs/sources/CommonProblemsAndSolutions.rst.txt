@@ -1,4 +1,4 @@
-2.6 常见问题及解决方法
+常见问题及解决方法
 =========================
 
 1. 无法登录ALKEMIE软件
@@ -12,19 +12,27 @@
 3. pip install 安装过程中遇到如下错误：
 
 .. image:: image/2-10.png
+    :align: center
+    :width: 500
 
 **解决方法**：请更换pip镜像至清华源，因为官方pip目前暂停支持fastTSNE软件包，详情参考2.2中第三步。
 
 4. conda安装过程各种遇到如下警告：
 
 .. image:: image/2-11.png
+    :align: center
+    :width: 500
 
 **解决方法**：把下图所示的conda目录添加到环境变量里面即可解决
     .. image:: image/2-12.png
+        :align: center
+        :width: 500
 
 5. 运行Alkemiems-akpad无法启动ALKEMIE软件
 
 .. image:: image/2-13.png
+    :align: center
+    :width: 500
 
 **解决方法**：如果遇到这个问题，是因为conda 环境变量不正确，重新添加更新conda环境变量即可。
 

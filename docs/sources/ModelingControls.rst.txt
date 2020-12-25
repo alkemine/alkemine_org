@@ -1,7 +1,7 @@
-4.1 建模控件
+建模控件
 ====================
 
-4.1.1 POSCAR控件
+POSCAR控件
 -------------------------------
 
 读取POSCAR、cif、xsf和xyz等格式的文件。
@@ -26,10 +26,10 @@
 
 .. image:: image/3-102.png
     :align: center
-    :width: 500
+    :width: 300
 
 
-4.1.2 Builder控件
+Builder控件
 -------------------------------
 
 可构建晶界，掺杂，空位等复杂模型。 支持寻找晶界、构建晶界、间隙掺杂、空位掺杂、取代原子掺杂和指定任意位置掺杂等多种方式。
@@ -56,10 +56,10 @@
 
 .. image:: image/3-103.png
     :align: center
-    :width: 900
+    :width: 600
 
 
-4.1.2.2 Build Grain Boundary：构建晶界
+Build Grain Boundary：构建晶界
 """"""""""""""""""""""""""""""""""""""""""
 ::
 
@@ -93,10 +93,10 @@
 
 .. image:: image/3-104.png
     :align: center
-    :width: 900
+    :width: 600
 
 
-4.1.2.3 Build vacancy：构建空位
+Build vacancy：构建空位
 """"""""""""""""""""""""""""""""""
 ::
 
@@ -117,7 +117,7 @@
     :width: 500
 
 
-4.1.2.4 Build Substitution：构建置换原子
+Build Substitution：构建置换原子
 """""""""""""""""""""""""""""""""""""""""""
 
 ::
@@ -141,7 +141,7 @@
     :width: 500
 
 
-4.1.2.5 Build Interstitution：构建间隙原子
+Build Interstitution：构建间隙原子
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
 ::
@@ -165,7 +165,7 @@
     :width: 500
 
 
-4.1.2.6 Build Doping：构建掺杂
+Build Doping：构建掺杂
 """""""""""""""""""""""""""""""""""""""""
 
 ::
@@ -191,11 +191,11 @@
     :width: 500
 
 
-4.1.2.7 Send data：将建好的结构信息传递至下一控件
+Send data：将建好的结构信息传递至下一控件
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-4.1.3 Multi POSCAR控件
+Multi POSCAR控件
 -------------------------------
 
 读取多个POSCAR、cif、xsf和xyz等格式的文件。
@@ -220,10 +220,10 @@
 
 .. image:: image/3-109.png
     :align: center
-    :width: 500
+    :width: 300
 
 
-4.1.4 Finder控件
+Finder控件
 -------------------------------
 
 在数据库中查找指定元素的所有可能结构，并生成相应的结构文件。
@@ -276,10 +276,10 @@
 
 .. image:: image/3-110.png
     :align: center
-    :width: 900
+    :width: 600
 
 
-4.1.5 HT Preprocessor控件
+HT Preprocessor控件
 -------------------------------
 
 高通量预处理控件，该控件类似于一个结构容器。 所有生成的结构必须传输到此控件，才能进行下一步计算。
@@ -298,10 +298,10 @@
 
 .. image:: image/3-111.png
     :align: center
-    :width: 500
+    :width: 400
 
 
-4.1.6 Data Table控件
+Data Table控件
 -------------------------------
 
 以表格的形式(类似于Excel)展示数据集。
@@ -329,10 +329,10 @@
 
 .. image:: image/3-112.png
     :align: center
-    :width: 900
+    :width: 600
 
 
-4.1.7 File控件
+File控件
 -------------------------------
 
 从输入文件或者网络中读取数据，并输出一个数据表格。
@@ -362,7 +362,7 @@
     :width: 500
 
 
-4.1.8 Data Info控件
+Data Info控件
 -------------------------------
 
 展示数据集的基本信息，例如每一列中变量的数量和类型，有多少行等等。
@@ -394,7 +394,7 @@
     :width: 300
 
 
-4.1.9 LDA-1/2控件
+LDA-1/2控件
 -------------------------------
 
 生成特殊的LDA-1/2势函数。
@@ -411,19 +411,19 @@
 
     .. image:: image/3-115.png
         :align: center
-        :width: 900
+        :width: 600
 
   2. shLDA-1/2r_in
 
     .. image:: image/3-116.png
         :align: center
-        :width: 900
+        :width: 600
 
   3. shLDA-1/2r_out
 
     .. image:: image/3-117.png
         :align: center
-        :width: 900
+        :width: 600
 
 **参数配置**::
 
@@ -451,7 +451,7 @@
 
 
 
-4.1.10 POTCAR控件
+POTCAR控件
 -------------------------------
 
 选择所需的POTCAR文件。
@@ -474,10 +474,10 @@
 
 .. image:: image/3-118.png
     :align: center
-    :width: 400
+    :width: 300
 
 
-4.1.11 1 to 4控件
+1 to 4控件
 -------------------------------
 
 输入二元材料AB的cif格式文件，输出AA，AB，BA，BB，4个POSCAR文件。
@@ -500,4 +500,4 @@
 
 .. image:: image/3-119.png
     :align: center
-    :width: 400
+    :width: 300

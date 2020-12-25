@@ -1,7 +1,7 @@
-4.6 OpenPhase控件
+OpenPhase控件
 ========================
 
-4.6.1 Openphase Input控件
+Openphase Input控件
 -------------------------------
 
 用于输入计算OpenPhase的配置参数。
@@ -71,10 +71,10 @@
 
 .. image:: image/3-156.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.6.2 Get VTK 控件
+Get VTK 控件
 
 用于获取VTK数据。
 
@@ -97,7 +97,7 @@
     :width: 400
 
 
-4.6.3 Get Oc Data 控件
+Get Oc Data 控件
 ----------------------------------
 
 用于获取OpenCalPhd数据。
@@ -118,10 +118,10 @@
 
 .. image:: image/3-158.png
     :align: center
-    :width: 500
+    :width: 400
 
 
-4.6.4 Opencalphd Plot 控件
+Opencalphd Plot 控件
 ------------------------------------
 
 用于绘制Opencalphd图像。
@@ -136,10 +136,10 @@
 
 .. image:: image/3-159.png
     :align: center
-    :width: 500
+    :width: 400
 
 
-4.6.5 Openphase Plot 控件
+Openphase Plot 控件
 -------------------------------------
 
 用于绘制Openphase图像。
@@ -156,10 +156,10 @@
 
 .. image:: image/3-160.png
     :align: center
-    :width: 500
+    :width: 400
 
 
-4.6.6 Animation Gif控件
+Animation Gif控件
 ------------------------------------
 
 用于Animation Gif。
@@ -178,10 +178,10 @@
 
 .. image:: image/3-161.png
     :align: center
-    :width: 500
+    :width: 400
 
 
-4.6.7 Dendrite Gif控件
+Dendrite Gif控件
 -----------------------------------
 
 用于Dendrite Gif。
@@ -200,10 +200,10 @@
 
 .. image:: image/3-162.png
     :align: center
-    :width: 500
+    :width: 400
 
 
-4.6.8 NormalGG Gif控件
+NormalGG Gif控件
 -------------------------------------
 
 用于NormalGG Gif。
@@ -222,10 +222,10 @@
 
 .. image:: image/3-163.png
     :align: center
-    :width: 500
+    :width: 400
 
 
-4.6.9 Single GrainBoundary Gif控件
+Single GrainBoundary Gif控件
 ----------------------------------------------
 
 用于Single GrainBoundary Gif。
@@ -244,10 +244,10 @@
 
 .. image:: image/3-164.png
     :align: center
-    :width: 500
+    :width: 400
 
 
-4.6.10 Openphase NormalGrain WF控件
+Openphase NormalGrain WF控件
 ----------------------------------------------
 
 用于Openphase NormalGrain工作流计算。
@@ -262,10 +262,10 @@
 
 .. image:: image/3-165.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.6.11 Openphase SingleGrain WF控件
+Openphase SingleGrain WF控件
 -----------------------------------------------
 
 用于Openphase SingleGrain工作流计算。
@@ -280,10 +280,10 @@
 
 .. image:: image/3-166.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.6.12 Opencalphd WF控件
+Opencalphd WF控件
 ----------------------------------------
 
 用于Opencalphd工作流计算。
@@ -298,4 +298,4 @@
 
 .. image:: image/3-167.png
     :align: center
-    :width: 900
+    :width: 500

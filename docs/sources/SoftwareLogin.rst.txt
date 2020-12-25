@@ -1,7 +1,9 @@
-2.5 软件登录
+软件登录
 ====================
 
 .. image:: image/2-9.png
+    :align: center
+    :width: 400
 
 ALKEMIE登录界面如上图所示
 Account：登录账号；Password：登录密码；Sign In：注册账号；Forgot：忘记密码；Remember Password：勾选记住密码，不用重复输入；Auto Log In：下次自动登录；Log In：点击登录软件。

@@ -278,7 +278,11 @@ if __name__ == '__main__':
     
     gp = GetAllPyFiles(fn_dir=filen, rped_name='_sources', gogal_name='sources')
     gp.auto_run(nopy=False, valid=True, picture=True, mv_olddir_to_new_dir=False)
-    gp.log.info("Replace _images to sources in *.html done!")
+    gp.log.info("Replace _sources to sources in *.html done!")
+    
+    gp = GetAllPyFiles(fn_dir=filen, rped_name='_downloads', gogal_name='downloads')
+    gp.auto_run(nopy=False, valid=True, picture=True, mv_olddir_to_new_dir=False)
+    gp.log.info("Replace _downloads to downloads in *.html done!")
 
     try:
         os.rename("docs/_static", "docs/static")
@@ -296,5 +300,11 @@ if __name__ == '__main__':
         gp.log.info("Rename _images to sources done!")
     except FileNotFoundError:
         pass
-    # fn = r'G:/alkemie-dev/Orange/tree.py'
+
+    try:
+        os.rename("docs/_downloads", "docs/downloads")
+        gp.log.info("Rename _images to sources done!")
+    except FileNotFoundError:
+        pass
+# fn = r'G:/alkemie-dev/Orange/tree.py'
     # replace_one_file(fn, log=log_test())

@@ -1,11 +1,11 @@
-4.2 VASP工作流控件
+VASP工作流控件
 =============================
 
 该软件共支持10个基础工作流，分别包括结构优化、能带结构计算、态密度计算、分子动力学模拟、HSE能带结构计算等等。
 
 .. image:: image/3-120.png
     :align: center
-    :width: 900
+    :width: 600
 
 每个工作流都有输入输出文件和相应的参数设置。参数配置一般有三组：通用计算参数、特定计算参数和工作流参数。所有参数均有常用默认设置，这个对于新手用户十分方便。鼠标双击打开工作流，可以看到每个工作流中均包含通用计算参数和特定计算参数设置，下面将首先对这两组参数设置进行详细介绍。
 
@@ -41,12 +41,12 @@
 
 .. image:: image/3-121.png
     :align: center
-    :width: 700
+    :width: 500
 
 每个工作流共有的配置介绍完之后，我们将依次对单个控件的用途，输入输出文件以及其特有的工作流参数设置进行介绍。
 
 
-4.2.1 VASP AIMD WF控件
+VASP AIMD WF控件
 --------------------------------
 
 用来计算分子动力学。
@@ -83,7 +83,7 @@
     :width: 200
 
 
-4.2.2 Bandstructure WF控件
+Bandstructure WF控件
 -------------------------------------
 
 用来计算材料的能带结构。
@@ -99,10 +99,10 @@
 
 .. image:: image/3-123.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.2.3 Optimize WF控件
+Optimize WF控件
 --------------------------------
 
 用来进行结构优化。
@@ -117,10 +117,10 @@
 
 .. image:: image/3-124.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.2.4 Static WF控件
+Static WF控件
 -----------------------------
 
 用来进行静态计算。
@@ -135,10 +135,10 @@
 
 .. image:: image/3-125.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.2.5 DOS WF控件
+DOS WF控件
 ---------------------------
 
 用于计算材料电子态密度。
@@ -153,10 +153,10 @@
 
 .. image:: image/3-126.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.2.6 HSE_bandstucture WF控件
+HSE_bandstucture WF控件
 ----------------------------------------
 
 通过杂化密度泛函(HSE)的方法计算材料的能带结构。
@@ -171,10 +171,10 @@
 
 .. image:: image/3-127.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.2.7 Boltztrap WF控件
+Boltztrap WF控件
 -------------------------------------
 
 用来计算材料的玻尔兹曼输运特性。
@@ -189,10 +189,10 @@
 
 .. image:: image/3-128.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.2.8 Elastic-tensor WF控件 
+Elastic-tensor WF控件 
 ------------------------------------------
 
 用来计算材料的弹性模量。
@@ -215,10 +215,10 @@
 
 .. image:: image/3-129.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.2.9 Equation_state WF控件
+Equation_state WF控件
 ----------------------------------------
 
 用来计算材料的状态方程。
@@ -255,10 +255,10 @@
 
 .. image:: image/3-130.png
     :align: center
-    :width: 300
+    :width: 500
 
 
-4.2.10 NEB WF控件
+NEB WF控件
 ----------------------------
 
 用来计算材料的过渡态。
@@ -277,10 +277,10 @@
 
 .. image:: image/3-130.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.2.11 Raman WF控件
+Raman WF控件
 ------------------------------
 
 用来计算材料的拉曼光谱。
@@ -301,4 +301,4 @@
 
 .. image:: image/3-131.png
     :align: center
-    :width: 900
+    :width: 400

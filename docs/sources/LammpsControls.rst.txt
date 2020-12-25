@@ -1,7 +1,7 @@
-4.10 lammps控件
+lammps控件
 ========================
 
-4.10.1 lammps relax workflow控件
+lammps relax workflow控件
 -----------------------------------------
 
 用于lammps relax workflow。
@@ -42,10 +42,10 @@
 
 .. image:: image/3-186.png
     :align: center
-    :width: 300
+    :width: 200
 
 
-4.10.2 Crack workf控件（待开发）
+Crack workf控件（待开发）
 ----------------------------------------
 
 用于Crack workf。
@@ -53,7 +53,7 @@
 **参数配置**: :ref:`see this! <parameters>`
 
 
-4.10.3 diffuse workflow控件（待开发）
+diffuse workflow控件（待开发）
 ----------------------------------------------
 
 用于diffuse workflow。
@@ -61,7 +61,7 @@
 **参数配置**: :ref:`see this! <parameters>`
 
 
-4.10.4 Elastic workflow控件（待开发）
+Elastic workflow控件（待开发）
 -------------------------------------------------
 
 用于Elastic workflow。
@@ -69,7 +69,7 @@
 **参数配置**: :ref:`see this! <parameters>`
 
 
-4.10.5 Flow workflow控件（待开发）
+Flow workflow控件（待开发）
 -------------------------------------------
 
 用于Flow workflow。
@@ -77,7 +77,7 @@
 **参数配置**: :ref:`see this! <parameters>`
 
 
-4.10.6 lmp_Neb workflow控件（待开发）
+lmp_Neb workflow控件（待开发）
 ------------------------------------------------
 
 用于lmp_Neb workflow。
@@ -85,7 +85,7 @@
 **参数配置**: :ref:`see this! <parameters>`
 
 
-4.10.7 Shear workflow控件（待开发）
+Shear workflow控件（待开发）
 ----------------------------------------------
 
 用于Shear workflow。

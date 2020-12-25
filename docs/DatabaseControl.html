@@ -7,11 +7,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>4.3 数据库控件 &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
+  <title>数据库控件 &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
   
 
   
-  <link rel="stylesheet" href="static/alk.css" type="text/css" />
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="static/pygments.css" type="text/css" />
 
   
@@ -36,8 +36,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="4.4 画图与分析控件" href="DrawingAndAnalysisControls.html" />
-    <link rel="prev" title="4.2 VASP工作流控件" href="VASPWorkflowControl.html" /> 
+    <link rel="next" title="画图与分析控件" href="DrawingAndAnalysisControls.html" />
+    <link rel="prev" title="VASP工作流控件" href="VASPWorkflowControl.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,22 +84,35 @@
             
               <p class="caption"><span class="caption-text">目录:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">ALKEMIE简介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">ALKEMIE软件理念及概况</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">ALKEMIE软件安装</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Examples.html">算例</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="ControlDetails.html">控件详细介绍</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="ModelingControls.html">4.1 建模控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="VASPWorkflowControl.html">4.2 VASP工作流控件</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">4.3 数据库控件</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#database">4.3.1 Database控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#manager">4.3.2 Manager控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#jobs">4.3.3 Jobs控件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ApplyForTrial.html">申请试用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">设计架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">高通量算例</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ControlDetails.html">控件介绍</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ModelingControls.html">建模控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VASPWorkflowControl.html">VASP工作流控件</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">数据库控件</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#database">Database控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manager">Manager控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jobs">Jobs控件</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="DrawingAndAnalysisControls.html">4.4 画图与分析控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DrawingAndAnalysisControls.html">画图与分析控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="potentialmindControls.html">potentialmind控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenPhaseControls.html">OpenPhase控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DynamicControls.html">Dynamic控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GibbsControls.html">Gibbs控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JobsControls.html">Jobs控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LammpsControls.html">lammps控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QEControls.html">qe控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AbinitControls.html">abinit控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CalypsoControls.html">calypso控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VASPExtendControls.html">vaspextend控件（待开发）</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="IntroductionToALKEMIEwebVersion.html">网页版数据库</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ConcludingRemarks.html">未来与展望</a></li>
 </ul>
 
             
@@ -124,21 +137,53 @@
         
         <div class="rst-content">
         
-          <div class=asetop>
-<a href=genindex.html>index</a>
-| <a href=py-modindex.html>modules</a>
-| <a href=https://gitlab.com/ase/ase>gitlab</a>
-
-| <a href="https://gitlab.com/ase/ase/blob/master/doc/DatabaseControl.rst">page source</a>
-
-</div>
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALKEMIE</title>
+    <style>
+        thead tr th,
+        tbody {
+            text-align: center;
+        }
+        table {
+            margin: 0px auto;
+        }
+        p {
+            line-height: 36px;
+            text-indent: 2em;
+        }
+        li p,
+        .admonition-title {
+            text-indent: 0em;
+        }
+        .caption {
+            text-indent: 0em;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+    <div class=asetop>
+        <a href=genindex.html>index</a>
+        | <a href=py-modindex.html>modules</a>
+        | <a href=https://gitlab.com/ase/ase>gitlab</a>
+        
+        | <a href="https://gitlab.com/ase/ase/blob/master/doc/DatabaseControl.rst">page source</a>
+        
+    </div>
+    <br>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>4.3 数据库控件<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>数据库控件<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="database">
-<h2>4.3.1 Database控件<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h2>
+<h2>Database控件<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h2>
 <p>用来保存计算结果。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -190,7 +235,7 @@
 <a class="reference internal image-reference" href="images/3-132.png"><img alt="images/3-132.png" class="align-center" src="images/3-132.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="manager">
-<h2>4.3.2 Manager控件<a class="headerlink" href="#manager" title="Permalink to this headline">¶</a></h2>
+<h2>Manager控件<a class="headerlink" href="#manager" title="Permalink to this headline">¶</a></h2>
 <p>用于管理工作流和工作任务。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -216,10 +261,10 @@
 </table>
 <p>双击打开控件，可看到Manager控件不需要设置参数，它可以用来查看已经配置好的工作流信息。Workflow对话框中显示当前工作流具体信息，包括工作流的创建时间、元素种类、材料结构等等。点击Add workflow也可添加新的工作流。</p>
 <p>同样地，在参数设置窗口的最下方设有Auto-Run的选项，若勾选此项，可自动开始运行；若不勾选此选项，可通过点击Send data控制。</p>
-<a class="reference internal image-reference" href="images/3-133.png"><img alt="images/3-133.png" class="align-center" src="images/3-133.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="images/3-133.png"><img alt="images/3-133.png" class="align-center" src="images/3-133.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="jobs">
-<h2>4.3.3 Jobs控件<a class="headerlink" href="#jobs" title="Permalink to this headline">¶</a></h2>
+<h2>Jobs控件<a class="headerlink" href="#jobs" title="Permalink to this headline">¶</a></h2>
 <p>用于执行工作流，提交任务。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -253,7 +298,7 @@
 <span class="n">Workflow</span>                                  <span class="n">具体工作流信息</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-134.png"><img alt="images/3-134.png" class="align-center" src="images/3-134.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="images/3-134.png"><img alt="images/3-134.png" class="align-center" src="images/3-134.png" style="width: 500px;" /></a>
 <p>确认完成后，可以通过点击Run without jobs直接运行。</p>
 <p>Jobs控件同样在窗口的最下方设有Auto-Run的选项，若勾选此项，可自动运行；若不勾选此选项，可通过点击Run WF控制。</p>
 <a class="reference internal image-reference" href="images/3-135.png"><img alt="images/3-135.png" class="align-center" src="images/3-135.png" style="width: 300px;" /></a>
@@ -268,10 +313,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="DrawingAndAnalysisControls.html" class="btn btn-neutral float-right" title="4.4 画图与分析控件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="DrawingAndAnalysisControls.html" class="btn btn-neutral float-right" title="画图与分析控件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="VASPWorkflowControl.html" class="btn btn-neutral float-left" title="4.2 VASP工作流控件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="VASPWorkflowControl.html" class="btn btn-neutral float-left" title="VASP工作流控件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -283,7 +328,7 @@
         
         &copy; Copyright 2020, ALKEMIE Matter Studio Developers
       <span class="lastupdated">
-        Last updated on Mon, 07 Dec 2020 15:33:13.
+        Last updated on Fri, 25 Dec 2020 17:25:45.
       </span>
 
     </p>

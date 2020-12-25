@@ -7,11 +7,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>4.1 建模控件 &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
+  <title>建模控件 &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
   
 
   
-  <link rel="stylesheet" href="static/alk.css" type="text/css" />
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="static/pygments.css" type="text/css" />
 
   
@@ -36,8 +36,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="4.2 VASP工作流控件" href="VASPWorkflowControl.html" />
-    <link rel="prev" title="控件详细介绍" href="ControlDetails.html" /> 
+    <link rel="next" title="VASP工作流控件" href="VASPWorkflowControl.html" />
+    <link rel="prev" title="控件介绍" href="ControlDetails.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,39 +84,52 @@
             
               <p class="caption"><span class="caption-text">目录:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">ALKEMIE简介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">ALKEMIE软件理念及概况</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">ALKEMIE软件安装</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Examples.html">算例</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="ControlDetails.html">控件详细介绍</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">4.1 建模控件</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#poscar">4.1.1 POSCAR控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#builder">4.1.2 Builder控件</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ApplyForTrial.html">申请试用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">设计架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">高通量算例</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ControlDetails.html">控件介绍</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">建模控件</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#poscar">POSCAR控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#builder">Builder控件</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#find-grain-boundary">4.1.2.1 Find Grain Boundary：查找晶界</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#build-grain-boundary">4.1.2.2 Build Grain Boundary：构建晶界</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#build-vacancy">4.1.2.3 Build vacancy：构建空位</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#build-substitution">4.1.2.4 Build Substitution：构建置换原子</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#build-interstitution">4.1.2.5 Build Interstitution：构建间隙原子</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#build-doping">4.1.2.6 Build Doping：构建掺杂</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#send-data">4.1.2.7 Send data：将建好的结构信息传递至下一控件</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-grain-boundary">Build Grain Boundary：构建晶界</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-vacancy">Build vacancy：构建空位</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-substitution">Build Substitution：构建置换原子</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-interstitution">Build Interstitution：构建间隙原子</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-doping">Build Doping：构建掺杂</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#send-data">Send data：将建好的结构信息传递至下一控件</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#multi-poscar">4.1.3 Multi POSCAR控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#finder">4.1.4 Finder控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ht-preprocessor">4.1.5 HT Preprocessor控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-table">4.1.6 Data Table控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#file">4.1.7 File控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-info">4.1.8 Data Info控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lda-1-2">4.1.9 LDA-1/2控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#potcar">4.1.10 POTCAR控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#to-4">4.1.11 1 to 4控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multi-poscar">Multi POSCAR控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#finder">Finder控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ht-preprocessor">HT Preprocessor控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-table">Data Table控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file">File控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-info">Data Info控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lda-1-2">LDA-1/2控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#potcar">POTCAR控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#to-4">1 to 4控件</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="VASPWorkflowControl.html">4.2 VASP工作流控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="DatabaseControl.html">4.3 数据库控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="DrawingAndAnalysisControls.html">4.4 画图与分析控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VASPWorkflowControl.html">VASP工作流控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DatabaseControl.html">数据库控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DrawingAndAnalysisControls.html">画图与分析控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="potentialmindControls.html">potentialmind控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenPhaseControls.html">OpenPhase控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DynamicControls.html">Dynamic控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GibbsControls.html">Gibbs控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JobsControls.html">Jobs控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LammpsControls.html">lammps控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QEControls.html">qe控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AbinitControls.html">abinit控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CalypsoControls.html">calypso控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VASPExtendControls.html">vaspextend控件（待开发）</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="IntroductionToALKEMIEwebVersion.html">网页版数据库</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ConcludingRemarks.html">未来与展望</a></li>
 </ul>
 
             
@@ -141,21 +154,53 @@
         
         <div class="rst-content">
         
-          <div class=asetop>
-<a href=genindex.html>index</a>
-| <a href=py-modindex.html>modules</a>
-| <a href=https://gitlab.com/ase/ase>gitlab</a>
-
-| <a href="https://gitlab.com/ase/ase/blob/master/doc/ModelingControls.rst">page source</a>
-
-</div>
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALKEMIE</title>
+    <style>
+        thead tr th,
+        tbody {
+            text-align: center;
+        }
+        table {
+            margin: 0px auto;
+        }
+        p {
+            line-height: 36px;
+            text-indent: 2em;
+        }
+        li p,
+        .admonition-title {
+            text-indent: 0em;
+        }
+        .caption {
+            text-indent: 0em;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+    <div class=asetop>
+        <a href=genindex.html>index</a>
+        | <a href=py-modindex.html>modules</a>
+        | <a href=https://gitlab.com/ase/ase>gitlab</a>
+        
+        | <a href="https://gitlab.com/ase/ase/blob/master/doc/ModelingControls.rst">page source</a>
+        
+    </div>
+    <br>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>4.1 建模控件<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>建模控件<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="poscar">
-<h2>4.1.1 POSCAR控件<a class="headerlink" href="#poscar" title="Permalink to this headline">¶</a></h2>
+<h2>POSCAR控件<a class="headerlink" href="#poscar" title="Permalink to this headline">¶</a></h2>
 <p>读取POSCAR、cif、xsf和xyz等格式的文件。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -183,10 +228,10 @@ Info                                   展示原子结构信息
 Apply automatically                    勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击apply传输，默认勾选
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-102.png"><img alt="images/3-102.png" class="align-center" src="images/3-102.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="images/3-102.png"><img alt="images/3-102.png" class="align-center" src="images/3-102.png" style="width: 300px;" /></a>
 </div>
 <div class="section" id="builder">
-<h2>4.1.2 Builder控件<a class="headerlink" href="#builder" title="Permalink to this headline">¶</a></h2>
+<h2>Builder控件<a class="headerlink" href="#builder" title="Permalink to this headline">¶</a></h2>
 <p>可构建晶界，掺杂，空位等复杂模型。 支持寻找晶界、构建晶界、间隙掺杂、空位掺杂、取代原子掺杂和指定任意位置掺杂等多种方式。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -221,10 +266,10 @@ find                                   点击查找满足指定条件的晶界
 Information                            展示晶界结构信息
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-103.png"><img alt="images/3-103.png" class="align-center" src="images/3-103.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="images/3-103.png"><img alt="images/3-103.png" class="align-center" src="images/3-103.png" style="width: 600px;" /></a>
 </div>
 <div class="section" id="build-grain-boundary">
-<h3>4.1.2.2 Build Grain Boundary：构建晶界<a class="headerlink" href="#build-grain-boundary" title="Permalink to this headline">¶</a></h3>
+<h3>Build Grain Boundary：构建晶界<a class="headerlink" href="#build-grain-boundary" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Choose File*                           选择初始结构
 
 Rotation axis*                         两个晶粒的共同旋转轴，如 0 0 1
@@ -254,10 +299,10 @@ Build                                  构建晶界
 Information                            展示构建的晶界结构信息
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-104.png"><img alt="images/3-104.png" class="align-center" src="images/3-104.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="images/3-104.png"><img alt="images/3-104.png" class="align-center" src="images/3-104.png" style="width: 600px;" /></a>
 </div>
 <div class="section" id="build-vacancy">
-<h3>4.1.2.3 Build vacancy：构建空位<a class="headerlink" href="#build-vacancy" title="Permalink to this headline">¶</a></h3>
+<h3>Build vacancy：构建空位<a class="headerlink" href="#build-vacancy" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Choose File*                           选择初始结构
 
 Scaling matrix*                        缩放矩阵，用于构建超胞。选项包括：1位整数，表示3个方向同时扩大相应倍数；3位矢量，表示3个方向分别扩大相应倍数；9位矩阵，表示以矩阵方式扩大相应倍数
@@ -274,7 +319,7 @@ Information                            展示构建的空位结构信息
 <a class="reference internal image-reference" href="images/3-105.png"><img alt="images/3-105.png" class="align-center" src="images/3-105.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="build-substitution">
-<h3>4.1.2.4 Build Substitution：构建置换原子<a class="headerlink" href="#build-substitution" title="Permalink to this headline">¶</a></h3>
+<h3>Build Substitution：构建置换原子<a class="headerlink" href="#build-substitution" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Element*                               选择要置换的元素
 
 Choose File*                           选择初始结构
@@ -293,7 +338,7 @@ Information                            展示构建的置换原子结构信息
 <a class="reference internal image-reference" href="images/3-106.png"><img alt="images/3-106.png" class="align-center" src="images/3-106.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="build-interstitution">
-<h3>4.1.2.5 Build Interstitution：构建间隙原子<a class="headerlink" href="#build-interstitution" title="Permalink to this headline">¶</a></h3>
+<h3>Build Interstitution：构建间隙原子<a class="headerlink" href="#build-interstitution" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Element*                               选择要插入间隙的元素
 
 Choose File*                           选择初始结构
@@ -312,7 +357,7 @@ Information                            展示构建的间隙原子结构信息
 <a class="reference internal image-reference" href="images/3-107.png"><img alt="images/3-107.png" class="align-center" src="images/3-107.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="build-doping">
-<h3>4.1.2.6 Build Doping：构建掺杂<a class="headerlink" href="#build-doping" title="Permalink to this headline">¶</a></h3>
+<h3>Build Doping：构建掺杂<a class="headerlink" href="#build-doping" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Element*                               选择要掺杂的元素
 
 Choose File*                           选择初始结构
@@ -333,11 +378,11 @@ Information                            展示构建的间隙原子结构信息
 <a class="reference internal image-reference" href="images/3-108.png"><img alt="images/3-108.png" class="align-center" src="images/3-108.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="send-data">
-<h3>4.1.2.7 Send data：将建好的结构信息传递至下一控件<a class="headerlink" href="#send-data" title="Permalink to this headline">¶</a></h3>
+<h3>Send data：将建好的结构信息传递至下一控件<a class="headerlink" href="#send-data" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 <div class="section" id="multi-poscar">
-<h2>4.1.3 Multi POSCAR控件<a class="headerlink" href="#multi-poscar" title="Permalink to this headline">¶</a></h2>
+<h2>Multi POSCAR控件<a class="headerlink" href="#multi-poscar" title="Permalink to this headline">¶</a></h2>
 <p>读取多个POSCAR、cif、xsf和xyz等格式的文件。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -367,10 +412,10 @@ Info                                   展示原子结构信息
 Apply automatically                    勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击apply传输，默认勾选
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-109.png"><img alt="images/3-109.png" class="align-center" src="images/3-109.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="images/3-109.png"><img alt="images/3-109.png" class="align-center" src="images/3-109.png" style="width: 300px;" /></a>
 </div>
 <div class="section" id="finder">
-<h2>4.1.4 Finder控件<a class="headerlink" href="#finder" title="Permalink to this headline">¶</a></h2>
+<h2>Finder控件<a class="headerlink" href="#finder" title="Permalink to this headline">¶</a></h2>
 <p>在数据库中查找指定元素的所有可能结构，并生成相应的结构文件。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -428,10 +473,10 @@ Results                                展示所有满足条件的结构的信�
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Auto-run                               勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击Get finder传输，默认勾选
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-110.png"><img alt="images/3-110.png" class="align-center" src="images/3-110.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="images/3-110.png"><img alt="images/3-110.png" class="align-center" src="images/3-110.png" style="width: 600px;" /></a>
 </div>
 <div class="section" id="ht-preprocessor">
-<h2>4.1.5 HT Preprocessor控件<a class="headerlink" href="#ht-preprocessor" title="Permalink to this headline">¶</a></h2>
+<h2>HT Preprocessor控件<a class="headerlink" href="#ht-preprocessor" title="Permalink to this headline">¶</a></h2>
 <p>高通量预处理控件，该控件类似于一个结构容器。 所有生成的结构必须传输到此控件，才能进行下一步计算。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -459,10 +504,10 @@ Results                                展示所有满足条件的结构的信�
 Auto-Run                               勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击Send data传输，默认勾选
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-111.png"><img alt="images/3-111.png" class="align-center" src="images/3-111.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="images/3-111.png"><img alt="images/3-111.png" class="align-center" src="images/3-111.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="data-table">
-<h2>4.1.6 Data Table控件<a class="headerlink" href="#data-table" title="Permalink to this headline">¶</a></h2>
+<h2>Data Table控件<a class="headerlink" href="#data-table" title="Permalink to this headline">¶</a></h2>
 <p>以表格的形式(类似于Excel)展示数据集。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -497,10 +542,10 @@ Restore Original Order                               恢复原始顺序
 Send Automatically                                   勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击Send Automatically传输，默认勾选
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-112.png"><img alt="images/3-112.png" class="align-center" src="images/3-112.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="images/3-112.png"><img alt="images/3-112.png" class="align-center" src="images/3-112.png" style="width: 600px;" /></a>
 </div>
 <div class="section" id="file">
-<h2>4.1.7 File控件<a class="headerlink" href="#file" title="Permalink to this headline">¶</a></h2>
+<h2>File控件<a class="headerlink" href="#file" title="Permalink to this headline">¶</a></h2>
 <p>从输入文件或者网络中读取数据，并输出一个数据表格。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -535,7 +580,7 @@ Browse documentation datasets          浏览文档数据集
 <a class="reference internal image-reference" href="images/3-113.png"><img alt="images/3-113.png" class="align-center" src="images/3-113.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="data-info">
-<h2>4.1.8 Data Info控件<a class="headerlink" href="#data-info" title="Permalink to this headline">¶</a></h2>
+<h2>Data Info控件<a class="headerlink" href="#data-info" title="Permalink to this headline">¶</a></h2>
 <p>展示数据集的基本信息，例如每一列中变量的数量和类型，有多少行等等。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -572,7 +617,7 @@ Browse documentation datasets          浏览文档数据集
 <a class="reference internal image-reference" href="images/3-114.png"><img alt="images/3-114.png" class="align-center" src="images/3-114.png" style="width: 300px;" /></a>
 </div>
 <div class="section" id="lda-1-2">
-<h2>4.1.9 LDA-1/2控件<a class="headerlink" href="#lda-1-2" title="Permalink to this headline">¶</a></h2>
+<h2>LDA-1/2控件<a class="headerlink" href="#lda-1-2" title="Permalink to this headline">¶</a></h2>
 <p>生成特殊的LDA-1/2势函数。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -596,19 +641,19 @@ Browse documentation datasets          浏览文档数据集
 <li><p>LDA-1/2</p></li>
 </ol>
 <blockquote>
-<div><a class="reference internal image-reference" href="images/3-115.png"><img alt="images/3-115.png" class="align-center" src="images/3-115.png" style="width: 900px;" /></a>
+<div><a class="reference internal image-reference" href="images/3-115.png"><img alt="images/3-115.png" class="align-center" src="images/3-115.png" style="width: 600px;" /></a>
 </div></blockquote>
 <ol class="arabic simple" start="2">
 <li><p>shLDA-1/2r_in</p></li>
 </ol>
 <blockquote>
-<div><a class="reference internal image-reference" href="images/3-116.png"><img alt="images/3-116.png" class="align-center" src="images/3-116.png" style="width: 900px;" /></a>
+<div><a class="reference internal image-reference" href="images/3-116.png"><img alt="images/3-116.png" class="align-center" src="images/3-116.png" style="width: 600px;" /></a>
 </div></blockquote>
 <ol class="arabic simple" start="3">
 <li><p>shLDA-1/2r_out</p></li>
 </ol>
 <blockquote>
-<div><a class="reference internal image-reference" href="images/3-117.png"><img alt="images/3-117.png" class="align-center" src="images/3-117.png" style="width: 900px;" /></a>
+<div><a class="reference internal image-reference" href="images/3-117.png"><img alt="images/3-117.png" class="align-center" src="images/3-117.png" style="width: 600px;" /></a>
 </div></blockquote>
 </div></blockquote>
 <p><strong>参数配置</strong>:</p>
@@ -637,7 +682,7 @@ Browse documentation datasets          浏览文档数据集
 </div>
 </div>
 <div class="section" id="potcar">
-<h2>4.1.10 POTCAR控件<a class="headerlink" href="#potcar" title="Permalink to this headline">¶</a></h2>
+<h2>POTCAR控件<a class="headerlink" href="#potcar" title="Permalink to this headline">¶</a></h2>
 <p>选择所需的POTCAR文件。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -665,10 +710,10 @@ Info                                   展示POTCAR文件信息
 Apply automatically                    勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击apply传输，默认勾选
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-118.png"><img alt="images/3-118.png" class="align-center" src="images/3-118.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/3-118.png"><img alt="images/3-118.png" class="align-center" src="images/3-118.png" style="width: 300px;" /></a>
 </div>
 <div class="section" id="to-4">
-<h2>4.1.11 1 to 4控件<a class="headerlink" href="#to-4" title="Permalink to this headline">¶</a></h2>
+<h2>1 to 4控件<a class="headerlink" href="#to-4" title="Permalink to this headline">¶</a></h2>
 <p>输入二元材料AB的cif格式文件，输出AA，AB，BA，BB，4个POSCAR文件。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -696,7 +741,7 @@ Info                                   展示生成的4个POSCAR文件信息
 Apply automatically                    勾选状态下可以自动将控件的输出传入下一控件，取消勾选可以手动点击apply传输，默认勾选
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-119.png"><img alt="images/3-119.png" class="align-center" src="images/3-119.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/3-119.png"><img alt="images/3-119.png" class="align-center" src="images/3-119.png" style="width: 300px;" /></a>
 </div>
 </div>
 
@@ -708,10 +753,10 @@ Apply automatically                    勾选状态下可以自动将控件的�
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="VASPWorkflowControl.html" class="btn btn-neutral float-right" title="4.2 VASP工作流控件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="VASPWorkflowControl.html" class="btn btn-neutral float-right" title="VASP工作流控件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="ControlDetails.html" class="btn btn-neutral float-left" title="控件详细介绍" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ControlDetails.html" class="btn btn-neutral float-left" title="控件介绍" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -723,7 +768,7 @@ Apply automatically                    勾选状态下可以自动将控件的�
         
         &copy; Copyright 2020, ALKEMIE Matter Studio Developers
       <span class="lastupdated">
-        Last updated on Mon, 07 Dec 2020 15:33:13.
+        Last updated on Fri, 25 Dec 2020 17:25:45.
       </span>
 
     </p>

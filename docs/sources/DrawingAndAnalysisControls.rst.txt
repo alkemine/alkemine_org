@@ -1,7 +1,7 @@
-4.4 画图与分析控件
+画图与分析控件
 =============================================
 
-4.4.1 PlotBand控件
+PlotBand控件
 --------------------------------
 
 用于画出能带结构。
@@ -28,10 +28,10 @@
 
 .. image:: image/3-136.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.4.2 viewer控件
+viewer控件
 -------------------------------
 
 用于查看结构。
@@ -50,10 +50,10 @@
 
 .. image:: image/3-137.png
     :align: center
-    :width: 400
+    :width: 200
 
 
-4.4.3 Analyzer控件
+Analyzer控件
 --------------------------------
 
 用于分析计算结果。
@@ -84,7 +84,7 @@
     :width: 500
 
 
-4.4.4 Color控件
+Color控件
 ----------------------------
 
 用于设置变量的颜色图例。
@@ -105,10 +105,10 @@
 
 .. image:: image/3-139.png
     :align: center
-    :width: 600
+    :width: 400
 
 
-4.4.5 Distributions控件
+Distributions控件
 ----------------------------------
 
 用图表展示数据要素的值分布。
@@ -134,10 +134,10 @@
 
 .. image:: image/3-140.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.4.6 Scatter Plot控件
+Scatter Plot控件
 ----------------------------------
 
 用于画出各种数据的散点图。
@@ -186,9 +186,9 @@
 
 .. image:: image/3-141.png
     :align: center
-    :width: 900
+    :width: 500
 
-4.4.7 VaspPlot控件
+VaspPlot控件
 -----------------------------
 
 用于画出DOS和Band图。
@@ -207,4 +207,4 @@
 
 .. image:: image/3-142.png
     :align: center
-    :width: 900
+    :width: 500

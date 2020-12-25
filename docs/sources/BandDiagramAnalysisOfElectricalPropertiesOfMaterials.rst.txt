@@ -1,20 +1,20 @@
-3.26 高通量自动流程：材料电学性质能带图分析
+材料电学性质能带图分析
 ================================================
 
-VaspPlot 中以散点图的形成展现Analyzer中Bnad查询结果，可多任务展示。
+ :mod:`VaspPlot` 中以散点图的形成展现 :mod:`Analyzer` 中 :mod:`Bnad` 查询结果，可多任务展示。
 
 .. image:: image/3-82.png
     :align: center
-    :width: 700
+    :width: 500
 
-首先在Analyzer控件中查询band，在criteria中指定任务ID，无输入表示查询所有。
+首先在 :mod:`Analyzer` 控件中查询band，在 :mod:`criteria` 中指定任务ID，无输入表示查询所有。
 
 .. image:: image/3-83.png
     :align: center
-    :width: 700
+    :width: 500
 
-查询之后再VaspPlot中选择类型Band，点击Plotting即可将所有结果画出。
+查询之后再 :mod:`VaspPlot` 中选择类型 :mod:`Band` ，点击 :mod:`Plotting` 即可将所有结果画出。
 
 .. image:: image/3-84.png
     :align: center
-    :width: 900
+    :width: 500

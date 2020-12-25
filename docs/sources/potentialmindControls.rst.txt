@@ -1,7 +1,7 @@
-4.5 potentialmind控件
+potentialmind控件
 =================================
 
-4.5.1 POSCAR控件
+POSCAR控件
 -------------------------
 
 用于选择POSCAR文件。
@@ -20,10 +20,10 @@
 
 .. image:: image/3-143.png
     :align: center
-    :width: 400
+    :width: 200
 
 
-4.5.2 Relax控件
+Relax控件
 --------------------------
 
 用于对POSCAR文件确定的结构进行驰豫。
@@ -40,10 +40,10 @@
 
 .. image:: image/3-144.png
     :align: center
-    :width: 400
+    :width: 200
 
 
-4.5.3 Static控件
+Static控件
 --------------------------
 
 用于对POSCAR文件确定的结构进行静态自洽。
@@ -60,10 +60,10 @@
 
 .. image:: image/3-145.png
     :align: center
-    :width: 400
+    :width: 200
 
 
-4.5.4 Datasets控件
+Datasets控件
 ---------------------------
 
 用于选择数据集文件。
@@ -82,10 +82,10 @@
 
 .. image:: image/3-146.png
     :align: center
-    :width: 400
+    :width: 200
 
 
-4.5.5 Potential控件
+Potential控件
 -------------------------------
 
 用于从选择的数据集文件中生成数据以进行计算。
@@ -112,10 +112,10 @@
 
 .. image:: image/3-147.png
     :align: center
-    :width: 900
+    :width: 500
 
 
-4.5.6 Train控件
+Train控件
 ----------------------------
 
 使用机器学习进行训练。
@@ -133,7 +133,7 @@
     :width: 300
 
 
-4.5.7 Train Neural Network控件
+Train Neural Network控件
 -------------------------------------------
 
 使用带有反向传播的多层感知算法构建神经网络。
@@ -165,7 +165,7 @@
     :width: 500
 
 
-4.5.8 Predict控件
+Predict控件
 -------------------------
 
 用于预测精度。
@@ -180,10 +180,10 @@
 
 .. image:: image/3-150.png
     :align: center
-    :width: 300
+    :width: 200
 
 
-4.5.9 potential控件
+potential控件
 ----------------------------
 
 用于输入接口势函数文件。
@@ -212,10 +212,10 @@
 
 .. image:: image/3-151.png
     :align: center
-    :width: 300
+    :width: 200
 
 
-4.5.10 ASE控件
+ASE控件
 --------------------------
 
 使用vasp运行ASE计算。
@@ -232,10 +232,10 @@
 
 .. image:: image/3-152.png
     :align: center
-    :width: 300
+    :width: 200
 
 
-4.5.11 AIMD控件
+AIMD控件
 ---------------------------
 
 使用vasp运行AIMD计算。
@@ -260,10 +260,10 @@
 
 .. image:: image/3-153.png
     :align: center
-    :width: 300
+    :width: 200
 
 
-4.5.12 Analyzer控件
+Analyzer控件
 ------------------------------
 
 用于数据分析。
@@ -278,10 +278,10 @@
 
 .. image:: image/3-154.png
     :align: center
-    :width: 300
+    :width: 200
 
 
-4.5.13 OUTCAR控件
+OUTCAR控件
 --------------------------------
 
 用于输入OUTCAR文件。
@@ -302,4 +302,4 @@
 
 .. image:: image/3-155.png
     :align: center
-    :width: 300
+    :width: 200

@@ -7,11 +7,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>4.7 Dynamic控件 &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
+  <title>Dynamic控件 &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
   
 
   
-  <link rel="stylesheet" href="static/alk.css" type="text/css" />
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="static/pygments.css" type="text/css" />
 
   
@@ -36,8 +36,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="4.8 Gibbs控件" href="GibbsControls.html" />
-    <link rel="prev" title="4.6 OpenPhase控件" href="OpenPhaseControls.html" /> 
+    <link rel="next" title="Gibbs控件" href="GibbsControls.html" />
+    <link rel="prev" title="OpenPhase控件" href="OpenPhaseControls.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,29 +84,38 @@
             
               <p class="caption"><span class="caption-text">目录:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">ALKEMIE简介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">ALKEMIE软件理念及概况</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">ALKEMIE软件安装</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Examples.html">算例</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="ControlDetails.html">控件详细介绍</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="ModelingControls.html">4.1 建模控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="VASPWorkflowControl.html">4.2 VASP工作流控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="DatabaseControl.html">4.3 数据库控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="DrawingAndAnalysisControls.html">4.4 画图与分析控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="potentialmindControls.html">4.5 potentialmind控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="OpenPhaseControls.html">4.6 OpenPhase控件</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">4.7 Dynamic控件</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#get-kmc-data">4.7.1 Get Kmc Data控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#get-delta-e">4.7.2 Get delta E控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lattice">4.7.3 Lattice控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#kmc-run-li-wf">4.7.4 Kmc Run Li WF控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#kmc-run-graphite-wf">4.7.5 Kmc Run Graphite WF控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#kmc-plot">4.7.6 Kmc Plot控件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ApplyForTrial.html">申请试用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">设计架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">高通量算例</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ControlDetails.html">控件介绍</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ModelingControls.html">建模控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VASPWorkflowControl.html">VASP工作流控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DatabaseControl.html">数据库控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DrawingAndAnalysisControls.html">画图与分析控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="potentialmindControls.html">potentialmind控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenPhaseControls.html">OpenPhase控件</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Dynamic控件</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#get-kmc-data">Get Kmc Data控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-delta-e">Get delta E控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lattice">Lattice控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kmc-run-li-wf">Kmc Run Li WF控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kmc-run-graphite-wf">Kmc Run Graphite WF控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kmc-plot">Kmc Plot控件</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="GibbsControls.html">4.8 Gibbs控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GibbsControls.html">Gibbs控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JobsControls.html">Jobs控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LammpsControls.html">lammps控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QEControls.html">qe控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AbinitControls.html">abinit控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CalypsoControls.html">calypso控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VASPExtendControls.html">vaspextend控件（待开发）</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="IntroductionToALKEMIEwebVersion.html">网页版数据库</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ConcludingRemarks.html">未来与展望</a></li>
 </ul>
 
             
@@ -131,21 +140,53 @@
         
         <div class="rst-content">
         
-          <div class=asetop>
-<a href=genindex.html>index</a>
-| <a href=py-modindex.html>modules</a>
-| <a href=https://gitlab.com/ase/ase>gitlab</a>
-
-| <a href="https://gitlab.com/ase/ase/blob/master/doc/DynamicControls.rst">page source</a>
-
-</div>
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALKEMIE</title>
+    <style>
+        thead tr th,
+        tbody {
+            text-align: center;
+        }
+        table {
+            margin: 0px auto;
+        }
+        p {
+            line-height: 36px;
+            text-indent: 2em;
+        }
+        li p,
+        .admonition-title {
+            text-indent: 0em;
+        }
+        .caption {
+            text-indent: 0em;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+    <div class=asetop>
+        <a href=genindex.html>index</a>
+        | <a href=py-modindex.html>modules</a>
+        | <a href=https://gitlab.com/ase/ase>gitlab</a>
+        
+        | <a href="https://gitlab.com/ase/ase/blob/master/doc/DynamicControls.rst">page source</a>
+        
+    </div>
+    <br>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="section" id="dynamic">
-<h1>4.7 Dynamic控件<a class="headerlink" href="#dynamic" title="Permalink to this headline">¶</a></h1>
+<h1>Dynamic控件<a class="headerlink" href="#dynamic" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="get-kmc-data">
-<h2>4.7.1 Get Kmc Data控件<a class="headerlink" href="#get-kmc-data" title="Permalink to this headline">¶</a></h2>
+<h2>Get Kmc Data控件<a class="headerlink" href="#get-kmc-data" title="Permalink to this headline">¶</a></h2>
 <p>用于从数据库蒙特卡洛运算数据。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -169,10 +210,10 @@
 <span class="n">Get</span> <span class="n">Data</span>                                      <span class="n">从数据库获取对应数据并向下传递</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-168.png"><img alt="images/3-168.png" class="align-center" src="images/3-168.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="images/3-168.png"><img alt="images/3-168.png" class="align-center" src="images/3-168.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="get-delta-e">
-<h2>4.7.2 Get delta E控件<a class="headerlink" href="#get-delta-e" title="Permalink to this headline">¶</a></h2>
+<h2>Get delta E控件<a class="headerlink" href="#get-delta-e" title="Permalink to this headline">¶</a></h2>
 <p>用于从数据库deltaE数据。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -199,7 +240,7 @@
 <a class="reference internal image-reference" href="images/3-169.png"><img alt="images/3-169.png" class="align-center" src="images/3-169.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="lattice">
-<h2>4.7.3 Lattice控件<a class="headerlink" href="#lattice" title="Permalink to this headline">¶</a></h2>
+<h2>Lattice控件<a class="headerlink" href="#lattice" title="Permalink to this headline">¶</a></h2>
 <p>用于从本地文件获取晶格常数信息，从而用于多缺蒙特卡洛计算。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -226,7 +267,7 @@
 <a class="reference internal image-reference" href="images/3-170.png"><img alt="images/3-170.png" class="align-center" src="images/3-170.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="kmc-run-li-wf">
-<h2>4.7.4 Kmc Run Li WF控件<a class="headerlink" href="#kmc-run-li-wf" title="Permalink to this headline">¶</a></h2>
+<h2>Kmc Run Li WF控件<a class="headerlink" href="#kmc-run-li-wf" title="Permalink to this headline">¶</a></h2>
 <p>用于配置蒙特卡洛复杂化合物中不同格点占据几率统计的工作流参数，并运行计算。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -262,10 +303,10 @@ Run                                           运行计算，数据结果
 Samples
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-171.png"><img alt="images/3-171.png" class="align-center" src="images/3-171.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="images/3-171.png"><img alt="images/3-171.png" class="align-center" src="images/3-171.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="kmc-run-graphite-wf">
-<h2>4.7.5 Kmc Run Graphite WF控件<a class="headerlink" href="#kmc-run-graphite-wf" title="Permalink to this headline">¶</a></h2>
+<h2>Kmc Run Graphite WF控件<a class="headerlink" href="#kmc-run-graphite-wf" title="Permalink to this headline">¶</a></h2>
 <p>用于配置蒙特卡洛蜂窝状材料中空位的扩散的工作流参数，并运行计算。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -297,10 +338,10 @@ Samples
 Run                                           运行计算，数据结果
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-172.png"><img alt="images/3-172.png" class="align-center" src="images/3-172.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="images/3-172.png"><img alt="images/3-172.png" class="align-center" src="images/3-172.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="kmc-plot">
-<h2>4.7.6 Kmc Plot控件<a class="headerlink" href="#kmc-plot" title="Permalink to this headline">¶</a></h2>
+<h2>Kmc Plot控件<a class="headerlink" href="#kmc-plot" title="Permalink to this headline">¶</a></h2>
 <p>用于绘制蒙特卡洛数据图像。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -319,7 +360,7 @@ Run                                           运行计算，数据结果
 </tbody>
 </table>
 <p><strong>无参数</strong></p>
-<a class="reference internal image-reference" href="images/3-173.png"><img alt="images/3-173.png" class="align-center" src="images/3-173.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="images/3-173.png"><img alt="images/3-173.png" class="align-center" src="images/3-173.png" style="width: 500px;" /></a>
 </div>
 </div>
 
@@ -331,10 +372,10 @@ Run                                           运行计算，数据结果
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="GibbsControls.html" class="btn btn-neutral float-right" title="4.8 Gibbs控件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="GibbsControls.html" class="btn btn-neutral float-right" title="Gibbs控件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="OpenPhaseControls.html" class="btn btn-neutral float-left" title="4.6 OpenPhase控件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="OpenPhaseControls.html" class="btn btn-neutral float-left" title="OpenPhase控件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -346,7 +387,7 @@ Run                                           运行计算，数据结果
         
         &copy; Copyright 2020, ALKEMIE Matter Studio Developers
       <span class="lastupdated">
-        Last updated on Mon, 07 Dec 2020 21:58:51.
+        Last updated on Fri, 25 Dec 2020 17:25:45.
       </span>
 
     </p>

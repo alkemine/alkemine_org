@@ -1,0 +1,31 @@
+申请试用
+========================
+
+.. attention:: 在申请帐号之前一定要仔细阅读ALKEMIE用户协议，当您开始使用ALKEMIE软件时，我们默认您已经了解了用户协议。
+
+.. centered::
+    阅读用户协议请点击：:doc:`用户协议 <UserAgreement>`
+
+申请步骤
+--------------------
+
+1. 首先填写 `统计表 <https://docs.qq.com/form/page/DRkRFUnd1RkdJSUZP?_w_tencentdocx_form=1>`_
+
+.. important:: 统计表用来收集用户的身份信息。一定要填写真实信息，信息错误可能会无法注册！
+
+2. 等待审核，审核通过后会通过邮件方式给您发送邀请码和软件安装包。
+
+3. 安装ALKEMIE客户端，具体安装步骤详见 :doc:`安装 <ALKEMIESoftwareInstallation>`
+
+4. 注册账号，安装好客户端后启动时会要求您注册ALKEMIE账户。
+
+.. image:: image/signIn.png
+    :align: center
+    :width: 500
+
+5. 接下来您就可以使用该软件的所有功能了，ALKEMIE高通量平台的详细使用指南见 :doc:`算例 <Examples>`
+
+参与开发
+----------------------
+
+.. hint:: 如果您有兴趣成为ALKEMIE开发人员，可以参考gitee仓库：`地址 <https://gitee.com/alkemiems/alkemie>`_

@@ -1,12 +1,12 @@
-3.19 高通量任务管理：删除指定任务
+删除指定任务
 ===========================================
 
-通过Delete Workflow控件，可以对工作流进行删除操作。首先，连接Manager控件到Delete Workflow，然后进入界面，输入Job Id， 按Submit，即可删除工作流。
+通过 :mod:`Delete Workflow` 控件，可以对工作流进行删除操作。首先，连接 :mod:`Manager` 控件到 :mod:`Delete Workflow` ，然后进入界面，输入Job Id， 按 :mod:`Submit` ，即可删除工作流。
 
 .. image:: image/3-67.png
     :align: center
-    :width: 500
+    :width: 400
 
 .. image:: image/3-68.png
     :align: center
-    :width: 700
+    :width: 500

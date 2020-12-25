@@ -7,11 +7,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>4.5 potentialmind控件 &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
+  <title>potentialmind控件 &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
   
 
   
-  <link rel="stylesheet" href="static/alk.css" type="text/css" />
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="static/pygments.css" type="text/css" />
 
   
@@ -36,7 +36,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="4.4 画图与分析控件" href="DrawingAndAnalysisControls.html" /> 
+    <link rel="next" title="OpenPhase控件" href="OpenPhaseControls.html" />
+    <link rel="prev" title="画图与分析控件" href="DrawingAndAnalysisControls.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,33 +84,45 @@
             
               <p class="caption"><span class="caption-text">目录:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">ALKEMIE简介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">ALKEMIE软件理念及概况</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">ALKEMIE软件安装</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Examples.html">算例</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="ControlDetails.html">控件详细介绍</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="ModelingControls.html">4.1 建模控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="VASPWorkflowControl.html">4.2 VASP工作流控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="DatabaseControl.html">4.3 数据库控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="DrawingAndAnalysisControls.html">4.4 画图与分析控件</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">4.5 potentialmind控件</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#poscar">4.5.1 POSCAR控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#relax">4.5.2 Relax控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#static">4.5.3 Static控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#datasets">4.5.4 Datasets控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#potential">4.5.5 Potential控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#train">4.5.6 Train控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#train-neural-network">4.5.7 Train Neural Network控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#predict">4.5.8 Predict控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">4.5.9 potential控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ase">4.5.10 ASE控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#aimd">4.5.11 AIMD控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#analyzer">4.5.12 Analyzer控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#outcar">4.5.13 OUTCAR控件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ApplyForTrial.html">申请试用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">设计架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">高通量算例</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ControlDetails.html">控件介绍</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ModelingControls.html">建模控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VASPWorkflowControl.html">VASP工作流控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DatabaseControl.html">数据库控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DrawingAndAnalysisControls.html">画图与分析控件</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">potentialmind控件</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#poscar">POSCAR控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#relax">Relax控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#static">Static控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datasets">Datasets控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#potential">Potential控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#train">Train控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#train-neural-network">Train Neural Network控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#predict">Predict控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">potential控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ase">ASE控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aimd">AIMD控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#analyzer">Analyzer控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#outcar">OUTCAR控件</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="OpenPhaseControls.html">OpenPhase控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DynamicControls.html">Dynamic控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GibbsControls.html">Gibbs控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JobsControls.html">Jobs控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LammpsControls.html">lammps控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QEControls.html">qe控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AbinitControls.html">abinit控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CalypsoControls.html">calypso控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VASPExtendControls.html">vaspextend控件（待开发）</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="IntroductionToALKEMIEwebVersion.html">网页版数据库</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ConcludingRemarks.html">未来与展望</a></li>
 </ul>
 
             
@@ -134,21 +147,53 @@
         
         <div class="rst-content">
         
-          <div class=asetop>
-<a href=genindex.html>index</a>
-| <a href=py-modindex.html>modules</a>
-| <a href=https://gitlab.com/ase/ase>gitlab</a>
-
-| <a href="https://gitlab.com/ase/ase/blob/master/doc/potentialmindControls.rst">page source</a>
-
-</div>
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALKEMIE</title>
+    <style>
+        thead tr th,
+        tbody {
+            text-align: center;
+        }
+        table {
+            margin: 0px auto;
+        }
+        p {
+            line-height: 36px;
+            text-indent: 2em;
+        }
+        li p,
+        .admonition-title {
+            text-indent: 0em;
+        }
+        .caption {
+            text-indent: 0em;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+    <div class=asetop>
+        <a href=genindex.html>index</a>
+        | <a href=py-modindex.html>modules</a>
+        | <a href=https://gitlab.com/ase/ase>gitlab</a>
+        
+        | <a href="https://gitlab.com/ase/ase/blob/master/doc/potentialmindControls.rst">page source</a>
+        
+    </div>
+    <br>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="section" id="potentialmind">
-<h1>4.5 potentialmind控件<a class="headerlink" href="#potentialmind" title="Permalink to this headline">¶</a></h1>
+<h1>potentialmind控件<a class="headerlink" href="#potentialmind" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="poscar">
-<h2>4.5.1 POSCAR控件<a class="headerlink" href="#poscar" title="Permalink to this headline">¶</a></h2>
+<h2>POSCAR控件<a class="headerlink" href="#poscar" title="Permalink to this headline">¶</a></h2>
 <p>用于选择POSCAR文件。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -172,10 +217,10 @@
 <span class="n">File</span>                                        <span class="n">显示POSCAR文件的路径</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-143.png"><img alt="images/3-143.png" class="align-center" src="images/3-143.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/3-143.png"><img alt="images/3-143.png" class="align-center" src="images/3-143.png" style="width: 200px;" /></a>
 </div>
 <div class="section" id="relax">
-<h2>4.5.2 Relax控件<a class="headerlink" href="#relax" title="Permalink to this headline">¶</a></h2>
+<h2>Relax控件<a class="headerlink" href="#relax" title="Permalink to this headline">¶</a></h2>
 <p>用于对POSCAR文件确定的结构进行驰豫。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -209,10 +254,10 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Relax</span>                                       <span class="n">根据输入的文件对相应结构驰豫</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-144.png"><img alt="images/3-144.png" class="align-center" src="images/3-144.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/3-144.png"><img alt="images/3-144.png" class="align-center" src="images/3-144.png" style="width: 200px;" /></a>
 </div>
 <div class="section" id="static">
-<h2>4.5.3 Static控件<a class="headerlink" href="#static" title="Permalink to this headline">¶</a></h2>
+<h2>Static控件<a class="headerlink" href="#static" title="Permalink to this headline">¶</a></h2>
 <p>用于对POSCAR文件确定的结构进行静态自洽。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -246,10 +291,10 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Static</span>                                      <span class="n">根据输入的文件对相应结构驰豫</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-145.png"><img alt="images/3-145.png" class="align-center" src="images/3-145.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/3-145.png"><img alt="images/3-145.png" class="align-center" src="images/3-145.png" style="width: 200px;" /></a>
 </div>
 <div class="section" id="datasets">
-<h2>4.5.4 Datasets控件<a class="headerlink" href="#datasets" title="Permalink to this headline">¶</a></h2>
+<h2>Datasets控件<a class="headerlink" href="#datasets" title="Permalink to this headline">¶</a></h2>
 <p>用于选择数据集文件。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -273,10 +318,10 @@
 <span class="n">File</span>                                        <span class="n">显示数据集文件的路径</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-146.png"><img alt="images/3-146.png" class="align-center" src="images/3-146.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/3-146.png"><img alt="images/3-146.png" class="align-center" src="images/3-146.png" style="width: 200px;" /></a>
 </div>
 <div class="section" id="potential">
-<h2>4.5.5 Potential控件<a class="headerlink" href="#potential" title="Permalink to this headline">¶</a></h2>
+<h2>Potential控件<a class="headerlink" href="#potential" title="Permalink to this headline">¶</a></h2>
 <p>用于从选择的数据集文件中生成数据以进行计算。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -308,10 +353,10 @@
 <span class="n">Generate</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-147.png"><img alt="images/3-147.png" class="align-center" src="images/3-147.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="images/3-147.png"><img alt="images/3-147.png" class="align-center" src="images/3-147.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="train">
-<h2>4.5.6 Train控件<a class="headerlink" href="#train" title="Permalink to this headline">¶</a></h2>
+<h2>Train控件<a class="headerlink" href="#train" title="Permalink to this headline">¶</a></h2>
 <p>使用机器学习进行训练。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -335,7 +380,7 @@
 <a class="reference internal image-reference" href="images/3-148.png"><img alt="images/3-148.png" class="align-center" src="images/3-148.png" style="width: 300px;" /></a>
 </div>
 <div class="section" id="train-neural-network">
-<h2>4.5.7 Train Neural Network控件<a class="headerlink" href="#train-neural-network" title="Permalink to this headline">¶</a></h2>
+<h2>Train Neural Network控件<a class="headerlink" href="#train-neural-network" title="Permalink to this headline">¶</a></h2>
 <p>使用带有反向传播的多层感知算法构建神经网络。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -372,7 +417,7 @@ Apply Automatically                         勾选状态下可以自动应用设
 <a class="reference internal image-reference" href="images/3-149.png"><img alt="images/3-149.png" class="align-center" src="images/3-149.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="predict">
-<h2>4.5.8 Predict控件<a class="headerlink" href="#predict" title="Permalink to this headline">¶</a></h2>
+<h2>Predict控件<a class="headerlink" href="#predict" title="Permalink to this headline">¶</a></h2>
 <p>用于预测精度。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -395,10 +440,10 @@ Apply Automatically                         勾选状态下可以自动应用设
 </tbody>
 </table>
 <p><strong>无参数</strong></p>
-<a class="reference internal image-reference" href="images/3-150.png"><img alt="images/3-150.png" class="align-center" src="images/3-150.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="images/3-150.png"><img alt="images/3-150.png" class="align-center" src="images/3-150.png" style="width: 200px;" /></a>
 </div>
 <div class="section" id="id1">
-<h2>4.5.9 potential控件<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>potential控件<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>用于输入接口势函数文件。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -436,10 +481,10 @@ File                                        显示选择文件的路径
 Run
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-151.png"><img alt="images/3-151.png" class="align-center" src="images/3-151.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="images/3-151.png"><img alt="images/3-151.png" class="align-center" src="images/3-151.png" style="width: 200px;" /></a>
 </div>
 <div class="section" id="ase">
-<h2>4.5.10 ASE控件<a class="headerlink" href="#ase" title="Permalink to this headline">¶</a></h2>
+<h2>ASE控件<a class="headerlink" href="#ase" title="Permalink to this headline">¶</a></h2>
 <p>使用vasp运行ASE计算。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -473,10 +518,10 @@ Run
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Run</span> <span class="n">ASE</span>                                     <span class="n">运行ASE</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-152.png"><img alt="images/3-152.png" class="align-center" src="images/3-152.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="images/3-152.png"><img alt="images/3-152.png" class="align-center" src="images/3-152.png" style="width: 200px;" /></a>
 </div>
 <div class="section" id="aimd">
-<h2>4.5.11 AIMD控件<a class="headerlink" href="#aimd" title="Permalink to this headline">¶</a></h2>
+<h2>AIMD控件<a class="headerlink" href="#aimd" title="Permalink to this headline">¶</a></h2>
 <p>使用vasp运行AIMD计算。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -522,10 +567,10 @@ Done                                        设置完成
 Run AIMD                                    运行AIMD
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-153.png"><img alt="images/3-153.png" class="align-center" src="images/3-153.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="images/3-153.png"><img alt="images/3-153.png" class="align-center" src="images/3-153.png" style="width: 200px;" /></a>
 </div>
 <div class="section" id="analyzer">
-<h2>4.5.12 Analyzer控件<a class="headerlink" href="#analyzer" title="Permalink to this headline">¶</a></h2>
+<h2>Analyzer控件<a class="headerlink" href="#analyzer" title="Permalink to this headline">¶</a></h2>
 <p>用于数据分析。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -548,10 +593,10 @@ Run AIMD                                    运行AIMD
 </tbody>
 </table>
 <p><strong>无参数</strong></p>
-<a class="reference internal image-reference" href="images/3-154.png"><img alt="images/3-154.png" class="align-center" src="images/3-154.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="images/3-154.png"><img alt="images/3-154.png" class="align-center" src="images/3-154.png" style="width: 200px;" /></a>
 </div>
 <div class="section" id="outcar">
-<h2>4.5.13 OUTCAR控件<a class="headerlink" href="#outcar" title="Permalink to this headline">¶</a></h2>
+<h2>OUTCAR控件<a class="headerlink" href="#outcar" title="Permalink to this headline">¶</a></h2>
 <p>用于输入OUTCAR文件。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -577,7 +622,7 @@ File                                        显示文件的路径
 Auto-generate                               勾选状态下可以自动生成OUTCAR，取消勾选可以手动点击Generate OUTCAR，默认勾选
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-155.png"><img alt="images/3-155.png" class="align-center" src="images/3-155.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="images/3-155.png"><img alt="images/3-155.png" class="align-center" src="images/3-155.png" style="width: 200px;" /></a>
 </div>
 </div>
 
@@ -589,8 +634,10 @@ Auto-generate                               勾选状态下可以自动生成OUT
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="OpenPhaseControls.html" class="btn btn-neutral float-right" title="OpenPhase控件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="DrawingAndAnalysisControls.html" class="btn btn-neutral float-left" title="4.4 画图与分析控件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="DrawingAndAnalysisControls.html" class="btn btn-neutral float-left" title="画图与分析控件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -602,7 +649,7 @@ Auto-generate                               勾选状态下可以自动生成OUT
         
         &copy; Copyright 2020, ALKEMIE Matter Studio Developers
       <span class="lastupdated">
-        Last updated on Mon, 07 Dec 2020 16:45:44.
+        Last updated on Fri, 25 Dec 2020 17:25:45.
       </span>
 
     </p>

@@ -7,11 +7,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>4.8 Gibbs控件 &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
+  <title>Gibbs控件 &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
   
 
   
-  <link rel="stylesheet" href="static/alk.css" type="text/css" />
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="static/pygments.css" type="text/css" />
 
   
@@ -36,8 +36,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="4.9 Jobs控件" href="JobsControls.html" />
-    <link rel="prev" title="4.7 Dynamic控件" href="DynamicControls.html" /> 
+    <link rel="next" title="Jobs控件" href="JobsControls.html" />
+    <link rel="prev" title="Dynamic控件" href="DynamicControls.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,33 +84,41 @@
             
               <p class="caption"><span class="caption-text">目录:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">ALKEMIE简介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">ALKEMIE软件理念及概况</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">ALKEMIE软件安装</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Examples.html">算例</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="ControlDetails.html">控件详细介绍</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="ModelingControls.html">4.1 建模控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="VASPWorkflowControl.html">4.2 VASP工作流控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="DatabaseControl.html">4.3 数据库控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="DrawingAndAnalysisControls.html">4.4 画图与分析控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="potentialmindControls.html">4.5 potentialmind控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="OpenPhaseControls.html">4.6 OpenPhase控件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="DynamicControls.html">4.7 Dynamic控件</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">4.8 Gibbs控件</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#get-data">4.8.1 Get data控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#get-ev">4.8.2 Get EV控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#run-bulkmodule">4.8.3 Run BulkModule控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#gibbs-wf">4.8.4 Gibbs WF控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#gibbs-analyze">4.8.5 Gibbs analyze控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#volume-scale">4.8.6 Volume Scale控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tc-input">4.8.7 Tc Input控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tc-wf">4.8.8 Tc WF控件</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tc-plot">4.8.9 Tc Plot控件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ApplyForTrial.html">申请试用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">设计架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">高通量算例</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ControlDetails.html">控件介绍</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ModelingControls.html">建模控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VASPWorkflowControl.html">VASP工作流控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DatabaseControl.html">数据库控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DrawingAndAnalysisControls.html">画图与分析控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="potentialmindControls.html">potentialmind控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenPhaseControls.html">OpenPhase控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DynamicControls.html">Dynamic控件</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Gibbs控件</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#get-data">Get data控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-ev">Get EV控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-bulkmodule">Run BulkModule控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gibbs-wf">Gibbs WF控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gibbs-analyze">Gibbs analyze控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#volume-scale">Volume Scale控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tc-input">Tc Input控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tc-wf">Tc WF控件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tc-plot">Tc Plot控件</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="JobsControls.html">4.9 Jobs控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JobsControls.html">Jobs控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LammpsControls.html">lammps控件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QEControls.html">qe控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AbinitControls.html">abinit控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CalypsoControls.html">calypso控件（待开发）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VASPExtendControls.html">vaspextend控件（待开发）</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="IntroductionToALKEMIEwebVersion.html">网页版数据库</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ConcludingRemarks.html">未来与展望</a></li>
 </ul>
 
             
@@ -135,21 +143,53 @@
         
         <div class="rst-content">
         
-          <div class=asetop>
-<a href=genindex.html>index</a>
-| <a href=py-modindex.html>modules</a>
-| <a href=https://gitlab.com/ase/ase>gitlab</a>
-
-| <a href="https://gitlab.com/ase/ase/blob/master/doc/GibbsControls.rst">page source</a>
-
-</div>
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALKEMIE</title>
+    <style>
+        thead tr th,
+        tbody {
+            text-align: center;
+        }
+        table {
+            margin: 0px auto;
+        }
+        p {
+            line-height: 36px;
+            text-indent: 2em;
+        }
+        li p,
+        .admonition-title {
+            text-indent: 0em;
+        }
+        .caption {
+            text-indent: 0em;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+    <div class=asetop>
+        <a href=genindex.html>index</a>
+        | <a href=py-modindex.html>modules</a>
+        | <a href=https://gitlab.com/ase/ase>gitlab</a>
+        
+        | <a href="https://gitlab.com/ase/ase/blob/master/doc/GibbsControls.rst">page source</a>
+        
+    </div>
+    <br>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="section" id="gibbs">
-<h1>4.8 Gibbs控件<a class="headerlink" href="#gibbs" title="Permalink to this headline">¶</a></h1>
+<h1>Gibbs控件<a class="headerlink" href="#gibbs" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="get-data">
-<h2>4.8.1 Get data控件<a class="headerlink" href="#get-data" title="Permalink to this headline">¶</a></h2>
+<h2>Get data控件<a class="headerlink" href="#get-data" title="Permalink to this headline">¶</a></h2>
 <p>用于从数据库Gibbs或Tc数据。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -177,10 +217,10 @@ jobs_id                                        输入任务id
 Get data                                       从数据库获取对应数据并向下传递
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-174.png"><img alt="images/3-174.png" class="align-center" src="images/3-174.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="images/3-174.png"><img alt="images/3-174.png" class="align-center" src="images/3-174.png" style="width: 300px;" /></a>
 </div>
 <div class="section" id="get-ev">
-<h2>4.8.2 Get EV控件<a class="headerlink" href="#get-ev" title="Permalink to this headline">¶</a></h2>
+<h2>Get EV控件<a class="headerlink" href="#get-ev" title="Permalink to this headline">¶</a></h2>
 <p>用于从数据库Gibbs或Tc数据。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -206,10 +246,10 @@ Get data                                       从数据库获取对应数据并
 <span class="n">Get</span> <span class="n">E</span><span class="o">-</span><span class="n">V</span>                                        <span class="n">从数据库获取对应数据并向下传递</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-175.png"><img alt="images/3-175.png" class="align-center" src="images/3-175.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="images/3-175.png"><img alt="images/3-175.png" class="align-center" src="images/3-175.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="run-bulkmodule">
-<h2>4.8.3 Run BulkModule控件<a class="headerlink" href="#run-bulkmodule" title="Permalink to this headline">¶</a></h2>
+<h2>Run BulkModule控件<a class="headerlink" href="#run-bulkmodule" title="Permalink to this headline">¶</a></h2>
 <p>用于计算材料体模量。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -234,7 +274,7 @@ Get data                                       从数据库获取对应数据并
 <a class="reference internal image-reference" href="images/3-175.png"><img alt="images/3-175.png" class="align-center" src="images/3-175.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="gibbs-wf">
-<h2>4.8.4 Gibbs WF控件<a class="headerlink" href="#gibbs-wf" title="Permalink to this headline">¶</a></h2>
+<h2>Gibbs WF控件<a class="headerlink" href="#gibbs-wf" title="Permalink to this headline">¶</a></h2>
 <p>用于Gibbs工作流计算。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -282,10 +322,10 @@ Get data                                       从数据库获取对应数据并
 <span class="n">send</span> <span class="n">wfs</span>                                       <span class="n">传递配置完成的工作流</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-177.png"><img alt="images/3-177.png" class="align-center" src="images/3-177.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="images/3-177.png"><img alt="images/3-177.png" class="align-center" src="images/3-177.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="gibbs-analyze">
-<h2>4.8.5 Gibbs analyze控件<a class="headerlink" href="#gibbs-analyze" title="Permalink to this headline">¶</a></h2>
+<h2>Gibbs analyze控件<a class="headerlink" href="#gibbs-analyze" title="Permalink to this headline">¶</a></h2>
 <p>用于Gibbs计算数据图像绘制。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -309,10 +349,10 @@ Get data                                       从数据库获取对应数据并
 Run                                             绘制图像
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-178.png"><img alt="images/3-178.png" class="align-center" src="images/3-178.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="images/3-178.png"><img alt="images/3-178.png" class="align-center" src="images/3-178.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="volume-scale">
-<h2>4.8.6 Volume Scale控件<a class="headerlink" href="#volume-scale" title="Permalink to this headline">¶</a></h2>
+<h2>Volume Scale控件<a class="headerlink" href="#volume-scale" title="Permalink to this headline">¶</a></h2>
 <p>用于对结构进行体积缩放用于Tc计算。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -340,10 +380,10 @@ Point number                                   点数目
 Run                                            运行控件，输出多个结构信息
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-179.png"><img alt="images/3-179.png" class="align-center" src="images/3-179.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="images/3-179.png"><img alt="images/3-179.png" class="align-center" src="images/3-179.png" style="width: 500px;" /></a>
 </div>
 <div class="section" id="tc-input">
-<h2>4.8.7 Tc Input控件<a class="headerlink" href="#tc-input" title="Permalink to this headline">¶</a></h2>
+<h2>Tc Input控件<a class="headerlink" href="#tc-input" title="Permalink to this headline">¶</a></h2>
 <p>用于Tc计算的参数配置。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -389,10 +429,10 @@ Run                                            运行控件，输出多个结构
 <span class="n">run</span>                                            <span class="n">配置参数文件并传递参数</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-180.png"><img alt="images/3-180.png" class="align-center" src="images/3-180.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="images/3-180.png"><img alt="images/3-180.png" class="align-center" src="images/3-180.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="tc-wf">
-<h2>4.8.8 Tc WF控件<a class="headerlink" href="#tc-wf" title="Permalink to this headline">¶</a></h2>
+<h2>Tc WF控件<a class="headerlink" href="#tc-wf" title="Permalink to this headline">¶</a></h2>
 <p>用于Tc工作流计算。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -414,10 +454,10 @@ Run                                            运行控件，输出多个结构
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Send</span> <span class="n">wfs</span>                                       <span class="n">传递工作流信息</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/3-181.png"><img alt="images/3-181.png" class="align-center" src="images/3-181.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="images/3-181.png"><img alt="images/3-181.png" class="align-center" src="images/3-181.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="tc-plot">
-<h2>4.8.9 Tc Plot控件<a class="headerlink" href="#tc-plot" title="Permalink to this headline">¶</a></h2>
+<h2>Tc Plot控件<a class="headerlink" href="#tc-plot" title="Permalink to this headline">¶</a></h2>
 <p>用于Tc数据绘制图像。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -436,7 +476,7 @@ Run                                            运行控件，输出多个结构
 </tbody>
 </table>
 <p><strong>无参数</strong></p>
-<a class="reference internal image-reference" href="images/3-182.png"><img alt="images/3-182.png" class="align-center" src="images/3-182.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="images/3-182.png"><img alt="images/3-182.png" class="align-center" src="images/3-182.png" style="width: 400px;" /></a>
 </div>
 </div>
 
@@ -448,10 +488,10 @@ Run                                            运行控件，输出多个结构
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="JobsControls.html" class="btn btn-neutral float-right" title="4.9 Jobs控件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="JobsControls.html" class="btn btn-neutral float-right" title="Jobs控件" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="DynamicControls.html" class="btn btn-neutral float-left" title="4.7 Dynamic控件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="DynamicControls.html" class="btn btn-neutral float-left" title="Dynamic控件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -463,7 +503,7 @@ Run                                            运行控件，输出多个结构
         
         &copy; Copyright 2020, ALKEMIE Matter Studio Developers
       <span class="lastupdated">
-        Last updated on Mon, 07 Dec 2020 22:11:00.
+        Last updated on Fri, 25 Dec 2020 17:25:45.
       </span>
 
     </p>

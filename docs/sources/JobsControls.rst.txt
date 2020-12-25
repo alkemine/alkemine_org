@@ -1,7 +1,7 @@
-4.9 Jobs控件
+Jobs控件
 =================
 
-4.9.1 Work State控件
+Work State控件
 -------------------------
 
 用于查看远程计算机工作流计算状态。
@@ -18,10 +18,10 @@
 
 .. image:: image/3-183.png
     :align: center
-    :width: 700
+    :width: 500
 
 
-4.9.2 Delete Workflow 控件
+Delete Workflow 控件
 ----------------------------------
 
 用于删除远程计算机工作流。
@@ -40,10 +40,10 @@
 
 .. image:: image/3-184.png
     :align: center
-    :width: 700
+    :width: 500
 
 
-4.9.3 Work Priority 控件
+Work Priority 控件
 -----------------------------------
 
 用于调整远程计算机工作流顺序。
@@ -64,6 +64,6 @@
 
 .. image:: image/3-185.png
     :align: center
-    :width: 700
+    :width: 500
 
 
