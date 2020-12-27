@@ -8,7 +8,7 @@ Welcome to ALKEMIE Matter Studio's documentation!
 
 .. image:: image/ALKEMIE.png
     :align: center
-    :width: 300
+    :width: 400
 
 
 
@@ -23,13 +23,23 @@ ALKEMIE平台包含ALKEMIE Matter Studio（MS）、ALKEMIE Data Vault（DV）和
    :align: center
    :width: 500
 
-引用文献
------------------
+引用ALKEMIE软件
+-------------------------
 
 ::
 
     Wang G, Peng L, Li K, et al. ALKEMIE: An intelligent computational platform for accelerating 
     materials discovery and design[J]. Computational Materials Science, 186: 110064.
+
+    # Bib Tex
+    @article{wang186alkemie,
+      title={ALKEMIE: An intelligent computational platform for accelerating materials discovery and design},
+      author={Wang, Guanjie and Peng, Liyu and Li, Kaiqi and Zhu, Linggang and Zhou, Jian and Miao, Naihua and Sun, Zhimei},
+      journal={Computational Materials Science},
+      volume={186},
+      pages={110064},
+      publisher={Elsevier}
+    }
 
 
 .. toctree::
