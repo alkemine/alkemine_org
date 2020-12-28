@@ -42,6 +42,7 @@
       font-family: "微软雅黑";
       font-weight: bold;
     }
+
     .ALKEMIE-Welcome {
       text-align: center;
       font-family: "微软雅黑";
@@ -94,11 +95,43 @@
 
           <p class="caption"><span class="caption-text">目录:</span></p>
           <ul>
-            <li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">简介</a></li>
-            <li class="toctree-l1"><a class="reference internal" href="ApplyForTrial.html">申请试用</a></li>
-            <li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">设计架构</a>
+            <li class="toctree-l1 current"><a class="reference internal" href="ALKEMIEIntroduction.html">简介</a>
+              <ul>
+                <li class="toctree-l2"><a class="reference internal" href="ALKEMIEIntroduction.html#id2">软件特色</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="ALKEMIEIntroduction.html#id3">适用范围</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="ALKEMIEIntroduction.html#alkemine">ALKEMINE主要开发人员</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="ALKEMIEIntroduction.html#id4">用户文档撰写人员</a></li>
+              </ul>
             </li>
-            <li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">客户端安装</a></li>
+            <li class="toctree-l1 current"><a class="reference internal" href="ApplyForTrial.html">申请试用</a>
+              <ul>
+                <li class="toctree-l2"><a class="reference internal" href="ApplyForTrial.html#id2">申请步骤</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="ApplyForTrial.html#id4">参与开发</a></li>
+              </ul>
+            </li>
+            <li class="toctree-l1 current"><a class="reference internal"
+                href="ALKEMIESoftwareConceptAndOverview.html">设计架构</a>
+              <ul>
+                <li class="toctree-l2"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html#id1">ALKEMIE Matter Studio
+                    基础架构</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html#alkemie-matter-studio">ALKEMIE Matter Studio
+                    平台概述</a></li>
+              </ul>
+            </li>
+            <li class="toctree-l1 current"><a class="reference internal"
+                href="ALKEMIESoftwareInstallation.html">客户端安装</a>
+              <ul>
+                <li class="toctree-l2"><a class="reference internal" href="CompilerEnvironment.html">编译环境</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="InstallationPython.html">安装python</a></li>
+                <li class="toctree-l2"><a class="reference internal"
+                    href="InstallationVisualStudioInstaller.html">安装Visual Studio Installer</a></li>
+                <li class="toctree-l2"><a class="reference internal"
+                    href="InstallationALKEMIESoftware.html">安装ALKEMIE客户端软件</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="SoftwareLogin.html">软件登录</a></li>
+                <li class="toctree-l2"><a class="reference internal"
+                    href="CommonProblemsAndSolutions.html">常见问题及解决方法</a></li>
+              </ul>
+            </li>
             <li class="toctree-l1"><a class="reference internal" href="Examples.html">高通量算例</a></li>
             <li class="toctree-l1"><a class="reference internal" href="ControlDetails.html">控件介绍</a></li>
             <li class="toctree-l1"><a class="reference internal" href="IntroductionToALKEMIEwebVersion.html">网页版数据库</a>
@@ -203,6 +236,9 @@
                 <p>在未知材料化学成分和性能关系的情况下，具有某种特需功能的新材料往往需要经过漫长的试错和纠错过程，
                   并且经常无功而返。在过去几十年，随着计算能力和理论物理的发展，材料计算模拟在新材料设计中逐渐占据主导地位。如今，
                   随着数据驱动的材料研发时代的到来，为加速新材料的研发与设计，结合多类型材料数据库，数据挖掘和机器学习技术，发展高 通量自动流程材料集成计算算法及数据管理智能平台变得至关重要。</p>
+                <a class="reference internal image-reference" href="images/alkemie-software.png"><img
+                    alt="images/alkemie-software.png" class="align-center" src="images/alkemie-software.png"
+                    style="width: 500px;" /></a>
                 <p>ALKEMIE (Artificial Learning and Knowledge Enhanced Materials Informatics Engineering)是由
                   北京航空航天大学孙志梅教授团队于2017年基于python开源框架自主开发了一套高通量自动流程可视化计算和数据管理智能平台， 该平台包含
                   了适用于数据驱动的材料研发模式的三个核心方面：材料高通量自动计算模拟，材料数据库及数据管理和基于人工智能和机器学习的材料
@@ -214,9 +250,6 @@
                   其具有可视化的高通量自动流程可视化操作界面；从建模、运行到数据分析，全程自动无人工干预；支持单用户不低于1000量级的 并发运算；
                   针对典型算例可以实现单一尺度及跨尺度计算功能；拥有完整的18万条材料学数据库；可移植性、可扩展性强： 目前支持VASP, LAMMPS,
                   QE等计算；适用于对第一性原理知识掌握程度从初级到专业的所有材料研究人员。</p>
-                <a class="reference internal image-reference" href="images/alkemie-software.png"><img
-                    alt="images/alkemie-software.png" class="align-center" src="images/alkemie-software.png"
-                    style="width: 500px;" /></a>
                 <div class="section" id="alkemie">
                   <h2>引用ALKEMIE软件<a class="headerlink" href="#alkemie" title="Permalink to this headline">¶</a></h2>
                   <div class="highlight-default notranslate">
