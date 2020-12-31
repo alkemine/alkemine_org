@@ -24,7 +24,6 @@ ALKEMIE（Artificial Learning and Knowledge Enhanced Materials Informatics Engin
 
 * **高通量自动数据分析**：自动绘制材料性质图（Bands，DOS等）；自动对高通量任务统计分析。
 
-E:\桌面\convert\source5\source\static\alk.css
 软件功能
 -----------------
 
@@ -62,16 +61,15 @@ E:\桌面\convert\source5\source\static\alk.css
 * 需要材料计算模拟的其他人员
 
 
-ALKEMINE主要开发人员
+开发人员
 -------------------------------
 
 王冠杰、彭力宇、李开旗、程影星、吴浩
 
-用户文档撰写人员
------------------------------
+**用户文档撰写人员**
 
-**教师**：孙志梅、周健、王鹏、祝令刚、缪奶华、姜鑫
+**教师**：孙志梅、周健、祝令刚、缪奶华
 
-**学生**：王冠杰、李开旗、李泽峰、李杰、崔京京、彭力宇、杨晓艺、张雅恬、陈家天
+**学生**：王冠杰、李开旗、李泽峰、李杰、崔京京、彭力宇、张雅恬、陈家天
 
 **联系人**: 孙志梅：zmsun@buaa.edu.cn; 王冠杰：gjwang@buaa.edu.cn
