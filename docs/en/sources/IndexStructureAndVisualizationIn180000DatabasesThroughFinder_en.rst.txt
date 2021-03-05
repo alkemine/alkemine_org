@@ -1,0 +1,8 @@
+Index structure and visualization in 180,000 databases through Finder
+===============================================================================
+
+Double-click to enter the :mod:`Finder` module, configure the remote server, select the index standard, enter the specific index criteria, click search, and double-click the target result to visualize it.
+
+.. image:: image/3-46.png
+    :align: center
+    :width: 500

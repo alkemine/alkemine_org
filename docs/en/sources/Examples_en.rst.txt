@@ -1,0 +1,37 @@
+High-throughput examples
+=================================
+
+.. toctree::
+
+    High-throughput1000-levelCalculationProcess_en
+    DynamicMonteCarlo_en
+    FirstPrinciplesCoupledWithThermodynamicsGibbs_en
+    FirstPrinciplesAndBodyModulusCoupling_en
+    CurieTemperatureCalculation_en
+    ConstructVacancyConfigurationsAndPerformFirst-principlesStaticCalculations_en
+    ConstructTheDopingConfigurationOfPhaseChangeMaterialsAndPerformFirst-principlesStaticCalculations_en
+    ConstructTheGrainBoundaryConfigurationOfPhaseChangeMaterialsAndPerformFirst-principlesStaticCalculations_en
+    ConstructAtomConfigurationsOfSubstitutionTypesAndPerformFirst-principlesStaticCalculations_en
+    ConstructTetrahedralAndOctahedralInterstitialAtomConfigurationsAndPerformFirst-principlesStaticCalculations_en
+    IndexStructureAndVisualizationIn180000DatabasesThroughFinder_en
+    First-principlesRelaxationCalculation_en
+    First-principlesBandCalculation_en
+    First-principlesDensityOfStatesCalculation_en
+    First-principlesHSECalculation_en
+    First-principlesNEBCalculation_en
+    LammpsRelaxationCalculation_en
+    ViewingTheMultitaskingWorkingStatusOfTheComputingModule_en
+    DeleteSpecifiedTask_en
+    ChangeTheHigh-throughputTaskQueue_en
+    AutomaticAnalysisOfEnergyVolume_en
+    AutomaticFormatDisplayOfEnergyVolumeBandGap_en
+    AutomaticStatisticalAnalysisOfEnergyVolumeBandGap_en
+    AutomaticScatterPlotDistributionOfEnergyVolumeBandGap_en
+    DensityAnalysisOfElectricalPropertiesOfMaterials_en
+    BandDiagramAnalysisOfElectricalPropertiesOfMaterials_en
+    OpenPhaseWorkflow_en
+    OpencalphdWorkflow_en
+    AutomaticallyConvertData_en
+    AutomaticTrainingModel_en
+    AutomaticallyPredictAccordingToTheModel_en
+    AutomaticallyLinkLarge-scaleMolecularDynamicsASEforSimulation_en

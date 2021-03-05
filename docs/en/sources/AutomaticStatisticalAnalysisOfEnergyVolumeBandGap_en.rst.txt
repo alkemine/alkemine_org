@@ -1,0 +1,12 @@
+Automatic Statistical Analysis Of Energy, Volume, Band Gap
+=====================================================================
+
+ :mod:`Distributions` in the form of a statistical figure diaplays query results in :mod:`Analyzer` that can be used for multi-tasks.
+
+.. image:: image/3-75.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-76.png
+    :align: center
+    :width: 500

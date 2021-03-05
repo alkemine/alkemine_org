@@ -1,0 +1,243 @@
+Gibbs Controls
+==========================
+
+Get data controls
+---------------------------
+
+Used to get Gibbs or Tc data from the database.
+
++----------+----------------------+
+|  Input   |        Output        |
++==========+============+=========+
+| Database | Data_gibbs | Data_tc |
++----------+------------+---------+
+
+**Parameter configuration**::
+
+    Param                                          Data type, Gibbs or Tc
+
+    jobs_id                                        Enter task id
+
+    Get data                                       Get the corresponding data from the database and pass it down
+
+.. image:: image/3-174.png
+    :align: center
+    :width: 300
+
+
+Get EV controls
+--------------------------------
+
+Used to get Gibbs or Tc data from the database.
+
++----------+--------+
+|  Input   | Output |
++==========+====+===+
+| Database | EV | E |
++----------+----+---+
+
+**Parameter configuration**::
+
+    jobs_id                                        Enter task id
+
+    Get E-V                                        Get the corresponding data from the database and pass it down
+
+.. image:: image/3-175.png
+    :align: center
+    :width: 400
+
+
+Run BulkModule controls
+-------------------------------
+
+Used to calculate the bulk modulus of the material.
+
++----------+---------------+
+|  Input   |    Output     |
++==========+===============+
+|    EV    | Gibbs Outputs |
++----------+---------------+
+
+**Parameter configuration**::
+
+    Run BulkModule                                 Calculate the bulk modulus
+
+.. image:: image/3-175.png
+    :align: center
+    :width: 400
+
+
+Gibbs WF controls
+--------------------------
+
+Used to calculate Gibbs workflow.
+
++----------+---------------+
+|  Input   |    Output     |
++==========+===============+
+|    EV    | Workflow List |
++----------+---------------+
+
+**Parameter configuration**::
+
+    V-E-file                                       Local EV file
+
+    mm
+
+    vfree
+
+    pressure                                       Pressure
+
+    temperature                                    Temperature
+
+    phase                                          Phase 
+
+    tmodel                                         Model
+
+    tmodel_par                                     Model parameters
+
+    fit_model                                      Fit model
+
+    fit_order                                      Fit order
+
+    units_V                                        Units of volume
+
+    units_E                                        Units of energy
+
+    poisson                                        Poisson constant
+
+    send wfs                                       Send configured workflows
+
+.. image:: image/3-177.png
+    :align: center
+    :width: 500
+
+
+Gibbs analyze controls
+---------------------------------
+
+Used to draw Gibbs calculation data image.
+
++---------------------+---------------+
+|        Input        |    Output     |
++=====================+===============+
+|    Gibbs Outputs    |     None      |
++---------------------+---------------+
+
+**Parameter configuration**::
+
+    Parameter selection bar                         Select the x and y coordinate parameters to be drawn
+
+    Run                                             Draw image
+
+.. image:: image/3-178.png
+    :align: center
+    :width: 500
+
+
+Volume Scale controls
+----------------------------------
+
+Used for volume scaling of the structure for Tc calculation.
+
++-----------------+-----------------+
+|        Input    |     Output      |
++=================+=================+
+|    structure    | many structures |
++-----------------+-----------------+
+
+**Parameter configuration**::
+
+    openfile                                       Select local crystal structure file
+
+    Volume scale                                   Volume scale
+
+    Point number                                   Point number
+
+    Run                                            Run control, output multiple structure information
+
+.. image:: image/3-179.png
+    :align: center
+    :width: 500
+
+
+Tc Input controls
+---------------------------
+
+Parameter configuration for Tc calculation.
+
++--------------+--------+
+|     Input    | Output |
++====+=========+========+
+| EV | Diffuse | Params |
++----+---------+--------+
+
+**Parameter configuration**::
+
+    Nx                                             x spin
+
+    Ny                                             y spin
+
+    N2                                             Total spin
+
+    MCSteps                                        MC steps
+
+    K_B                                            Boltzmann constant
+
+    B                                              Magnetic induction
+
+    J                                              Ferromagnetic coefficient
+
+    Mu                                             Magnetic moment of each particle
+
+    Tmin                                           Minimum temperature
+
+    Tmax                                           Maximum temperature
+
+    DeltaT                                         Temperature step
+
+    run                                            Configure parameter file and pass parameters
+
+.. image:: image/3-180.png
+    :align: center
+    :width: 400
+
+
+Tc WF controls
+------------------------------
+
+Used to calculate Tc workflow.
+
++--------+---------------+
+| Input  |    Output     |
++========+===============+
+| Params | Workflow List |
++--------+---------------+
+
+**Parameter configuration**::
+
+    Send wfs                                       Send workflow information
+
+.. image:: image/3-181.png
+    :align: center
+    :width: 400
+
+
+Tc Plot controls
+---------------------------
+
+Used to draw images with Tc data.
+
++---------+---------------+
+|  Input  |    Output     |
++=========+===============+
+| Data_tc |     Data      |
++---------+---------------+
+
+**No parameters**
+
+.. image:: image/3-182.png
+    :align: center
+    :width: 400
+
+

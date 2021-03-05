@@ -1,0 +1,20 @@
+Band Diagram Analysis of Electrical Properties of Materials
+========================================================================
+
+:mod:`VaspPlot` displays the :mod:`Bnad` query results in :mod:`Analyzer` in the form of scatter plots, which can be displayed in multiple tasks.
+
+.. image:: image/3-82.png
+    :align: center
+    :width: 500
+
+First query the band in the :mod:`Analyzer` control, and specify the task ID in the :mod:`criteria`. No input means to query all.
+
+.. image:: image/3-83.png
+    :align: center
+    :width: 500
+
+After querying, select :mod:`Band` in :mod:`VaspPlot`, and click :mod:`Plotting` to plot all results.
+
+.. image:: image/3-84.png
+    :align: center
+    :width: 500

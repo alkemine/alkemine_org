@@ -1,0 +1,54 @@
+.. alkemine_doc documentation master file, created by
+   sphinx-quickstart on Wed Nov 25 20:11:52 2020.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to User Manual of ALKEMIE Matter Studio
+======================================================
+
+
+
+
+When the relationship between the chemical composition and performance of the material is unknown, a new material with a certain specific function often needs to go through a long trial and error process, and often turns up nothing. In the past few decades, with the development of computing power and theoretical physics, material calculation simulation has gradually occupied a dominant position in the design of new materials. Nowadays, with the advent of the era of data-driven materials research and development, in order to accelerate the research and development and design of new materials, combined with multi-type material databases, data mining and machine learning technologies, the development of high-throughput automatic process materials integrated computing algorithms and data management intelligent platforms becomes vital.
+
+.. image:: image/alkemie-sofeware-1.png
+   :align: center
+   :width: 500
+
+ALKEMIE (Artificial Learning and Knowledge Enhanced Materials Informatics Engineering) is a set of high-throughput automatic process visualization computing and data management intelligent platform developed by the team of Professor Sun Zhimei of Beihang University in 2017 based on the python open source framework. The platform includes applicable three core aspects of the data-driven material research and development model: material high-throughput automatic calculation and simulation, material database and data management, and material data mining based on artificial intelligence and machine learning. In summary, the ALKEMIE high-throughput calculation module can realize the whole process from modeling, operation to data analysis without manual intervention; it supports concurrent high-throughput automatic calculation and simulation with a single user not less than 10^4; ALKEMIE’s multiple types of materials database make data mining technology based on artificial intelligence and machine learning can be quickly applied and practiced in the design and development of new materials through the database's high-level interface (API). In particular, ALKEMIE has independently developed a special module for cross-scale and large-scale molecular dynamics potential functions based on machine learning. More importantly, ALKEMIE has designed a user-friendly visual operating world to make workflow and data flow more transparent and operable.
+
+The ALKEMIE platform includes three parts: ALKEMIE Matter Studio (MS), ALKEMIE Data Vault (DV) and ALKEMIE Potential Mind (PM). It has a visualized high-throughput automatic process visualization operation interface; from modeling, operation to data analysis, the whole process is automatic without manual intervention; it supports concurrent operations of not less than 1000 for a single user; it can achieve a single scale and cross-scale calculation function; It has a complete 180,000 material science database; strong portability and scalability; It currently supports VASP, LAMMPS, QE and other calculations; It is suitable for all first-principles knowledge masters from elementary to professional Materials researchers.
+
+
+
+references
+-----------------
+
+::
+
+    Wang G, Peng L, Li K, et al. ALKEMIE: An intelligent computational platform for accelerating 
+    materials discovery and design[J]. Computational Materials Science, 186: 110064.
+
+    # Bib Tex
+    @article{wang186alkemie,
+      title={ALKEMIE: An intelligent computational platform for accelerating materials discovery and design},
+      author={Wang, Guanjie and Peng, Liyu and Li, Kaiqi and Zhu, Linggang and Zhou, Jian and Miao, Naihua and Sun, Zhimei},
+      journal={Computational Materials Science},
+      volume={186},
+      pages={110064},
+      publisher={Elsevier}
+    }
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: index：
+
+   ALKEMIEIntroduction_en
+   ApplyForTrial_en
+   ALKEMIESoftwareConceptAndOverview_en
+   ALKEMIESoftwareInstallation_en
+   Examples_en
+   ControlDetails_en
+   ConcludingRemarks_en
+

@@ -1,0 +1,301 @@
+OpenPhase Control
+========================
+
+Openphase Input Control
+-------------------------------
+
+The configuration parameters for entering the calculation OpenPhase.
+
++--------------+----------------+
+|     Input    |     Output     |
++==============+=======+========+
+| EV | Diffuse | Input | Inputs |
++--------------+-------+--------+
+
+**Parameter configuration**::
+
+    nSteps                                       Operation steps, integer
+
+    FTime                                        Record step size, integer
+
+    STime                                        Display step size, integer
+
+    LUnits                                       Length unit, m、cm、mm
+
+    TUnits                                       Time unit，s、m、h
+
+    MUnits                                       Mass unit，kg、g
+
+    EUnits                                       Energy unit，J、kJ
+
+    Nx                                           Number in x direction, integer
+
+    Ny                                           Number in y direction, integer
+
+    Nz                                           Number in z direction, integer
+
+    Nphses                                       Number of phases, integer
+
+    Ncomps                                       Number of compounds, integer
+
+    Nsubs                                        Substitution number, integer
+
+    dt                                           Time step, floating point
+
+    IWidth                                       Initial width, floating point
+
+    IEnergy                                      Initial energy
+
+    IMobty                                       Initial mobility
+
+    Rho
+    dx                                           spacing
+
+    nOMP
+
+    Restrt                                       Restart options
+
+    tStart
+
+    tRdtst
+
+    PhiIdx
+
+    Radius
+
+    Remesh
+
+    Boundary conditions                          Boundary condition setting
+
+    Thermodynamic parameters                     Thermodynamic parameters
+
+.. image:: image/3-156.png
+    :align: center
+    :width: 500
+
+
+Get VTK Control
+
+Used to obtain VTK data.
+
++--------------+--------------------------------+
+|     Input    |             Output             |
++==============+================================+
+|   Database   | DataOP：data for Draw pictures |
++--------------+--------------------------------+
+
+**Parameter configuration**::
+
+    option                                       Select vtk type and dynamic type
+
+    jobs_id                                      jobs Identity document
+
+    Get Data                                     Get data from the database and pass it down
+
+.. image:: image/3-157.png
+    :align: center
+    :width: 400
+
+
+Get Oc Data Control
+----------------------------------
+
+Used to get OpenCalPhd data。
+
++--------------+------------------------------+
+|     Input    |             Output           |
++==============+==============================+
+|   Database   |        Data_opencalPhd       |
++--------------+------------------------------+
+
+**Parameter configuration**::
+
+    Param                                        Select data type
+
+    jobs_id                                      jobs Identity document
+
+    Get Data                                     Get data from the database and pass it down
+
+.. image:: image/3-158.png
+    :align: center
+    :width: 400
+
+
+Opencalphd Plot Control
+------------------------------------
+
+Used to draw OpenCalPhd images.
+
++---------------------+-----------------------+
+|        Input        |         Output        |
++=====================+=======================+
+|   Data_opencalPhd   |          None         |
++---------------------+-----------------------+
+
+**No parameter**
+
+.. image:: image/3-159.png
+    :align: center
+    :width: 400
+
+
+Openphase Plot Control
+-------------------------------------
+
+Used to draw openphase images.
+
++-------------+-----------------------+
+|    Input    |         Output        |
++=============+=======================+
+|   Data_op   |          None         |
++-------------+-----------------------+
+
+**Parameter configuration**::
+
+    Openphase Plot                               Used to draw openphase dynamic pictures
+
+.. image:: image/3-160.png
+    :align: center
+    :width: 400
+
+
+Animation Gif Control
+------------------------------------
+
+For Animation Gif。
+
++-------------+-----------------------+
+|    Input    |         Output        |
++=============+=======================+
+|   DB_FILE   |          None         |
++-------------+-----------------------+
+
+**Parameter configuration**::
+
+    Gif Speed                                    Adjust the playback speed of Gif
+
+    Restart                                      Restart playback
+
+.. image:: image/3-161.png
+    :align: center
+    :width: 400
+
+
+Dendrite Gif Control
+-----------------------------------
+
+For Dendrite Gif。
+
++-------------+-----------------------+
+|    Input    |         Output        |
++=============+=======================+
+|   DB_FILE   |          None         |
++-------------+-----------------------+
+
+**Parameter configuration**::
+
+    Gif Speed                                    Adjust the playback speed of Gif
+
+    Restart                                      Restart playback
+
+.. image:: image/3-162.png
+    :align: center
+    :width: 400
+
+
+NormalGG Gif Control
+-------------------------------------
+
+For NormalGG Gif。
+
++-------------+-----------------------+
+|    Input    |         Output        |
++=============+=======================+
+|   DB_FILE   |          None         |
++-------------+-----------------------+
+
+**Parameter configuration**::
+
+    Gif Speed                                    Adjust the playback speed of Gif
+
+    Restart                                      Restart playback
+
+.. image:: image/3-163.png
+    :align: center
+    :width: 400
+
+
+Single GrainBoundary Gif控件
+----------------------------------------------
+
+For Single GrainBoundary Gif。
+
++-------------+-----------------------+
+|    Input    |         Output        |
++=============+=======================+
+|   DB_FILE   |          None         |
++-------------+-----------------------+
+
+**Parameter configuration**::
+
+    Gif Speed                                     Adjust the playback speed of Gif
+
+    Restart                                      Restart playback
+
+.. image:: image/3-164.png
+    :align: center
+    :width: 400
+
+
+Openphase NormalGrain WF Control
+----------------------------------------------
+
+Workflow computing for Openphase Normalgrain.
+
++--------------+----------------------+
+|     Input    |         Output       |
++=======+======+==========+===========+
+| Input | Data | Workflow | Workflows |
++-------+------+----------+-----------+
+
+**No parameter**
+
+.. image:: image/3-165.png
+    :align: center
+    :width: 500
+
+
+Openphase SingleGrain WF Control
+-----------------------------------------------
+
+For Openphase Singlegrain workflow computing.
+
++--------------+----------------------+
+|     Input    |         Output       |
++=======+======+==========+===========+
+| Input | Data | Workflow | Workflows |
++-------+------+----------+-----------+
+
+**No parameter**
+
+.. image:: image/3-166.png
+    :align: center
+    :width: 500
+
+
+Opencalphd WF Control
+----------------------------------------
+
+Workflow computing for Opencalphd.
+
++--------------+----------------------+
+|     Input    |         Output       |
++=======+======+==========+===========+
+| Input | Data | Workflow | Workflows |
++-------+------+----------+-----------+
+
+**No parameter**
+
+.. image:: image/3-167.png
+    :align: center
+    :width: 500

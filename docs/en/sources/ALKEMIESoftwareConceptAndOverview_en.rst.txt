@@ -1,0 +1,18 @@
+Architecture
+=======================
+
+The overall design concept of ALKEMIE is as follows:
+-----------------------------------------------------------------------
+
+.. image:: image/architecture.png
+   :align: center
+   :width: 500
+
+ALKEMIE software includes three parts: Basic, Works and AI. Each part is divided into several categories, and there are nearly 100 basic controls. Each basic control has its own unique features. It can complete functions such as automatic modeling, automatic high-throughput first-principles calculations, automatic data analysis, and material machine learning.
+
+
+ALKEMIE Matter Studio Platform Overview
+-----------------------------------------------
+.. image:: image/GraphicalAbstract-final.png
+   :align: center
+   :width: 500

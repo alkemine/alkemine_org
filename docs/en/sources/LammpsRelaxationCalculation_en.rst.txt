@@ -1,0 +1,16 @@
+Lammps Relaxation Calculation
+===============================================
+
+Connect the controls from left to right to perform the calculation of :mod:`Lammps Relax WF` .
+
+.. image:: image/3-62.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-64.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-63.png
+    :align: center
+    :width: 500

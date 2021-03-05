@@ -1,0 +1,16 @@
+Construct vacancy configurations and perform first-principles static calculations
+===========================================================================================
+
+Connect the controls from left to right; input the crystal structure through the 'POSCAR' module, and build the vacancy model through 'Build vacancy' in the 'Builder' module.
+
+.. image:: image/3-38.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-40.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-39.png
+    :align: center
+    :width: 500

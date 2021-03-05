@@ -1,0 +1,27 @@
+First-principles And Body Modulus Coupling
+===================================================
+
+First principles calculation is combined with Gibbs calculation. First principles static calculation is carried out. When the static calculation is completed, the calculation data is transferred to the database, and the data can be obtained from the output interface of: mod:`manager`(that is, the data obtained after performing VASP calculation), :mod:`Get EV` to get EV data, and: mod:`run bulkmodule` performs bulk modulus calculation.
+
++ First, manually connect the controls, or click: mod: `File`,: mod: `open and freeze`, click to open the corresponding sample template file and click the start button, as shown in the figure:
+  The first part is static calculation, the second part is bulk modulus calculation.
+
+.. image:: image/3-30.png
+    :align: center
+    :width: 500
+
++ Second, click :mod:`Volume Scale` to adjust the size of the structure, and output multiple structure information to the subsequent workflow, as shown in the figure:
+
+.. image:: image/3-31.png
+    :align: center
+    :width: 500
+
++ Third, submit the task in Jobs, wait for the end of the task, and perform the next part of the calculation;
+
++ Fourth, click :mod:`Get EV`, enter jobs_id, and get the E-V value;
+
++ Fifth, click :mod:`Run BulkModule` to get the body modulus parameters;
+
+.. image:: image/3-32.png
+    :align: center
+    :width: 500

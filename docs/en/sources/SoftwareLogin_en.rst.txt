@@ -1,0 +1,9 @@
+Software login
+====================
+
+.. image:: image/2-9.png
+    :align: center
+    :width: 400
+
+The ALKEMIE login interface is shown in the figure above
+Account：Login account；Password：Login password；Sign In：Registered account number；Forgot：Forget the password；Remember Password：Check remember password, no need to repeat；Auto Log In：Auto login next time；Log In：Click login software.

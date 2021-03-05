@@ -1,0 +1,40 @@
+First Principles Coupled With Thermodynamics Gibbs
+=============================================================
+
+First principles calculation is combined with Gibbs calculation. First principles static calculation is carried out. When the static calculation is completed, the calculation data is transferred to the database, and the data can be obtained from the output interface of: mod:`manager`(that is, the data obtained after performing VASP calculation), :mod:`Get EV` to get EV data, :mod:`Gibbs WF` to perform workflow calculations, to get Gibbs data through :mod:`Get Data`, and to plot with :mod:`Gibbs analyze`.
+
+* The first step is to manually connect the control, or click :mod:`File`, :mod:`Open and Freeze`, click to open the corresponding sample template file and click the start button, as shown in the figure:
+  The first part is static calculation, and the second part is Gibbs calculation.
+
+.. image:: image/3-24.png
+    :align: center
+    :width: 500
+
+* The second step is to click :mod:`Volume Scale` to adjust the size of the structure, and output multiple structures to the subsequent workflow, as shown in the figure:
+
+.. image:: image/3-25.png
+    :align: center
+    :width: 500
+
+* The third step is to submit the task in :mod:`Jobs`, wait for the end of the task, and perform the next part of the calculation;
+
+
+* The fourth step is to click :mod:`Get EV`, and enter jobs_id to get the E-V value, as shown in the figure:
+
+* The fifth step, open :mod:`Gibbs WF`, enter the corresponding parameters, click :mod:`run` to run and pass in the next control, if there is a local EV file, you can also click :mod:`V-E-file` to import , and pass in the E-V value from here
+   , as shown in the figure:
+
+.. image:: image/3-26.png
+    :align: center
+    :width: 500
+
+
+* The sixth step is to submit the task in Jobs (1) and wait for the task to end;
+
+* The seventh step, when the task calculation is completed, click :mod:`Get Data`, select the parameter type as Gibbs, then enter the corresponding jobs_id, click :mod:`Get Data`, as shown in the figure;
+
+* The eighth step, click :mod:`Gibbs analyze`, select the parameters to be drawn, such as Estatic->p, click :mod:`run` to get the picture, as shown in the figure:
+
+.. image:: image/3-28.png
+    :align: center
+    :width: 500

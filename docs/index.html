@@ -6,7 +6,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Welcome to ALKEMIE Matter Studio’s documentation! &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
+  <title>Welcome to User Manual of ALKEMIE Matter Studio &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
 
 
 
@@ -37,18 +37,6 @@
   <link rel="index" title="Index" href="genindex.html" />
   <link rel="search" title="Search" href="search.html" />
   <link rel="next" title="简介" href="ALKEMIEIntroduction.html" />
-  <style>
-    table tr {
-      font-family: "微软雅黑";
-      font-weight: bold;
-    }
-
-    .ALKEMIE-Welcome {
-      text-align: center;
-      font-family: "微软雅黑";
-      font-size: 30px;
-    }
-  </style>
 </head>
 
 <body class="wy-body-for-nav">
@@ -62,7 +50,7 @@
 
 
 
-          <a href="#" class="icon icon-home" alt="Documentation Home"> ALKEMIE Matter Studio
+          <a href="#" class="icon icon-home" alt=" Documentation Home"> ALKEMIE Matter Studio
 
 
 
@@ -95,30 +83,33 @@
 
           <p class="caption"><span class="caption-text">目录:</span></p>
           <ul>
-            <li class="toctree-l1 current"><a class="reference internal" href="ALKEMIEIntroduction.html">简介</a>
+            <!-- <li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">简介</a></li> -->
+            <li class="toctree-l1 current"><a class="current reference internal" href="ALKEMIEIntroduction.html">简介</a>
               <ul>
                 <li class="toctree-l2"><a class="reference internal" href="ALKEMIEIntroduction.html#id2">软件特色</a></li>
-                <li class="toctree-l2"><a class="reference internal" href="ALKEMIEIntroduction.html#id3">适用范围</a></li>
-                <li class="toctree-l2"><a class="reference internal" href="ALKEMIEIntroduction.html#alkemine">ALKEMINE主要开发人员</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="ALKEMIEIntroduction.html#id3">软件功能</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="ALKEMIEIntroduction.html#id4">适用范围</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="ALKEMIEIntroduction.html#id5">开发人员</a></li>
               </ul>
             </li>
-            <li class="toctree-l1 current"><a class="reference internal" href="ApplyForTrial.html">申请试用</a>
+            <!-- <li class="toctree-l1"><a class="reference internal" href="ApplyForTrial.html">申请试用</a></li> -->
+            <li class="toctree-l1 current"><a class="current reference internal" href="ApplyForTrial.html">申请试用</a>
               <ul>
                 <li class="toctree-l2"><a class="reference internal" href="ApplyForTrial.html#id2">申请步骤</a></li>
                 <li class="toctree-l2"><a class="reference internal" href="ApplyForTrial.html#id4">参与开发</a></li>
               </ul>
             </li>
-            <li class="toctree-l1 current"><a class="reference internal"
-                href="ALKEMIESoftwareConceptAndOverview.html">设计架构</a>
+            <!-- <li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html">设计架构</a>
+            </li> -->
+            <li class="toctree-l1 current"><a class="current reference internal" href="ALKEMIESoftwareConceptAndOverview.html">设计架构</a>
               <ul>
-                <li class="toctree-l2"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html#id1">ALKEMIE Matter Studio
-                    基础架构</a></li>
                 <li class="toctree-l2"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html#alkemie-matter-studio">ALKEMIE Matter Studio
-                    平台概述</a></li>
+                    基础架构</a></li>
+                <li class="toctree-l2"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview.html#id2">ALKEMIE Matter Studio 平台概述</a></li>
               </ul>
             </li>
-            <li class="toctree-l1 current"><a class="reference internal"
-                href="ALKEMIESoftwareInstallation.html">客户端安装</a>
+            <!-- <li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation.html">客户端安装</a></li> -->
+            <li class="toctree-l1 current"><a class="current reference internal" href="ALKEMIESoftwareInstallation.html">客户端安装</a>
               <ul>
                 <li class="toctree-l2"><a class="reference internal" href="CompilerEnvironment.html">编译环境</a></li>
                 <li class="toctree-l2"><a class="reference internal" href="InstallationPython.html">安装python</a></li>
@@ -133,8 +124,6 @@
             </li>
             <li class="toctree-l1"><a class="reference internal" href="Examples.html">高通量算例</a></li>
             <li class="toctree-l1"><a class="reference internal" href="ControlDetails.html">控件介绍</a></li>
-            <li class="toctree-l1"><a class="reference internal" href=""></a>
-            </li>
             <li class="toctree-l1"><a class="reference internal" href="ConcludingRemarks.html">未来与展望</a></li>
           </ul>
 
@@ -190,6 +179,11 @@
               .caption {
                 text-indent: 0em;
               }
+
+              /* 使顶部的中英文切换按钮右对齐 */
+              div.asetop {
+                text-align: right;
+              }
             </style>
           </head>
 
@@ -198,52 +192,38 @@
           </body>
 
           </html>
-          <!-- <div class=asetop>
-        <a href=genindex.html>index</a>
+          <div class=asetop>
+            <!-- <a href=genindex.html>index</a>
         | <a href=py-modindex.html>modules</a>
         | <a href=https://gitlab.com/ase/ase>gitlab</a>
         
         | <a href="https://gitlab.com/ase/ase/blob/master/doc/index.rst">page source</a>
-        
-    </div> -->
+         -->
+
+            <!-- 在顶部添加中英文切换按钮 -->
+            <a href="./index.html">中文</a>
+            | <a href="./en/index_en.html">English</a>
+          </div>
           <br>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div itemprop="articleBody">
 
-              <div class="section" id="welcome-to-alkemie-matter-studio-s-documentation">
+              <div class="section" id="welcome-to-user-manual-of-alkemie-matter-studio">
                 <h1>Welcome to User Manual of ALKEMIE Matter Studio<a class="headerlink"
-                    href="#welcome-to-alkemie-matter-studio-s-documentation" title="Permalink to this headline">¶</a>
+                    href="#welcome-to-user-manual-of-alkemie-matter-studio" title="Permalink to this headline">¶</a>
                 </h1>
-                <!-- <a class="reference internal image-reference" href="images/ALKEMIE.png"><img alt="images/ALKEMIE.png"
-                    class="align-center" src="images/ALKEMIE.png" style="width: 600px;" /></a> -->
-                <!-- <table cellpadding="5" width="560">
-                  <tr>
-                      <td align="left">Give me six hours to chop down a tree and I will spend the first four sharpening the axe.</td>
-                  </tr>
-                  <tr>
-                      <td align="right">-- Abraham Lincoln</td>
-                  </tr>
-                  <tr>
-                      <td align="left">磨刀不误砍柴工</td>
-                  </tr>
-                  <tr>
-                      <td align="right">-- 中国成语</td>
-                  </tr>
-                </table> -->
-                <!-- <br><br>
-                <p class="ALKEMIE-Welcome">欢迎使用ALKEMIE Matter Studio</p> -->
-                <p>在未知材料化学成分和性能关系的情况下，具有某种特需功能的新材料往往需要经过漫长的试错和纠错过程，
-                  并且经常无功而返。在过去几十年，随着计算能力和理论物理的发展，材料计算模拟在新材料设计中逐渐占据主导地位。如今，
-                  随着数据驱动的材料研发时代的到来，为加速新材料的研发与设计，结合多类型材料数据库，数据挖掘和机器学习技术，发展高 通量自动流程材料集成计算算法及数据管理智能平台变得至关重要。</p>
+                <p>
+                  在未知材料化学成分和性能关系的情况下，具有某种特需功能的新材料往往需要经过漫长的试错和纠错过程，并且经常无功而返。在过去几十年，随着计算能力和理论物理的发展，材料计算模拟在新材料设计中逐渐占据主导地位。如今，随着数据驱动的材料研发时代的到来，为加速新材料的研发与设计，结合多类型材料数据库，数据挖掘和机器学习技术，发展高通量自动流程材料集成计算算法及数据管理智能平台变得至关重要。
+                </p>
                 <a class="reference internal image-reference" href="images/alkemie-sofeware-1.png"><img
                     alt="images/alkemie-sofeware-1.png" class="align-center" src="images/alkemie-sofeware-1.png"
                     style="width: 500px;" /></a>
-                <p>ALKEMIE (Artificial Learning and Knowledge Enhanced Materials Informatics Engineering)是由
-                  北京航空航天大学孙志梅教授团队于2017年基于python开源框架自主开发了一套高通量自动流程可视化计算和数据管理智能平台， 该平台包含了适用于数据驱动的材料研发模式的三个核心方面：材料高通量自动计算模拟，材料数据库及数据管理和基于人工智能和机器学习的材料数据挖掘。概括来说，ALKEMIE高通量计算模块可实现从建模、运行到数据分析，全程自动无人工干预；支持单用户不低于10^4量级的并发高通量自动计算模拟；ALKEMIE多类型的材料数据库，通过数据库的高级接口（API）使得基于人工智能和机器学习的数据挖掘技术在新材料设计与研发中可以得以快速的应用和实践。特别的，ALKEMIE自主开发了基于机器学习的跨尺度大规模分子动力学势函数的特色模块。更重要的是，ALKEMIE设计了用户友好的可视化操作界使得工作流和数据流具有更强的透明性和可操作性。</p>
-                <p>ALKEMIE平台包含ALKEMIE Matter Studio（MS）、ALKEMIE Data Vault（DV）和ALKEMIE Potential Mind（PM）三部分。
-                  其具有可视化的高通量自动流程可视化操作界面；从建模、运行到数据分析，全程自动无人工干预；支持单用户不低于1000量级的 并发运算；
-                  针对典型算例可以实现单一尺度及跨尺度计算功能；拥有完整的18万条材料学数据库；可移植性、可扩展性强： 目前支持VASP, LAMMPS,
-                  QE等计算；适用于对第一性原理知识掌握程度从初级到专业的所有材料研究人员。</p>
+                <p>ALKEMIE (Artificial Learning and Knowledge Enhanced Materials Informatics
+                  Engineering)是由北京航空航天大学孙志梅教授团队于2017年基于python开源框架自主开发了一套高通量自动流程可视化计算和数据管理智能平台，该平台包含了适用于数据驱动的材料研发模式的三个核心方面：材料高通量自动计算模拟，材料数据库及数据管理和基于人工智能和机器学习的材料数据挖掘。概括来说，ALKEMIE高通量计算模块可实现从建模、运行到数据分析，全程自动无人工干预；支持单用户不低于10^4量级的并发高通量自动计算模拟；ALKEMIE多类型的材料数据库，通过数据库的高级接口（API）使得基于人工智能和机器学习的数据挖掘技术在新材料设计与研发中可以得以快速的应用和实践。特别的，ALKEMIE自主开发了基于机器学习的跨尺度大规模分子动力学势函数的特色模块。更重要的是，ALKEMIE设计了用户友好的可视化操作界使得工作流和数据流具有更强的透明性和可操作性。
+                </p>
+                <p>ALKEMIE平台包含ALKEMIE Matter Studio（MS）、ALKEMIE Data Vault（DV）和ALKEMIE Potential
+                  Mind（PM）三部分。其具有可视化的高通量自动流程可视化操作界面；从建模、运行到数据分析，全程自动无人工干预；支持单用户不低于10^4量级的并发运算；针对典型算例可以实现单一尺度及跨尺度计算功能；拥有完整的18万条材料学数据库；可移植性、可扩展性强：目前支持VASP,
+                  LAMMPS, QE等计算；适用于对第一性原理知识掌握程度从初级到专业的所有材料研究人员。</p>
                 <div class="section" id="alkemie">
                   <h2>引用ALKEMIE软件<a class="headerlink" href="#alkemie" title="Permalink to this headline">¶</a></h2>
                   <div class="highlight-default notranslate">
@@ -271,11 +251,15 @@
                           <li class="toctree-l2"><a class="reference internal"
                               href="ALKEMIEIntroduction.html#id2">软件特色</a></li>
                           <li class="toctree-l2"><a class="reference internal"
-                              href="ALKEMIEIntroduction.html#id3">适用范围</a></li>
+                              href="ALKEMIEIntroduction.html#id3">软件功能</a></li>
                           <li class="toctree-l2"><a class="reference internal"
-                              href="ALKEMIEIntroduction.html#alkemine">ALKEMINE主要开发人员</a></li>
+                              href="ALKEMIEIntroduction.html#id4">适用范围</a></li>
                           <li class="toctree-l2"><a class="reference internal"
-                              href="ALKEMIEIntroduction.html#id4">用户文档撰写人员</a></li>
+                              href="ALKEMIEIntroduction.html#id5">开发人员</a></li>
+                          <!-- <li class="toctree-l2"><a class="reference internal"
+                              href="ALKEMIEIntroduction.html#id6">用户文档撰写人员</a></li>
+                          <li class="toctree-l2"><a class="reference internal"
+                              href="ALKEMIEIntroduction.html#id7">联系人</a></li> -->
                         </ul>
                       </li>
                       <li class="toctree-l1"><a class="reference internal" href="ApplyForTrial.html">申请试用</a>
@@ -291,13 +275,21 @@
                         <ul>
                           <li class="toctree-l2"><a class="reference internal"
                               href="ALKEMIESoftwareConceptAndOverview.html#alkemie-matter-studio">ALKEMIE Matter Studio
-                              平台概述</a></li>
+                              基础架构</a></li>
+                          <li class="toctree-l2"><a class="reference internal"
+                              href="ALKEMIESoftwareConceptAndOverview.html#id2">ALKEMIE Matter Studio 平台概述</a></li>
                         </ul>
                       </li>
                       <li class="toctree-l1"><a class="reference internal"
                           href="ALKEMIESoftwareInstallation.html">客户端安装</a>
                         <ul>
                           <li class="toctree-l2"><a class="reference internal" href="CompilerEnvironment.html">编译环境</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="CompilerEnvironment.html#windows">Windows安装环境</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="CompilerEnvironment.html#linux">Linux安装环境</a></li>
+                            </ul>
                           </li>
                           <li class="toctree-l2"><a class="reference internal"
                               href="InstallationPython.html">安装python</a></li>
@@ -313,8 +305,35 @@
                       <li class="toctree-l1"><a class="reference internal" href="Examples.html">高通量算例</a>
                         <ul>
                           <li class="toctree-l2"><a class="reference internal"
-                              href="High-throughput1000-levelCalculationProcess.html">高通量1000量级计算流程</a></li>
+                              href="High-throughput1000-levelCalculationProcess.html">高通量1000量级计算流程</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="HighThroughputOverallProcess.html">高通量总流程</a>
+                                <ul>
+                                  <li class="toctree-l4"><a class="reference internal"
+                                      href="HighThroughputOverallProcess.html#multiposcar">高通量建模基础概念（MultiPoscar）</a>
+                                  </li>
+                                  <li class="toctree-l4"><a class="reference internal"
+                                      href="HighThroughputOverallProcess.html#id2">工作流实例基础概念</a></li>
+                                  <li class="toctree-l4"><a class="reference internal"
+                                      href="HighThroughputOverallProcess.html#id3">数据库配置及提交任务基础概念</a></li>
+                                  <li class="toctree-l4"><a class="reference internal"
+                                      href="HighThroughputOverallProcess.html#id4">数据分析实例</a></li>
+                                </ul>
+                              </li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="SpecificOperationExamplesOfHigh-throughputCalculationProcess.html">高通量计算流程具体操作实例</a>
+                              </li>
+                            </ul>
+                          </li>
                           <li class="toctree-l2"><a class="reference internal" href="DynamicMonteCarlo.html">动态蒙特卡洛</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DiffusionOfAtomsOnHoneycombGrids.html">蜂窝状格点上原子的扩散</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="StatisticsOnTheProbabilityOfDifferentGridPointsInComplexCompounds.html">复杂化合物中不同格点占据几率统计</a>
+                              </li>
+                            </ul>
                           </li>
                           <li class="toctree-l2"><a class="reference internal"
                               href="FirstPrinciplesCoupledWithThermodynamicsGibbs.html">第一性原理与热力学Gibbs耦合</a></li>
@@ -389,23 +408,233 @@
                       <li class="toctree-l1"><a class="reference internal" href="ControlDetails.html">控件介绍</a>
                         <ul>
                           <li class="toctree-l2"><a class="reference internal" href="ModelingControls.html">建模控件</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="ModelingControls.html#poscar">POSCAR控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="ModelingControls.html#builder">Builder控件</a>
+                                <ul>
+                                  <li class="toctree-l4"><a class="reference internal"
+                                      href="ModelingControls.html#find-grain-boundary">4.1.2.1 Find Grain
+                                      Boundary：查找晶界</a></li>
+                                  <li class="toctree-l4"><a class="reference internal"
+                                      href="ModelingControls.html#build-grain-boundary">Build Grain Boundary：构建晶界</a>
+                                  </li>
+                                  <li class="toctree-l4"><a class="reference internal"
+                                      href="ModelingControls.html#build-vacancy">Build vacancy：构建空位</a></li>
+                                  <li class="toctree-l4"><a class="reference internal"
+                                      href="ModelingControls.html#build-substitution">Build Substitution：构建置换原子</a></li>
+                                  <li class="toctree-l4"><a class="reference internal"
+                                      href="ModelingControls.html#build-interstitution">Build Interstitution：构建间隙原子</a>
+                                  </li>
+                                  <li class="toctree-l4"><a class="reference internal"
+                                      href="ModelingControls.html#build-doping">Build Doping：构建掺杂</a></li>
+                                  <li class="toctree-l4"><a class="reference internal"
+                                      href="ModelingControls.html#send-data">Send data：将建好的结构信息传递至下一控件</a></li>
+                                </ul>
+                              </li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="ModelingControls.html#multi-poscar">Multi POSCAR控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="ModelingControls.html#finder">Finder控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="ModelingControls.html#ht-preprocessor">HT Preprocessor控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="ModelingControls.html#data-table">Data Table控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="ModelingControls.html#file">File控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="ModelingControls.html#data-info">Data Info控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="ModelingControls.html#lda-1-2">LDA-1/2控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="ModelingControls.html#potcar">POTCAR控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal" href="ModelingControls.html#to-4">1
+                                  to 4控件</a></li>
+                            </ul>
                           </li>
                           <li class="toctree-l2"><a class="reference internal"
-                              href="VASPWorkflowControl.html">VASP工作流控件</a></li>
+                              href="VASPWorkflowControl.html">VASP工作流控件</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPWorkflowControl.html#vasp-aimd-wf">VASP AIMD WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPWorkflowControl.html#bandstructure-wf">Bandstructure WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPWorkflowControl.html#optimize-wf">Optimize WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPWorkflowControl.html#static-wf">Static WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPWorkflowControl.html#dos-wf">DOS WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPWorkflowControl.html#hse-bandstucture-wf">HSE_bandstucture WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPWorkflowControl.html#boltztrap-wf">Boltztrap WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPWorkflowControl.html#elastic-tensor-wf">Elastic-tensor WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPWorkflowControl.html#equation-state-wf">Equation_state WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPWorkflowControl.html#neb-wf">NEB WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPWorkflowControl.html#raman-wf">Raman WF控件</a></li>
+                            </ul>
+                          </li>
                           <li class="toctree-l2"><a class="reference internal" href="DatabaseControl.html">数据库控件</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DatabaseControl.html#database">Database控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DatabaseControl.html#manager">Manager控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DatabaseControl.html#jobs">Jobs控件</a></li>
+                            </ul>
                           </li>
                           <li class="toctree-l2"><a class="reference internal"
-                              href="DrawingAndAnalysisControls.html">画图与分析控件</a></li>
+                              href="DrawingAndAnalysisControls.html">画图与分析控件</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DrawingAndAnalysisControls.html#plotband">PlotBand控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DrawingAndAnalysisControls.html#viewer">viewer控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DrawingAndAnalysisControls.html#analyzer">Analyzer控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DrawingAndAnalysisControls.html#color">Color控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DrawingAndAnalysisControls.html#distributions">Distributions控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DrawingAndAnalysisControls.html#scatter-plot">Scatter Plot控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DrawingAndAnalysisControls.html#vaspplot">VaspPlot控件</a></li>
+                            </ul>
+                          </li>
                           <li class="toctree-l2"><a class="reference internal"
-                              href="potentialmindControls.html">potentialmind控件</a></li>
+                              href="potentialmindControls.html">potentialmind控件</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#poscar">POSCAR控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#relax">Relax控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#static">Static控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#datasets">Datasets控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#potential">Potential控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#train">Train控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#train-neural-network">Train Neural Network控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#predict">Predict控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#id1">potential控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#ase">ASE控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#aimd">AIMD控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#analyzer">Analyzer控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="potentialmindControls.html#outcar">OUTCAR控件</a></li>
+                            </ul>
+                          </li>
                           <li class="toctree-l2"><a class="reference internal"
-                              href="OpenPhaseControls.html">OpenPhase控件</a></li>
+                              href="OpenPhaseControls.html">OpenPhase控件</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="OpenPhaseControls.html#openphase-input">Openphase Input控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="OpenPhaseControls.html#get-oc-data">Get Oc Data 控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="OpenPhaseControls.html#opencalphd-plot">Opencalphd Plot 控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="OpenPhaseControls.html#openphase-plot">Openphase Plot 控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="OpenPhaseControls.html#animation-gif">Animation Gif控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="OpenPhaseControls.html#dendrite-gif">Dendrite Gif控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="OpenPhaseControls.html#normalgg-gif">NormalGG Gif控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="OpenPhaseControls.html#single-grainboundary-gif">Single GrainBoundary Gif控件</a>
+                              </li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="OpenPhaseControls.html#openphase-normalgrain-wf">Openphase NormalGrain WF控件</a>
+                              </li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="OpenPhaseControls.html#openphase-singlegrain-wf">Openphase SingleGrain WF控件</a>
+                              </li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="OpenPhaseControls.html#opencalphd-wf">Opencalphd WF控件</a></li>
+                            </ul>
+                          </li>
                           <li class="toctree-l2"><a class="reference internal" href="DynamicControls.html">Dynamic控件</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DynamicControls.html#get-kmc-data">Get Kmc Data控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DynamicControls.html#get-delta-e">Get delta E控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DynamicControls.html#lattice">Lattice控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DynamicControls.html#kmc-run-li-wf">Kmc Run Li WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DynamicControls.html#kmc-run-graphite-wf">Kmc Run Graphite WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="DynamicControls.html#kmc-plot">Kmc Plot控件</a></li>
+                            </ul>
                           </li>
                           <li class="toctree-l2"><a class="reference internal" href="GibbsControls.html">Gibbs控件</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="GibbsControls.html#get-data">Get data控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal" href="GibbsControls.html#get-ev">Get
+                                  EV控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="GibbsControls.html#run-bulkmodule">Run BulkModule控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="GibbsControls.html#gibbs-wf">Gibbs WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="GibbsControls.html#gibbs-analyze">Gibbs analyze控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="GibbsControls.html#volume-scale">Volume Scale控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal" href="GibbsControls.html#tc-input">Tc
+                                  Input控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal" href="GibbsControls.html#tc-wf">Tc
+                                  WF控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal" href="GibbsControls.html#tc-plot">Tc
+                                  Plot控件</a></li>
+                            </ul>
                           </li>
-                          <li class="toctree-l2"><a class="reference internal" href="JobsControls.html">Jobs控件</a></li>
+                          <li class="toctree-l2"><a class="reference internal" href="JobsControls.html">Jobs控件</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="JobsControls.html#work-state">Work State控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="JobsControls.html#delete-workflow">Delete Workflow 控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="JobsControls.html#work-priority">Work Priority 控件</a></li>
+                            </ul>
+                          </li>
                           <li class="toctree-l2"><a class="reference internal" href="LammpsControls.html">lammps控件</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="LammpsControls.html#lammps-relax-workflow">lammps relax workflow控件</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="LammpsControls.html#crack-workf">Crack workf控件（待开发）</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="LammpsControls.html#diffuse-workflow">diffuse workflow控件（待开发）</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="LammpsControls.html#elastic-workflow">Elastic workflow控件（待开发）</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="LammpsControls.html#flow-workflow">Flow workflow控件（待开发）</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="LammpsControls.html#lmp-neb-workflow">lmp_Neb workflow控件（待开发）</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="LammpsControls.html#shear-workflow">Shear workflow控件（待开发）</a></li>
+                            </ul>
                           </li>
                           <li class="toctree-l2"><a class="reference internal" href="QEControls.html">qe控件（待开发）</a></li>
                           <li class="toctree-l2"><a class="reference internal"
@@ -413,10 +642,24 @@
                           <li class="toctree-l2"><a class="reference internal"
                               href="CalypsoControls.html">calypso控件（待开发）</a></li>
                           <li class="toctree-l2"><a class="reference internal"
-                              href="VASPExtendControls.html">vaspextend控件（待开发）</a></li>
+                              href="VASPExtendControls.html">vaspextend控件（待开发）</a>
+                            <ul>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPExtendControls.html#test-vaspextend">Test VaspExtend控件（待开发）</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPExtendControls.html#baser">Baser控件（待开发）</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPExtendControls.html#lobster">Lobster控件（待开发）</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPExtendControls.html#rings">Rings控件（待开发）</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPExtendControls.html#strain">Strain控件（待开发）</a></li>
+                              <li class="toctree-l3"><a class="reference internal"
+                                  href="VASPExtendControls.html#pbetogw">PbeToGw控件（待开发）</a></li>
+                            </ul>
+                          </li>
                         </ul>
                       </li>
-                      
                       <li class="toctree-l1"><a class="reference internal" href="ConcludingRemarks.html">未来与展望</a></li>
                     </ul>
                   </div>
@@ -445,7 +688,7 @@
 
                 &copy; Copyright 2020, ALKEMIE Matter Studio Developers
                 <span class="lastupdated">
-                  Last updated on Fri, 25 Dec 2020 22:08:48.
+                  Last updated on Thu, 04 Mar 2021 16:09:07.
                 </span>
 
               </p>
@@ -469,18 +712,23 @@
   </div>
   <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
-      <span class="fa fa-book"> Manual</span>
-      Chinese
+      <span class="fa fa-book"> Documentation</span>
+      1.5.0
       <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">
       <dl>
-        <dt>Languages</dt>
+        <dt>Versions</dt>
 
-        <dd><a href="index_en.html">English</a></dd>
+        <dd><a href="https://gitee.com/alkemiems/dashboard/projects/alkemiems/alkemiems/tree/login">1.6.8
+            (development)</a></dd>
+
+        <dd><a href="https://gitee.com/alkemiems/dashboard/projects/alkemiems/alkemiems/tree/release">1.5.0 (latest
+            stable)</a></dd>
+
+        <!-- <dd><a href="index_en.html">English</a></dd>
         <br>
-        <dd><a href="index.html">Chinese</a></dd>
-
+        <dd><a href="index.html">Chinese</a></dd> -->
       </dl>
     </div>
   </div>

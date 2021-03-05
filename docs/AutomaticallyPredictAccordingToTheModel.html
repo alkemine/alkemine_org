@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
+
 <head>
   <meta charset="utf-8">
   
@@ -24,20 +25,21 @@
     <script src="static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
-        <script src="static/jquery.js"></script>
-        <script src="static/underscore.js"></script>
-        <script src="static/doctools.js"></script>
-        <script src="static/language_data.js"></script>
-    
-    <script type="text/javascript" src="static/js/theme.js"></script>
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="./"
+    src="static/documentation_options.js"></script>
+  <script src="static/jquery.js"></script>
+  <script src="static/underscore.js"></script>
+  <script src="static/doctools.js"></script>
+  <script src="static/language_data.js"></script>
+  
+  <script type="text/javascript" src="static/js/theme.js"></script>
 
-    
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="自动链接大规模分子动力学ASE进行模拟" href="AutomaticallyLinkLarge-scaleMolecularDynamicsASEforSimulation.html" />
-    <link rel="prev" title="自动训练模型" href="AutomaticTrainingModel.html" /> 
+  
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="自动链接大规模分子动力学ASE进行模拟" href="AutomaticallyLinkLarge-scaleMolecularDynamicsASEforSimulation.html" />
+  <link rel="prev" title="自动训练模型" href="AutomaticTrainingModel.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -51,18 +53,18 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> ALKEMIE Matter Studio
-          
+            <a href="index.html" class="icon icon-home" alt=" Documentation Home"> ALKEMIE Matter Studio
+              
 
-          
-          </a>
+              
+            </a>
 
-          
             
             
-          
+            
+            
 
-          
+            
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,18 +73,18 @@
   </form>
 </div>
 
-          
+            
         </div>
 
         
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">目录:</span></p>
+          
+          
+          
+          
+          
+          <p class="caption"><span class="caption-text">目录:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction.html">简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ApplyForTrial.html">申请试用</a></li>
@@ -124,11 +126,10 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ControlDetails.html">控件介绍</a></li>
-<li class="toctree-l1"><a class="reference internal" href="IntroductionToALKEMIEwebVersion.html">网页版数据库</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ConcludingRemarks.html">未来与展望</a></li>
 </ul>
 
-            
+          
           
         </div>
         
@@ -140,17 +141,17 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">ALKEMIE Matter Studio</a>
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ALKEMIE Matter Studio</a>
         
       </nav>
 
 
       <div class="wy-nav-content">
         
-        <div class="rst-content">
-        
-          <!DOCTYPE html>
+          <div class="rst-content">
+            
+            <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -175,24 +176,32 @@
         .caption {
             text-indent: 0em;
         }
+        /* 使顶部的中英文切换按钮右对齐 */
+        div.asetop {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
     
 </body>
 </html>
-    <!-- <div class=asetop>
-        <a href=genindex.html>index</a>
+    <div class=asetop>
+        <!-- <a href=genindex.html>index</a>
         | <a href=py-modindex.html>modules</a>
         | <a href=https://gitlab.com/ase/ase>gitlab</a>
         
         | <a href="https://gitlab.com/ase/ase/blob/master/doc/AutomaticallyPredictAccordingToTheModel.rst">page source</a>
+         -->
         
-    </div> -->
+        <!-- 在顶部添加中英文切换按钮 -->
+        <a href="./AutomaticallyPredictAccordingToTheModel.html">中文</a>
+        | <a href="./en/AutomaticallyPredictAccordingToTheModel_en.html">English</a>
+    </div>
     <br>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
   <div class="section" id="id1">
 <h1>自动根据模型预测<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>通过该控件来预测训练好的模型的精确度，或者用于展示改模型是否收敛，时候有利于后面的进一步研究，只有当模型精确度足够高才可以进行最后的大规模分子动力学模拟，并且进行相应的能量和力学性质的计算，因此，generate和train是一个循环往复，不断迭代的过程。精度达到与第一性原理相当的精度后即可进行ASE的大规模分子动力学模拟。</p>
@@ -201,10 +210,10 @@
 </div>
 
 
-           </div>
-           
-          </div>
-          <footer>
+              </div>
+              
+            </div>
+            <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
@@ -223,7 +232,7 @@
         
         &copy; Copyright 2020, ALKEMIE Matter Studio Developers
       <span class="lastupdated">
-        Last updated on Fri, 25 Dec 2020 21:46:52.
+        Last updated on Thu, 04 Mar 2021 13:11:53.
       </span>
 
     </p>
@@ -239,8 +248,8 @@
 
 </footer>
 
+          </div>
         </div>
-      </div>
 
     </section>
 
@@ -248,7 +257,7 @@
     <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       <span class="fa fa-book"> Documentation</span>
-      v: 1.5.0
+      1.5.0
       <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">
@@ -259,20 +268,24 @@
         
           <dd><a href="https://gitee.com/alkemiems/dashboard/projects/alkemiems/alkemiems/tree/release">1.5.0 (latest stable)</a></dd>
         
+        <!-- <dd><a href="index_en.html">English</a></dd>
+        <br>
+        <dd><a href="index.html">Chinese</a></dd> -->
       </dl>
     </div>
   </div>
 
   <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
+    jQuery(function () {
+      SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
 
   
   
-    
+  
    
 
 </body>
+
 </html>

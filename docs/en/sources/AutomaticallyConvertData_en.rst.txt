@@ -1,0 +1,12 @@
+Automatically Convert Data
+============================================
+
+ :mod:`Generate` is to convert the structural data in materials science into pure digital data that can be used for machine learning. The following figure shows the optional parameter configuration in the entire Generate process. The control is divided into two areas: the left is the parameter control area; the right is the information display area. First select the symmetric function file and structure file. Then configure the type of parameters to be fitted, the direction of the force to be fitted, the name of the output file and the number of parallel operations. Click generate to proceed to the next step.
+
+.. image:: image/3-94.png
+    :align: center
+    :width: 100
+
+.. image:: image/3-95.png
+    :align: center
+    :width: 500

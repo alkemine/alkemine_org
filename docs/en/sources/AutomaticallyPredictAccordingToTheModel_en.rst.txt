@@ -1,0 +1,12 @@
+Automatic Prediction Based on Model
+==============================================
+
+This control is used to predict the accuracy of the trained model, or to show whether the model converges, which is conducive to further research later. Only when the accuracy of the model is high enough can the final large-scale molecular dynamics simulation be carried out, and the corresponding energy and mechanical properties can be calculated. Therefore, generate and train are a cyclical and iterative process. After the accuracy reaches the accuracy equivalent to the first principles, the large-scale molecular dynamics simulation of ASE can be carried out.
+
+.. image:: image/3-98.png
+    :align: center
+    :width: 100
+
+.. image:: image/3-99.png
+    :align: center
+    :width: 500

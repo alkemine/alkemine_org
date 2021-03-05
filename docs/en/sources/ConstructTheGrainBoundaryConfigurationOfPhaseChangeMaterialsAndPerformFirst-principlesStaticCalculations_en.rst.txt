@@ -1,0 +1,16 @@
+Construct the grain boundary configuration of phase change materials and perform first-principles static calculations
+======================================================================================================================================
+
+Connect the controls from left to right; input the crystal structure through the POSCAR module, and build the grain boundary model through Build Grain Boundary in the Builder module.
+
+.. image:: image/3-38.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-40.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-43.png
+    :align: center
+    :width: 500

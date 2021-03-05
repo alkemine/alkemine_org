@@ -1,0 +1,14 @@
+Automatic Analysis of Energy Volume
+=========================================
+
+The :mod:`Analyzer` control is connected to the output interface of the :mod:`DataBase` to query the specified nature or all the properties, and all tasks are displayed according to the task ID on the right.
+
+.. image:: image/3-71.png
+    :align: center
+    :width: 400
+
+The :mod:`Analyzer` control can set the properties that need to be queried, such as energy, dos, bands, etc. Enter the Job ID in the :mod:`criteria` to specify the task, and no entry means to query all tasks. :mod:`Advanced Query` can specify any nature for query.
+
+.. image:: image/3-72.png
+    :align: center
+    :width: 500

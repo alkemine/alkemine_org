@@ -1,0 +1,41 @@
+Common Problems and Solutions
+=======================================
+
+1. Can not log in the ALKEMIE.
+
+**Solution**：Please contact the administrator to obtain a license and register an account.
+
+2. Unable to connect the remote database, and unable to submit tasks through remote server.
+
+**Solution**：Currently, the ALKEMIE server is only deployed on the Beihang campus server and the Guangzhou Supercomputing Tianhe server. The off-campus connection to the Beihang campus server can only be accessed through EasyConnect VPN. To connect to the Tianhe supercomputer server, you need to have VPN access through HillStone software and have the permission of the Tianhe computing account. If you cannot connect, please contact the administrator. If you want to build your own server environment, the process is relatively complicated, so please contact the administrator.
+
+3. Encountered the following error during pip install installation:
+
+.. image:: image/2-10.png
+    :align: center
+    :width: 500
+
+**Solution**：Please replace the pip mirror to Tsinghua source, because pip currently temporarily suspends support for the fastTSNE software package. For details, refer to step 3 in 2.2.
+
+4. The conda installation process encountered the following warning:
+
+.. image:: image/2-11.png
+    :align: center
+    :width: 500
+
+**Solution**：Add the conda path shown in the figure below to the environment variable.
+    .. image:: image/2-12.png
+        :align: center
+        :width: 500
+
+5. Cannot start ALKEMIE software after running Alkemiems-akpad.
+
+.. image:: image/2-13.png
+    :align: center
+    :width: 500
+
+**Solution**：If you encounter this problem, it is because the conda environment variable is incorrect, just add the conda environment variable again.
+
+6. Prompt that Visual Studio C++14 is missing during installation.
+
+**Solution**：Please install Visual Studio 2019 according to 2.3. After restarting, you can install the ALKEMIE software.

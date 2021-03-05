@@ -1,0 +1,456 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Dynamic Controls &mdash; ALKEMIE Matter Studio 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="./"
+    src="static/documentation_options.js"></script>
+  <script src="static/jquery.js"></script>
+  <script src="static/underscore.js"></script>
+  <script src="static/doctools.js"></script>
+  <script src="static/language_data.js"></script>
+  
+  <script type="text/javascript" src="static/js/theme.js"></script>
+
+  
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="Gibbs Controls" href="GibbsControls_en.html" />
+  <link rel="prev" title="OpenPhase Control" href="OpenPhaseControls_en.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index_en.html" class="icon icon-home" alt=" Documentation Home"> ALKEMIE Matter Studio
+              
+
+              
+            </a>
+
+            
+            
+            
+            
+
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+            
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <p class="caption"><span class="caption-text">index：</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIEIntroduction_en.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ApplyForTrial_en.html">Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview_en.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareInstallation_en.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples_en.html">High-throughput examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ControlDetails_en.html">Details of Widgets</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ModelingControls_en.html">Modeling Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VASPWorkflowControl_en.html">VASP Workflow Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DatabaseControl_en.html">Database Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DrawingAndAnalysisControls_en.html">Drawing And Analysis Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="potentialmindControls_en.html">potentialmind Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenPhaseControls_en.html">OpenPhase Control</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Dynamic Controls</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#get-kmc-data-controls">Get Kmc Data Controls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-delta-e-controls">Get delta E Controls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lattice-controls">Lattice Controls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kmc-run-li-wf-controls">Kmc Run Li WF Controls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kmc-run-graphite-wf-controls">Kmc Run Graphite WF Controls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kmc-plot-controls">Kmc Plot Controls</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="GibbsControls_en.html">Gibbs Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JobsControls_en.html">Jobs Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LammpsControls_en.html">lammps controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QEControls_en.html">qe Control（To be developed）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AbinitControls_en.html">abinit control（To be developed）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CalypsoControls_en.html">calypso control(to be developed)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VASPExtendControls_en.html">Vaspextend control (to be developed)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ConcludingRemarks_en.html">Furture</a></li>
+</ul>
+
+          
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index_en.html">ALKEMIE Matter Studio</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALKEMIE</title>
+    <style>
+        thead tr th,
+        tbody {
+            text-align: center;
+        }
+        table {
+            margin: 0px auto;
+        }
+        p {
+            line-height: 36px;
+            text-indent: 2em;
+            text-align: justify;
+        }
+        li p,
+        .admonition-title {
+            text-indent: 0em;
+        }
+        .caption {
+            text-indent: 0em;
+        }
+        /* 使顶部的中英文切换按钮右对齐 */
+        div.asetop {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+    <div class=asetop>
+        <!-- <a href=genindex.html>index</a>
+        | <a href=py-modindex.html>modules</a>
+        | <a href=https://gitlab.com/ase/ase>gitlab</a>
+        
+        | <a href="https://gitlab.com/ase/ase/blob/master/doc/DynamicControls_en.rst">page source</a>
+         -->
+
+        <!-- 在顶部添加中英文切换按钮 -->
+        <a href="../DynamicControls.html">中文</a>
+        | <a href="./DynamicControls_en.html">English</a>
+    </div>
+    <br>
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="dynamic-controls">
+<h1>Dynamic Controls<a class="headerlink" href="#dynamic-controls" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="get-kmc-data-controls">
+<h2>Get Kmc Data Controls<a class="headerlink" href="#get-kmc-data-controls" title="Permalink to this headline">¶</a></h2>
+<p>Used to compute data from the database in Monte Carlo</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Database</p></td>
+<td><p>Data</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Parameter Configuration</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jobs_id</span>                                       <span class="n">Input</span> <span class="n">jobs_id</span>
+
+<span class="n">Get</span> <span class="n">Data</span>                                      <span class="n">Get</span> <span class="n">the</span> <span class="n">corresponding</span> <span class="n">data</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">database</span> <span class="ow">and</span> <span class="k">pass</span> <span class="n">it</span> <span class="n">down</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-168.png"><img alt="images/3-168.png" class="align-center" src="images/3-168.png" style="width: 400px;" /></a>
+</div>
+<div class="section" id="get-delta-e-controls">
+<h2>Get delta E Controls<a class="headerlink" href="#get-delta-e-controls" title="Permalink to this headline">¶</a></h2>
+<p>Used to get deltaE data from the datacase</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Database</p></td>
+<td><p>Data E</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Parameter Configuration</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jobs_id</span>                                       <span class="n">Input</span> <span class="n">jobs_id</span>
+
+<span class="n">Get</span> <span class="n">delta</span> <span class="n">E</span>                                   <span class="n">Get</span> <span class="n">the</span> <span class="n">corresponding</span> <span class="n">data</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">database</span> <span class="ow">and</span> <span class="k">pass</span> <span class="n">it</span> <span class="n">down</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-169.png"><img alt="images/3-169.png" class="align-center" src="images/3-169.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="lattice-controls">
+<h2>Lattice Controls<a class="headerlink" href="#lattice-controls" title="Permalink to this headline">¶</a></h2>
+<p>Used to get lattice constant information from local files for multi-deficiency Monte Carlo calculations</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>None</p></td>
+<td><p>Lattice</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Parameter Configuration</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">File</span> <span class="n">path</span>                                     <span class="n">The</span> <span class="n">file</span> <span class="n">path</span>
+
+<span class="n">Apply</span> <span class="n">automatically</span>                           <span class="n">Read</span> <span class="n">the</span> <span class="n">file</span> <span class="n">information</span> <span class="n">automatically</span> <span class="ow">and</span> <span class="k">pass</span> <span class="n">data</span> <span class="n">down</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-170.png"><img alt="images/3-170.png" class="align-center" src="images/3-170.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="kmc-run-li-wf-controls">
+<h2>Kmc Run Li WF Controls<a class="headerlink" href="#kmc-run-li-wf-controls" title="Permalink to this headline">¶</a></h2>
+<p>Used to configure workflow parameters for different lattice occupancy probability statistics in Monte Carlo complex compounds and run the calculation</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 28%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="2"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Data E</p></td>
+<td><p>Lattice</p></td>
+<td><p>Workflow List</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Parameter Configuration</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Site</span><span class="o">-</span><span class="n">energy</span> <span class="n">Diff</span>                              <span class="n">Site</span><span class="o">-</span><span class="n">energy</span> <span class="n">difference</span>
+
+<span class="n">Temperature</span>                                   <span class="n">Temperature</span><span class="p">(</span><span class="n">K</span><span class="p">)</span>
+
+<span class="n">Diffusive</span> <span class="n">Atoms</span>                               <span class="n">Diffusive</span> <span class="n">atoms</span>
+
+<span class="n">Barrier</span>                                       <span class="n">Resistance</span>
+
+<span class="n">Lattice</span>                                       <span class="n">Lattice</span> <span class="n">constant</span>
+
+<span class="n">Run</span>                                           <span class="n">Run</span> <span class="n">calculations</span><span class="p">,</span> <span class="n">data</span> <span class="n">results</span>
+
+<span class="n">Samples</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-171.png"><img alt="images/3-171.png" class="align-center" src="images/3-171.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="kmc-run-graphite-wf-controls">
+<h2>Kmc Run Graphite WF Controls<a class="headerlink" href="#kmc-run-graphite-wf-controls" title="Permalink to this headline">¶</a></h2>
+<p>Used to configure workflow parameters for the diffusion of vacancies in a Monte Carlo honeycomb material and run the calculation</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 55%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Data E</p></td>
+<td><p>Workflow List</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Parameter Configuration</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Site</span><span class="o">-</span><span class="n">energy</span> <span class="n">Diff</span>                              <span class="n">Site</span><span class="o">-</span><span class="n">energy</span> <span class="n">difference</span>
+
+<span class="n">Temperature</span>                                   <span class="n">Temperature</span><span class="p">(</span><span class="n">K</span><span class="p">)</span>
+
+<span class="n">Diffusive</span> <span class="n">Atoms</span>                               <span class="n">Diffusive</span> <span class="n">atoms</span>
+
+<span class="n">Barrier</span>                                       <span class="n">Resistance</span>
+
+<span class="n">Samples</span>
+
+<span class="n">Run</span>                                           <span class="n">Run</span> <span class="n">calculations</span><span class="p">,</span> <span class="n">data</span> <span class="n">results</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/3-172.png"><img alt="images/3-172.png" class="align-center" src="images/3-172.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="kmc-plot-controls">
+<h2>Kmc Plot Controls<a class="headerlink" href="#kmc-plot-controls" title="Permalink to this headline">¶</a></h2>
+<p>Used to draw Monte Carlo data images</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 55%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Input</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Data E</p></td>
+<td><p>Workflow List</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>No Parameter</strong></p>
+<a class="reference internal image-reference" href="images/3-173.png"><img alt="images/3-173.png" class="align-center" src="images/3-173.png" style="width: 500px;" /></a>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+            <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="GibbsControls_en.html" class="btn btn-neutral float-right" title="Gibbs Controls" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="OpenPhaseControls_en.html" class="btn btn-neutral float-left" title="OpenPhase Control" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Zefeng Li, Guanjie Wang
+      <span class="lastupdated">
+        Last updated on Thu, 04 Mar 2021 16:04:22.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+          </div>
+        </div>
+
+    </section>
+
+  </div>
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Documentation</span>
+      1.5.0
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+          <dd><a href="https://gitee.com/alkemiems/dashboard/projects/alkemiems/alkemiems/tree/login">1.6.8 (development)</a></dd>
+        
+          <dd><a href="https://gitee.com/alkemiems/dashboard/projects/alkemiems/alkemiems/tree/release">1.5.0 (latest stable)</a></dd>
+        
+        <!-- <dd><a href="index_en.html">English</a></dd>
+        <br>
+        <dd><a href="index.html">Chinese</a></dd> -->
+      </dl>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    jQuery(function () {
+      SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+  
+   
+
+</body>
+
+</html>

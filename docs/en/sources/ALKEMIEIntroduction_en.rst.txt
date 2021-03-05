@@ -1,0 +1,83 @@
+Introduction
+================
+
+When the relationship between the chemical composition and performance of the material is unknown, new materials with special functions are often discovered after a long period of trial and error correction. However, with the rapid development of computing power and technology, traditional concepts are changing. In order to accelerate the research and development of new materials, by combining first-principles databases, data mining and machine learning technologies, the development of high-throughput automatic process material integration calculation algorithms and software becomes crucial. At present, the commonly used high-throughput computing process frameworks (Materials Project, Aflow, etc.) are basically dominated by foreign research groups and the installation "costs" are relatively high. With the concept of material genome, we has developed a set of simple and easy to understand Integrated algorithms and software for high-throughput automatic processes.
+
+ALKEMIE (Artificial Learning and Knowledge Enhanced Materials Informatics Engineering) is a high-throughput automatic process calculation software with multi-scale integration. Led by the team of Professor Sun Zhimei from Beijing University of Aeronautics and Astronautics, it was developed from scratch based on the python open source framework. The software includes two versions of stand-alone version (full function) and web version (database function). Users can download the stand-alone full version after registering on the web page.
+
+Characteristics
+---------------------
+
+* **A wide range of users**：Provide reliable default parameter configuration for novice users, and also suitable for advanced users to customize settings.
+
+* **Big data of materials**：More than 180,000 pieces of material structure data; convenient for query; with high-throughput calculation interface.
+
+* **High-throughput automatic modeling**：Automatically construct structures such as grain boundaries, doping, vacancies, and heterojunctions.
+
+* **Diversified and process-oriented computing workflow**：The software supports VASP and LAMMPS high-throughput workflow, and the workflow will show the internal calculation details in a flowchart.
+
+* **Machine learning cross-scale potential function**：First principles are seamlessly integrated with large-scale molecular dynamics, and deep learning neural networks are used to fit potential functions and run large-scale molecular dynamics simulations.
+
+* **Multi-scale simulation**：Thermodynamics (Gibbs, Curie temperature, body modulus) simulation; dynamic Monte Carlo (KMC) simulation; phase diagram and phase field (Openphase, Opencalphd) simulation.
+
+* **Autonomous algorithm**：Body modulus fitting based on chaotic polynomial method (gPC); electronic structure high-efficiency and high-precision algorithm LDA-1/2; machine learning Potentialmind algorithm.
+
+* **High-throughput automatic data analysis**：Automatically draw material property maps (Bands, DOS, etc.); automatically perform statistical analysis on high-throughput tasks.
+
+Function
+---------------------
+
+* **High-throughput**：ALKEMIE can manage a single user's high-throughput computing tasks over 10000 orders of magnitude.
+
+* **Automation**：ALKEMIE's high-throughput workflow runs automatically from modeling, calculation to data analysis without manual intervention. The running process can use default parameters or user-defined parameters.
+
+* **Visualization**：ALKEMIE designed a user-friendly visual interface based on QT, which makes the high-throughput internal work flow and data transmission method more transparent, more convenient to operate, and convenient for users with different material knowledge backgrounds.
+
+* **Workflow**：ALKEMIE has developed and designed a scientific workflow suitable for a variety of computing software, liberating users from tedious and even difficult calculation processes, and greatly improving calculation and work efficiency.
+
+* **Database**：ALKEMIE has constructed various types of material databases, including material structure databases, workflow databases, material properties databases, file databases, and structural descriptor databases suitable for machine learning.
+
+* **Machine learning**：ALKEMIE has developed models suitable for material structure energy prediction, atomic force prediction and band gap prediction based on a variety of general machine learning tools such as scikit-learn, PyTorch and TensorFlow, and has customized a unified bottom layer for the further development and application of the model.
+
+* **Plug-in mode**：The platform supports the integration of multi-scale and different function calculation modules in plug-in mode. At present, multiple calculation software of different scales have been added, including first-principles calculation software VASP, OpenMX, molecular dynamics software Lammps, ASE, thermodynamic calculation software Gibbs, OpenCalphd and phase field calculation software OpenPhase, etc. Part of the software only provides calculation example functions, which will be further improved in the future.
+
+* **Portable**：Multiple operating systems such as Windows, Linux, and Mac OS.
+
+* **Scalable**：ALKEMIE supports calculations such as VASP and LAMMPS, and the interface is easy to expand.
+
+* **Across scales**：ALKEMIE integrates first-principles calculations (VASP), molecular dynamics simulation (LAMMPS), thermodynamic calculations (GIBBS2), dynamic Monte Carlo simulation (kinetic_mc) and mesoscopic phase field simulation (Openphase) related software, which can realize a single Scale and cross-scale calculation functions.
+
+
+
+.. important:: ALKEMIE released version 1.0 in April 2019. The latest version is ALKEMIE-1.5. The software is currently under continuous development. The software performance and extended functions will be further improved in the future.
+
+Scope of Application
+--------------------------
+
+* Suitable for beginners who have a preliminary understanding of first-principles knowledge and need practical application
+* Suitable for professional researchers who are proficient in first-principles knowledge and need to study the properties of materials
+* Suitable for experimenters who need to combine calculations to provide theoretical explanations for experimental phenomena
+* Suitable for researchers who need to perform high-throughput screening and calculations of multiple materials and multiple structures
+* Suitable for other personnel who need material calculation simulation
+
+
+developers
+-------------------------------
+
+guanjie wang, liyu peng, kaiqi li, yingxing cheng, hao wu
+
+User Document Writer
+-----------------------------
+
+**teacher**：zhimei sun, jian zhou, peng wang, linggang zhu, naihua miao
+
+**student**：guanjie wang, kaiqi li, zefeng li, jie li, jingjing cui, liyu peng, yatian zhang, jiatian chen
+
+**translation**：zefeng li, zhen yang, xuanguang zhang, tong zhao, ya gao, miaoqi guo
+
+Contact person
+---------------------------
+
+zhimei sun：zmsun@buaa.edu.cn
+
+guanjie wang：gjwang@buaa.edu.cn

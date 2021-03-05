@@ -1,0 +1,70 @@
+.. centered:: Hello! We are part of the ALKEMIE research group. This user license agreement is made by us and is used to explain the behaviors that you are allowed / prohibited to do when using alkemis. Please read the following full text carefully before installing or using alkemis, because it is very important and legally binding.
+
+
+.. centered:: ALKEMIE
+
+.. centered:: 《End user license agreement》
+
+1. **Confirmation and acceptance of terms of service**
+
+This clause is a clause between the user and the development team of ALKEMIE regarding the user's use of ALKEMIE software and related services, including the text of the clause and various rules that have been published or may be published / updated in the future. All rules are an integral part of this clause and have the same legal effect as the text of the clause. Unless otherwise expressly stated, the user's use of the ALKEMIE software or services will be subject to these terms.。
+
+If this clause needs to be revised due to the development of ALKEMIE, the development team will publish it on the official website of ALKEMIE. Users can go to the latest version of the agreement. After the development team modifies the above terms, if the user does not accept the modified terms, the user can choose to terminate the use of ALKEMIE software or services. If the user continues to use it, it will be deemed that he has accepted the revised terms.
+
+2. **Introduction to ALKEMIE**
+
+ALKEMIE（Artificial Learning and Knowledge Enhanced Materials Informatics Engineering）It is a high-throughput automatic process computing software with multi-scale integration function. Led by Professor Sun Zhimei of Beijing University of Aeronautics and Astronautics, it is a set of completely independent high-throughput automatic process computing software based on Python open source framework. The software includes two versions: stand-alone version (full function) and web page version (database function). Users can download the stand-alone full version after registering on the web page.
+
+3. **About account number**
+
+At present, the combination of invitation registration and manual audit is the only basis for ALKEMIE to confirm the user's identity. The user shall maintain the confidentiality and security of the account and password, be responsible for all activities and behaviors of the account, and prohibit giving, borrowing, renting and transferring. If the user does not take good care of his account and password and causes damage to the user, ALKEMIE or a third party, the user will be fully responsible. The user agrees that if any illegal use of user account or security vulnerability is found, it is obliged to inform the ALKEMIE development team immediately.
+
+If the user violates laws and regulations or does not comply with the provisions of this article when registering and using the ALKEMIE account, ALKEMIE has the right not to register; if the user has registered, ALKEMIE has the right to unilaterally take measures such as correction within a time limit, short-term ban, permanent ban, cancellation, account withdrawal, etc. without notifying the user, and has the right to report to the competent government department. 
+
+This License Agreement shall survive its termination. At any time, you may decide to stop using the ALKEMIE account completely, and the license agreement will be terminated unconditionally. If you want us to delete your account information, please contact our team. In case of serious breach of this agreement, we reserve the right to suspend or cancel your access to alkemis and use our services and alkemis content.
+
+4. **Change or termination of services**
+
+The ALKEMIE development team is always improving the software and related services. The development team may choose to suspend, interrupt and terminate part or all of the services of ALKEMIE according to its own decision, government action, force majeure and other reasons. In case of such situation, the ALKEMIE development team will notify the user in the form of announcement, but will not bear any loss caused to the user. When we want to repair or update ALKEMIE (for example, add or remove some functions, or solve software error problems), we need such rights to ensure the efficient operation of ALKEMIE.
+
+5. **Ownership**
+
+ALKEMIE, including (but not limited to) its graphics, computer code, user interface, text, design layout, database, data and all other contents, as well as all relevant legal and development rights, are owned by us or authorized by a third party. We reserve all rights except as stated in this agreement. No part of ALKEMIE may be used or utilized unless otherwise explained in the agreement.
+
+Other contents provided by ALKEMIE shall be owned by their respective owners.
+
+In case of any violation of this agreement, the rights of the third party's Library and technology used by ALKEMIE may be protected accordingly.
+
+6. **Limitation of liability (disclaimer)**
+
+Users shall make their own judgment on the content produced by ALKEMIE by other users, and bear all legal liabilities for themselves, others and the society caused by the use of the content, including but not limited to the risks arising from the reliance on the accuracy, authenticity, integrity or practicability of the content.
+
+Under no circumstances shall the ALKEMIE development team be liable for any indirect, consequential, punitive, accidental, special or punitive damages.
+
+In order to ensure the security of software and services and the consistency of software functions, the ALKEMIE development team will update the ALKEMIE software. The user should update the software to the latest version. If the user does not update to the latest version in time, the ALKEMIE development team does not guarantee that the user can use the ALKEMIE service normally.
+
+7. **Prohibition of commercialization of services**
+
+ALKEMIE is open source software, users promise not to spread the source code maliciously without permission for non academic activities. It is not allowed to use ALKEMIE for sales or other commercial purposes without the permission of the development team.
+
+8. **Force majeure**
+
+In the process of using this service, we may encounter force majeure and other factors (force majeure refers to unforeseeable, insurmountable and unavoidable objective events), including but not limited to government actions, natural disasters, network reasons, hacker attacks or any other similar events. In case of force majeure, ALKEMIE research group will try to repair it in time as soon as possible, but the research group will not be responsible for the loss caused to users due to force majeure.
+
+9. **Information storage and related intellectual property rights**
+
+ALKEMIE will try its best to maintain the security and convenience of all services on the software, but will not bear any responsibility for the information deletion or storage failure in the service. In addition, ALKEMIE has the right to determine whether the user's behavior meets the requirements of the terms of service. If the user violates the provisions of the terms of service, ALKEMIE has the right to suspend or terminate the service of its ALKEMIE account.
+
+ALKEMIE respects intellectual property rights and focuses on protecting the rights of users. In the use of various services of alkemis, users may need to provide content to alkemis by uploading, publishing and other means. In this case, users still enjoy the complete intellectual property rights of these content.
+
+10. **Law**
+
+This article shall be governed by the laws of the people's Republic of China and shall exclude the application of all conflict of laws. In case of any dispute, the user and ALKEMIE agree to submit the dispute to the people's court with jurisdiction in the place where this agreement is signed for acceptance. This agreement is signed in Haidian District, Beijing. In case of any conflict between the single terms and the terms of service, the single terms shall prevail within the scope of the single terms.
+
+11. **Others**
+
+Failure to exercise, fail to exercise or fail to fully exercise the rights in this article or in accordance with the provisions of the law shall not be deemed as a waiver of such rights, nor shall it affect the future exercise of such rights by ALKEMIE. If any provision in these terms is invalid or unenforceable in whole or in part for any reason, the rest of the terms of service shall remain valid and binding, and both ALKEMIE and the user shall try their best to realize the original intention of the terms.
+
+.. centered:: You confirm that you have read and understood the contents of this agreement, privacy policy and our user agreement, and your installation or use of ALKEMIE is deemed to agree to and accept the above contents.
+
+:download:`User agreement <Agreement.pdf>`

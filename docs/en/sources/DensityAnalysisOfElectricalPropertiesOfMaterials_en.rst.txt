@@ -1,0 +1,20 @@
+Density analysis of electrical properties of materials
+=============================================================
+
+'VaspPlot' displays 'Dos' query results in 'Analyzer' in the form of scatter plots. Multi-task display is possible.
+
+.. image:: image/3-79.png
+    :align: center
+    :width: 500
+
+First query the dos in the Analyzer control, and then specify the task ID in the criteria. No input means to query all.
+
+.. image:: image/3-80.png
+    :align: center
+    :width: 500
+
+After querying, select the type 'Dos' in 'VaspPlot' and click 'Plotting' to plot all the results.
+
+.. image:: image/3-81.png
+    :align: center
+    :width: 500

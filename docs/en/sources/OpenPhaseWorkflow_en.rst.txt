@@ -1,0 +1,24 @@
+OpenPhase Workflow
+============================
+
+Through: Mod:'openphase'workflow calculation, the data results are displayed in the form of dynamic pictures.
+
+* First, manually connect the controls, or click: Mod: ` file ',: Mod: ` open and freeze', then click to open the corresponding sample template file and click the start button, as shown in the figure:
+
+.. image:: image/3-85.png
+    :align: center
+    :width: 500
+
+* Step 2: Click: Mod:'openphase input ', input corresponding parameters, and click: Mod:'run', as shown in the figure:
+
+.. image:: image/3-86.png
+    :align: center
+    :width: 500
+
+* Step 3: after the task calculation, click: Mod: ` get VTK '. At present, the default VTK type is: Mod: ` phasefield'. Select the dynamic type, such as interfaces, then enter jobs_ID, click: Mod: 'get data' to get the data, as shown in the figure:
+
+* Step 4: Click: Mod: ` openphase plot ', click: Mod: ` openphase plot' button to draw, click the picture to view the moving picture, as shown in the figure:
+
+.. image:: image/3-87.png
+    :align: center
+    :width: 500

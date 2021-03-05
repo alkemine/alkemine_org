@@ -1,0 +1,37 @@
+Install ALKEMIE software
+==================================
+
+1. **First, copy the entire Alkemiems-1.5.tar.gz installation package folder to a custom path. Note that the path cannot contain Chinese characters, spaces and other non-ASCII characters.**
+
+2. **Runing cmd and changing the directory to the path where the installation package is saved.**
+
+3. **Activating the python environment just installed through conda（activate env_name）**
+
+.. image:: image/2-6.png
+    :align: center
+    :width: 500
+
+4. **Entering pip install Alkemiems-1.5.tar.gz to run. (Take the folder D:\software where the Alkemiems-1.5.ar.gz installation package is located as an example to run the following), dispalying successful means that the installation is successful.**
+
+.. image:: image/2-7.png
+    :align: center
+    :width: 500
+
+::
+
+    >>>ERROR: Could not find a version that satisfies the requirement fastTSNE>=0.2.12 (from alkemiems)
+    >>>ERROR: No matching distribution found for fastTSNE>=0.2.12
+
+.. warning::
+
+    If the above error occurs, you need to configure Tsinghua source mirroring!
+
+5. **Adding the configuration file and put the configuration file .aklicense file in the user root directory. Running Alkemiems-akpad through cmd to start the software. The following is the software startup, login, welcome and main interface.**
+
+.. warning::
+
+    Be sure to start in the corresponding python environment! ! !
+
+.. image:: image/2-8.png
+    :align: center
+    :width: 500

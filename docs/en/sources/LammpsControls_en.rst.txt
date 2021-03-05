@@ -1,0 +1,93 @@
+lammps controls
+========================
+
+lammps relax workflow controls
+-----------------------------------------
+
+Be used for lammps relax workflow。
+
+.. _parameters:
+
++-----------------------------------------------------------+--------------------------+
+|                           Input                           |          Output          |
++===========+=============+=======+========+=========+======+==========+===============+
+| Structure | POSCAR file | INCAR | POTCAR | KPOINTS | Data | Workflow | Workflow List |
++-----------+-------------+-------+--------+---------+------+----------+---------------+
+
+**Parameter Configuration**::
+
+    VASP_CMD                                        VASP commands that can be executed by remote computer
+
+    DB_FILE                                         Database configuration file
+
+    USERINCARSETTINGS                               INCAR parameters defined by users will override the default values
+
+    ADDWFMETADATA                                   Whether the metadata related to wf (structure information, etc.) is recorded
+
+    ADD_NAMEFILE                                    If it is True: an empty fw.name file will be written at the beginning of each task, which will make it easy for you to identify which directory the task is in
+
+    SCRATCH_DIR                                     Search the path of the previous calculation result, default the current directory
+
+    GAMMAVASPCMD                                    The path of gammavaspcmd which supports the detection of environment variables env_chk
+
+    SMALLGAPKPOINTMULTIPLY                          Whether static calculations and amorphous self-consistent calculations use small K-point calculations
+
+    STABILITY_CHECK                                 Whether to check the stability of the structure after the structure is optimized
+
+    RELAXMAXFORCE                                   The criterion of relaxation convergence 
+
+    REMOVE_WAVECAR                                  True means to remove the wavecar. It is not removed by default
+
+    Auto-Run                                        When checked, the workflow can be run automatically, and if unchecked, you can manually click "Run Workflow" to run, and it is checked by default
+
+.. image:: image/3-186.png
+    :align: center
+    :width: 200
+
+
+Crack workf controls（To be developed）
+----------------------------------------
+
+Be used for Crack workf。
+
+**Parameter Configuration**: :ref:`see this! <parameters>`
+
+
+diffuse workflow controls（To be developed）
+----------------------------------------------
+
+Be used for diffuse workflow。
+
+**Parameter Configuration**: :ref:`see this! <parameters>`
+
+
+Elastic workflow controls（To be developed）
+-------------------------------------------------
+
+Be used for Elastic workflow。
+
+**Parameter Configuration**: :ref:`see this! <parameters>`
+
+
+Flow workflow controls（To be developed）
+-------------------------------------------
+
+Be used for Flow workflow。
+
+**Parameter Configuration**: :ref:`see this! <parameters>`
+
+
+lmp_Neb workflow controls（To be developed）
+------------------------------------------------
+
+Be used for lmp_Neb workflow。
+
+**Parameter Configuration**: :ref:`see this! <parameters>`
+
+
+Shear workflow controls（To be developed）
+----------------------------------------------
+
+Be used for Shear workflow。
+
+**Parameter Configuration**: :ref:`see this! <parameters>`

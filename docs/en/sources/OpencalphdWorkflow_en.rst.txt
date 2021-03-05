@@ -1,0 +1,35 @@
+Opencalphd Workflow
+==============================
+
+By :mod:`Opencalphd` workflow calculation, the phase diagram data results are obtained.
+
+* Step 1, manually connect the controls, or click :mod:`File`, :mod:`Open and Freeze`. Click to open the corresponding sample template file and click the start button, as shown in the figure:
+  The first part is the static computation workflow, and the second part is the OpenCalphd workflow.
+
+.. image:: image/3-89.png
+    :align: center
+    :width: 500
+
+* Step 2, click :mod:`1 to 4` control to open the cif format file, and four different structure information will be automatically generated, as shown in the figure:
+
+.. image:: image/3-90.png
+    :align: center
+    :width: 500
+
+* Step 3, submit the task in :mod:`Jobs` . Wait for the task to finish, and proceed to the next part of the calculation;
+
+* Step 4, click :mod:`Get EV` to get energy E, as shown in the figure:
+
+* Step 5, after :mod:`Opencalphd` workflow configuration is completed, submit the task :mod:`Jobs（1）` and wait for the task to finish;
+
+* Step 6, click :mod:`Get Oc Data` . Choose the data type and input the jobs_id. Click :mod:`Get Data` to get data, as shown in the figure:
+
+.. image:: image/3-91.png
+    :align: center
+    :width: 500
+
+* Step 7, click Opencalphd Plot to draw the image, as shown in the figure:
+
+.. image:: image/3-93.png
+    :align: center
+    :width: 500

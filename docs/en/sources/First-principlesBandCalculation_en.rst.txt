@@ -1,0 +1,16 @@
+First-principles Band Calculation
+==============================================
+
+Connect controls from left to right, :mod:`Bandstructure WF` calculates the energy band, including structural optimization, static self-consistent and non-static self-consistent.
+
+.. image:: image/3-49.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-54.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-50.png
+    :align: center
+    :width: 500

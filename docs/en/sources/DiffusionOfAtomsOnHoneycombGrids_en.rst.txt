@@ -1,0 +1,43 @@
+Diffusion of atoms on honeycomb grids
+=================================================
+
+In this example, the potential barrier for the diffusion of vacancies is calculated based on the first principles, and the mesoscopic Monte Carlo simulation is performed to obtain the diffusion coefficient of atoms. After completing the first-principles NEB calculation, link to 'Kmc Run' to perform the calculation, and finally draw the graph through 'Kmc Plot'. The complete flow chart is as follows:
+
+.. image:: image/3-13.png
+    :align: center
+    :width: 500
+
++ Step 1: Connect the controls manually, or click 'File' and 'Open and Freeze'. Open the corresponding sample template file and click the start button, as shown in the figure:
+
+.. image:: image/3-13.png
+    :align: center
+    :width: 500
+
++ Step 2: Select the structure; click MultiPOSCAR; select the end point structure of vacancy diffusion; click POSCAR to select the most primitive structure (Parent Structure).
+
+.. image:: image/3-14.png
+    :align: center
+    :width: 500
+
++ Step 3: Click the 'Start' button in the lower left corner to run the neb calculation workflow.
+
++ Step 4: Click 'Run jobs' in the Jobs module to submit the job, then click 'Jobs' to view the record job number.
+
++ Step 5: Click 'Get_delta_E', and enter jobs_id to get the energy barrier, as shown in the figure:
+    
++ Step 6: Click Run honeycomb lattice Kmc WF to configure the parameters, as shown in the figure:
+
+.. image:: image/3-15.png
+    :align: center
+    :width: 500
+
+
++ Step 7: Submit the task in Jobs (1) and wait for the calculation to end.
+
++ Step 8: Click 'Get Kmc Data' and enter jobs_id to transfer data to 'Kmc Plot', as shown in the figure:
+
++ Step 9: Click 'Kmc Plot' to draw the image, as shown in the figure:
+
+.. image:: image/3-17.png
+    :align: center
+    :width: 500

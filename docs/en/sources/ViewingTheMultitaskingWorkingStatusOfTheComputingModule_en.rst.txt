@@ -1,0 +1,15 @@
+Viewing the multitasking working status of the computing module
+=========================================================================
+
+:mod:`Work State` allows you to view information such as the number, ID, and status of the submitted tasks. The input interface is :mod:`Manager` control.
+
+.. image:: image/3-65.png
+    :align: center
+    :width: 400
+
+.. image:: image/3-66.png
+    :align: center
+    :width: 500
+
+The left side of the :mod:`Work State` control displays each submitted workflow, including task name, task status, task ID, subtask (Fireworks), etc. 
+The figure on the right represents the elapsed time since the task was created, the figure below shows the number of states corresponding to the workflow and subtasks.

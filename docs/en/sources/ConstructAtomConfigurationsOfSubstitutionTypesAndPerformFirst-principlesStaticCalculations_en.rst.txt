@@ -1,0 +1,16 @@
+Construct atom configurations of substitution types and perform first-principles static calculations
+===============================================================================================================
+
+Connect the controls from left to right; input the crystal structure through the 'POSCAR' module, and build the gap doping model through the 'Build Substitution' in the 'Builder' module.
+
+.. image:: image/3-38.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-40.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-44.png
+    :align: center
+    :width: 500

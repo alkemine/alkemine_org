@@ -1,0 +1,12 @@
+Automatic Format Display Of Energy, Volume, Band Gap
+============================================================
+
+ :mod:`Data Table` in the form of a table displays the query results in :mod:`Analyzer` that can display multiple tasks at the same time.
+
+.. image:: image/3-73.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-74.png
+    :align: center
+    :width: 500

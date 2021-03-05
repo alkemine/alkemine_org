@@ -1,0 +1,22 @@
+Curie temperature calculation
+===================================
+
+Curie temperature calculation. First, configure the workflow parameters in Tc Input. After the workflow calculation is completed, the required data can be obtained from the 'Mananger' output interface; 'Get Data' to obtain the data, and 'Tc Plot' to draw the image.
+
+* Step 1: Connect the controls manually. Or click 'File', 'Open and Freeze', and click to open the corresponding sample template file and click the start button. as shown in the figure:
+
+.. image:: image/3-34.png
+    :align: center
+    :width: 500
+
+* Step 2: Click 'Tc Input' and enter the parameters, as shown in the figure:
+
+* Step 3: Submit the task in 'Jobs', and then wait for the task to end. You can view the task status in the Work Stat control;
+
+* Step 4: After the task is calculated, click Get Data and select the parameter type as Tc. Then enter the corresponding jobs_id and click 'Get Data', as shown in the figure:
+
+* Step 5: Click 'Tc Plot' to draw a picture.
+
+.. image:: image/3-35.png
+    :align: center
+    :width: 500

@@ -1,0 +1,12 @@
+Delete specified task
+===========================================
+
+Through the 'Delete Workflow' control, you can delete the workflow. First, connect the 'Manager' control to 'Delete Workflow', then enter the 'Job Id' in the interface, and press 'Submit' to delete the workflow.
+
+.. image:: image/3-67.png
+    :align: center
+    :width: 400
+
+.. image:: image/3-68.png
+    :align: center
+    :width: 500

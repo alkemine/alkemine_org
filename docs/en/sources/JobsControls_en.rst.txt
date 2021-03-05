@@ -1,0 +1,69 @@
+Jobs Controls
+=================
+
+Work State Controls
+-------------------------
+
+Used to view the workflow calculation state of a remote computer
+
++----------+---------------+
+|   Input  |    Output     |
++==========+===============+
+| Database |   Database    |
++----------+---------------+
+
+**Parameter Configuration**::
+
+    Refresh                                         Refresh the page
+
+.. image:: image/3-183.png
+    :align: center
+    :width: 500
+
+
+Delete Workflow Controls
+----------------------------------
+
+Used to delete a remote computer workflow
+
++----------+---------------+
+|   Input  |    Output     |
++==========+===============+
+| Database |     None      |
++----------+---------------+
+
+**Parameter Configuration**::
+
+    Job Id                                          Workflow id
+
+    Submit                                          Send delete instruction
+
+.. image:: image/3-184.png
+    :align: center
+    :width: 500
+
+
+Work Priority Controls
+-----------------------------------
+
+Used to adjust the workflow sequence of a remote computer
+
++----------+---------------+
+|   Input  |    Output     |
++==========+===============+
+| Database |     None      |
++----------+---------------+
+
+**Parameter Configuration**::
+
+    Job Id                                          Workflow id
+
+    Job priority                                    Workflow priority
+
+    Submit                                          Send adjustment instruction
+
+.. image:: image/3-185.png
+    :align: center
+    :width: 500
+
+

@@ -1,0 +1,149 @@
+Dynamic Controls
+==========================
+
+Get Kmc Data Controls
+---------------------------------
+
+Used to compute data from the database in Monte Carlo
+
++-------------+-----------------------+
+|    Input    |         Output        |
++=============+=======================+
+|   Database  |          Data         |
++-------------+-----------------------+
+
+**Parameter Configuration**::
+
+    jobs_id                                       Input jobs_id
+
+    Get Data                                      Get the corresponding data from the database and pass it down
+
+.. image:: image/3-168.png
+    :align: center
+    :width: 400
+
+
+Get delta E Controls
+-----------------------------------
+
+Used to get deltaE data from the datacase
+
++-------------+-----------------------+
+|    Input    |         Output        |
++=============+=======================+
+|   Database  |         Data E        |
++-------------+-----------------------+
+
+**Parameter Configuration**::
+
+    jobs_id                                       Input jobs_id
+
+    Get delta E                                   Get the corresponding data from the database and pass it down
+
+.. image:: image/3-169.png
+    :align: center
+    :width: 500
+
+
+Lattice Controls
+-----------------------------------
+
+Used to get lattice constant information from local files for multi-deficiency Monte Carlo calculations
+
++-------------+-----------------------+
+|    Input    |         Output        |
++=============+=======================+
+|     None    |         Lattice       |
++-------------+-----------------------+
+
+**Parameter Configuration**::
+
+    File path                                     The file path
+
+    Apply automatically                           Read the file information automatically and pass data down 
+
+.. image:: image/3-170.png
+    :align: center
+    :width: 500
+
+
+Kmc Run Li WF Controls
+------------------------------------
+
+Used to configure workflow parameters for different lattice occupancy probability statistics in Monte Carlo complex compounds and run the calculation
+
++------------------+---------------+
+|       Input      |     Output    |
++========+=========+===============+
+| Data E | Lattice | Workflow List |
++--------+---------+---------------+
+
+**Parameter Configuration**::
+
+    Site-energy Diff                              Site-energy difference
+
+    Temperature                                   Temperature(K)
+
+    Diffusive Atoms                               Diffusive atoms
+
+    Barrier                                       Resistance
+
+    Lattice                                       Lattice constant
+
+    Run                                           Run calculations, data results
+
+    Samples
+
+.. image:: image/3-171.png
+    :align: center
+    :width: 500
+
+
+Kmc Run Graphite WF Controls
+--------------------------------------------
+
+Used to configure workflow parameters for the diffusion of vacancies in a Monte Carlo honeycomb material and run the calculation
+
++------------------+---------------+
+|       Input      |     Output    |
++==================+===============+
+|       Data E     | Workflow List |
++------------------+---------------+
+
+**Parameter Configuration**::
+
+    Site-energy Diff                              Site-energy difference
+
+    Temperature                                   Temperature(K)
+
+    Diffusive Atoms                               Diffusive atoms
+
+    Barrier                                       Resistance
+
+    Samples
+
+    Run                                           Run calculations, data results
+
+.. image:: image/3-172.png
+    :align: center
+    :width: 500
+
+
+Kmc Plot Controls
+-------------------------------
+
+Used to draw Monte Carlo data images
+
++------------------+---------------+
+|       Input      |     Output    |
++==================+===============+
+|       Data E     | Workflow List |
++------------------+---------------+
+
+**No Parameter**
+
+.. image:: image/3-173.png
+    :align: center
+    :width: 500
+
+

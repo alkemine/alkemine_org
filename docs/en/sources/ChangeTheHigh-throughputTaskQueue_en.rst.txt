@@ -1,0 +1,12 @@
+Change the high-throughput task queue
+===============================================
+
+The :mod:`Work Priority` control allows you to adjust the workflow calculation order. First, connect the :mod:`Manager` control to the :mod:`Work Priority`, then enter the interface, input Job Id, input Job priority (0-100, 100 is the highest priority) and press :mod:`Submit` to adjust the workflow sequence.
+
+.. image:: image/3-69.png
+    :align: center
+    :width: 400
+
+.. image:: image/3-70.png
+    :align: center
+    :width: 500

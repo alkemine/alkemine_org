@@ -1,0 +1,16 @@
+First-principles HSE Calculation
+===============================================
+
+Connect controls from left to right, :mod:`HSE WF` takes three steps to calculate, namely structural optimization, static self-consistent and HSE calculation.
+
+.. image:: image/3-56.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-57.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-58.png
+    :align: center
+    :width: 500

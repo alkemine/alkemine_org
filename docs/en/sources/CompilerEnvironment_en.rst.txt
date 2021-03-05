@@ -1,0 +1,20 @@
+Compiler Environment
+=============================
+
+Windows Installation Environment
+-------------------------------------
+
+    * The numpy package must be available before compilation, otherwise the C language related scripts cannot be compiled.
+    * It is recommended to use anaconda to install python3.7.0 environment.
+    * Visual Studio 14++ (Windows)
+
+Linux Installation Environment
+----------------------------------------
+
+    * The numpy package must be available before compilation, otherwise the C language related scripts cannot be compiled.
+    * gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)
+    * It is recommended to use anaconda to install python3.7.0 environment.
+    * Visual interface needs: glibc/2.16
+
+.. note::
+    The following specific installation steps are based on Windows10.

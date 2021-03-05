@@ -1,0 +1,44 @@
+Specific operation examples of high throughput computing process
+======================================================================
+
+* Step 1: click the top left corner of the software: Mod:'File ', select the button: Mod:'open and freeze', and select the saved high-throughput computing process wf.akwf , as shown in the figure:
+
+.. image:: image/3-7.png
+    :align: center
+    :width: 400
+
+.. warning::
+
+    Select :mod:`Open and Freeze`, At this time, the data in the whole workflow is suspended. When high-throughput data is passed in, click the start button in the lower left corner to start automatically submitting tasks.
+
+* Step 2: double-click: Mod: ` multiposcar ', switch to the corresponding folder, and select 1000 structures, as shown in the figure:
+
+.. image:: image/3-8.png
+    :align: center
+    :width: 400
+
+.. note::
+
+    Wait until the progress bar in the lower right corner of the window in the figure above reaches 100%, indicating that the structure input is completed. At this point, click the start button in the lower left corner to start adding high-throughput automatic static computing to the database. When the two control progress bars in the figure below are all 100%, the data addition is finished, as shown in the figure below:
+
+.. image:: image/3-9.png
+    :align: center
+    :width: 400
+
+* Step 3: Click: Mod:'run jobs' in: Mod:'Jobs' to automatically submit tasks on the remote computer and start calculation, as shown in the figure below. After that, we need to wait about 2 hours to complete the calculation. After submitting, you can click: Mod: 'jobs' to view the task details.
+
+.. image:: image/3-10.png
+    :align: center
+    :width: 400
+
+* During the waiting process, you can view the working status through: Mod:'workstation '.
+
+.. image:: image/3-11.png
+    :align: center
+    :width: 400
+
+* Finally, wait for the end of the calculation to view the calculation results. After jobs, connect two data analysis buttons, and click the buttons 1, 2, 3 at a time to view the corresponding task ID and calculation results.
+
+.. image:: image/3-12.png
+    :align: center
+    :width: 400

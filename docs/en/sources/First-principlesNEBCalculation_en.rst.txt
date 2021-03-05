@@ -1,0 +1,16 @@
+First-principles NEB Calculation
+====================================================
+
+Connect controls from left to right， :mod:`NEB WF` can calculate the diffusion barrier. First obtain the diffusion path, then relax the structure, write the result into the database, change the point on the path, and repeat the above steps until it is completed.
+
+.. image:: image/3-59.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-60.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-61.png
+    :align: center
+    :width: 500

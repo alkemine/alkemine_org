@@ -1,0 +1,17 @@
+Automatic Training Model
+============================================
+
+The user interface of the training process is shown in the figure below. The left is parameter configuration area, the upper part of the right side is the parameter display area, the middle part is the progress bar of the training, and the bottom part is the information including error value and parameter change in the training process.
+
+The parameters on the left include the data used to select the neural network, the path to save the model, the path to save parameter information, the path to load the model and the hyperparameter configuration.
+
+Hyperparameters include the type of data for training, the number of GPUs used for training, the size of batch_size, the number of steps for iteration, the size of batch processing, how often the model is saved, the type of loss function, the type of activation function, the parameters of learning rate and weight, the number of hidden layers and the number of nodes in each layer, etc.
+
+
+.. image:: image/3-96.png
+    :align: center
+    :width: 100
+
+.. image:: image/3-97.png
+    :align: center
+    :width: 500

@@ -1,0 +1,35 @@
+Statistics on the probability of different grid points in complex compounds
+=====================================================================================
+
+According to the first-principles calculation of the potential barrier of vacancy diffusion, this example simulates the model Carlo simulation of the mesoscopic scale, and obtains statistics of the probability of different lattice points in the complex compound. After completing the first-principles NEB calculation, link to :mod:`Kmc Run Li` to perform the calculation, and finally draw the graph through :mod:`Kmc Plot`, the complete flow chart is as follows:
+
+.. image:: image/3-19.png
+    :align: center
+    :width: 500
+	
+The first step is to manually connect the controls, or click :mod:`File`, :mod:`Open and Freeze`, click to open the corresponding sample template file and click the start button, as shown in the figure:
+
+.. image:: image/3-19.png
+    :align: center
+    :width: 500
+
+- Steps 2 to 5 are the same as the above example, not repeat them here;
+
+- The sixth step is to click :mod:`Lattice`, the data crystal structure file, as shown in the figure:
+
+- The seventh step is to click :mod:`Run garnet lattice Kmc WF` to configure the parameters, as shown in the figure:
+
+.. image:: image/3-20.png
+    :align: center
+    :width: 500
+
+
+- The eighth step: submit the task in Jobs(1) and wait for the calculation to end;
+
+- Step 9: Click :mod:`Get Kmc Data` and enter jobs_id to transfer data to Kmc Plot, as shown in the figure:
+
+- The tenth step: click :mod:`Kmc Plot` to draw an image, as shown in the figure:
+
+.. image:: image/3-22.png
+    :align: center
+    :width: 500

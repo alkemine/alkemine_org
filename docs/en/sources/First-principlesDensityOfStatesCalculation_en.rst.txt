@@ -1,0 +1,16 @@
+First-principles Density Of States Calculation
+======================================================
+
+Connect controls from left to right, :mod:`DOS WF` calculates the density of states, three steps are required, namely structural optimization, static self-consistent and density of states calculation.
+
+.. image:: image/3-51.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-55.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-52.png
+    :align: center
+    :width: 500

@@ -1,0 +1,16 @@
+Construct tetrahedral and octahedral interstitial atom configurations and perform first-principles static calculations
+===================================================================================================================================================
+
+Connect the controls from left to right, input the crystal structure through the 'POSCAR' module, and build the interstitial doping model through 'Build Interstitial' in the 'Builder' module.
+
+.. image:: image/3-38.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-40.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-45.png
+    :align: center
+    :width: 500

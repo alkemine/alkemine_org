@@ -1,0 +1,20 @@
+Details of Widgets
+=========================
+
+.. toctree::
+    :maxdepth: 2
+
+    ModelingControls_en
+    VASPWorkflowControl_en
+    DatabaseControl_en
+    DrawingAndAnalysisControls_en
+    potentialmindControls_en
+    OpenPhaseControls_en
+    DynamicControls_en
+    GibbsControls_en
+    JobsControls_en
+    LammpsControls_en
+    QEControls_en
+    AbinitControls_en
+    CalypsoControls_en
+    VASPExtendControls_en

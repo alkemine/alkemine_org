@@ -1,0 +1,16 @@
+Construct the doping configuration of phase change materials and perform first-principles static calculations
+======================================================================================================================================
+
+Connect the controls from left to right; input the crystal structure through the 'POSCAR' module, and build the doping replacement model through 'Build Doping' in the 'Builder' module.
+
+.. image:: image/3-38.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-40.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-41.png
+    :align: center
+    :width: 500

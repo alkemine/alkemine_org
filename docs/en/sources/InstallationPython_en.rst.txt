@@ -1,0 +1,49 @@
+Install python
+================
+
+1. **Download the Windows version of the Anaconda installation package at http://www.anaconda.com.**
+
+.. image:: image/2-1.png
+    :align: center
+    :width: 500
+
+After the download is complete, you need double-click the mouse to start the installer, keep the default option settings and follow the instructions to install. Only as an administrator can you choose to install by all users. Checking "Just Me" in general situation.
+
+.. image:: image/2-2.png
+    :align: center
+    :width: 500
+
+
+2. **You need to add environment variables after the installation is complete.**
+
+Right-click the computer icon on the desktop, and click properties in the pop-up right-click menu to open the system settings. Select Advanced System Settings-Environment Variables-Path System Variables-Edit in turn. After opening the dialog for editing environment variables, click new folder to add the environment variables shown in the figure below. The path in the box needs to correspond to your own installation directory, as shown in the figure below.
+
+.. image:: image/2-4.png
+    :align: center
+    :width: 500
+
+
+3. **Add Tsinghua source mirror to conda and pip, refer to the specific method:**
+
+conda Tsinghua mirror：https://mirror.tuna.tsinghua.edu.cn/help/anaconda/
+
+.. code-block:: python
+
+    easy-install pip
+    pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+pypi Tsinghua mirror：https://mirror.tuna.tsinghua.edu.cn/help/pypi/
+
+.. code-block:: python
+
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+    conda config --set show_channel_urls yes
+
+
+.. warning::
+
+    If you do not add the Tsinghua mirror source, there will be a dependency package fastTSNE-0.2.13.tar.gz that cannot be downloaded correctly. You can manually download the 0.2.13 version through the connection and install it through pip https://pypi.tuna.tsinghua.edu. cn/simple/fasttsne/
+
+    There is no fastTSNE package in conda image, and Tsinghua image of pip is required

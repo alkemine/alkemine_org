@@ -1,0 +1,16 @@
+High-throughput Automatic Calculation Process：First-principles Relaxation Calculation
+================================================================================================
+
+Connect controls from left to right， :mod:`Optimize WF` optimizes the crystal structure.
+
+.. image:: image/3-47.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-53.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-48.png
+    :align: center
+    :width: 500

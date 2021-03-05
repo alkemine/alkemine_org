@@ -1,0 +1,12 @@
+Automatic Scatter Plot Distribution Of Energy, Volume, Band Gap
+=========================================================================
+
+ :mod:`Scatter Plot` in the form of a scatter diagram displays query results in :mod:`Analyzer` that can be used for multi-tasks.
+
+.. image:: image/3-77.png
+    :align: center
+    :width: 500
+
+.. image:: image/3-78.png
+    :align: center
+    :width: 500
