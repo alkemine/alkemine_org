@@ -1,4 +1,4 @@
-.. centered:: 您好！我们是ALKEMIE课题组的一份子。本ALKEMIE用户许可协议由我们制定、用于阐释您在使用ALKEMIE时允许/禁止做的行为，请在安装或使用ALKEMIE之前仔细阅读以下全文，因为它十分重要、且具备法律约束效力。
+.. centered:: 本ALKEMIE用户许可协议由我们制定、用于阐释您在使用ALKEMIE时允许/禁止做的行为，请在安装或使用ALKEMIE之前仔细阅读以下全文，因为它十分重要、且具备法律约束效力。
 
 
 .. centered:: ALKEMIE

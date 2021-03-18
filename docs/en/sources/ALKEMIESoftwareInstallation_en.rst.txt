@@ -1,7 +1,9 @@
 Installation
 ===================
 
-95% of the ALKEMIE software package is developed in python language, and it also contains a small amount of C and C++ language codes. Currently, the server and database have been deployed in the Beihang College Road Campus Supercomputing Cluster, Beihang Shahe Campus Supercomputing Cluster and Guangzhou National Supercomputing Center ; The client version can run perfectly on systems such as Windos7, Windows10, MacOS high sierra 10.13.6 and Ubuntu 18.04.2. The software portability is good. If users are familiar with the python language, they can create a new python environment and install it easily through pip install. Because there are some C and C++ codes, they need VS14++ or GCC4.4.7+ compiler to compile some C and C++ codes. The following part details the installation steps of ALKEMIE.
+95% of the ALKEMIE software package is developed in python language, and it also contains a small amount of C and C++ language codes. At present, servers and databases have been deployed in supercomputing clusters on Beihang College Road campus, Beihang Shahe campus supercomputing cluster, Tianjin National Supercomputing Center, Parallel Computing, Sichuan University, Fuzhou University and other supercomputing centers.
+
+The ALKEMIE client version can run perfectly on systems such as Windos7, Windows10, MacOS high sierra 10.13.6 and Ubuntu 18.04.2. The software portability is good. If users are familiar with the python language, they can create a new python environment and install it easily through pip install. Because there are some C and C++ codes, they need VS14++ or GCC4.4.7+ compiler to compile some C and C++ codes. The following part details the installation steps of ALKEMIE.
 
 
 .. toctree:: 

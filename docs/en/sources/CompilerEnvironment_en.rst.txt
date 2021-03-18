@@ -4,17 +4,17 @@ Compiler Environment
 Windows Installation Environment
 -------------------------------------
 
-    * The numpy package must be available before compilation, otherwise the C language related scripts cannot be compiled.
-    * It is recommended to use anaconda to install python3.7.0 environment.
-    * Visual Studio 14++ (Windows)
+    a. python (It is recommended to use Anaconda to install python3.7.0 environment)
+    b. numpy (Numpy must be installed before installing ALKEMIE, otherwise the scripts related to the c language cannot be compiled)
+    c. Visual Studio 14++ (C and C++ compilation dependencies)
 
 Linux Installation Environment
 ----------------------------------------
 
-    * The numpy package must be available before compilation, otherwise the C language related scripts cannot be compiled.
-    * gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)
-    * It is recommended to use anaconda to install python3.7.0 environment.
-    * Visual interface needs: glibc/2.16
+    a. python (It is recommended to use Anaconda to install python3.7.0 environment)
+    b. numpy (Numpy must be installed before installing ALKEMIE, otherwise the scripts related to the c language cannot be compiled)
+    c. gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)
+    d. Visual interface needs: glibc/2.16
 
 .. note::
     The following specific installation steps are based on Windows10.

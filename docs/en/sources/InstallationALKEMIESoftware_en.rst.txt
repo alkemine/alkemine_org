@@ -1,36 +1,36 @@
 Install ALKEMIE software
 ==================================
 
-1. **First, copy the entire Alkemiems-1.5.tar.gz installation package folder to a custom path. Note that the path cannot contain Chinese characters, spaces and other non-ASCII characters.**
+1. **Move the ALKEMIE installation package to a custom path. Note that the path cannot contain Chinese characters, spaces and other non-ASCII characters.**
 
-2. **Runing cmd and changing the directory to the path where the installation package is saved.**
+2. **Run the following command to install ALKEMIE. If it displays successfully, it means the installation is successful.**
 
-3. **Activating the python environment just installed through conda（activate env_name）**
+.. code-block:: python
 
-.. image:: image/2-6.png
-    :align: center
-    :width: 500
+    # Enter the target folder in cmd and enter the following command. Take the D:\alkemiems\test folder as an example
 
-4. **Entering pip install Alkemiems-1.5.tar.gz to run. (Take the folder D:\software where the Alkemiems-1.5.ar.gz installation package is located as an example to run the following), dispalying successful means that the installation is successful.**
+    # windows switch to D drive
+    D:
+    # Enter the folder
+    cd alkemiems\test
 
-.. image:: image/2-7.png
-    :align: center
-    :width: 500
+    # Install ALKEMIE software. Take the installation of Alkemiems-2021.3.16b0.tar.gz as an example
+    pip install Alkemiems-2021.3.16b0.tar.gz
 
-::
+3. **Run the following command to create a shortcut on the desktop**
 
-    >>>ERROR: Could not find a version that satisfies the requirement fastTSNE>=0.2.12 (from alkemiems)
-    >>>ERROR: No matching distribution found for fastTSNE>=0.2.12
+.. code-block:: python
 
-.. warning::
+    # Create Shortcut
+    Alkemiems-shortcut
 
-    If the above error occurs, you need to configure Tsinghua source mirroring!
+4. **Double-click the shortcut to start the software, the following is the software startup, login, welcome and main interface**
 
-5. **Adding the configuration file and put the configuration file .aklicense file in the user root directory. Running Alkemiems-akpad through cmd to start the software. The following is the software startup, login, welcome and main interface.**
+.. code-block:: python
 
-.. warning::
-
-    Be sure to start in the corresponding python environment! ! !
+    # Double-click the shortcut to start the software
+    # Or open cmd, enter Alkemiems-akpad to start the software
+    Alkemiems-akpad
 
 .. image:: image/2-8.png
     :align: center

@@ -1,4 +1,4 @@
-.. centered:: Hello! We are part of the ALKEMIE research group. This user license agreement is made by us and is used to explain the behaviors that you are allowed / prohibited to do when using alkemis. Please read the following full text carefully before installing or using alkemis, because it is very important and legally binding.
+.. centered:: This user license agreement is used to explain the behaviors that you are allowed / prohibited to do when using alkemis. Please read the following full text carefully before installing or using alkemis, because it is very important and legally binding.
 
 
 .. centered:: ALKEMIE
@@ -67,4 +67,4 @@ Failure to exercise, fail to exercise or fail to fully exercise the rights in th
 
 .. centered:: You confirm that you have read and understood the contents of this agreement, privacy policy and our user agreement, and your installation or use of ALKEMIE is deemed to agree to and accept the above contents.
 
-:download:`User agreement <Agreement.pdf>`
+:download:`User agreement <Agreement_en.pdf>`

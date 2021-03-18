@@ -61,23 +61,23 @@ Scope of Application
 * Suitable for other personnel who need material calculation simulation
 
 
-developers
+Developers
 -------------------------------
 
-guanjie wang, liyu peng, kaiqi li, yingxing cheng, hao wu
+Guanjie Wang, Liyu Peng, Kaiqi Li, Yingxing Cheng, Hao Wu
 
-User Document Writer
+User Document
 -----------------------------
 
-**teacher**：zhimei sun, jian zhou, peng wang, linggang zhu, naihua miao
+**Teachers**：Zhimei Sun, Jian Zhou, Peng Wang, Linggang Zhu, Naihua Miao
 
-**student**：guanjie wang, kaiqi li, zefeng li, jie li, jingjing cui, liyu peng, yatian zhang, jiatian chen
+**Students**：Guanjie Wang, Kaiqi Li, Zefeng Li, Jie Li, Jingjing Cui, Liyu Peng, Yatian Zhang, Jiatian Chen
 
-**translation**：zefeng li, zhen yang, xuanguang zhang, tong zhao, ya gao, miaoqi guo
+**Translators**：Zefeng Li, Zhen Yang, Xuanguang Zhang, Tong Zhao, Ya Gao, Miaoqi Guo
 
-Contact person
+Contacts
 ---------------------------
 
-zhimei sun：zmsun@buaa.edu.cn
+Zhimei Sun：zmsun@buaa.edu.cn
 
-guanjie wang：gjwang@buaa.edu.cn
+Guanjie Wang：gjwang@buaa.edu.cn

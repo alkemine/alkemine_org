@@ -13,17 +13,17 @@ Step of Application
 
 .. important:: The statistical table is used to collect the user's identity information. Be sure to fill in the real information. If the information is wrong, you may not be able to register!
 
-2. Waiting for review. After the review is passed, the invitation code and software installation package will be sent to you by email.
+2. Waiting for review. After the review, the invitation code and software installation package will be sent to you through the official email address (info@alkemine.cn).
 
 3. For the specific installation steps of installing ALKEMIE client, see :doc:`installation <ALKEMIESoftwareInstallation_en>`
 
-4. Register an account. You will be asked to register an ALKEMIE account when you start the client after installing it.
+4. Register
 
 .. image:: image/signIn.png
     :align: center
     :width: 500
 
-5. Then you can use all the functions of the software. For the detailed usage guide of ALKEMIE high-throughput platform, see :doc:`examples <Examples_en>`
+5. For the detailed usage guide of ALKEMIE high-throughput platform, see :doc:`examples <Examples_en>`
 
 Become a Developer
 ----------------------

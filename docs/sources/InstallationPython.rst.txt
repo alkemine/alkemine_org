@@ -1,7 +1,7 @@
 安装python
 ================
 
-1. **在http://www.anaconda.com下载windows版的Anaconda安装包。**
+1. **下载windows版的Anaconda安装包，下载地址：** `Anaconda <http://www.anaconda.com>`_
 
 .. image:: image/2-1.png
     :align: center
@@ -16,24 +16,39 @@
 
 2. **安装完成之后需要添加环境变量。**
 
-鼠标右击桌面上的此电脑图标，在弹出的右键菜单中点击属性，打开系统设置。依次选择高级系统设置-环境变量-path系统变量-编辑，打开编辑环境变量的对话框之后，点击新建，添加下图所示环境变量，方框里的路径需要对应自己的安装目录，如下图所示。
+    a. 鼠标右击桌面上的此电脑图标，在弹出的右键菜单中点击属性，打开系统设置。
+    b. 依次选择高级系统设置-环境变量
+    c. 选择系统环境变量中的Path，点击编辑
+    d. 新建并添加五条环境变量
+
+.. warning::
+
+    user_path代表用户自定义的Anaconda安装位置，安装目录不能有中文字符
+
+.. code-block::
+
+    # 以5.3的Anaconda3版本为例
+    # user_path为Anaconda安装位置
+    user_path/Anaconda3-5.3
+    user_path/Anaconda3-5.3/Scripts
+    user_path/Anaconda3-5.3/Lib
+    user_path/Anaconda3-5.3/Library
+    user_path/Anaconda3-5.3/Library/bin
 
 .. image:: image/2-4.png
     :align: center
     :width: 500
 
-
 3. **给conda和pip添加清华源镜像，具体方法参考：**
 
-conda 清华镜像：https://mirror.tuna.tsinghua.edu.cn/help/anaconda/
+输入以下命令配置 `pypi清华镜像 <https://mirror.tuna.tsinghua.edu.cn/help/pypi/>`_
 
 .. code-block:: python
 
-    easy-install pip
     pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 
-pypi 清华镜像：https://mirror.tuna.tsinghua.edu.cn/help/pypi/
+输入以下命令配置 `conda清华镜像 <https://mirror.tuna.tsinghua.edu.cn/help/anaconda/>`_
 
 .. code-block:: python
 
@@ -47,3 +62,20 @@ pypi 清华镜像：https://mirror.tuna.tsinghua.edu.cn/help/pypi/
     如果不添加清华镜像源，会有一个依赖包fastTSNE-0.2.13.tar.gz无法正确下载，可以手动通过连接下载0.2.13版本并通过pip安装https://pypi.tuna.tsinghua.edu.cn/simple/fasttsne/
 
     conda镜像中没有fastTSNE包，需要pip的清华镜像
+
+
+4. **创建python3.7环境**
+
+.. code-block:: python
+
+    # 在Anaconda中创建python3.7环境
+    conda create --name env_name python==3.7
+    # 检索后输入yes，等待安装完成
+
+    # 激活python3.7环境
+    conda activate env_name
+
+.. hint::
+
+    更进一步的Anaconda使用教程及创建python环境，参考：https://zhuanlan.zhihu.com/p/94744929
+

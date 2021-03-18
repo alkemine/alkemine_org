@@ -13,17 +13,17 @@
 
 .. important:: 统计表用来收集用户的身份信息。一定要填写真实信息，信息错误可能会无法注册！
 
-2. 等待审核，审核通过后会通过邮件方式给您发送邀请码和软件安装包。
+2. 等待审核，审核后会通过官方邮箱(info@alkemine.cn)给您发送邀请码和软件安装包。
 
 3. 安装ALKEMIE客户端，具体安装步骤详见 :doc:`安装 <ALKEMIESoftwareInstallation>`
 
-4. 注册账号，安装好客户端后启动时会要求您注册ALKEMIE账户。
+4. 注册
 
 .. image:: image/signIn.png
     :align: center
     :width: 500
 
-5. 接下来您就可以使用该软件的所有功能了，ALKEMIE高通量平台的详细使用指南见 :doc:`算例 <Examples>`
+5. ALKEMIE高通量平台的详细使用指南见 :doc:`算例 <Examples>`
 
 参与开发
 ----------------------

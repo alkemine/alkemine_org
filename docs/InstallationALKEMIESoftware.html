@@ -154,6 +154,9 @@
         div.asetop {
             text-align: right;
         }
+        ol.p {
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
@@ -179,29 +182,34 @@
   <div class="section" id="alkemie">
 <h1>安装ALKEMIE客户端软件<a class="headerlink" href="#alkemie" title="Permalink to this headline">¶</a></h1>
 <ol class="arabic simple">
-<li><p><strong>首先将Alkemiems-1.5.tar.gz安装包文件夹整体复制到自定义路径，注意路径不能包含中文，空格等 非ASCII编码的字符。</strong></p></li>
-<li><p><strong>运行cmd并切换目录至安装包所保存的路径。</strong></p></li>
-<li><p><strong>通过conda激活刚刚安装的python环境（activate env_name）</strong></p></li>
+<li><p><strong>将ALKEMIE安装包移动到自定义路径，注意路径不能包含中文，空格等非ASCII编码的字符。</strong></p></li>
+<li><p><strong>运行以下命令安装ALKEMIE，显示successfully即表示安装成功。</strong></p></li>
 </ol>
-<a class="reference internal image-reference" href="images/2-6.png"><img alt="images/2-6.png" class="align-center" src="images/2-6.png" style="width: 500px;" /></a>
-<ol class="arabic simple" start="4">
-<li><p><strong>输入pip install Alkemiems-1.5.tar.gz运行。（以Alkemiems-1.5.ar.gz安装包所在文件夹为D:software为例运行如下)，显示successfully即表示安装成功。</strong></p></li>
-</ol>
-<a class="reference internal image-reference" href="images/2-7.png"><img alt="images/2-7.png" class="align-center" src="images/2-7.png" style="width: 500px;" /></a>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;ERROR: Could not find a version that satisfies the requirement fastTSNE&gt;=0.2.12 (from alkemiems)</span>
-<span class="go">&gt;&gt;&gt;ERROR: No matching distribution found for fastTSNE&gt;=0.2.12</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 在cmd中进入目标文件夹，输入以下命令。以 D:\alkemiems\test 文件夹为例</span>
+
+<span class="c1"># windows切换到D盘</span>
+<span class="n">D</span><span class="p">:</span>
+<span class="c1"># 进入文件夹</span>
+<span class="n">cd</span> <span class="n">alkemiems</span>\<span class="n">test</span>
+
+<span class="c1"># 安装ALKEMIE软件。 以Alkemiems-2021.3.16b0.tar.gz安装为例</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">Alkemiems</span><span class="o">-</span><span class="mf">2021.3</span><span class="o">.</span><span class="mi">16</span><span class="n">b0</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
 </pre></div>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>如果出现上面的报错时，需要配置清华源镜像！</p>
-</div>
-<ol class="arabic simple" start="5">
-<li><p><strong>添加配置文件，将配置文件.aklicense文件放到用户根目录。通过cmd运行Alkemiems-akpad，即可启动软件。如下是软件启动、登陆、欢迎及主界面。</strong></p></li>
+<ol class="arabic simple" start="3">
+<li><p><strong>运行以下命令在桌面创建快捷方式</strong></p></li>
 </ol>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>一定要在对应的python环境下启动！！！</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 创建快捷方式</span>
+<span class="n">Alkemiems</span><span class="o">-</span><span class="n">shortcut</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p><strong>双击快捷方式启动软件，如下是软件启动、登陆、欢迎及主界面</strong></p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 双击快捷方式启动软件</span>
+<span class="c1"># 或者打开cmd，输入Alkemiems-akpad启动软件</span>
+<span class="n">Alkemiems</span><span class="o">-</span><span class="n">akpad</span>
+</pre></div>
 </div>
 <a class="reference internal image-reference" href="images/2-8.png"><img alt="images/2-8.png" class="align-center" src="images/2-8.png" style="width: 500px;" /></a>
 </div>
@@ -229,7 +237,7 @@
         
         &copy; Copyright 2020, ALKEMIE Matter Studio Developers
       <span class="lastupdated">
-        Last updated on Thu, 04 Mar 2021 13:11:53.
+        Last updated on Wed, 17 Mar 2021 22:32:01.
       </span>
 
     </p>

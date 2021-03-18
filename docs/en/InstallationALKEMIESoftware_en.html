@@ -155,6 +155,9 @@
         div.asetop {
             text-align: right;
         }
+        ol.p {
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
@@ -180,29 +183,34 @@
   <div class="section" id="install-alkemie-software">
 <h1>Install ALKEMIE software<a class="headerlink" href="#install-alkemie-software" title="Permalink to this headline">¶</a></h1>
 <ol class="arabic simple">
-<li><p><strong>First, copy the entire Alkemiems-1.5.tar.gz installation package folder to a custom path. Note that the path cannot contain Chinese characters, spaces and other non-ASCII characters.</strong></p></li>
-<li><p><strong>Runing cmd and changing the directory to the path where the installation package is saved.</strong></p></li>
-<li><p><strong>Activating the python environment just installed through conda（activate env_name）</strong></p></li>
+<li><p><strong>Move the ALKEMIE installation package to a custom path. Note that the path cannot contain Chinese characters, spaces and other non-ASCII characters.</strong></p></li>
+<li><p><strong>Run the following command to install ALKEMIE. If it displays successfully, it means the installation is successful.</strong></p></li>
 </ol>
-<a class="reference internal image-reference" href="images/2-6.png"><img alt="images/2-6.png" class="align-center" src="images/2-6.png" style="width: 500px;" /></a>
-<ol class="arabic simple" start="4">
-<li><p><strong>Entering pip install Alkemiems-1.5.tar.gz to run. (Take the folder D:software where the Alkemiems-1.5.ar.gz installation package is located as an example to run the following), dispalying successful means that the installation is successful.</strong></p></li>
-</ol>
-<a class="reference internal image-reference" href="images/2-7.png"><img alt="images/2-7.png" class="align-center" src="images/2-7.png" style="width: 500px;" /></a>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;ERROR: Could not find a version that satisfies the requirement fastTSNE&gt;=0.2.12 (from alkemiems)</span>
-<span class="go">&gt;&gt;&gt;ERROR: No matching distribution found for fastTSNE&gt;=0.2.12</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enter the target folder in cmd and enter the following command. Take the D:\alkemiems\test folder as an example</span>
+
+<span class="c1"># windows switch to D drive</span>
+<span class="n">D</span><span class="p">:</span>
+<span class="c1"># Enter the folder</span>
+<span class="n">cd</span> <span class="n">alkemiems</span>\<span class="n">test</span>
+
+<span class="c1"># Install ALKEMIE software. Take the installation of Alkemiems-2021.3.16b0.tar.gz as an example</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">Alkemiems</span><span class="o">-</span><span class="mf">2021.3</span><span class="o">.</span><span class="mi">16</span><span class="n">b0</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
 </pre></div>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If the above error occurs, you need to configure Tsinghua source mirroring!</p>
-</div>
-<ol class="arabic simple" start="5">
-<li><p><strong>Adding the configuration file and put the configuration file .aklicense file in the user root directory. Running Alkemiems-akpad through cmd to start the software. The following is the software startup, login, welcome and main interface.</strong></p></li>
+<ol class="arabic simple" start="3">
+<li><p><strong>Run the following command to create a shortcut on the desktop</strong></p></li>
 </ol>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Be sure to start in the corresponding python environment! ! !</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create Shortcut</span>
+<span class="n">Alkemiems</span><span class="o">-</span><span class="n">shortcut</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p><strong>Double-click the shortcut to start the software, the following is the software startup, login, welcome and main interface</strong></p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Double-click the shortcut to start the software</span>
+<span class="c1"># Or open cmd, enter Alkemiems-akpad to start the software</span>
+<span class="n">Alkemiems</span><span class="o">-</span><span class="n">akpad</span>
+</pre></div>
 </div>
 <a class="reference internal image-reference" href="images/2-8.png"><img alt="images/2-8.png" class="align-center" src="images/2-8.png" style="width: 500px;" /></a>
 </div>
@@ -230,7 +238,7 @@
         
         &copy; Copyright 2021, Zefeng Li, Guanjie Wang
       <span class="lastupdated">
-        Last updated on Thu, 04 Mar 2021 16:04:22.
+        Last updated on Wed, 17 Mar 2021 22:31:45.
       </span>
 
     </p>
