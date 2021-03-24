@@ -11,26 +11,26 @@ Application Process
 Step of Application
 ----------------------
 
-1. Click to read the user agreement：:doc:`user agreement <UserAgreement_en>`
+1. **Click to read the user agreement：**:doc:`user agreement <UserAgreement_en>` .
 
 .. important::
-    Be sure to read the ALKEMIE user agreement carefully before applying for an account. When you start to use the ALKEMIE software, we assume that you have already understood the user agreement.
+    Please read the ALKEMIE user agreement carefully before applying for an account. When you start using the ALKEMIE software, we assume that you have understood and agreed to the user agreement.
 
-2. Fill in the `statistical table <https://docs.qq.com/form/page/DRkRFUnd1RkdJSUZP?_w_tencentdocx_form=1>`_
+2. **Fill in the** `User information statistics table <https://docs.qq.com/form/page/DRkRFUnd1RkdJSUZP?_w_tencentdocx_form=1>`_ .
 
-.. important:: The statistical table is used to collect the user's identity information. Be sure to fill in the real information. If the information is wrong, you may not be able to register!
+.. important:: Please fill in your real personal information, otherwise you may not be able to register normally!
 
-3. Waiting for review. After the review, the invitation code and software installation package will be sent to you through the official email address (info@alkemine.cn).
+3. **Waiting for review. After the review, the invitation code and software installation package will be sent to you through the official email address (info@alkemine.cn).**
 
-4. For the specific installation steps of installing ALKEMIE client, see :doc:`installation <ALKEMIESoftwareInstallation_en>`
+4. **For the specific installation steps of installing ALKEMIE client, see** :doc:`installation <ALKEMIESoftwareInstallation_en>` .
 
-5. Register
+5. **Start the software, click Sign Up on the login interface, and automatically register an account by filling in personal information and invitation code. After successful registration, it can be used normally.**
 
 .. image:: image/signIn.png
     :align: center
     :width: 700
 
-6. For the detailed usage guide of ALKEMIE high-throughput platform, see :doc:`examples <Examples_en>`
+6. **For the detailed usage guide of ALKEMIE high-throughput platform, see** :doc:`examples <Examples_en>` .
 
 Become a Developer
 ----------------------
