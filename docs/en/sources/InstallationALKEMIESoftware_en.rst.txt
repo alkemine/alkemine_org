@@ -1,5 +1,5 @@
-Install ALKEMIE software
-==================================
+Install ALKEMIE client from source
+==========================================
 
 1. **Move the ALKEMIE installation package to a custom path. Note that the path cannot contain Chinese characters, spaces and other non-ASCII characters.**
 
@@ -35,3 +35,9 @@ Install ALKEMIE software
 .. image:: image/2-8.png
     :align: center
     :width: 500
+
+5. **Uninstall ALKEMIE**
+
+.. code-block:: python
+
+    pip unistall Alkemiems

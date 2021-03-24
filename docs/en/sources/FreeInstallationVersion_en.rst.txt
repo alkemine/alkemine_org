@@ -1,0 +1,8 @@
+Easy installation of ALKEMIE client (default)
+==========================================================
+
+Download alkemiems-2021.03.16.zip, after decompression, as shown in the figure, double-click alkemiems.link to start the software.
+
+.. image:: image/easyInstall.png
+    :align: center
+    :width: 500

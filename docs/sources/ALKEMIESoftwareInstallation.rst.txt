@@ -8,9 +8,6 @@ ALKEMIE客户端可以在Windos7, Windows10, MacOS high sierra 10.13.6 及 Ubunt
 
 .. toctree:: 
     
-    CompilerEnvironment
-    InstallationPython.rst
-    InstallationVisualStudioInstaller.rst
-    InstallationALKEMIESoftware.rst
-    SoftwareLogin.rst
-    CommonProblemsAndSolutions.rst
+    FreeInstallationVersion
+    InstallationALKEMIESoftware
+    CommonProblemsAndSolutions

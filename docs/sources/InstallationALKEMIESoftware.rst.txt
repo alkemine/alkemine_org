@@ -1,5 +1,5 @@
-安装ALKEMIE客户端软件
-==============================
+从源码安装ALKEMIE客户端
+======================================
 
 1. **将ALKEMIE安装包移动到自定义路径，注意路径不能包含中文，空格等非ASCII编码的字符。**
 
@@ -35,3 +35,9 @@
 .. image:: image/2-8.png
     :align: center
     :width: 500
+
+5. **卸载ALKEMIE**
+
+.. code-block:: python
+
+    pip unistall Alkemiems

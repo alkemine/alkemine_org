@@ -39,7 +39,7 @@
   <link rel="index" title="Index" href="genindex.html" />
   <link rel="search" title="Search" href="search.html" />
   <link rel="next" title="High-throughput examples" href="Examples_en.html" />
-  <link rel="prev" title="Software login" href="SoftwareLogin_en.html" /> 
+  <link rel="prev" title="Install ALKEMIE client from source" href="InstallationALKEMIESoftware_en.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -90,12 +90,14 @@
 <li class="toctree-l1"><a class="reference internal" href="ApplyForTrial_en.html">Application</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ALKEMIESoftwareConceptAndOverview_en.html">Architecture</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="ALKEMIESoftwareInstallation_en.html">Installation</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="CompilerEnvironment_en.html">Compiler Environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="InstallationPython_en.html">Install python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="InstallationVisualStudioInstaller_en.html">Install Visual Studio Installer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="InstallationALKEMIESoftware_en.html">Install ALKEMIE software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="SoftwareLogin_en.html">Software login</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Common Problems and Solutions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FreeInstallationVersion_en.html">Easy installation of ALKEMIE client (default)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InstallationALKEMIESoftware_en.html">Install ALKEMIE client from source</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Common Problems and Solutions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installationpython">InstallationPython</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-visual-studio-installer">Installation Visual Studio Installer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-common-problems">Other Common Problems</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Examples_en.html">High-throughput examples</a></li>
@@ -182,6 +184,107 @@
                 
   <div class="section" id="common-problems-and-solutions">
 <h1>Common Problems and Solutions<a class="headerlink" href="#common-problems-and-solutions" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Windows Installation Environment</strong></p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>python (It is recommended to use Anaconda to install python3.7.0 environment)</p></li>
+<li><p>numpy (Numpy must be installed before installing ALKEMIE, otherwise the scripts related to the c language cannot be compiled)</p></li>
+<li><p>Visual Studio 14++ (C and C++ compilation dependencies)</p></li>
+</ol>
+</div></blockquote>
+<p><strong>Linux Installation Environment</strong></p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>python (It is recommended to use Anaconda to install python3.7.0 environment)</p></li>
+<li><p>numpy (Numpy must be installed before installing ALKEMIE, otherwise the scripts related to the c language cannot be compiled)</p></li>
+<li><p>gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)</p></li>
+<li><p>Visual interface needs: glibc/2.16</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="installationpython">
+<h2>InstallationPython<a class="headerlink" href="#installationpython" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Download the Windows version of the Anaconda installation package at</strong> <a class="reference external" href="http://www.anaconda.com">Anaconda</a></p></li>
+</ol>
+<a class="reference internal image-reference" href="images/2-1.png"><img alt="images/2-1.png" class="align-center" src="images/2-1.png" style="width: 500px;" /></a>
+<p>After the download is complete, you need double-click the mouse to start the installer, keep the default option settings and follow the instructions to install. Only as an administrator can you choose to install by all users. Checking “Just Me” in general situation.</p>
+<a class="reference internal image-reference" href="images/2-2.png"><img alt="images/2-2.png" class="align-center" src="images/2-2.png" style="width: 500px;" /></a>
+<ol class="arabic" start="2">
+<li><p><strong>Add environment variables after the installation is complete.</strong></p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Right-click the computer icon on the desktop, and click Properties in the pop-up right-click menu to open the system settings.</p></li>
+<li><p>Select Advanced System Settings-Environment Variables</p></li>
+<li><p>Select Path in the system environment variable, click Edit</p></li>
+<li><p>Create and add five environment variables</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>user_path represents the user-defined Anaconda installation location, the installation directory cannot have Chinese characters.</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Take the Anaconda3 version of 5.3 as an example</span>
+<span class="c1"># user_path is the Anaconda installation location</span>
+<span class="n">user_path</span><span class="o">/</span><span class="n">Anaconda3</span><span class="o">-</span><span class="mf">5.3</span>
+<span class="n">user_path</span><span class="o">/</span><span class="n">Anaconda3</span><span class="o">-</span><span class="mf">5.3</span><span class="o">/</span><span class="n">Scripts</span>
+<span class="n">user_path</span><span class="o">/</span><span class="n">Anaconda3</span><span class="o">-</span><span class="mf">5.3</span><span class="o">/</span><span class="n">Lib</span>
+<span class="n">user_path</span><span class="o">/</span><span class="n">Anaconda3</span><span class="o">-</span><span class="mf">5.3</span><span class="o">/</span><span class="n">Library</span>
+<span class="n">user_path</span><span class="o">/</span><span class="n">Anaconda3</span><span class="o">-</span><span class="mf">5.3</span><span class="o">/</span><span class="n">Library</span><span class="o">/</span><span class="nb">bin</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="images/2-4.png"><img alt="images/2-4.png" class="align-center" src="images/2-4.png" style="width: 500px;" /></a>
+<ol class="arabic simple" start="3">
+<li><p><strong>Add Tsinghua source mirror to conda and pip, refer to the specific method:</strong></p></li>
+</ol>
+<p>Enter the following command to configure <a class="reference external" href="https://mirror.tuna.tsinghua.edu.cn/help/pypi/">pypi Tsinghua mirror</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">config</span> <span class="nb">set</span> <span class="k">global</span><span class="o">.</span><span class="n">index</span><span class="o">-</span><span class="n">url</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">pypi</span><span class="o">.</span><span class="n">tuna</span><span class="o">.</span><span class="n">tsinghua</span><span class="o">.</span><span class="n">edu</span><span class="o">.</span><span class="n">cn</span><span class="o">/</span><span class="n">simple</span>
+</pre></div>
+</div>
+<p>Enter the following command to configure <a class="reference external" href="https://mirror.tuna.tsinghua.edu.cn/help/anaconda/">conda Tsinghua mirror</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">tuna</span><span class="o">.</span><span class="n">tsinghua</span><span class="o">.</span><span class="n">edu</span><span class="o">.</span><span class="n">cn</span><span class="o">/</span><span class="n">anaconda</span><span class="o">/</span><span class="n">pkgs</span><span class="o">/</span><span class="n">free</span><span class="o">/</span>
+<span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">mirrors</span><span class="o">.</span><span class="n">tuna</span><span class="o">.</span><span class="n">tsinghua</span><span class="o">.</span><span class="n">edu</span><span class="o">.</span><span class="n">cn</span><span class="o">/</span><span class="n">anaconda</span><span class="o">/</span><span class="n">pkgs</span><span class="o">/</span><span class="n">main</span><span class="o">/</span>
+<span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="nb">set</span> <span class="n">show_channel_urls</span> <span class="n">yes</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you do not add the Tsinghua mirror source, there will be a dependency package fastTSNE-0.2.13.tar.gz that cannot be downloaded correctly. You can manually download the 0.2.13 version through the connection and install it through pip <a class="reference external" href="https://pypi.tuna.tsinghua.edu">https://pypi.tuna.tsinghua.edu</a>. cn/simple/fasttsne/</p>
+<p>There is no fastTSNE package in conda image, and Tsinghua image of pip is required</p>
+</div>
+<ol class="arabic simple" start="4">
+<li><p><strong>Create a python3.7 enviroment</strong></p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a python3.7 environment in Anaconda</span>
+<span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">env_name</span> <span class="n">python</span><span class="o">==</span><span class="mf">3.7</span>
+<span class="c1"># Enter yes after retrieval and wait for the installation to complete</span>
+
+<span class="c1"># Activate the python3.7 environment</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">env_name</span>
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>For further Anaconda usage tutorials and creating python environment, refer to: <a class="reference external" href="https://zhuanlan.zhihu.com/p/94744929">https://zhuanlan.zhihu.com/p/94744929</a></p>
+</div>
+</div>
+<div class="section" id="installation-visual-studio-installer">
+<h2>Installation Visual Studio Installer<a class="headerlink" href="#installation-visual-studio-installer" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>Download the Visual Studio 2019 installation package, download address: <a class="reference external" href="https://visualstudio.microsoft.com/zh-hans">https://visualstudio.microsoft.com/zh-hans</a></p></li>
+<li><p>Double-click the mouse to start the installation program, choose to use C++ desktop development, and install according to the default path</p></li>
+<li><p>The installation process takes about half an hour. After the installation is complete, you must restart the computer according to the prompts</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="images/2-5.jpg"><img alt="images/2-5.jpg" class="align-center" src="images/2-5.jpg" style="width: 500px;" /></a>
+</div>
+<div class="section" id="other-common-problems">
+<h2>Other Common Problems<a class="headerlink" href="#other-common-problems" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Can not log in the ALKEMIE.</p></li>
 </ol>
@@ -208,10 +311,7 @@
 </ol>
 <a class="reference internal image-reference" href="images/2-13.png"><img alt="images/2-13.png" class="align-center" src="images/2-13.png" style="width: 500px;" /></a>
 <p><strong>Solution</strong>：If you encounter this problem, it is because the conda environment variable is incorrect, just add the conda environment variable again.</p>
-<ol class="arabic simple" start="6">
-<li><p>Prompt that Visual Studio C++14 is missing during installation.</p></li>
-</ol>
-<p><strong>Solution</strong>：Please install Visual Studio 2019 according to 2.3. After restarting, you can install the ALKEMIE software.</p>
+</div>
 </div>
 
 
@@ -225,7 +325,7 @@
         <a href="Examples_en.html" class="btn btn-neutral float-right" title="High-throughput examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="SoftwareLogin_en.html" class="btn btn-neutral float-left" title="Software login" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="InstallationALKEMIESoftware_en.html" class="btn btn-neutral float-left" title="Install ALKEMIE client from source" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -237,7 +337,7 @@
         
         &copy; Copyright 2021, Zefeng Li, Guanjie Wang
       <span class="lastupdated">
-        Last updated on Wed, 17 Mar 2021 22:20:07.
+        Last updated on Wed, 24 Mar 2021 11:12:57.
       </span>
 
     </p>

@@ -1,0 +1,8 @@
+免安装ALKEMIE客户端（默认）
+==================================================
+
+下载alkemiems-2021.03.16.zip，解压后如图所示，双击alkemiems.link启动软件。
+
+.. image:: image/easyInstall.png
+    :align: center
+    :width: 500

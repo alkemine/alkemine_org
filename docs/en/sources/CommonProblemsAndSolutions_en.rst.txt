@@ -1,6 +1,115 @@
 Common Problems and Solutions
 =======================================
 
+.. warning::
+
+	**Windows Installation Environment**
+
+	    a. python (It is recommended to use Anaconda to install python3.7.0 environment)
+	    b. numpy (Numpy must be installed before installing ALKEMIE, otherwise the scripts related to the c language cannot be compiled)
+	    c. Visual Studio 14++ (C and C++ compilation dependencies)
+
+	**Linux Installation Environment**
+
+	    a. python (It is recommended to use Anaconda to install python3.7.0 environment)
+	    b. numpy (Numpy must be installed before installing ALKEMIE, otherwise the scripts related to the c language cannot be compiled)
+	    c. gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-4)
+	    d. Visual interface needs: glibc/2.16
+
+InstallationPython
+---------------------------------------------------
+
+1. **Download the Windows version of the Anaconda installation package at** `Anaconda <http://www.anaconda.com>`_
+
+.. image:: image/2-1.png
+    :align: center
+    :width: 500
+
+After the download is complete, you need double-click the mouse to start the installer, keep the default option settings and follow the instructions to install. Only as an administrator can you choose to install by all users. Checking "Just Me" in general situation.
+
+.. image:: image/2-2.png
+    :align: center
+    :width: 500
+
+
+2. **Add environment variables after the installation is complete.**
+
+    a. Right-click the computer icon on the desktop, and click Properties in the pop-up right-click menu to open the system settings.
+    b. Select Advanced System Settings-Environment Variables
+    c. Select Path in the system environment variable, click Edit
+    d. Create and add five environment variables
+
+.. warning::
+
+    user_path represents the user-defined Anaconda installation location, the installation directory cannot have Chinese characters.
+
+.. code-block::
+
+    # Take the Anaconda3 version of 5.3 as an example
+    # user_path is the Anaconda installation location
+    user_path/Anaconda3-5.3
+    user_path/Anaconda3-5.3/Scripts
+    user_path/Anaconda3-5.3/Lib
+    user_path/Anaconda3-5.3/Library
+    user_path/Anaconda3-5.3/Library/bin
+
+.. image:: image/2-4.png
+    :align: center
+    :width: 500
+
+3. **Add Tsinghua source mirror to conda and pip, refer to the specific method:**
+
+Enter the following command to configure `pypi Tsinghua mirror <https://mirror.tuna.tsinghua.edu.cn/help/pypi/>`_
+
+.. code-block:: python
+
+    pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+Enter the following command to configure `conda Tsinghua mirror <https://mirror.tuna.tsinghua.edu.cn/help/anaconda/>`_
+
+.. code-block:: python
+
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+    conda config --set show_channel_urls yes
+
+
+.. warning::
+
+    If you do not add the Tsinghua mirror source, there will be a dependency package fastTSNE-0.2.13.tar.gz that cannot be downloaded correctly. You can manually download the 0.2.13 version through the connection and install it through pip https://pypi.tuna.tsinghua.edu. cn/simple/fasttsne/
+
+    There is no fastTSNE package in conda image, and Tsinghua image of pip is required
+
+4. **Create a python3.7 enviroment**
+
+.. code-block:: python
+
+    # Create a python3.7 environment in Anaconda
+    conda create --name env_name python==3.7
+    # Enter yes after retrieval and wait for the installation to complete
+
+    # Activate the python3.7 environment
+    conda activate env_name
+
+.. hint::
+
+    For further Anaconda usage tutorials and creating python environment, refer to: https://zhuanlan.zhihu.com/p/94744929
+
+Installation Visual Studio Installer
+----------------------------------------------------
+
+    * Download the Visual Studio 2019 installation package, download address: https://visualstudio.microsoft.com/zh-hans
+    * Double-click the mouse to start the installation program, choose to use C++ desktop development, and install according to the default path
+    * The installation process takes about half an hour. After the installation is complete, you must restart the computer according to the prompts
+
+.. image:: image/2-5.jpg
+    :align: center
+    :width: 500
+
+Other Common Problems
+-----------------------------------------------
+
 1. Can not log in the ALKEMIE.
 
 **Solution**：Please contact the administrator to obtain a license and register an account.
@@ -35,7 +144,3 @@ Common Problems and Solutions
     :width: 500
 
 **Solution**：If you encounter this problem, it is because the conda environment variable is incorrect, just add the conda environment variable again.
-
-6. Prompt that Visual Studio C++14 is missing during installation.
-
-**Solution**：Please install Visual Studio 2019 according to 2.3. After restarting, you can install the ALKEMIE software.

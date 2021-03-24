@@ -8,9 +8,6 @@ The ALKEMIE client version can run perfectly on systems such as Windos7, Windows
 
 .. toctree:: 
     
-    CompilerEnvironment_en
-    InstallationPython_en.rst
-    InstallationVisualStudioInstaller_en.rst
-    InstallationALKEMIESoftware_en.rst
-    SoftwareLogin_en.rst
-    CommonProblemsAndSolutions_en.rst
+    FreeInstallationVersion_en
+    InstallationALKEMIESoftware_en
+    CommonProblemsAndSolutions_en
